@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AFACES — Portfolio Oficial</title>
+<link rel="icon" type="image/x-icon" href="assets/images/icon/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">A<span>F</span>ACES</a>
+  <ul class="nav-links">
+    <li><a href="#about">Artista</a></li>
+    <li><a href="#phases">Fases</a></li>
+    <li><a href="#tematicas">Temáticas</a></li>
+    <li><a href="#series">Series</a></li>
+    <li><a href="#discography">Discografía</a></li>
+    <li><a href="#platforms">Escuchar</a></li>
+  </ul>
+  <div class="nav-right">
+    <!-- RADIO TOGGLE -->
+    <button class="radio-toggle" id="radioToggle" title="Radio Afaces" aria-label="Abrir radio">
+      <span class="radio-toggle-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/>
+        </svg>
+      </span>
+      <span class="radio-toggle-label">RADIO</span>
+      <span class="radio-live-dot" id="radioLiveDot"></span>
+    </button>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
+      <span class="theme-icon theme-icon-dark">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </span>
+      <span class="theme-icon theme-icon-light">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </span>
+    </button>
+
+    <a href="mailto:afacesmusic@gmail.com" class="nav-cta">Contacto</a>
+  </div>
+</nav>
+
+<!-- RADIO PLAYER PANEL -->
+<div class="radio-panel" id="radioPanel" aria-hidden="true">
+  <div class="radio-panel-inner">
+    <div class="radio-header">
+      <div class="radio-logo">
+        <span class="radio-dot" id="rpDot"></span>
+        AFACES RADIO
+      </div>
+      <button class="radio-close" id="radioClose" aria-label="Cerrar radio">✕</button>
+    </div>
+
+    <div class="radio-art" id="radioArt">
+      <div class="radio-art-img" id="radioArtImg"></div>
+      <div class="radio-vinyl" id="radioVinyl">
+        <div class="vinyl-ring"></div>
+        <div class="vinyl-ring"></div>
+        <div class="vinyl-center"></div>
+      </div>
+    </div>
+
+    <div class="radio-info">
+      <div class="radio-track-name" id="radioTrackName">— Selecciona una pista —</div>
+      <div class="radio-track-artist" id="radioTrackArtist">Afaces</div>
+      <div class="radio-track-count" id="radioTrackCount">— / —</div>
+    </div>
+
+    <div class="radio-progress-wrap">
+      <span class="radio-time" id="radioCurrTime">00:00</span>
+      <div class="radio-progress-track">
+        <div class="radio-progress-fill" id="radioProgressFill"></div>
+        <input type="range" class="radio-seek" id="radioSeek" min="0" max="100" value="0" step="0.1">
+      </div>
+      <span class="radio-time" id="radioDuration">00:00</span>
+    </div>
+
+    <div class="radio-controls">
+      <button class="rctrl rctrl-prev" id="rPrev" title="Anterior" aria-label="Pista anterior">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 20L9 12l10-8v16zm-12 0V4H5v16h2z"/></svg>
+      </button>
+      <button class="rctrl rctrl-play" id="rPlay" title="Play/Pausa" aria-label="Reproducir o pausar">
+        <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="pause-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+      <button class="rctrl rctrl-next" id="rNext" title="Siguiente" aria-label="Pista siguiente">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5 4l10 8-10 8V4zm12 0h2v16h-2z"/></svg>
+      </button>
+      <button class="rctrl rctrl-shuffle" id="rShuffle" title="Aleatorio" aria-label="Modo aleatorio">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+      </button>
+    </div>
+
+    <div class="radio-volume">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5zm6.07 2.93a10 10 0 0 1 0 14.14"/><line x1="15.54" y1="8.46" x2="21.07" y2="2.93"/></svg>
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5z"/></svg>
+      <input type="range" class="radio-vol-slider" id="radioVol" min="0" max="100" value="80">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5zm6.07 2.93a10 10 0 0 1 0 14.14m-3.53-10.61a6 6 0 0 1 0 8.48"/></svg>
+    </div>
+
+    <div class="radio-playlist" id="radioPlaylist">
+      <!-- populated by JS -->
+    </div>
+  </div>
+</div>
+<div class="radio-backdrop" id="radioBackdrop"></div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-bg-num" id="heroBgNum">100</div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Proyecto musical independiente · Desde 2017</div>
+    <h1 class="hero-title">A<em>fa</em><br>ces</h1>
+    <div class="hero-bottom">
+      <p class="hero-desc">Un universo sonoro de 100 lanzamientos.<br>Desde el caos experimental hasta la arquitectura conceptual. 6 fases. 7 núcleos. Sin fin.</p>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-n">27</div><div class="stat-l">Álbumes</div></div>
+        <div class="stat"><div class="stat-n">73</div><div class="stat-l">LPs</div></div>
+        <div class="stat"><div class="stat-n">6</div><div class="stat-l">Fases</div></div>
+        <div class="stat"><div class="stat-n">7</div><div class="stat-l">Núcleos</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap"><div class="marquee-track" id="mqTrack"></div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="fu">
+    <div class="about-label">El artista</div>
+    <h2 class="about-headline">Un universo<br>narrativo <em>coherente</em></h2>
+    <p class="about-text">Afaces es el proyecto de Axel Fernandez Curros: obra musical masiva y continua de 100 lanzamientos. No es una colección de trabajos inconexos — es un universo narrativo donde cada pieza aporta a una exploración continua de sistemas, vacíos, códigos, desapariciones y estructuras invisibles de control.</p>
+    <p class="about-text">La producción muestra una evolución clara: desde trabajos experimentales en inglés con títulos provocativos, hacia producciones conceptuales complejas en español con arquitecturas narrativas interconectadas. Desde la frustración meta-artística de <em style="color:var(--gold)">'BUY NEVER'</em> hasta el cierre conceptual de <em style="color:var(--gold)">'Ceniza y Sal: Manual de Desaparición'</em>.</p>
+    <p class="about-text">Las series NEXUZ, PROTOCOLO y KODE funcionan como megaestructuras dentro de la obra mayor. La Trilogía del Fuego y la Constelación del Vacío trazan arcos temáticos que atraviesan décadas.</p>
+    <div class="about-pills">
+      <a href="https://open.spotify.com/artist/3zbzWzOqZcY3mZBG5ICF9l" target="_blank" class="pill">Spotify</a>
+      <a href="https://afaces.bandcamp.com" target="_blank" class="pill">Bandcamp</a>
+      <a href="https://soundcloud.com/afaces" target="_blank" class="pill">SoundCloud</a>
+      <a href="https://music.apple.com/us/artist/afaces/1450474907" target="_blank" class="pill">Apple Music</a>
+      <a href="https://www.youtube.com/user/axelaxel12" target="_blank" class="pill">YouTube</a>
+      <a href="https://www.deezer.com/es/artist/57830442" target="_blank" class="pill">Deezer</a>
+    </div>
+  </div>
+  <div class="fu" style="transition-delay:.14s">
+    <div class="info-grid">
+      <div class="info-cell"><div class="info-cell-lbl">Artista</div><div class="info-cell-val">Axel F. Curros</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Activo desde</div><div class="info-cell-val">2017</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Álbumes</div><div class="info-cell-val">27</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">LPs</div><div class="info-cell-val">73</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Fases evolutivas</div><div class="info-cell-val">6</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Núcleos temáticos</div><div class="info-cell-val">7</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Idioma(s)</div><div class="info-cell-val" style="font-size:.9rem;font-family:'Space Mono';font-weight:400">ES / EN  / CAT / EUS / IALEX</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Sello</div><div class="info-cell-val">Independiente</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHASES -->
+<section id="phases">
+  <div class="sec-head fu">
+    <span class="sec-n">02</span>
+    <h2 class="sec-title">Fases Evolutivas</h2>
+    <span class="sec-sub">6 períodos · 100 lanzamientos</span>
+  </div>
+  <div class="phases-grid">
+    <div class="phase-card p1 fu"><div class="phase-num">Fase 01</div><div class="phase-name">Experimental</div><div class="phase-range">Álbumes 1–27</div><div class="phase-desc">Exploración y formación de identidad artística. Predominio del inglés con títulos provocativos y meta-referencias al proceso creativo. Crítica a la industria desde dentro.</div><div class="phase-tags"><span class="ptag p1">Inglés</span><span class="ptag p1">Provocativo</span><span class="ptag p1">Meta-artístico</span></div></div>
+    <div class="phase-card p2 fu" style="transition-delay:.08s"><div class="phase-num">Fase 02</div><div class="phase-name">Transición Urbana</div><div class="phase-range">LPs 1–10</div><div class="phase-desc">Cambio hacia narrativas en español con enfoque urbano y social. Realismo crítico: tránsito, accidentes, emigración, maquinaria sistémica.</div><div class="phase-tags"><span class="ptag p2">Español</span><span class="ptag p2">Urbano</span><span class="ptag p2">Social</span></div></div>
+    <div class="phase-card p3 fu" style="transition-delay:.16s"><div class="phase-num">Fase 03</div><div class="phase-name">Alt-Ortografía</div><div class="phase-range">LPs 11–14</div><div class="phase-desc">Deformación deliberada del lenguaje. La ortografía como territorio de subversión. Títulos que rompen la norma para revelar lo que la norma oculta.</div><div class="phase-tags"><span class="ptag p3">Lingüístico</span><span class="ptag p3">Experimental</span></div></div>
+    <div class="phase-card p4 fu" style="transition-delay:.24s"><div class="phase-num">Fase 04</div><div class="phase-name">Megaestructuras</div><div class="phase-range">LPs 15–22</div><div class="phase-desc">Series NEXUZ, PROTOCOLO y KODE: sistemas complejos de interconnexión temática. Arquitectura conceptual que supera al disco individual.</div><div class="phase-tags"><span class="ptag p4">Sistémico</span><span class="ptag p4">Conceptual</span><span class="ptag p4">Series</span></div></div>
+    <div class="phase-card p5 fu" style="transition-delay:.32s"><div class="phase-num">Fase 05</div><div class="phase-name">Post-Conceptual</div><div class="phase-range">LPs 23–51</div><div class="phase-desc">La fase más extensa. Madurez artística plena. Diversificación radical: desde el fuego social hasta la filosofía, desde el duelo hasta la burocracia.</div><div class="phase-tags"><span class="ptag p5">Maduro</span><span class="ptag p5">Diverso</span><span class="ptag p5">Filosófico</span></div></div>
+    <div class="phase-card p6 fu" style="transition-delay:.4s"><div class="phase-num">Fase 06</div><div class="phase-name">Cierre y Vacío</div><div class="phase-range">LPs 52–73</div><div class="phase-desc">El vacío como categoría definitiva. Burocracia, desaparición, ceniza. El cierre que no cierra — porque la obra permanece abierta en sus preguntas.</div><div class="phase-tags"><span class="ptag p6">Vacío</span><span class="ptag p6">Burocracia</span><span class="ptag p6">Final</span></div></div>
+  </div>
+</section>
+
+<!-- TEMATICAS -->
+<section id="tematicas">
+  <div class="sec-head fu">
+    <span class="sec-n">03</span>
+    <h2 class="sec-title">Núcleos Temáticos</h2>
+    <span class="sec-sub">7 ejes transversales</span>
+  </div>
+  <div class="temas-grid">
+    <div class="tema-card fu"><div class="tema-icon">🔴</div><div class="tema-name">Control & Sistema</div><div class="tema-count">~22 obras</div><div class="tema-desc">La maquinaria invisible que organiza la existencia: burocracia, protocolos, códigos, censos. El poder que se ejerce sin nombre ni cara.</div><div class="tema-ex">El Papeleo · PROTOCOLO D.E.U.S. · 1/9: El Censo del Silencio</div></div>
+    <div class="tema-card fu" style="transition-delay:.06s"><div class="tema-icon">⬛</div><div class="tema-name">Vacío & Desaparición</div><div class="tema-count">~15 obras</div><div class="tema-desc">El vacío como espacio activo. Ausencias que pesan más que presencias. Geografías del silencio y la invisibilidad.</div><div class="tema-ex">Geometría del Vacío · Desaparecemos Juntos · Abismo</div></div>
+    <div class="tema-card fu" style="transition-delay:.12s"><div class="tema-icon">🌆</div><div class="tema-name">Urbanismo & Sociedad</div><div class="tema-count">~18 obras</div><div class="tema-desc">La ciudad como escenario de conflicto. Calles, tránsito, gasolineras, barrios que arden. Lo colectivo bajo presión.</div><div class="tema-ex">Tránsito · Accidente · La Villa Está Que Arde</div></div>
+    <div class="tema-card fu" style="transition-delay:.18s"><div class="tema-icon">💻</div><div class="tema-name">Digital & Código</div><div class="tema-count">~12 obras</div><div class="tema-desc">La tecnología como lenguaje y como jaula. Interfaces, datos, logs, sistemas que reportan sin comprender.</div><div class="tema-ex">SYN KODE · ARCHIVE-ZERO · remanencia.log</div></div>
+    <div class="tema-card fu" style="transition-delay:.24s"><div class="tema-icon">🔥</div><div class="tema-name">Conflicto & Tensión</div><div class="tema-count">~10 obras</div><div class="tema-desc">El fuego como metáfora estructural. Explosión inminente, combustión lenta, la cancha siempre al borde del estallido.</div><div class="tema-ex">La Trilogía del Fuego · Las Últimas Habitaciones</div></div>
+    <div class="tema-card fu" style="transition-delay:.3s"><div class="tema-icon">🪞</div><div class="tema-name">Identidad & Meta</div><div class="tema-count">~14 obras</div><div class="tema-desc">La obra que se mira a sí misma. La industria, el artista, el proceso. Meta-referencias que ponen en crisis la idea misma de la música.</div><div class="tema-ex">BUY NEVER · Where are my royalties · advisory content</div></div>
+    <div class="tema-card fu" style="transition-delay:.36s"><div class="tema-icon">⚖️</div><div class="tema-name">Filosofía & Existencia</div><div class="tema-count">~9 obras</div><div class="tema-desc">Preguntas sin respuesta como método. Kenosis, vacío, alta gamma. La filosofía no como respuesta sino como forma de habitar la incertidumbre.</div><div class="tema-ex">Kenosis · Alta γ · Teoría del Eco</div></div>
+    <div class="tema-card fu" style="transition-delay:.42s"><div class="tema-icon">🌐</div><div class="tema-name">Lengua & Forma</div><div class="tema-count">~8 obras</div><div class="tema-desc">El idioma como territorio de subversión. Catalán, euskera, IALEX, ortografía rota. La forma del lenguaje como contenido político.</div><div class="tema-ex">Alt-Ortografía · Pacizeq · Disculpaz-nos</div></div>
+  </div>
+</section>
+
+<!-- SERIES -->
+<section id="series">
+  <div class="sec-head fu">
+    <span class="sec-n">04</span>
+    <h2 class="sec-title">Series y Arcos</h2>
+    <span class="sec-sub">Megaestructuras narrativas</span>
+  </div>
+  <div class="series-grid">
+    <div class="serie-card fu"><div class="serie-label">LPs 15–17</div><div class="serie-title">Serie NEXUZ</div><div class="serie-desc">Tres volúmenes que exploran la conexión invisible entre sistemas humanos y estructuras ocultas de organización social. Influencias del pensamiento sistémico y la teoría del caos.</div><div class="serie-items"><div class="s-item"><span class="s-n">15.</span><span>Nexuz-Persönaz — El individuo en la red</span></div><div class="s-item"><span class="s-n">16.</span><span>Nexuz Sonoraz — El sonido como nexo</span></div><div class="s-item"><span class="s-n">17.</span><span>NEXUZ SOPHIA: KONZEPT FRAKTUR</span></div></div></div>
+    <div class="serie-card fu" style="transition-delay:.1s"><div class="serie-label">LPs 18 + 22</div><div class="serie-title">Serie PROTOCOLO</div><div class="serie-desc">El protocolo como forma de violencia administrativa. Dos capítulos que exploran cómo los sistemas de procedimiento borran la humanidad de sus participantes.</div><div class="serie-items"><div class="s-item"><span class="s-n">18.</span><span>PROTOCOLO D.E.U.S. - CONSTRUYENDO EL FUTURO</span></div><div class="s-item"><span class="s-n">22.</span><span>PROTOCOLO ESCAPE: Capítulo 1 (Piloto)</span></div></div></div>
+    <div class="serie-card fu" style="transition-delay:.2s"><div class="serie-label">LPs 19–21</div><div class="serie-title">Serie KODE / ZERO</div><div class="serie-desc">Códigos como estructuras de control. El punto cero como archivo fundamental y reset absoluto. Las dos series se cruzan en KODE-ZERO.</div><div class="serie-items"><div class="s-item"><span class="s-n">19.</span><span>SYN KODE: The Complete System Report</span></div><div class="s-item"><span class="s-n">20.</span><span>ARCHIVE-ZERO — Origen de todo registro</span></div><div class="s-item"><span class="s-n">21.</span><span>KODE-ZERO — Reset absoluto del código</span></div></div></div>
+    <div class="serie-card fu" style="transition-delay:.3s"><div class="serie-label">LPs 24–26</div><div class="serie-title">Trilogía del Fuego</div><div class="serie-desc">El fuego como metáfora de conflicto, tensión y destrucción social. Escala desde el barrio en llamas hasta la combustión total.</div><div class="serie-items"><div class="s-item"><span class="s-n">24.</span><span>La Villa Está Que Arde — Conflicto territorial</span></div><div class="s-item"><span class="s-n">25.</span><span>La Cancha Está Por Estallar — A punto de explosión</span></div><div class="s-item"><span class="s-n">26.</span><span>Todo Se Quema — Combustión total</span></div></div></div>
+    <div class="serie-card fu" style="transition-delay:.4s"><div class="serie-label">9 obras dispersas</div><div class="serie-title">Constelación del Vacío</div><div class="serie-desc">No una serie lineal sino un arco temático recurrente que agrupa obras que exploran el vacío como concepto espacial y existencial a lo largo de toda la obra.</div><div class="serie-items"><div class="s-item"><span class="s-n">27.</span><span>Geometría del Vacío</span></div><div class="s-item"><span class="s-n">31.</span><span>Desaparecemos Juntos</span></div><div class="s-item"><span class="s-n">40.</span><span>Estación Fantasma</span></div><div class="s-item"><span class="s-n">54.</span><span>Espero Nada</span></div><div class="s-item"><span class="s-n">64.</span><span>Abismo</span></div><div class="s-item"><span class="s-n">71.</span><span>Ceniza y Sal: Manual de Desaparición</span></div></div></div>
+    <div class="serie-card fu" style="transition-delay:.5s"><div class="serie-label">4 obras clave</div><div class="serie-title">Serie Burocrática</div><div class="serie-desc">Violencia de lo administrativo, invisibilidad de sistemas de control, censos deshumanizantes e infraestructuras ocultas del poder.</div><div class="serie-items"><div class="s-item"><span class="s-n">52.</span><span>El Papeleo</span></div><div class="s-item"><span class="s-n">58.</span><span>Infraestructuras Invisibles</span></div><div class="s-item"><span class="s-n">65.</span><span>1/9: El Censo del Silencio</span></div><div class="s-item"><span class="s-n">68.</span><span>Estática Burocrática</span></div></div></div>
+  </div>
+</section>
+
+<!-- DISCOGRAPHY -->
+<section id="discography">
+  <div class="sec-head fu">
+    <span class="sec-n">05</span>
+    <h2 class="sec-title">Discografía</h2>
+    <span class="sec-sub">100 lanzamientos completos</span>
+  </div>
+  <div class="disc-controls">
+    <button class="tab-btn active" data-tab="albums">Álbumes <span id="aCnt"></span></button>
+    <button class="tab-btn" data-tab="lps">LPs <span id="lCnt"></span></button>
+    <div class="disc-filter-group">
+      <select class="filter-sel" id="phaseFilter"><option value="">Todas las fases</option></select>
+      <input type="text" class="search-inp" id="searchInput" placeholder="Buscar...">
+    </div>
+  </div>
+  <div class="disc-results" id="resultsLabel"></div>
+  <div class="disc-panel active" id="panel-albums"><div class="disc-grid" id="grid-albums"></div></div>
+  <div class="disc-panel" id="panel-lps"><div class="disc-grid" id="grid-lps"></div></div>
+</section>
+
+<!-- PLATFORMS -->
+<section id="platforms">
+  <div class="sec-head fu"><span class="sec-n">06</span><h2 class="sec-title">Escuchar y Seguir</h2></div>
+  <div class="plat-grid fu">
+    <a href="https://open.spotify.com/artist/3zbzWzOqZcY3mZBG5ICF9l" target="_blank" class="plat-card"><div class="plat-icon">🎵</div><div class="plat-name">Spotify</div></a>
+    <a href="https://music.apple.com/us/artist/afaces/1450474907" target="_blank" class="plat-card"><div class="plat-icon">🍎</div><div class="plat-name">Apple Music</div></a>
+    <a href="https://afaces.bandcamp.com" target="_blank" class="plat-card"><div class="plat-icon">🎸</div><div class="plat-name">Bandcamp</div></a>
+    <a href="https://soundcloud.com/afaces" target="_blank" class="plat-card"><div class="plat-icon">☁️</div><div class="plat-name">SoundCloud</div></a>
+    <a href="https://www.youtube.com/user/axelaxel12" target="_blank" class="plat-card"><div class="plat-icon">▶️</div><div class="plat-name">YouTube</div></a>
+    <a href="https://www.deezer.com/es/artist/57830442" target="_blank" class="plat-card"><div class="plat-icon">🎼</div><div class="plat-name">Deezer</div></a>
+    <a href="https://tidal.com/browse/artist/10889435" target="_blank" class="plat-card"><div class="plat-icon">🌊</div><div class="plat-name">Tidal</div></a>
+    <a href="https://music.amazon.com/artists/B07MWG7VY1/afaces" target="_blank" class="plat-card"><div class="plat-icon">📦</div><div class="plat-name">Amazon Music</div></a>
+    <a href="https://us.napster.com/artist/afaces" target="_blank" class="plat-card"><div class="plat-icon">🐱</div><div class="plat-name">Napster</div></a>
+    <a href="https://www.shazam.com/es/artist/afaces/1450474907" target="_blank" class="plat-card"><div class="plat-icon">🔷</div><div class="plat-name">Shazam</div></a>
+    <a href="https://www.instagram.com/el_afaces/" target="_blank" class="plat-card"><div class="plat-icon">📷</div><div class="plat-name">Instagram</div></a>
+    <a href="https://www.facebook.com/afaces/" target="_blank" class="plat-card"><div class="plat-icon">👤</div><div class="plat-name">Facebook</div></a>
+    <a href="https://twitter.com/afaces2" target="_blank" class="plat-card"><div class="plat-icon">🐦</div><div class="plat-name">Twitter / X</div></a>
+    <a href="https://www.tiktok.com/@el_afaces" target="_blank" class="plat-card"><div class="plat-icon">🎤</div><div class="plat-name">TikTok</div></a>
+    <a href="https://paypal.me/axelcurros" target="_blank" class="plat-card"><div class="plat-icon">💛</div><div class="plat-name">Apoyar</div></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo">AFACES</div>
+    <p class="footer-copy">© 2026 Afaces · Axel Fernandez Curros<br>Todos los derechos reservados · Sello independiente</p>
+  </div>
+  <div class="footer-center">
+    <a href="mailto:afacesmusic@gmail.com" class="footer-email">afacesmusic@gmail.com</a>
+    <a href="mailto:afaces@tinet.cat" class="footer-email">afaces@tinet.cat</a>
+    <div class="footer-since">Making noise since 1996</div>
+  </div>
+  <div class="footer-right">
+    <a href="https://afaces.github.io/epk" target="_blank">Electronic Press Kit</a>
+    <a href="https://afaces.github.io/contact" target="_blank">Contacto</a>
+    <a href="https://afaces.github.io/donate" target="_blank">Donar</a>
+    <a href="https://github.com/afaces/afaces.github.io" target="_blank">Código fuente</a>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-inner">
+    <div class="modal-hdr">
+      <div>
+        <div class="modal-type" id="mType">—</div>
+        <div class="modal-title" id="mTitle">—</div>
+        <div class="modal-phase-txt" id="mPhase">—</div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕ Cerrar</button>
+    </div>
+    <a href="#" id="mThumbLink" target="_blank" rel="noopener" class="modal-thumb-wrap">
+      <img id="mThumbImg" class="mthumb-img" src="" alt="">
+      <div class="mplay-btn">
+        <svg width="22" height="26" viewBox="0 0 22 26" fill="white"><path d="M0 0L22 13L0 26Z"/></svg>
+      </div>
+      <span class="mwatch-label">Hover para reproducir</span>
+      <span class="mwatch-cta">▶ Ver en YouTube</span>
+    </a>
+    <div class="modal-foot">
+      <a href="#" id="mYtLink" target="_blank" rel="noopener" class="modal-yt">↗ Abrir en YouTube</a>
+      <div class="modal-nav">
+        <button class="mnav-btn" id="mPrev" onclick="navigateModal(-1)">← Anterior</button>
+        <button class="mnav-btn" id="mNext" onclick="navigateModal(1)">Siguiente →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
