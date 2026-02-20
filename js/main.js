@@ -7,33 +7,33 @@
 
 // ── DATA ──────────────────────────────────────────────────────────
 const ALBUMS = [
-  {n:1, title:"Nefasto", vid:"SWNbhMxS4S4", phase:"Experimental", pb:"pb-exp"},
-  {n:2, title:"Writer", vid:"1PB176jjic8", phase:"Experimental", pb:"pb-exp"},
-  {n:3, title:"Back and Fro", vid:"uwmr2eNdpE4", phase:"Experimental", pb:"pb-exp"},
-  {n:4, title:"Planetc", vid:"F44txcWQoJQ", phase:"Experimental", pb:"pb-exp"},
-  {n:5, title:"Black", vid:"rcAxMjoC7fw", phase:"Experimental", pb:"pb-exp"},
-  {n:6, title:"list", vid:"_DSxx9E3MCQ", phase:"Experimental", pb:"pb-exp"},
-  {n:7, title:"A cool name", vid:"RVxpNONLZ8o", phase:"Experimental", pb:"pb-exp"},
-  {n:8, title:"50%", vid:"_4Vfk487foQ", phase:"Experimental", pb:"pb-exp"},
-  {n:9, title:"advisory content", vid:"ybNa3a48fxk", phase:"Experimental", pb:"pb-exp"},
-  {n:10, title:"BUY NEVER", vid:"Utmf9RgCITo", phase:"Experimental", pb:"pb-exp"},
-  {n:11, title:"Bull's-eye", vid:"VCzKkBZ-03w", phase:"Experimental", pb:"pb-exp"},
-  {n:12, title:"Where are my royalties", vid:"zg2NECdI3OY", phase:"Experimental", pb:"pb-exp"},
-  {n:13, title:"Who u tryna' impress", vid:"Nx3ucT01P-g", phase:"Experimental", pb:"pb-exp"},
-  {n:14, title:"The bad words", vid:"rEKs9ttSOLA", phase:"Experimental", pb:"pb-exp"},
-  {n:15, title:"Journey to Wasted Youth", vid:"0EdaPCRZXmY", phase:"Experimental", pb:"pb-exp"},
-  {n:16, title:"Lyricless Miracles", vid:"FzD53ikXz5w", phase:"Experimental", pb:"pb-exp"},
-  {n:17, title:"irl", vid:"g9dWBnJ20MQ", phase:"Experimental", pb:"pb-exp"},
-  {n:18, title:"before senescence", vid:"uEgdTjGGk-Y", phase:"Experimental", pb:"pb-exp"},
-  {n:19, title:"back to the origins", vid:"Lt66WnK2Xq4", phase:"Experimental", pb:"pb-exp"},
-  {n:20, title:"conversation conservation", vid:"msZJIYzS7vA", phase:"Experimental", pb:"pb-exp"},
-  {n:21, title:"Gloomy dances", vid:"jojN7p_oBsw", phase:"Experimental", pb:"pb-exp"},
-  {n:22, title:"Not Too Bad", vid:"5D2dG7wPEGc", phase:"Experimental", pb:"pb-exp"},
-  {n:23, title:"There is Another", vid:"yJaQezPFOdc", phase:"Experimental", pb:"pb-exp"},
-  {n:24, title:"Cafés", vid:"0sYNIjkrPnY", phase:"Experimental", pb:"pb-exp"},
-  {n:25, title:"Mental Breakdown in The Virtual Kitchen", vid:"SDWjbspXElQ", phase:"Experimental", pb:"pb-exp"},
-  {n:26, title:"Natural Stupidity", vid:"c60OIAPuF3E", phase:"Experimental", pb:"pb-exp"},
-  {n:27, title:"Uncivil", vid:"b63grPuQfpw", phase:"Experimental", pb:"pb-exp"},
+  {n:1, title:"Nefasto", vid:"SWNbhMxS4S4", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/nefasto"},
+  {n:2, title:"Writer", vid:"1PB176jjic8", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/writer-2"},
+  {n:3, title:"Back and Fro", vid:"uwmr2eNdpE4", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/back-and-fro"},
+  {n:4, title:"Planetc", vid:"F44txcWQoJQ", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/planetc"},
+  {n:5, title:"Black", vid:"rcAxMjoC7fw", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/black"},
+  {n:6, title:"list", vid:"_DSxx9E3MCQ", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/list"},
+  {n:7, title:"A cool name", vid:"RVxpNONLZ8o", phase:"Downtempo", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/a-cool-name"},
+  {n:8, title:"50%", vid:"_4Vfk487foQ", phase:"Downtempo", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/50"},
+  {n:9, title:"advisory content", vid:"ybNa3a48fxk", phase:"Downtempo", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/advisory-content"},
+  {n:10, title:"BUY NEVER", vid:"Utmf9RgCITo", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/buy-never"},
+  {n:11, title:"Bull's-eye", vid:"VCzKkBZ-03w", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/bulls-eye"},
+  {n:12, title:"Where are my royalties", vid:"zg2NECdI3OY", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/where-are-my-royalties"},
+  {n:13, title:"Who u tryna' impress", vid:"Nx3ucT01P-g", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/who-u-tryna-impress"},
+  {n:14, title:"The bad words", vid:"rEKs9ttSOLA", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/the-bad-words"},
+  {n:15, title:"Journey to Wasted Youth", vid:"0EdaPCRZXmY", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/journey-to-wasted-youth"},
+  {n:16, title:"Lyricless Miracles", vid:"FzD53ikXz5w", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/lyricless-miracles"},
+  {n:17, title:"irl", vid:"g9dWBnJ20MQ", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/irl"},
+  {n:18, title:"before senescence", vid:"uEgdTjGGk-Y", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/before-senescence"},
+  {n:19, title:"back to the origins", vid:"Lt66WnK2Xq4", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/back-to-the-origins"},
+  {n:20, title:"conversation conservation", vid:"msZJIYzS7vA", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/conversation-conservation"},
+  {n:21, title:"Gloomy dances", vid:"jojN7p_oBsw", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/gloomy-dances"},
+  {n:22, title:"Not Too Bad", vid:"5D2dG7wPEGc", phase:"Alternative", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/not-too-bad"},
+  {n:23, title:"There is Another", vid:"yJaQezPFOdc", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/there-is-another"},
+  {n:24, title:"Cafés", vid:"0sYNIjkrPnY", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/caf-s"},
+  {n:25, title:"Mental Breakdown in The Virtual Kitchen", vid:"SDWjbspXElQ", phase:"Downtempo", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/mental-breakdown-in-the-virtual-kitchen"},
+  {n:26, title:"Natural Stupidity", vid:"c60OIAPuF3E", phase:"Downtempo", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/natural-stupidity"},
+  {n:27, title:"Uncivil", vid:"b63grPuQfpw", phase:"Downtempo", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/uncivil"},
 ];
 const LPS = [
   {n:1, title:"Ole y Ole", vid:"g9hcz4P5CQE", phase:"Inicios", pb:"pb-ini"},
@@ -3242,6 +3242,9 @@ function fmtTime(s) {
 function buildPlaylist() {
   rPlaylist.innerHTML = RADIO_TRACKS.map((t, i) => `
     <div class="rpl-item${i === radio.idx ? ' active' : ''}" data-idx="${i}">
+      <button class="rpl-download" data-idx="${i}" title="Descargar">
+        <svg width="10" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+      </button>
       <span class="rpl-num">${String(i+1).padStart(2,'0')}</span>
       <div class="rpl-info">
         <div class="rpl-name">${t.name}</div>
@@ -3260,6 +3263,37 @@ function buildPlaylist() {
       radio.playing = true;
     });
   });
+
+  // download buttons
+  rPlaylist.querySelectorAll('.rpl-download').forEach(btn=>{
+    btn.addEventListener('click', async (e)=>{
+      e.stopPropagation();
+      const idx = +btn.dataset.idx;
+      try{
+        await downloadTrack(idx);
+      }catch(err){
+        console.error('Download failed',err);
+        window.open(RADIO_TRACKS[idx].path,'_blank');
+      }
+    });
+  });
+}
+
+async function downloadTrack(idx){
+  const t = RADIO_TRACKS[idx];
+  if(!t || !t.path) throw new Error('No track');
+  const resp = await fetch(t.path);
+  if(!resp.ok) throw new Error('Network error');
+  const blob = await resp.blob();
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const safeName = t.name.replace(/[^a-z0-9\-_. ]/gi,'').trim() || `track-${idx+1}`;
+  a.href = url;
+  a.download = `${safeName}.mp3`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
 }
 
 // ── Init radio ───────────────────────────────────────────────────
@@ -3389,6 +3423,8 @@ function renderModal(){
   img.alt=item.title;
   document.getElementById('mThumbLink').href=ytUrl;
   document.getElementById('mYtLink').href=ytUrl;
+  const bcEl = document.getElementById('mBcLink');
+  if(item.bc){ bcEl.href = item.bc; bcEl.style.display = ''; } else { bcEl.href = '#'; bcEl.style.display = 'none'; }
   document.getElementById('mPrev').disabled=mIdx===0;
   document.getElementById('mNext').disabled=mIdx===mData.length-1;
   document.getElementById('modal').classList.add('open');
