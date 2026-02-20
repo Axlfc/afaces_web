@@ -3482,3 +3482,52 @@ window.addEventListener('scroll',()=>{if(bgNum)bgNum.style.transform=`translate(
 // ══════════════════════════════════════════════════════════════════
 buildGrids();
 buildPhaseOptions();
+
+// PLAYLIST VISOR: abre un modal con un iframe de YouTube para playlists
+function openPlaylistModal(playlistId, title){
+  if(!playlistId){
+    return; // no asignada
+  }
+  const iframe = document.getElementById('pvIframe');
+  const modal = document.getElementById('playlistModal');
+  const ytLink = document.getElementById('pvYtLink');
+  const t = document.getElementById('pvTitle');
+  iframe.src = `https://www.youtube.com/embed/videoseries?list=${playlistId}&autoplay=1&rel=0`;
+  ytLink.href = `https://www.youtube.com/playlist?list=${playlistId}`;
+  t.textContent = title || 'Playlist';
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
+}
+
+function closePlaylistModal(){
+  const iframe = document.getElementById('pvIframe');
+  const modal = document.getElementById('playlistModal');
+  iframe.src = '';
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
+}
+
+// Inicializar botones
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('.visor-btn,.serie-visor').forEach(btn=>{
+    const pid = btn.dataset.playlist || '';
+    if(!pid) btn.setAttribute('disabled','true');
+    btn.addEventListener('click',e=>{
+      e.preventDefault();
+      const id = btn.dataset.playlist;
+      const label = btn.textContent.trim();
+      if(!id) return;
+      openPlaylistModal(id,label);
+    });
+  });
+
+  const pvClose = document.getElementById('pvClose');
+  if(pvClose) pvClose.addEventListener('click',closePlaylistModal);
+  const pModal = document.getElementById('playlistModal');
+  if(pModal){
+    pModal.addEventListener('click',e=>{ if(e.target===pModal) closePlaylistModal(); });
+  }
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ const m=document.getElementById('playlistModal'); if(m && m.classList.contains('open')) closePlaylistModal(); } });
+});
