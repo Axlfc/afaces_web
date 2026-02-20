@@ -559,3 +559,21 @@ footer{padding:5rem 3rem 2.5rem;border-top:1px solid var(--border);display:grid;
   .disc-filter-group{width:100%}
   .filter-sel,.search-inp{width:100%}
 }
+
+/* ── CONTACT FORM ───────────────────────────────────────────────── */
+.contact__form-wrapper{max-width:940px;margin:0 auto;background:transparent;padding:2rem 0}
+.contact__form{display:block;background:var(--card-bg);border:1px solid var(--border);padding:1.6rem;border-radius:4px}
+.form__row{display:flex;gap:1rem}
+.form__field{flex:1;display:flex;flex-direction:column;margin-bottom:1rem}
+.form__label{font-size:.6rem;letter-spacing:.12em;color:var(--muted);margin-bottom:.45rem;text-transform:uppercase}
+.form__input,.form__textarea{background:transparent;border:1px solid var(--border);color:var(--text);padding:.75rem .9rem;border-radius:3px;font-family:'Space Mono',monospace;font-size:.9rem;outline:none;transition:border-color .15s}
+.form__input:focus,.form__textarea:focus{border-color:var(--accent)}
+.form__textarea{resize:vertical;min-height:120px}
+.form__submit{display:flex;justify-content:flex-end;margin-top:.6rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--border);padding:.55rem .9rem;background:transparent;color:var(--text);cursor:pointer}
+.btn--primary{background:var(--accent);border-color:var(--accent);color:var(--white)}
+
+@media(max-width:900px){
+  .form__row{flex-direction:column}
+  .contact__form-wrapper{padding:0 1.5rem}
+}

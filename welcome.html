@@ -47,7 +47,7 @@
       </span>
     </button>
 
-    <a href="mailto:afacesmusic@gmail.com" class="nav-cta">Contacto</a>
+    <a href="#contact" class="nav-cta">Contacto</a>
   </div>
 </nav>
 
@@ -267,6 +267,55 @@
 </section>
 
 <!-- FOOTER -->
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-head fu">
+    <span class="sec-n">07</span>
+    <h2 class="sec-title">Contacto</h2>
+    <span class="sec-sub">Escríbeme sobre proyectos, colaboraciones o prensa</span>
+  </div>
+  <div class="fu" style="padding:0 3rem 4rem;">
+    <div class="contact__form-wrapper">
+      <div id="contact-success" style="display:none;padding:1rem;border-bottom:1px solid var(--border);background:var(--bg-alt);color:var(--text);">
+        Gracias — tu mensaje ha sido enviado. Responderé tan pronto como pueda.
+      </div>
+      <form class="contact__form" id="contact-form" action="https://formsubmit.co/afaces@salou.tinet.cat" method="POST">
+        <input type="hidden" name="_subject" value="New message from afaces site">
+        <input type="hidden" name="_next" value="#contact?success=true">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+
+        <div class="form__row">
+          <div class="form__field">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="subject">Subject</label>
+          <input class="form__input" type="text" id="subject" name="subject" placeholder="Project / Collaboration / Other" required>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__textarea" id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+        </div>
+
+        <div class="form__submit">
+          <button type="submit" class="btn btn--primary">
+            Send Message
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 <footer>
   <div>
     <div class="footer-logo">AFACES</div>
@@ -316,5 +365,21 @@
 </div>
 
 <script src="js/main.js"></script>
+<script>
+  // Mostrar missatge d'èxit si el formulari ha redirigit amb success
+  (function(){
+    try{
+      const hash = window.location.hash || '';
+      const search = window.location.search || '';
+      const success = hash.includes('success=true') || search.includes('success=true');
+      if(success){
+        const el = document.getElementById('contact-success');
+        if(el){ el.style.display = 'block'; }
+        const sec = document.getElementById('contact');
+        if(sec){ sec.scrollIntoView({behavior:'smooth', block:'start'}); }
+      }
+    }catch(e){console.warn(e)}
+  })();
+</script>
 </body>
 </html>
