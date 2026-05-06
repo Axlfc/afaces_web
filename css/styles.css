@@ -471,6 +471,7 @@ section{position:relative;z-index:1}
 .pb-fil{background:rgba(80,100,60,.28);color:#b0d090}
 .pb-fui{background:rgba(200,80,30,.3);color:#f0b080}
 .pb-min{background:rgba(60,60,60,.28);color:#b0b0b0}
+.pb-rec { background: rgba(180,120,255,.15); color: #b47fff; border-color: rgba(180,120,255,.3); }
 
 /* ── PLATFORMS ──────────────────────────────────────────────────── */
 #platforms{padding:8rem 3rem;border-top:1px solid var(--border)}
