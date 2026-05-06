@@ -109,6 +109,14 @@ const LPS = [
   {n:71, title:"Ceniza y Sal: Manual de Desaparición", vid:"iJEtYEkKi68", phase:"Vacío", pb:"pb-vac"},
   {n:72, title:"remanencia.log", vid:"gpJyMsyZ4dA", phase:"Post-Conceptual", pb:"pb-pos"},
   {n:73, title:"LAS ÚLTIMAS HABITACIONES DE SANGRE", vid:"9GE5o7Xt4Qk", phase:"Post-Conceptual", pb:"pb-pos"},
+  {n:74, title:"Privacidad Pública", vid:"ncxhYf_PugQ", phase:"Reconstrucción Lógica", pb:"pb-rec"},
+  {n:75, title:"Sin Cara Propia", vid:"MoNzoQ__daU", phase:"Reconstrucción Lógica", pb:"pb-rec"},
+  {n:76, title:"Protocolo Extremo", vid:"AfHPHMEUmGw", phase:"Reconstrucción Lógica", pb:"pb-rec"},
+  {n:77, title:"Memoria Residual", vid:"3BUQpEgzf2Y", phase:"Reconstrucción Lógica", pb:"pb-rec"},
+  {n:78, title:"Creador Sin Corte", vid:"tetiibop_7o", phase:"Reconstrucción Lógica", pb:"pb-rec"},
+  {n:79, title:"Eficiencia Operativa", vid:"h3sb_s4jmbs", phase:"Reconstrucción Lógica", pb:"pb-rec"},
+  {n:80, title:"Obsolescencia del Alma", vid:"giqnvH-jhZw", phase:"Reconstrucción Lógica", pb:"pb-rec"},
+  {n:81, title:"Sofisma", vid:"--WR4MBuQiA", phase:"Reconstrucción Lógica", pb:"pb-rec"},
 ];
 
 // ══════════════════════════════════════════════════════════════════
