@@ -1,0 +1,25 @@
+name: Validar web AFACES
+on:
+  pull_request:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar sincronización del catálogo
+        run: python scripts/sync_catalog.py --check
+      - name: Construir y comprobar recursos estáticos
+        run: python scripts/build_tinet.py --manifest
+      - name: Publicar artefacto para inspección
+        uses: actions/upload-artifact@v4
+        with:
+          name: afaces-tinet-site
+          path: dist/
+          if-no-files-found: error
