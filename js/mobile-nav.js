@@ -7,7 +7,6 @@
   if(!nav || !links)return;
 
   const items=[
-    ['Inicio','welcome.html',true],
     ['Artista','welcome.html#about',true],
     ['Fases','welcome.html#phases',false],
     ['Temáticas','welcome.html#tematicas',false],
@@ -76,6 +75,10 @@
   const updateCurrent=()=>{
     const page=currentPage();
     const hash=location.hash;
+    if(logo){
+      if(page==='welcome.html'&&!hash)logo.setAttribute('aria-current','page');
+      else logo.removeAttribute('aria-current');
+    }
     for(const anchor of anchors){
       const [target,fragment]=anchor.getAttribute('href').split('#');
       const active=target===page && (fragment ? hash==='#'+fragment : !hash);
@@ -96,13 +99,15 @@
     try{return localStorage.getItem('afaces-view-mode')==='novato'?'novato':'experto'}
     catch{return document.documentElement.dataset.viewMode==='novato'?'novato':'experto'}
   };
-  const updateMode=()=>{
-    const mode=readMode();
+  const updateMode=(requestedMode)=>{
+    const mode=requestedMode==='novato'||requestedMode==='experto'?requestedMode:readMode();
     document.documentElement.dataset.viewMode=mode;
-    for(const li of links.children){
-      li.hidden=mode==='novato' && li.dataset.basic!=='true';
+    for(const li of links.children)li.hidden=mode==='novato' && li.dataset.basic!=='true';
+    // La portada oculta su discografía en modo novato; Mapa y Cronología
+    // son rutas avanzadas, por lo que solo queda Descubrir como atajo.
+    for(const anchor of quick.querySelectorAll('a')){
+      anchor.hidden=mode==='novato' && anchor.textContent!=='Descubrir';
     }
-    // Evita foco en un enlace que pueda pasar a estar oculto.
     if(isOpen())setOpen(false);
   };
 
@@ -134,7 +139,7 @@
     updateCurrent();
     updateMode();
   });
-  window.addEventListener('afaces:view-mode-change',updateMode);
+  window.addEventListener('afaces:view-mode-change',event=>updateMode(event.detail?.mode));
   window.addEventListener('storage',event=>{
     if(event.key==='afaces-view-mode')updateMode();
   });
