@@ -21,6 +21,7 @@ jobs:
         run: |
           set -euo pipefail
           cd "$RUNNER_TEMP/afaces-web-verify"
+          for file in js/*.js; do node --check "$file"; done
           python -m unittest discover -s tests -v
           python scripts/sync_catalog.py --check
           python scripts/build_tinet.py --manifest

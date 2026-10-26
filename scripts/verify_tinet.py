@@ -20,7 +20,7 @@ def verify(base_url, manifest_path, all_files=False, attempts=3):
             "data/metadata.json", "js/main.js", "css/styles.css", "data/routes.json"
         )
     ))
-    if not names or not base_url.startswith(("http://", "https://")):
+    if attempts < 1 or not names or not base_url.startswith(("http://", "https://")):
         raise ValueError("URL o manifiesto no válido")
     base_url = base_url.rstrip("/") + "/"
     errors = []

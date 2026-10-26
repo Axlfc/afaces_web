@@ -41,7 +41,7 @@ def retrieve(ftp, filename):
     return out.getvalue()
 
 
-def publish(ftp, dist, remote, backup):
+def publish(ftp, dist, remote, backup, force=False):
     if remote not in ("html", "./html", "/html", ".", "./"):
         raise ValueError("TINET_REMOTE_DIR debe ser html o . si la cuenta ya abre dentro de html")
     ftp.cwd(remote)
@@ -62,7 +62,7 @@ def publish(ftp, dist, remote, backup):
         old_files = json.loads(previous)["files"] if previous else {}
     except (ValueError, KeyError, TypeError):
         old_files = {}
-    changed = plan(files, old_files)
+    changed = plan(files, {} if force else old_files)
     print(f"Destino verificado: {root}. Actualizados: {len(changed)} / {len(files)}.")
     backup.mkdir(parents=True, exist_ok=True)
     if previous is not None:
@@ -94,6 +94,7 @@ def main():
     parser.add_argument("--backup", default=".tinet-backup")
     parser.add_argument("--remote-dir", default=os.getenv("TINET_REMOTE_DIR", "html"))
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true", help="Reenviar todos los archivos incluso si los hashes coinciden")
     args = parser.parse_args()
     dist = Path(args.dist).resolve()
     try:
@@ -113,7 +114,7 @@ def main():
             ftp.connect(host, port)
             ftp.login(user, password)
             ftp.prot_p()  # FTPS explícito con canal de datos protegido.
-            publish(ftp, dist, args.remote_dir, Path(args.backup).resolve())
+            publish(ftp, dist, args.remote_dir, Path(args.backup).resolve(), force=args.force)
         return 0
     except (OSError, ValueError, KeyError, error_perm, ssl.SSLError, json.JSONDecodeError) as exc:
         print("ERROR FTPS:", exc, file=sys.stderr)
