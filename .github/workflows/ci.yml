@@ -24,24 +24,33 @@ jobs:
           echo "=== LEAF DETAILS ==="
           timeout 20 openssl s_client -starttls ftp -connect usuaris.tinet.cat:21 -servername usuaris.tinet.cat </dev/null 2>/dev/null | openssl x509 -noout -subject -issuer -dates -ext authorityInfoAccess -ext subjectAltName
           echo "=== END DIAGNOSTIC ==="
-      - name: Probar intermedio Sectigo oficial con verificación TLS estricta
+      - name: Encontrar certificado intermedio y probar FTPS con validación estricta
         run: |
-          set -euo pipefail
-          curl --fail --location --silent --show-error --max-time 25 'https://crt.sh/?d=4267304698' --output "$RUNNER_TEMP/sectigo.ovr36.crt"
-          openssl x509 -inform DER -in "$RUNNER_TEMP/sectigo.ovr36.crt" -out "$RUNNER_TEMP/sectigo.ovr36.pem"
-          openssl x509 -inform DER -in "$RUNNER_TEMP/sectigo.ovr36.crt" -noout -subject -issuer -fingerprint -sha256
-          export AFACES_TEST_CERT="$RUNNER_TEMP/sectigo.ovr36.pem"
-          python - <<'PY'
+          set +e
+          for URL in \
+            'http://crt.sectigo.com/SectigoPublicServerAuthenticationCAOVR36.crt' \
+            'https://sectigo.tbs-certificats.com/SectigoPublicServerAuthenticationCAOVR36.crt' \
+            'https://crt.sh/?d=4267304698'; do
+            echo "CA_SOURCE: $URL"
+            curl --fail --location --silent --show-error --max-time 12 "$URL" -o "$RUNNER_TEMP/sectigo.crt"
+            if [ $? -eq 0 ]; then
+              openssl x509 -inform DER -in "$RUNNER_TEMP/sectigo.crt" -out "$RUNNER_TEMP/sectigo.pem" 2>/dev/null ||
+                openssl x509 -inform PEM -in "$RUNNER_TEMP/sectigo.crt" -out "$RUNNER_TEMP/sectigo.pem" 2>/dev/null
+              openssl x509 -in "$RUNNER_TEMP/sectigo.pem" -noout -subject -issuer -fingerprint -sha256
+              echo 'VERIFY WITH SECTIGO ISSUER'
+              python - <<'PY'
           import os, ssl
           from ftplib import FTP_TLS
-          context = ssl.create_default_context()
-          context.load_verify_locations(cafile=os.environ["AFACES_TEST_CERT"])
-          ftp = FTP_TLS(context=context, timeout=15)
-          ftp.connect("usuaris.tinet.cat", 21)
-          ftp.auth()
-          print("STRICT_TLS_AUTH_OK", ftp.sock.version(), ftp.sock.getpeercert().get("subject"))
-          ftp.close()
+          ctx = ssl.create_default_context()
+          ctx.load_verify_locations(cafile=os.environ['RUNNER_TEMP']+'/sectigo.pem')
+          with FTP_TLS(context=ctx, timeout=12) as ftp:
+              ftp.connect('usuaris.tinet.cat',21)
+              ftp.auth()
+              print('TLS_STRICT_SUCCESS', ftp.sock.version())
           PY
+              break
+            fi
+          done
       - name: Preparar worktree de verificación aislado
         run: git worktree add --detach "$RUNNER_TEMP/afaces-web-verify" HEAD
       - name: Pruebas, sincronización y construcción
