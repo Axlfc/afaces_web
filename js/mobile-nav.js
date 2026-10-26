@@ -7,13 +7,12 @@
   if(!nav || !links)return;
 
   const items=[
-    ['Inicio','welcome.html',true],
-    ['Artista','welcome.html#about',true],
+    ['Artista','welcome.html#about',false],
     ['Fases','welcome.html#phases',false],
     ['Temáticas','welcome.html#tematicas',false],
     ['Series','welcome.html#series',false],
-    ['Discografía','welcome.html#discography',true],
-    ['Escuchar','welcome.html#platforms',true],
+    ['Discografía','welcome.html#discography',false],
+    ['Escuchar','welcome.html#platforms',false],
     ['Descubrir','onboarding.html',true],
     ['Perfiles','perfiles.html',true],
     ['Mapa','mapa.html',false],
@@ -67,6 +66,7 @@
   nav.setAttribute('aria-label','Navegación principal');
   const logo=nav.querySelector('.nav-logo');
   if(logo)logo.href='welcome.html';
+  if(logo)logo.setAttribute('aria-label','AFACES — volver a la portada');
 
   const anchors=[...links.querySelectorAll('a'),...quick.querySelectorAll('a')];
   const currentPage=()=>{
@@ -76,6 +76,10 @@
   const updateCurrent=()=>{
     const page=currentPage();
     const hash=location.hash;
+    if(logo){
+      if(page==='welcome.html'&&!hash)logo.setAttribute('aria-current','page');
+      else logo.removeAttribute('aria-current');
+    }
     for(const anchor of anchors){
       const [target,fragment]=anchor.getAttribute('href').split('#');
       const active=target===page && (fragment ? hash==='#'+fragment : !hash);
@@ -101,6 +105,10 @@
     document.documentElement.dataset.viewMode=mode;
     for(const li of links.children){
       li.hidden=mode==='novato' && li.dataset.basic!=='true';
+    }
+    // Los accesos rápidos obedecen el mismo modo que el menú completo.
+    for(const anchor of quick.querySelectorAll('a')){
+      anchor.hidden=mode==='novato' && anchor.textContent!=='Descubrir';
     }
     // Evita foco en un enlace que pueda pasar a estar oculto.
     if(isOpen())setOpen(false);
