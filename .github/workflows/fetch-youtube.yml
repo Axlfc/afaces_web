@@ -1,0 +1,26 @@
+name: Actualizar metadatos de YouTube
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * 1'
+permissions:
+  contents: write
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar extractor
+        run: python -m pip install 'yt-dlp>=2025.1.1'
+      - name: Extraer metadatos
+        run: python scripts/fetch_youtube.py
+      - name: Registrar cambios
+        run: |
+          git add data/metadata.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore(data): actualizar metadatos de YouTube'
+            git push
+          fi
