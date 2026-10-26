@@ -16,8 +16,7 @@ Un `index.html` redirige a `welcome.html`, portada preferida por TINET.
 Settings → Secrets and variables → Actions:
 - Secrets: `FTP_USERNAME` y `FTP_PASSWORD` (obligatorios);
   `FTP_SERVER` (opcional, valor por defecto `usuaris.tinet.cat`).
-- Variables: `TINET_REMOTE_DIR` (por defecto `html`),
-  `TINET_FTP_PORT` (por defecto 21),
+- Variables: `TINET_FTP_PORT` (por defecto 21),
   `TINET_PUBLIC_URL` (por defecto `https://usuaris.tinet.cat/~afaces/`),
   `TINET_DEPLOY_ENABLED` (no activar hasta comprobar los secretos).
 - Environment: `tinet-production`. Puede protegerse con aprobación para el primer
@@ -27,9 +26,7 @@ Settings → Secrets and variables → Actions:
 `html` del FTP `usuaris.tinet.cat:21` y recomienda TLS explícito**:
 https://www.tinet.cat/serveis/espai-web-ftp
 
-Si el FTP abre directamente en `html/`, `TINET_REMOTE_DIR=.` es admisible;
-en ambos casos el programa exige que el directorio contenga `welcome.html`
-antes de escribir. Una ruta distinta se rechaza para evitar publicar fuera de la web.
+En el acceso FTP mostrado por el autor, `welcome.html` se encuentra en la raíz visible. El despliegue usa `TINET_REMOTE_DIR=.` (directorio inicial de sesión), sin crear ni prefijar `html/`. Se rechaza toda ruta distinta y se exige el marcador `welcome.html` antes de escribir. La configuración de la variable antigua `TINET_REMOTE_DIR` en GitHub Actions queda ignorada intencionadamente. Si el inicio de sesión de Actions no corresponde al mismo directorio visible en Dolphin, el proceso fallará sin subir ficheros.
 No desactiva la validación TLS ni permite FTP en claro.
 
 ## Publicar un LP

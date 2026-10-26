@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Publicación incremental segura mediante FTPS explícito para TINET."""
 import argparse
+import hashlib
 import io
 import json
+import re
 import os
 import ssl
 import sys
@@ -42,8 +44,8 @@ def retrieve(ftp, filename):
 
 
 def publish(ftp, dist, remote, backup, force=False):
-    if remote not in ("html", "./html", "/html", ".", "./"):
-        raise ValueError("TINET_REMOTE_DIR debe ser html o . si la cuenta ya abre dentro de html")
+    if remote not in (".", "./"):
+        raise ValueError("TINET_REMOTE_DIR debe ser . (raíz FTP que contiene welcome.html)")
     ftp.cwd(remote)
     root = ftp.pwd()
     names = {name.rsplit("/", 1)[-1] for name in ftp.nlst()}
@@ -54,16 +56,39 @@ def publish(ftp, dist, remote, backup, force=False):
     if manifest.get("schema_version") != 1:
         raise ValueError("Manifiesto de despliegue incompatible")
     files = manifest["files"]
-    for name in files:
-        if name.startswith("/") or ".." in Path(name).parts or not (dist / name).is_file():
-            raise ValueError("Ruta de despliegue insegura: " + name)
+    if not isinstance(files, dict) or "welcome.html" not in files:
+        raise ValueError("Manifiesto incompleto: falta welcome.html")
+    for name, digest in files.items():
+        if (not isinstance(name, str) or not isinstance(digest, str)
+                or not re.fullmatch(r"[a-f0-9]{64}", digest)
+                or name.startswith("/") or ".." in Path(name).parts):
+            raise ValueError("Ruta o hash inválido: " + str(name))
+        local_file = dist / name
+        if local_file.is_symlink() or not local_file.is_file():
+            raise ValueError("Archivo local inseguro o inexistente: " + name)
+        if hashlib.sha256(local_file.read_bytes()).hexdigest() != digest:
+            raise ValueError("Hash local incoherente con manifiesto: " + name)
     previous = retrieve(ftp, "deploy-manifest.json")
     try:
         old_files = json.loads(previous)["files"] if previous else {}
     except (ValueError, KeyError, TypeError):
         old_files = {}
+    # El manifiesto previo no prueba el contenido actual: cotejar hashes por FTPS.
+    # Esto recupera tanto ficheros eliminados como alteraciones manuales/remotas.
+    if not force:
+        for name, digest in files.items():
+            if old_files.get(name) != digest:
+                continue
+            parts = Path(name).parts
+            try:
+                cd_path(ftp, root, parts[:-1])
+                observed = retrieve(ftp, parts[-1])
+            except error_perm:
+                observed = None
+            if observed is None or hashlib.sha256(observed).hexdigest() != digest:
+                old_files.pop(name, None)
     changed = plan(files, {} if force else old_files)
-    print(f"Destino verificado: {root}. Actualizados: {len(changed)} / {len(files)}.")
+    print(f"Destino FTP confirmado: {root}. Archivos a actualizar: {len(changed)} / {len(files)}.")
     backup.mkdir(parents=True, exist_ok=True)
     if previous is not None:
         (backup / "deploy-manifest.json").write_bytes(previous)
@@ -92,7 +117,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dist", default="dist")
     parser.add_argument("--backup", default=".tinet-backup")
-    parser.add_argument("--remote-dir", default=os.getenv("TINET_REMOTE_DIR", "html"))
+    parser.add_argument("--remote-dir", default=os.getenv("TINET_REMOTE_DIR", "."))
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true", help="Reenviar todos los archivos incluso si los hashes coinciden")
     args = parser.parse_args()

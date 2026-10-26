@@ -22,7 +22,7 @@ jobs:
       FTP_SERVER: ${{ secrets.FTP_SERVER || 'usuaris.tinet.cat' }}
       FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
       FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-      TINET_REMOTE_DIR: ${{ vars.TINET_REMOTE_DIR || 'html' }}
+      TINET_REMOTE_DIR: '.'
       TINET_FORCE_FULL_DEPLOY: ${{ inputs.force_full || 'false' }}
       TINET_FTP_PORT: ${{ vars.TINET_FTP_PORT || '21' }}
       TINET_PUBLIC_URL: ${{ vars.TINET_PUBLIC_URL || 'https://usuaris.tinet.cat/~afaces/' }}
@@ -37,7 +37,7 @@ jobs:
           python -m unittest discover -s tests -v
           python scripts/sync_catalog.py --check
           python scripts/build_tinet.py --manifest
-      - name: Publicar por FTPS explícito cifrado en html/
+      - name: Publicar por FTPS explícito en raíz FTP verificada
         run: |
           if [ "$TINET_FORCE_FULL_DEPLOY" = "true" ]; then
             python scripts/deploy_tinet.py --dist dist --backup "$RUNNER_TEMP/tinet-backup" --force
