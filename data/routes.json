@@ -1,0 +1,39 @@
+{
+  "noise": {
+    "titulo": "Ruido y fricción",
+    "descripcion": "Una entrada por las texturas ásperas y la experimentación.",
+    "nucleos": [
+      "control",
+      "conflicto"
+    ],
+    "lanzamientos": []
+  },
+  "ambient": {
+    "titulo": "Espacios y ausencia",
+    "descripcion": "Escucha pausada, atmósferas y desaparición.",
+    "nucleos": [
+      "vacio",
+      "existencia"
+    ],
+    "lanzamientos": []
+  },
+  "post-punk": {
+    "titulo": "Tensión y ruptura",
+    "descripcion": "Crítica, lenguaje y conflicto.",
+    "nucleos": [
+      "conflicto",
+      "identidad"
+    ],
+    "lanzamientos": []
+  },
+  "conceptual": {
+    "titulo": "Arquitecturas de sentido",
+    "descripcion": "Narrativas, sistemas e interrogantes filosóficos.",
+    "nucleos": [
+      "control",
+      "identidad",
+      "existencia"
+    ],
+    "lanzamientos": []
+  }
+}
