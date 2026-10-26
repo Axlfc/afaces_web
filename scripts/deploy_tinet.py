@@ -42,8 +42,8 @@ def retrieve(ftp, filename):
 
 
 def publish(ftp, dist, remote, backup, force=False):
-    if remote not in ("html", "./html", "/html", ".", "./"):
-        raise ValueError("TINET_REMOTE_DIR debe ser html o . si la cuenta ya abre dentro de html")
+    if remote not in (".", "./"):
+        raise ValueError("TINET_REMOTE_DIR debe ser . (raíz FTP que contiene welcome.html)")
     ftp.cwd(remote)
     root = ftp.pwd()
     names = {name.rsplit("/", 1)[-1] for name in ftp.nlst()}
@@ -92,7 +92,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dist", default="dist")
     parser.add_argument("--backup", default=".tinet-backup")
-    parser.add_argument("--remote-dir", default=os.getenv("TINET_REMOTE_DIR", "html"))
+    parser.add_argument("--remote-dir", default=os.getenv("TINET_REMOTE_DIR", "."))
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true", help="Reenviar todos los archivos incluso si los hashes coinciden")
     args = parser.parse_args()
