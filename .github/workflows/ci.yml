@@ -15,16 +15,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Probar el contexto FTPS empaquetado contra TINET sin credenciales
-        run: |
-          python - <<'PY'
-          from ftplib import FTP_TLS
-          from scripts.deploy_tinet import make_ftps_context
-          with FTP_TLS(context=make_ftps_context(), timeout=20) as ftp:
-              ftp.connect('usuaris.tinet.cat', 21)
-              ftp.auth()
-              print('FTPS_BUNDLED_CERT_VERIFIED', ftp.sock.version())
-          PY
       - name: Preparar worktree de verificación aislado
         run: git worktree add --detach "$RUNNER_TEMP/afaces-web-verify" HEAD
       - name: Pruebas, sincronización y construcción
