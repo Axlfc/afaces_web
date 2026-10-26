@@ -92,7 +92,7 @@ def copy_public_files():
 # Solo se modifica el HTML generado en dist/, nunca los archivos fuente.
 # Así los navegadores obtienen el CSS y JavaScript nuevos tras cada despliegue.
 ASSET_ATTR = re.compile(
-    r"""(?P<prefix>\\b(?:src|href)\\s*=\\s*)(?P<quote>["'])(?P<url>[^"']+)(?P=quote)""",
+    r"""(?P<prefix>\b(?:src|href)\s*=\s*)(?P<quote>["'])(?P<url>[^"']+)(?P=quote)""",
     re.I,
 )
 
