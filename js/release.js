@@ -3,11 +3,11 @@
 const by=id=>document.getElementById(id);
 const params=new URLSearchParams(location.search),ref=params.get('ref');
 const status=by('status');
-if(!/^[AL]:\d+$/.test(ref||'')){status.textContent='Referencia inválida. Abre una ficha desde el catálogo.';return}
+if(ref && !/^[AL]:\d+$/.test(ref)){status.textContent='Referencia inválida.';return}
 try{
 const response=await fetch('data/metadata.json',{cache:'no-cache'});
 if(!response.ok)throw Error('HTTP '+response.status);
-const data=await response.json(),item=data.videos.find(x=>x.ref===ref);
+const data=await response.json();if(!ref){status.textContent='Explora las '+data.videos.length+' fichas del catálogo.';by('title').textContent='Catálogo completo';by('meta').textContent='Álbumes y LP';for(const v of data.videos){const row=document.createElement('div');row.className='track';const link=document.createElement('a');link.href='lanzamiento.html?ref='+encodeURIComponent(v.ref);link.textContent=v.ref+' · '+(v.titulo||v.title);row.append(link);by('tracks').append(row)}by('description').textContent='Selecciona un lanzamiento para consultar su descripción y canciones.';return}const item=data.videos.find(x=>x.ref===ref);
 if(!item){status.textContent='Lanzamiento no encontrado.';return}
 const videoId=new URL(item.youtube_url).searchParams.get('v');
 if(!/^[\w-]{11}$/.test(videoId||''))throw Error('Identificador de vídeo incorrecto');
