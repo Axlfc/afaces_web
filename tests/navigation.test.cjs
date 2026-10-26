@@ -99,12 +99,13 @@ function makeMenu(mode='experto',pathname='/~afaces/welcome.html'){
 
 test('menú completo, accesos rápidos y orden de tabulación',()=>{
   const page=makeMenu();
-  assert.equal(page.links.children.length,17);
+  assert.equal(page.links.children.length,16);
   assert.equal(page.quick.querySelectorAll('a').length,4);
   assert.equal(page.links.hidden,true);
   assert.equal(page.toggle.getAttribute('aria-controls'),page.links.id);
   assert.ok(page.nav.children.indexOf(page.toggle)<page.nav.children.indexOf(page.links));
-  assert.equal(page.links.querySelectorAll('a')[0].getAttribute('aria-current'),'page');
+  assert.equal(page.links.querySelectorAll('a').some(a=>a.textContent==='Inicio'),false);
+  assert.equal(page.logo.getAttribute('aria-current'),'page');
   assert.equal(page.logo.href,'welcome.html');
 });
 
@@ -146,9 +147,11 @@ test('novato filtra avanzados; cambiar a experto actualiza sin recargar',()=>{
   const discover=links.find(li=>li.querySelector('a').textContent==='Descubrir');
   assert.equal(map.hidden,true);
   assert.equal(discover.hidden,false);
+  assert.deepEqual(page.quick.querySelectorAll('a').filter(a=>!a.hidden).map(a=>a.textContent),['Descubrir']);
   page.storage.mode='experto';
   page.win.dispatch('storage',{key:'afaces-view-mode'});
   assert.equal(map.hidden,false);
+  assert.equal(page.quick.querySelectorAll('a').filter(a=>!a.hidden).length,4);
   assert.equal(page.doc.documentElement.dataset.viewMode,'experto');
 });
 
@@ -160,4 +163,13 @@ test('actualiza sección activa al cambiar hash y cerrar menú',()=>{
   const artist=page.links.children.find(li=>li.querySelector('a').textContent==='Artista').querySelector('a');
   assert.equal(artist.getAttribute('aria-current'),'location');
   assert.equal(page.links.hidden,true);
+});
+
+test('cambio de modo recibido de la misma página, incluso sin almacenamiento',()=>{
+  const page=makeMenu('experto');
+  page.win.dispatch('afaces:view-mode-change',{detail:{mode:'novato'}});
+  const map=page.links.children.find(li=>li.querySelector('a').textContent==='Mapa');
+  assert.equal(page.doc.documentElement.dataset.viewMode,'novato');
+  assert.equal(map.hidden,true);
+  assert.equal(page.quick.querySelectorAll('a').filter(a=>!a.hidden).length,1);
 });

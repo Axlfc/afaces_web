@@ -32,6 +32,22 @@ class NavigationContractTests(unittest.TestCase):
             with self.subTest(target=dest):
                 self.assertTrue((ROOT / dest).is_file(), dest)
 
+    def test_view_selector_loaded_once_on_all_pages(self):
+        for page in PAGES:
+            with self.subTest(page=page):
+                source = (ROOT / page).read_text(encoding="utf-8")
+                self.assertEqual(source.count('src="js/modes.js"'), 1)
+        homepage = (ROOT / "welcome.html").read_text(encoding="utf-8")
+        self.assertNotIn('class="ux-mode-switch"', homepage)
+
+    def test_selector_uses_shared_styles_and_excludes_redundant_inicio(self):
+        common_css = (ROOT / "css/styles.css").read_text(encoding="utf-8")
+        self.assertIn(".ux-mode-switch", common_css)
+        self.assertIn(".ux-mode-switch button[aria-pressed=", common_css)
+        self.assertIn('body>nav .af-nav-shortcuts a[hidden]', common_css)
+        navigation = (ROOT / "js/mobile-nav.js").read_text(encoding="utf-8")
+        self.assertNotIn("['Inicio','welcome.html',true]", navigation)
+
     def test_hidden_menu_can_not_override_closed_state(self):
         styles = (ROOT / "css/styles.css").read_text(encoding="utf-8")
         self.assertIn("body>nav .nav-links[hidden]", styles)
