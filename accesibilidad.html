@@ -1,0 +1,103 @@
+<!doctype html><html lang="es" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Accesibilidad — AFACES</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Space+Mono:wght@400;700&family=Barlow+Condensed:wght@300;400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/discovery.css"><link rel="stylesheet" href="css/a11y.css"></head><body><div class="cursor" id="cursor"></div><div class="cursor-ring" id="cursorRing"></div><!-- NAV -->
+<nav>
+  <a href="welcome.html" class="nav-logo">A<span>F</span>ACES</a>
+  <ul class="nav-links">
+    <li><a href="welcome.html#about">Artista</a></li>
+    <li><a href="welcome.html#phases">Fases</a></li>
+    <li><a href="welcome.html#tematicas">Temáticas</a></li>
+    <li><a href="welcome.html#series">Series</a></li>
+    <li><a href="welcome.html#discography">Discografía</a></li>
+    <li><a href="welcome.html#platforms">Escuchar</a></li><li><a href="onboarding.html">Descubrir</a></li><li><a href="perfiles.html">Perfiles</a></li>
+  </ul>
+  <div class="nav-right">
+    <!-- RADIO TOGGLE -->
+    <button class="radio-toggle" id="radioToggle" title="Radio Afaces" aria-label="Abrir radio">
+      <span class="radio-toggle-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/>
+        </svg>
+      </span>
+      <span class="radio-toggle-label">RADIO</span>
+      <span class="radio-live-dot" id="radioLiveDot"></span>
+    </button>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle" title="Cambiar tema" aria-label="Cambiar tema claro/oscuro">
+      <span class="theme-icon theme-icon-dark">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </span>
+      <span class="theme-icon theme-icon-light">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </span>
+    </button>
+
+    <a href="welcome.html#contact" class="nav-cta">Contacto</a>
+  </div>
+</nav>
+
+<!-- RADIO PLAYER PANEL -->
+<div class="radio-panel" id="radioPanel" aria-hidden="true">
+  <div class="radio-panel-inner">
+    <div class="radio-header">
+      <div class="radio-logo">
+        <span class="radio-dot" id="rpDot"></span>
+        AFACES RADIO
+      </div>
+      <button class="radio-close" id="radioClose" aria-label="Cerrar radio">✕</button>
+    </div>
+
+    <div class="radio-art" id="radioArt">
+      <div class="radio-art-img" id="radioArtImg"></div>
+      <div class="radio-vinyl" id="radioVinyl">
+        <div class="vinyl-ring"></div>
+        <div class="vinyl-ring"></div>
+        <div class="vinyl-center"></div>
+      </div>
+    </div>
+
+    <div class="radio-info">
+      <div class="radio-track-name" id="radioTrackName">— Selecciona una pista —</div>
+      <div class="radio-track-artist" id="radioTrackArtist">Afaces</div>
+      <div class="radio-track-count" id="radioTrackCount">— / —</div>
+    </div>
+
+    <div class="radio-progress-wrap">
+      <span class="radio-time" id="radioCurrTime">00:00</span>
+      <div class="radio-progress-track">
+        <div class="radio-progress-fill" id="radioProgressFill"></div>
+        <input type="range" class="radio-seek" id="radioSeek" min="0" max="100" value="0" step="0.1">
+      </div>
+      <span class="radio-time" id="radioDuration">00:00</span>
+    </div>
+
+    <div class="radio-controls">
+      <button class="rctrl rctrl-prev" id="rPrev" title="Anterior" aria-label="Pista anterior">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 20L9 12l10-8v16zm-12 0V4H5v16h2z"/></svg>
+      </button>
+      <button class="rctrl rctrl-play" id="rPlay" title="Play/Pausa" aria-label="Reproducir o pausar">
+        <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="pause-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+      <button class="rctrl rctrl-next" id="rNext" title="Siguiente" aria-label="Pista siguiente">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5 4l10 8-10 8V4zm12 0h2v16h-2z"/></svg>
+      </button>
+      <button class="rctrl rctrl-shuffle" id="rShuffle" title="Aleatorio" aria-label="Modo aleatorio">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+      </button>
+    </div>
+
+    <div class="radio-volume">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5zm6.07 2.93a10 10 0 0 1 0 14.14"/><line x1="15.54" y1="8.46" x2="21.07" y2="2.93"/></svg>
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5z"/></svg>
+      <input type="range" class="radio-vol-slider" id="radioVol" min="0" max="100" value="80">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5zm6.07 2.93a10 10 0 0 1 0 14.14m-3.53-10.61a6 6 0 0 1 0 8.48"/></svg>
+    </div>
+
+    <div class="radio-playlist" id="radioPlaylist">
+      <!-- populated by JS -->
+    </div>
+  </div>
+</div>
+<div class="radio-backdrop" id="radioBackdrop"></div>
+
+<main class="ux-page" id="contenido"><div class="ux-index">AFACES / ACCESIBILIDAD</div><section aria-labelledby="titulo"><p class="ux-kicker">Acceso y escucha</p><h1 class="ux-title" id="titulo">Accesibilidad</h1><p class="ux-note">Estado de las medidas de acceso sensorial. No se declara conformidad WCAG sin auditoría.</p></section><section aria-labelledby="medidas"><h2 id="medidas">Medidas y disponibilidad</h2><ul class="a11y-list"><li><strong>HTML semántico:</strong> estas vistas incorporan navegación, contenido principal, secciones y formularios etiquetados.</li><li><strong>Transcripciones:</strong> <a href="letras.html">vista disponible</a>, textos pendientes de revisión y publicación.</li><li><strong>Subtítulos:</strong> procedimiento documentado para crear y cargar SRT/VTT; no todos los vídeos tienen subtítulos verificados.</li><li><strong>Teclado y lectores de pantalla:</strong> se utilizan controles nativos; falta una auditoría completa.</li></ul></section><section aria-labelledby="solicitar"><h2 id="solicitar">Solicitar adaptaciones</h2><p>Para pedir una transcripción, subtítulos corregidos o comunicar una barrera, utiliza <a href="feedback.html">Feedback</a> o escribe a <a href="mailto:afacesmusic@gmail.com">afacesmusic@gmail.com</a>. Indica la URL y el formato que necesitas, sin aportar datos médicos.</p></section></main><footer class="a11y-footer"><nav aria-label="Páginas de accesibilidad"><a href="feedback.html">Feedback</a><a href="letras.html">Letras</a><a href="accesibilidad.html">Accesibilidad</a><a href="welcome.html">Inicio</a></nav></footer><script src="js/discovery-shell.js" defer></script></body></html>
