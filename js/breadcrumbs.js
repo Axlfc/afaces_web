@@ -12,7 +12,7 @@ const maxTrail=8;
 const current=new URL(location.href);
 const page=current.pathname.split('/').pop()||'welcome.html';
 if(!Object.hasOwn(pages,page))return;
-const main=document.querySelector('main');if(!main)return;
+const main=document.querySelector('main');if(!main&&page!=='welcome.html')return;
 const clean=url=>{try{const u=new URL(url,location.href);if(u.origin!==location.origin)return null;const file=u.pathname.split('/').pop()||'welcome.html';if(!Object.hasOwn(pages,file))return null;return {url:u.pathname+u.search+u.hash,page:file}}catch{return null}};
 const same=(a,b)=>a&&b&&a.url===b.url;
 const read=()=>{try{const data=JSON.parse(sessionStorage.getItem(storageKey)||'[]');return Array.isArray(data)?data.filter(x=>x&&typeof x.url==='string'&&clean(x.url)&&x.page===clean(x.url).page).slice(-maxTrail):[]}catch{return []}};
@@ -54,7 +54,7 @@ const ol=document.createElement('ol');const nodes=[{url:'welcome.html',page:'wel
 const unique=[];for(const n of nodes){if(!unique.length||!same(unique.at(-1),n))unique.push(n)}
 unique.forEach((n,i)=>{const li=document.createElement('li');const last=i===unique.length-1;if(last){const span=document.createElement('span');span.textContent=labels(n);span.setAttribute('aria-current','page');span.id='af-breadcrumb-current';li.append(span)}else{const link=document.createElement('a');link.href=n.url;link.textContent=labels(n);li.append(link)}ol.append(li)});
 nav.append(ol);
-main.insertBefore(nav,main.firstChild);
+if(main)main.insertBefore(nav,main.firstChild);
 if(page==='lanzamiento.html'){
  const heading=document.getElementById('title');
  if(heading){const update=()=>{if(heading.textContent.trim()){const end=document.getElementById('af-breadcrumb-current');if(end)end.textContent=heading.textContent.trim()}};new MutationObserver(update).observe(heading,{childList:true,characterData:true,subtree:true});update()}
