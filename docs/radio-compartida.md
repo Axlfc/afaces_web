@@ -14,9 +14,25 @@ Radio musical de **Afaces**: se alimenta exclusivamente de los MP3 de los álbum
 
 ## Reproducción entre páginas
 
-La web es estática y cada enlace HTML recarga el documento. Los navegadores cortan el audio de la página saliente. La radio recuerda la pista, posición, volumen y aleatorio mediante `sessionStorage` por pestaña, y al entrar en otra página restaura la posición **en pausa**. El visitante debe pulsar Reproducir otra vez; intentar autoplay tras una navegación sin gesto del usuario sería poco fiable y podría quedar bloqueado por el navegador.
+En la primera carga la web permanece HTML estático. Al seguir un enlace interno a otra
+sección, js/persistent-navigation.js mantiene el único Audio y su panel en la ventana
+principal, y presenta las páginas editoriales en un iframe del mismo origen. Cada
+sección sigue ejecutando sus scripts normales sin destruir la radio.
 
-Para continuidad acústica ininterrumpida haría falta convertir la navegación a una SPA persistente o alojar el reproductor en otro contexto estable. No se promete esa funcionalidad aquí.
+El botón RADIO de cada página embebida se comunica con el reproductor principal.
+El historial visible se actualiza con History API y Atrás/Adelante navega solo
+el contenido del iframe; se conservan pista, posición real, reproducción, volumen,
+aleatorio y panel. Las URL directas también funcionan.
+
+Se excluyen enlaces externos, descarga, abrir en pestaña nueva y clics modificados.
+Si se desactiva JavaScript se usa la navegación HTML normal, sin continuidad.
+Recargar completamente la página, cerrar la pestaña, salir de AFACES, límites del
+navegador o MP3 ausentes en el hosting externo pueden cortar la radio. En recarga
+completa, sessionStorage solo restaura el tiempo en pausa para respetar autoplay.
+
+Verificación manual: Play -> Perfiles -> Mapa -> Fichas -> Atrás; comprobar
+audio sin cortes, botón RADIO, hash y query parameters, enlaces externos,
+tema, móvil y apertura de menú.
 
 ## Descarga MP3
 
