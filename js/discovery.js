@@ -9,9 +9,8 @@ async function recommendations(){
  const status=document.getElementById('estado'),out=document.getElementById('resultados'),title=document.getElementById('titulo');
  const params=new URLSearchParams(location.search),n=params.get('nucleo'),archN=params.get('nucleo_arch'),phase=params.get('fase');
  const selected=Object.hasOwn(NUCLEOS,n)?n:null;
- const form=document.getElementById('recommendationFilters'),select=document.getElementById('recommendationNucleus');
- if(select){select.value=selected||''}
- if(form){form.addEventListener('submit',e=>{e.preventDefault();const val=select.value;location.href=val?'recomendaciones.html?nucleo='+encodeURIComponent(val):'recomendaciones.html'})}
+ const form=document.getElementById('recommendationFilters');
+ if(form){const checked=form.querySelector('input[name="nucleo"][value="'+(selected||'')+'"]');if(checked)checked.checked=true;form.addEventListener('submit',e=>{e.preventDefault();const val=form.querySelector('input[name="nucleo"]:checked')?.value||'';location.href=val?'recomendaciones.html?nucleo='+encodeURIComponent(val):'recomendaciones.html'})}
  try{
   const [data,routes]=await Promise.all([loadJSON('data/metadata.json'),loadJSON('data/routes.json')]);
   const items=Array.isArray(data.videos)?data.videos:[];
