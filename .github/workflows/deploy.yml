@@ -31,10 +31,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Pruebas, integridad y paquete público
         run: |
           set -euo pipefail
           python -m unittest discover -s tests -v
+          node --check js/mobile-nav.js
+          node --test tests/navigation.test.cjs
           python scripts/sync_catalog.py --check
           python scripts/build_tinet.py --manifest
       - name: Publicar por FTPS explícito en raíz web detectada con welcome.html
