@@ -223,7 +223,7 @@
       say('Descarga iniciada: '+track.name);
     }catch(error){
       console.warn('AFACES Radio: descarga directa no disponible',error);
-      if(/^HTTP (?:404|410)\\b/.test(String(error.message))){
+      if(/^HTTP (?:404|410)\b/.test(String(error.message))){
         say('Este MP3 no está disponible actualmente en el repositorio de música.');
         return;
       }
