@@ -33,7 +33,7 @@ class Element {
   }
   set className(value){
     this._className=String(value);
-    this._classes=new Set(this._className.split(/\\s+/).filter(Boolean));
+    this._classes=new Set(this._className.split(/\s+/).filter(Boolean));
   }
   get className(){return this._className}
   setAttribute(key,value){this.attributes[key]=String(value)}
