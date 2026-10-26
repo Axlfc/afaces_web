@@ -11,7 +11,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=SWNbhMxS4S4",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:2",
@@ -22,7 +24,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=1PB176jjic8",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:3",
@@ -33,7 +37,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=uwmr2eNdpE4",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:4",
@@ -44,7 +50,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=F44txcWQoJQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:5",
@@ -55,7 +63,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=rcAxMjoC7fw",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:6",
@@ -66,7 +76,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=_DSxx9E3MCQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:7",
@@ -77,7 +89,9 @@
       "fase": "Downtempo",
       "youtube_url": "https://www.youtube.com/watch?v=RVxpNONLZ8o",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:8",
@@ -88,7 +102,9 @@
       "fase": "Downtempo",
       "youtube_url": "https://www.youtube.com/watch?v=_4Vfk487foQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:9",
@@ -101,7 +117,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 1,
+      "nucleos_architectura": [
+        "identity-meta"
+      ]
     },
     {
       "ref": "A:10",
@@ -114,7 +134,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 1,
+      "nucleos_architectura": [
+        "identity-meta"
+      ]
     },
     {
       "ref": "A:11",
@@ -125,7 +149,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=VCzKkBZ-03w",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:12",
@@ -138,7 +164,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 1,
+      "nucleos_architectura": [
+        "identity-meta"
+      ]
     },
     {
       "ref": "A:13",
@@ -151,7 +181,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 1,
+      "nucleos_architectura": [
+        "identity-meta"
+      ]
     },
     {
       "ref": "A:14",
@@ -162,7 +196,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=rEKs9ttSOLA",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:15",
@@ -173,7 +209,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=0EdaPCRZXmY",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:16",
@@ -184,7 +222,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=FzD53ikXz5w",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:17",
@@ -195,7 +235,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=g9dWBnJ20MQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:18",
@@ -206,7 +248,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=uEgdTjGGk-Y",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:19",
@@ -217,7 +261,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=Lt66WnK2Xq4",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:20",
@@ -228,7 +274,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=msZJIYzS7vA",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:21",
@@ -239,7 +287,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=jojN7p_oBsw",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:22",
@@ -250,7 +300,9 @@
       "fase": "Alternative",
       "youtube_url": "https://www.youtube.com/watch?v=5D2dG7wPEGc",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:23",
@@ -261,7 +313,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=yJaQezPFOdc",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:24",
@@ -272,7 +326,9 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=0sYNIjkrPnY",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "A:25",
@@ -285,7 +341,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 1,
+      "nucleos_architectura": [
+        "psychology-error"
+      ]
     },
     {
       "ref": "A:26",
@@ -298,7 +358,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 1,
+      "nucleos_architectura": [
+        "psychology-error"
+      ]
     },
     {
       "ref": "A:27",
@@ -309,7 +373,9 @@
       "fase": "Downtempo",
       "youtube_url": "https://www.youtube.com/watch?v=b63grPuQfpw",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 1,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:1",
@@ -320,7 +386,9 @@
       "fase": "Inicios",
       "youtube_url": "https://www.youtube.com/watch?v=g9hcz4P5CQE",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 2,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:2",
@@ -331,7 +399,9 @@
       "fase": "Inicios",
       "youtube_url": "https://www.youtube.com/watch?v=Yc3NPdmnUJg",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 2,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:3",
@@ -342,7 +412,9 @@
       "fase": "Inicios",
       "youtube_url": "https://www.youtube.com/watch?v=rM_sBnq9peM",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 2,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:4",
@@ -353,7 +425,9 @@
       "fase": "Inicios",
       "youtube_url": "https://www.youtube.com/watch?v=gT3_2KV9hQw",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 2,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:5",
@@ -366,7 +440,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 2,
+      "nucleos_architectura": [
+        "urban-society"
+      ]
     },
     {
       "ref": "L:6",
@@ -379,7 +457,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 2,
+      "nucleos_architectura": [
+        "urban-society"
+      ]
     },
     {
       "ref": "L:7",
@@ -392,7 +474,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 2,
+      "nucleos_architectura": [
+        "urban-society"
+      ]
     },
     {
       "ref": "L:8",
@@ -405,7 +491,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 2,
+      "nucleos_architectura": [
+        "urban-society"
+      ]
     },
     {
       "ref": "L:9",
@@ -418,7 +508,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 2,
+      "nucleos_architectura": [
+        "urban-society"
+      ]
     },
     {
       "ref": "L:10",
@@ -432,7 +526,12 @@
         "control",
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 2,
+      "nucleos_architectura": [
+        "control-system",
+        "urban-society"
+      ]
     },
     {
       "ref": "L:11",
@@ -445,7 +544,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 3,
+      "nucleos_architectura": [
+        "language-form"
+      ]
     },
     {
       "ref": "L:12",
@@ -458,7 +561,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 3,
+      "nucleos_architectura": [
+        "language-form"
+      ]
     },
     {
       "ref": "L:13",
@@ -471,7 +578,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 3,
+      "nucleos_architectura": [
+        "language-form"
+      ]
     },
     {
       "ref": "L:14",
@@ -484,7 +595,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 3,
+      "nucleos_architectura": [
+        "language-form"
+      ]
     },
     {
       "ref": "L:15",
@@ -497,7 +612,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 4,
+      "nucleos_architectura": [
+        "language-form"
+      ]
     },
     {
       "ref": "L:16",
@@ -510,7 +629,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 4,
+      "nucleos_architectura": [
+        "language-form"
+      ]
     },
     {
       "ref": "L:17",
@@ -523,7 +646,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 4,
+      "nucleos_architectura": [
+        "language-form"
+      ]
     },
     {
       "ref": "L:18",
@@ -536,7 +663,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 4,
+      "nucleos_architectura": [
+        "control-system"
+      ]
     },
     {
       "ref": "L:19",
@@ -549,7 +680,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 4,
+      "nucleos_architectura": [
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:20",
@@ -562,7 +698,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 4,
+      "nucleos_architectura": [
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:21",
@@ -575,7 +716,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 4,
+      "nucleos_architectura": [
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:22",
@@ -588,7 +734,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 4,
+      "nucleos_architectura": [
+        "control-system"
+      ]
     },
     {
       "ref": "L:23",
@@ -599,7 +749,9 @@
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=KIz9tKGR8yQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 5,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:24",
@@ -612,7 +764,12 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "urban-society",
+        "conflict-tension"
+      ]
     },
     {
       "ref": "L:25",
@@ -625,7 +782,12 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "urban-society",
+        "conflict-tension"
+      ]
     },
     {
       "ref": "L:26",
@@ -638,7 +800,12 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "urban-society",
+        "conflict-tension"
+      ]
     },
     {
       "ref": "L:27",
@@ -651,7 +818,11 @@
       "nucleos": [
         "vacio"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "void-disappearance"
+      ]
     },
     {
       "ref": "L:28",
@@ -664,7 +835,11 @@
       "nucleos": [
         "vacio"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "void-disappearance"
+      ]
     },
     {
       "ref": "L:29",
@@ -677,7 +852,12 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "urban-society",
+        "conflict-tension"
+      ]
     },
     {
       "ref": "L:30",
@@ -690,7 +870,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "urban-society"
+      ]
     },
     {
       "ref": "L:31",
@@ -703,7 +887,11 @@
       "nucleos": [
         "vacio"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "void-disappearance"
+      ]
     },
     {
       "ref": "L:32",
@@ -716,7 +904,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "digital-code"
+      ]
     },
     {
       "ref": "L:33",
@@ -727,7 +919,9 @@
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=CbWGu_zEE_A",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 5,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:34",
@@ -740,7 +934,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "control-system",
+        "digital-code"
+      ]
     },
     {
       "ref": "L:35",
@@ -753,7 +952,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:36",
@@ -766,7 +969,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:37",
@@ -779,7 +986,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "control-system"
+      ]
     },
     {
       "ref": "L:38",
@@ -790,7 +1001,9 @@
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=DG8IG7pjFkw",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 5,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:39",
@@ -803,7 +1016,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "identity-meta"
+      ]
     },
     {
       "ref": "L:40",
@@ -816,7 +1033,11 @@
       "nucleos": [
         "vacio"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "void-disappearance"
+      ]
     },
     {
       "ref": "L:41",
@@ -827,7 +1048,9 @@
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=6qXZUmk0nN4",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 5,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:42",
@@ -838,7 +1061,9 @@
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=SyQT5uKy7xI",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 5,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:43",
@@ -851,7 +1076,11 @@
       "nucleos": [
         "vacio"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "void-disappearance"
+      ]
     },
     {
       "ref": "L:44",
@@ -864,7 +1093,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "urban-society"
+      ]
     },
     {
       "ref": "L:45",
@@ -877,7 +1110,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "philosophy-existence"
+      ]
     },
     {
       "ref": "L:46",
@@ -890,7 +1127,12 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "philosophy-existence",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:47",
@@ -903,7 +1145,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:48",
@@ -916,7 +1163,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "urban-society"
+      ]
     },
     {
       "ref": "L:49",
@@ -929,7 +1180,11 @@
       "nucleos": [
         "identidad"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "identity-meta"
+      ]
     },
     {
       "ref": "L:50",
@@ -940,7 +1195,9 @@
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=YUVDROFMQXU",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 5,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:51",
@@ -953,7 +1210,11 @@
       "nucleos": [
         "vacio"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 5,
+      "nucleos_architectura": [
+        "void-disappearance"
+      ]
     },
     {
       "ref": "L:52",
@@ -966,7 +1227,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "control-system"
+      ]
     },
     {
       "ref": "L:53",
@@ -979,7 +1244,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:54",
@@ -993,7 +1262,12 @@
         "vacio",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "void-disappearance",
+        "philosophy-existence"
+      ]
     },
     {
       "ref": "L:55",
@@ -1006,7 +1280,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "philosophy-existence"
+      ]
     },
     {
       "ref": "L:56",
@@ -1017,7 +1295,9 @@
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=Fpvvc0S7EAc",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": 6,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:57",
@@ -1030,7 +1310,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:58",
@@ -1043,7 +1327,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "control-system"
+      ]
     },
     {
       "ref": "L:59",
@@ -1056,7 +1344,12 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "urban-society",
+        "conflict-tension"
+      ]
     },
     {
       "ref": "L:60",
@@ -1069,7 +1362,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "conflict-tension"
+      ]
     },
     {
       "ref": "L:61",
@@ -1082,7 +1379,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "philosophy-existence"
+      ]
     },
     {
       "ref": "L:62",
@@ -1095,7 +1396,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:63",
@@ -1109,7 +1415,12 @@
         "identidad",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "identity-meta",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:64",
@@ -1123,7 +1434,12 @@
         "vacio",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "void-disappearance",
+        "philosophy-existence"
+      ]
     },
     {
       "ref": "L:65",
@@ -1136,7 +1452,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "control-system"
+      ]
     },
     {
       "ref": "L:66",
@@ -1149,7 +1469,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:67",
@@ -1162,7 +1487,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "philosophy-existence"
+      ]
     },
     {
       "ref": "L:68",
@@ -1175,7 +1504,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "control-system"
+      ]
     },
     {
       "ref": "L:69",
@@ -1188,7 +1521,12 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "urban-society",
+        "conflict-tension"
+      ]
     },
     {
       "ref": "L:70",
@@ -1201,7 +1539,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "philosophy-existence"
+      ]
     },
     {
       "ref": "L:71",
@@ -1214,7 +1556,11 @@
       "nucleos": [
         "vacio"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "void-disappearance"
+      ]
     },
     {
       "ref": "L:72",
@@ -1227,7 +1573,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "digital-code"
+      ]
     },
     {
       "ref": "L:73",
@@ -1240,7 +1590,11 @@
       "nucleos": [
         "conflicto"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 6,
+      "nucleos_architectura": [
+        "conflict-tension"
+      ]
     },
     {
       "ref": "L:74",
@@ -1253,7 +1607,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:75",
@@ -1267,7 +1626,12 @@
         "identidad",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "identity-meta",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:76",
@@ -1280,7 +1644,12 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:77",
@@ -1293,7 +1662,11 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "digital-code"
+      ]
     },
     {
       "ref": "L:78",
@@ -1307,7 +1680,12 @@
         "identidad",
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "identity-meta",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:79",
@@ -1321,7 +1699,12 @@
         "identidad",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "identity-meta",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:80",
@@ -1334,7 +1717,12 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "philosophy-existence",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:81",
@@ -1348,7 +1736,12 @@
         "identidad",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "language-form",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:82",
@@ -1363,7 +1756,16 @@
         "identidad",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "control-system",
+        "digital-code",
+        "identity-meta",
+        "philosophy-existence",
+        "control-architecture",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:83",
@@ -1378,7 +1780,16 @@
         "identidad",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "control-system",
+        "digital-code",
+        "identity-meta",
+        "philosophy-existence",
+        "control-architecture",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:84",
@@ -1392,7 +1803,14 @@
         "control",
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "control-system",
+        "digital-code",
+        "philosophy-existence",
+        "psychology-error"
+      ]
     },
     {
       "ref": "L:85",
@@ -1405,7 +1823,13 @@
       "nucleos": [
         "control"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": 7,
+      "nucleos_architectura": [
+        "control-system",
+        "digital-code",
+        "control-architecture"
+      ]
     },
     {
       "ref": "L:86",
@@ -1416,7 +1840,9 @@
       "fase": "Expediente",
       "youtube_url": "https://www.youtube.com/watch?v=IZYZgKqq8uk",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:87",
@@ -1427,7 +1853,9 @@
       "fase": "Expediente",
       "youtube_url": "https://www.youtube.com/watch?v=oFSP4t8jPZU",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:88",
@@ -1438,7 +1866,9 @@
       "fase": "Expediente",
       "youtube_url": "https://www.youtube.com/watch?v=Jwf8S8cgmCo",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:89",
@@ -1449,7 +1879,9 @@
       "fase": "Expediente",
       "youtube_url": "https://www.youtube.com/watch?v=CUeDTRoEuSQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:90",
@@ -1462,7 +1894,11 @@
       "nucleos": [
         "existencia"
       ],
-      "clasificacion": "curaduria_existente"
+      "clasificacion": "curaduria_existente",
+      "fase_id": null,
+      "nucleos_architectura": [
+        "emotional-parasitism"
+      ]
     },
     {
       "ref": "L:91",
@@ -1473,7 +1909,9 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=viX1QzYFF4Q",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:92",
@@ -1484,7 +1922,9 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=qPa4SJEa5UQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:93",
@@ -1495,7 +1935,9 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=7WoDnzL7A0g",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:94",
@@ -1506,7 +1948,9 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=gbECDu3gyoE",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:95",
@@ -1517,7 +1961,9 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=7RO7f-gpMx8",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:96",
@@ -1528,7 +1974,9 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=0Dm8ORZboaM",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:97",
@@ -1539,7 +1987,9 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=2EYF3_8U8go",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:98",
@@ -1550,7 +2000,9 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=h0v7YzEGxQg",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     },
     {
       "ref": "L:99",
@@ -1561,7 +2013,137 @@
       "fase": "Sin clasificar",
       "youtube_url": "https://www.youtube.com/watch?v=hDUDayP5xwo",
       "nucleos": [],
-      "clasificacion": "pendiente_revision"
+      "clasificacion": "pendiente_revision",
+      "fase_id": null,
+      "nucleos_architectura": []
     }
-  ]
+  ],
+  "architecture": {
+    "source": "js/main.js / AFACES_SITE.phases y AFACES_SITE.themes",
+    "phases": [
+      {
+        "id": 1,
+        "name": "Experimental",
+        "collection": "album",
+        "min": 1,
+        "max": 999
+      },
+      {
+        "id": 2,
+        "name": "Transición Urbana",
+        "collection": "lp",
+        "min": 1,
+        "max": 10
+      },
+      {
+        "id": 3,
+        "name": "Alt-Ortografía",
+        "collection": "lp",
+        "min": 11,
+        "max": 14
+      },
+      {
+        "id": 4,
+        "name": "Megaestructuras",
+        "collection": "lp",
+        "min": 15,
+        "max": 22
+      },
+      {
+        "id": 5,
+        "name": "Post-Conceptual",
+        "collection": "lp",
+        "min": 23,
+        "max": 51
+      },
+      {
+        "id": 6,
+        "name": "Cierre y Vacío",
+        "collection": "lp",
+        "min": 52,
+        "max": 73
+      },
+      {
+        "id": 7,
+        "name": "Reconstrucción Lógica",
+        "collection": "lp",
+        "min": 74,
+        "max": 85
+      },
+      {
+        "id": 8,
+        "name": "Pendiente de documentar",
+        "pending": true
+      },
+      {
+        "id": 9,
+        "name": "Pendiente de documentar",
+        "pending": true
+      }
+    ],
+    "nuclei": [
+      {
+        "id": "control-system",
+        "name": "Control & Sistema",
+        "playlistId": "PLAsjIJHsvHgo"
+      },
+      {
+        "id": "void-disappearance",
+        "name": "Vacío & Desaparición",
+        "playlistId": "PLbfVHpRyfnmg"
+      },
+      {
+        "id": "urban-society",
+        "name": "Urbanismo & Sociedad",
+        "playlistId": "PLC9cJkmmDqlA"
+      },
+      {
+        "id": "digital-code",
+        "name": "Digital & Código",
+        "playlistId": "PLFu-krZc8Y9I"
+      },
+      {
+        "id": "conflict-tension",
+        "name": "Conflicto & Tensión",
+        "playlistId": "PLE3GFYB2itGc"
+      },
+      {
+        "id": "identity-meta",
+        "name": "Identidad & Meta",
+        "playlistId": "PLFDMQFKRoLTg"
+      },
+      {
+        "id": "philosophy-existence",
+        "name": "Filosofía & Existencia",
+        "playlistId": "PLIgewmvJAp9U"
+      },
+      {
+        "id": "language-form",
+        "name": "Lengua & Forma",
+        "playlistId": "PLaMLgsTO_ECM"
+      },
+      {
+        "id": "control-architecture",
+        "name": "Arquitectura de Control",
+        "playlistId": "PLU4WkSMAq5cY"
+      },
+      {
+        "id": "psychology-error",
+        "name": "Psicología del Error",
+        "playlistId": "PLCdltWs-fGbs"
+      },
+      {
+        "id": "emotional-parasitism",
+        "name": "Parasitismo Emocional",
+        "playlistId": ""
+      },
+      {
+        "id": "pendiente-11",
+        "name": "Pendiente de documentar",
+        "pending": true,
+        "playlistId": ""
+      }
+    ],
+    "note": "Los ejes 8 y 9 y el núcleo 11 no constan definidos en la fuente; no se atribuyen lanzamientos sin evidencia."
+  }
 }
