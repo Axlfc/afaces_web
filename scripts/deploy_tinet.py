@@ -68,14 +68,39 @@ def retrieve(ftp, filename):
     return out.getvalue()
 
 
+
+def discover_webroot(ftp, remote):
+    """Localiza de forma inequívoca la web preexistente; jamás crea otra raíz.
+
+    'auto' admite el directorio inicial y su hijo html/ únicamente.
+    Con '.' se valida solo el directorio inicial, para clientes ya ubicados.
+    """
+    if remote not in ("auto", ".", "./"):
+        raise ValueError("TINET_REMOTE_DIR solo admite 'auto' o '.'")
+    start = ftp.pwd()
+    candidates = []
+    for relative in ((".", "html") if remote == "auto" else (".",)):
+        ftp.cwd(start)
+        try:
+            ftp.cwd(relative)
+            names = {n.rsplit("/", 1)[-1] for n in ftp.nlst()}
+        except error_perm:
+            continue
+        if "welcome.html" in names:
+            candidates.append(ftp.pwd())
+    ftp.cwd(start)
+    # Nunca dar prioridad arbitraria a una ubicación cuando hay dos webs.
+    if len(set(candidates)) != 1:
+        raise ValueError(
+            "Directorio web FTP no identificado de forma inequívoca: "
+            "se requiere un único welcome.html en la raíz de sesión o en html/"
+        )
+    ftp.cwd(candidates[0])
+    return ftp.pwd()
+
+
 def publish(ftp, dist, remote, backup, force=False):
-    if remote not in (".", "./"):
-        raise ValueError("TINET_REMOTE_DIR debe ser . (raíz FTP que contiene welcome.html)")
-    ftp.cwd(remote)
-    root = ftp.pwd()
-    names = {name.rsplit("/", 1)[-1] for name in ftp.nlst()}
-    if "welcome.html" not in names:
-        raise ValueError("El directorio FTP no contiene welcome.html: se cancela para evitar publicar fuera de la web")
+    root = discover_webroot(ftp, remote)
     manifest_file = dist / "deploy-manifest.json"
     manifest = json.loads(manifest_file.read_text(encoding="utf-8"))
     if manifest.get("schema_version") != 1:
@@ -142,7 +167,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dist", default="dist")
     parser.add_argument("--backup", default=".tinet-backup")
-    parser.add_argument("--remote-dir", default=os.getenv("TINET_REMOTE_DIR", "."))
+    parser.add_argument("--remote-dir", default=os.getenv("TINET_REMOTE_DIR", "auto"))
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true", help="Reenviar todos los archivos incluso si los hashes coinciden")
     args = parser.parse_args()
