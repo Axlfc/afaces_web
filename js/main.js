@@ -3716,6 +3716,7 @@ function renderModal(){
   const item=mData[mIdx];
   const type=currentTab==='albums'?'Álbum':'LP';
   const ytUrl=`https://www.youtube.com/watch?v=${item.vid}`;
+  const releaseUrl=`lanzamiento.html?ref=${currentTab==='albums'?'A':'L'}:${item.n}`;
   document.getElementById('mType').textContent=`${type} · #${String(item.n).padStart(2,'0')}`;
   document.getElementById('mTitle').textContent=item.title;
   document.getElementById('mPhase').textContent=item.phase;
@@ -3723,8 +3724,11 @@ function renderModal(){
   img.src=`https://img.youtube.com/vi/${item.vid}/maxresdefault.jpg`;
   img.onerror=()=>{ img.src=`https://img.youtube.com/vi/${item.vid}/0.jpg`; img.onerror=null; };
   img.alt=item.title;
-  document.getElementById('mThumbLink').href=ytUrl;
-  document.getElementById('mYtLink').href=ytUrl;
+  document.getElementById('mThumbLink').href=releaseUrl;
+  document.getElementById('mYtLink').href=releaseUrl;
+  document.getElementById('mYtLink').textContent='▶ Ver ficha y escuchar aquí';
+  document.getElementById('mYtLink').removeAttribute('target');
+  document.getElementById('mThumbLink').removeAttribute('target');
   const bcEl = document.getElementById('mBcLink');
   if(item.bc){ bcEl.href = item.bc; bcEl.style.display = ''; } else { bcEl.href = '#'; bcEl.style.display = 'none'; }
   document.getElementById('mPrev').disabled=mIdx===0;
