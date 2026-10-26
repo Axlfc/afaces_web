@@ -168,6 +168,20 @@ test('abrir panel, reproducir, siguiente, volumen, cierre sin interrumpir audio'
   assert.equal(app.api.getState().playing,true);
 });
 
+test('al terminar una pista avanza y mantiene reproducción aunque paused ya sea true',async()=>{
+  const app=page();
+  app.elements.rPlay.dispatch('click');
+  await Promise.resolve();
+  assert.equal(app.api.getState().playing,true);
+  // HTMLMediaElement marca paused=true al alcanzar el final.
+  app.audio.pause();
+  assert.equal(app.api.getState().playing,false);
+  app.audio.emit('ended');
+  await Promise.resolve();
+  assert.equal(app.api.getState().index,1);
+  assert.equal(app.api.getState().playing,true);
+});
+
 test('restauración de pista y tiempo en nueva página sin autoplay',()=>{
   const storage=new Map();
   const first=page(storage);

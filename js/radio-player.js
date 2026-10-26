@@ -141,11 +141,11 @@
     }else setPlaying(true);
   }
   function pauseTrack(){audio.pause();setPlaying(false);persist()}
-  const nextTrack=()=>{
+  const nextTrack=(autoplay=state.playing)=>{
     const index=state.shuffle
       ?Math.floor(Math.random()*RADIO_TRACKS.length)
       :(state.index+1)%RADIO_TRACKS.length;
-    loadTrack(index,state.playing);
+    loadTrack(index,autoplay);
   };
   const prevTrack=()=>{
     if(audio.currentTime>3){audio.currentTime=0;persist();return}
@@ -153,7 +153,7 @@
   };
   ui.play.addEventListener('click',()=>state.playing?pauseTrack():playTrack());
   ui.prev.addEventListener('click',prevTrack);
-  ui.next.addEventListener('click',nextTrack);
+  ui.next.addEventListener('click',()=>nextTrack());
   ui.shuffle.addEventListener('click',()=>{
     state.shuffle=!state.shuffle;
     ui.shuffle.classList.toggle('active',state.shuffle);
@@ -172,7 +172,7 @@
     audio.volume=Number(ui.volume.value)/100;
     persist();
   });
-  audio.addEventListener('ended',nextTrack);
+  audio.addEventListener('ended',()=>nextTrack(true));
   audio.addEventListener('pause',()=>{
     // El navegador puede pausar el audio sin pulsar nuestro botón.
     if(audio.paused)setPlaying(false);
