@@ -634,3 +634,16 @@ body>nav .nav-links a:focus-visible,body>nav .af-mobile-toggle:focus-visible{out
   body>nav .nav-right{gap:.2rem}
 }
 @media(prefers-reduced-motion:reduce){body>nav .nav-links,body>nav .af-mobile-toggle{transition:none}}
+
+
+/* NOVATO / EXPERTO — selector accesible disponible en todas las páginas */
+.ux-mode-switch{position:fixed;top:5.55rem;right:1.25rem;z-index:195;display:flex;align-items:center;gap:.35rem;padding:.35rem;border:1px solid var(--border);border-radius:2px;background:var(--nav-bg);box-shadow:0 8px 30px rgba(0,0,0,.22);max-width:calc(100vw - 1.5rem)}
+.ux-mode-switch span{padding:0 .55rem;font:600 .6rem 'Space Mono',monospace;letter-spacing:.04em;color:var(--muted);white-space:nowrap}
+.ux-mode-switch button{min-width:64px;min-height:40px;padding:.55rem .65rem;border:1px solid var(--border);background:transparent;color:var(--text);font:700 .63rem 'Space Mono',monospace;text-transform:uppercase;letter-spacing:.025em;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.ux-mode-switch button:hover{border-color:var(--accent);color:var(--accent)}
+.ux-mode-switch button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.ux-mode-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+body>nav .af-nav-shortcuts a[hidden]{display:none!important}
+@media(max-width:850px){.ux-mode-switch{top:auto;bottom:max(1rem,env(safe-area-inset-bottom));right:1rem}.ux-mode-switch span{display:none}}
+@media(max-width:360px){.ux-mode-switch{right:.5rem;bottom:max(.5rem,env(safe-area-inset-bottom))}.ux-mode-switch button{min-width:60px;min-height:40px;padding:.4rem}}
+@media(prefers-reduced-motion:reduce){.ux-mode-switch button{transition:none}}
