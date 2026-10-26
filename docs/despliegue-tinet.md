@@ -26,7 +26,7 @@ Settings → Secrets and variables → Actions:
 `html` del FTP `usuaris.tinet.cat:21` y recomienda TLS explícito**:
 https://www.tinet.cat/serveis/espai-web-ftp
 
-En el acceso FTP mostrado por el autor, `welcome.html` se encuentra en la raíz visible. El despliegue usa `TINET_REMOTE_DIR=.` (directorio inicial de sesión), sin crear ni prefijar `html/`. Se rechaza toda ruta distinta y se exige el marcador `welcome.html` antes de escribir. La configuración de la variable antigua `TINET_REMOTE_DIR` en GitHub Actions queda ignorada intencionadamente. Si el inicio de sesión de Actions no corresponde al mismo directorio visible en Dolphin, el proceso fallará sin subir ficheros.
+El acceso FTP mostrado en Dolphin arranca con `welcome.html` en su raíz visible, pero una ejecución autenticada en GitHub Actions (26-10-2026) demostró que **la sesión de CI empieza en otra carpeta que no contiene ese archivo**. El workflow fija `TINET_REMOTE_DIR=auto`: primero busca `welcome.html` en el directorio inicial; si no está, examina exclusivamente el hijo `html/`. Solo si exactamente una ubicación contiene `welcome.html` publica en ella. Si ambas o ninguna lo contienen, se detiene sin escribir ni crear directorios ajenos. La variable histórica `TINET_REMOTE_DIR` de GitHub Actions se ignora intencionadamente, para evitar despliegues accidentales.
 No desactiva la validación TLS ni permite FTP en claro.
 
 ## Publicar un LP

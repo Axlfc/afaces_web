@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.deploy_tinet import make_ftps_context, plan, publish
+from scripts.deploy_tinet import discover_webroot, make_ftps_context, plan, publish
 
 
 class FakeFTP:
@@ -27,7 +27,11 @@ class FakeFTP:
         return self.cwd_path
 
     def nlst(self):
-        return [p.rsplit("/", 1)[-1] for p in self.data if p.startswith(self.cwd_path.rstrip("/") + "/")]
+        prefix = self.cwd_path.rstrip("/") + "/"
+        names = {p[len(prefix):].split("/", 1)[0] for p in self.data if p.startswith(prefix)}
+        names.update({p[len(prefix):].split("/", 1)[0] for p in self.dirs
+                      if p.startswith(prefix) and p != self.cwd_path})
+        return sorted(names)
 
     def retrbinary(self, command, callback):
         from ftplib import error_perm
@@ -112,6 +116,37 @@ class FTPTests(unittest.TestCase):
             self.assertEqual(ftp.data["/welcome.html"], b"canonical")
             self.assertEqual((dist / "backup" / "welcome.html").read_bytes(),
                              b"changed by hand")
+
+    def test_auto_detects_html_when_login_root_is_not_public(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dist = Path(tmp)
+            (dist / "welcome.html").write_bytes(b"new")
+            digest = hashlib.sha256(b"new").hexdigest()
+            (dist / "deploy-manifest.json").write_text(json.dumps({
+                "schema_version": 1, "files": {"welcome.html": digest}
+            }))
+            ftp = FakeFTP()
+            ftp.data.clear()
+            ftp.dirs.add("/html")
+            ftp.data["/html/welcome.html"] = b"old"
+            self.assertEqual(publish(ftp, dist, "auto", dist / "backup"), 1)
+            self.assertEqual(ftp.data["/html/welcome.html"], b"new")
+            self.assertNotIn("/welcome.html", ftp.data)
+
+    def test_auto_fails_closed_when_both_locations_have_welcome(self):
+        ftp = FakeFTP()
+        ftp.dirs.add("/html")
+        ftp.data["/html/welcome.html"] = b"other site"
+        with self.assertRaisesRegex(ValueError, "inequívoca"):
+            discover_webroot(ftp, "auto")
+        self.assertEqual(ftp.data["/html/welcome.html"], b"other site")
+
+    def test_auto_fails_closed_when_neither_location_has_welcome(self):
+        ftp = FakeFTP()
+        ftp.data.clear()
+        ftp.dirs.add("/html")
+        with self.assertRaisesRegex(ValueError, "inequívoca"):
+            discover_webroot(ftp, "auto")
 
     def test_html_folder_is_not_an_accepted_target(self):
         with tempfile.TemporaryDirectory() as tmp:
