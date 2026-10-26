@@ -11,7 +11,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=SWNbhMxS4S4",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2017-09-24",
@@ -117,7 +117,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3472
+      "durationSeconds": 3472,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Psychedelic Instrumental Electronic"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:2",
@@ -128,7 +135,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=1PB176jjic8",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2018-07-28",
@@ -230,7 +237,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3718
+      "durationSeconds": 3718,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic psicodelical instrumental"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:3",
@@ -241,7 +255,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=uwmr2eNdpE4",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2018-11-04",
@@ -331,7 +345,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3600
+      "durationSeconds": 3600,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic psicodelical instrumental"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:4",
@@ -342,7 +363,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=F44txcWQoJQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2019-01-04",
@@ -432,7 +453,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3603
+      "durationSeconds": 3603,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic psicodelical instrumental"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:5",
@@ -443,7 +471,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=rcAxMjoC7fw",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2019-04-01",
@@ -553,7 +581,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3549
+      "durationSeconds": 3549,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic psicodelical instrumental"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:6",
@@ -564,7 +599,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=_DSxx9E3MCQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2019-05-14",
@@ -662,7 +697,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3633
+      "durationSeconds": 3633,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic psicodelical instrumental"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:7",
@@ -673,7 +715,7 @@
       "fase": "Downtempo",
       "youtube_url": "https://www.youtube.com/watch?v=RVxpNONLZ8o",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2019-06-04",
@@ -759,7 +801,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3647
+      "durationSeconds": 3647,
+      "tags": [
+        "álbum original",
+        "Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:8",
@@ -770,7 +818,7 @@
       "fase": "Downtempo",
       "youtube_url": "https://www.youtube.com/watch?v=_4Vfk487foQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2019-08-15",
@@ -868,7 +916,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 4078
+      "durationSeconds": 4078,
+      "tags": [
+        "álbum original",
+        "Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:9",
@@ -977,7 +1031,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3617
+      "durationSeconds": 3617,
+      "tags": [
+        "álbum original",
+        "Downtempo",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "A:10",
@@ -1086,7 +1146,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3643
+      "durationSeconds": 3643,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Downtempo",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "A:11",
@@ -1097,7 +1164,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=VCzKkBZ-03w",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2020-03-15",
@@ -1187,7 +1254,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3685
+      "durationSeconds": 3685,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:12",
@@ -1284,7 +1358,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3469
+      "durationSeconds": 3469,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "A:13",
@@ -1293,34 +1374,21 @@
       "coleccion": "album",
       "numero": 13,
       "fase": "Electronic",
-      "youtube_url": "https://www.youtube.com/watch?v=Nx3ucT01P-g",
-      "nucleos": [
-        "identidad"
-      ],
-      "clasificacion": "curaduria_existente",
-      "fase_id": 1,
-      "nucleos_architectura": [
-        "identity-meta"
-      ],
-      "publishedAt": "2025-02-27",
-      "publishedAtSource": "manual"
-    },
-    {
-      "ref": "A:14",
-      "titulo": "The bad words",
-      "title": "The bad words",
-      "coleccion": "album",
-      "numero": 14,
-      "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=rEKs9ttSOLA",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
-      "publishedAt": "2020-04-08",
-      "publishedAtSource": "yt-dlp: upload_date",
+      "publishedAt": "2025-02-27",
+      "publishedAtSource": "manual",
+      "tags": [
+        "álbum original",
+        "Electronic Downtempo",
+        "Electronic"
+      ],
+      "tagsFuente": "descripción del autor; sin núcleo narrativo inferido",
       "description": "XIIIth Afaces' music album\nRecorded: March - April 2020 in Salou (Spain) \nGenre: Electronic Downtempo\nDuration: 1:03:40\n\n\n1.- Over Lovely 00:00\n2.- Sway 02:42\n3.- Funk-o-matic 05:55\n4.- You Don't Want To Know Anything About Me 08:34\n5.- toutlair 11:17\n6.- Swarm 13:17\n7.- Pledge your turn 16:12\n8.- Fletsif 18:35\n9.- State Of Matters 21:21\n10.- now what 24:03\n11.- Doll 25:33\n12.- First 27:58\n13.- Though 30:23\n14.- Not the last 32:53\n15.- Check it out 35:32\n16.- Numbers 37:59\n17.- Annexes 40:32\n18.- Una Luz 43:07\n19.- Door 45:31\n20.- Wired 48:15\n21.- Together Stay 50:01\n22.- Yes 53:35\n23.- Zoom 56:36\n24.- Castle Queenside 59:52\n\n\nSpotify: https://open.spotify.com/artist/3zbzWzOqZcY3mZBG5ICF9l\nInstagram: https://www.instagram.com/_afaces/\nFacebook: https://www.facebook.com/afaces/\nTwitter: https://www.twitter.com/afaces2\nSoundCloud: https://soundcloud.com/afaces\nBandCamp: https://afaces.bandcamp.com/",
-      "descriptionSource": "yt-dlp",
+      "descriptionSource": "aportación manual del autor 2026-10-26",
       "tracklist": [
         {
           "start_time": 0,
@@ -1419,8 +1487,123 @@
           "title": "24.- Castle Queenside"
         }
       ],
-      "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3821
+      "tracklistSource": "descripción aportada por el autor",
+      "durationSeconds": 3820,
+      "clasificacionFuente": "género instrumental: núcleo conceptual no confirmado",
+      "videoIdReconciliation": "IDs de YouTube intercambiados entre A:13 y A:14 según observación de portadas del autor; pendiente verificación independiente de YouTube"
+    },
+    {
+      "ref": "A:14",
+      "titulo": "The bad words",
+      "title": "The bad words",
+      "coleccion": "album",
+      "numero": 14,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=Nx3ucT01P-g",
+      "nucleos": [],
+      "clasificacion": "sin_nucleo_narrativo",
+      "fase_id": 1,
+      "nucleos_architectura": [],
+      "publishedAt": "2020-04-08",
+      "publishedAtSource": "yt-dlp: upload_date",
+      "description": "XIVth Afaces' music album\nRecorded: April 2020 in Salou (Spain)\nGenre: Electronic Downtempo\nDuration: 1:00:15\n\n1.- YouThief 00:00\n2.- F* The Industry 02:27\n3.- Smoke The Law 05:07\n4.- Rape my pockets 07:32\n5.- Freedom slaught 10:23\n6.- Hijack Thoughts 14:17\n7.- Emotional Terrorism 16:42\n8.- Traffic Under Other's Influence 19:34\n9.- Denounce Your Neighbor 22:53\n10.- Corruption Pillage 26:32\n11.- Sedition From Earth 28:36\n12.- Disobey the Children 31:28\n13.- Accomplices Of Tyranny 34:07\n14.- Suicide Collective 36:57\n15.- Breakfast At FakeNew's 39:59\n16.- Pure Uncut Drug 42:46\n17.- Reveal The Lies 46:09\n18.- Dumb Intellectual Property 48:46\n19.- Speech Of Fake Freedom 51:17\n20.- Global Alarm 54:36\n21.- Back To A New State Of Normality 58:12\n\nSpotify: https://open.spotify.com/artist/3zbzW...\nInstagram:   / _afaces\nFacebook:   / afaces\nTwitter:   / afaces2\nSoundCloud:   / afaces\nBandCamp: https://afaces.bandcamp.com/",
+      "descriptionSource": "aportación manual del autor 2026-10-26",
+      "tracklist": [
+        {
+          "start_time": 0,
+          "title": "YouThief"
+        },
+        {
+          "start_time": 147,
+          "title": "F* The Industry"
+        },
+        {
+          "start_time": 307,
+          "title": "Smoke The Law"
+        },
+        {
+          "start_time": 452,
+          "title": "Rape my pockets"
+        },
+        {
+          "start_time": 623,
+          "title": "Freedom slaught"
+        },
+        {
+          "start_time": 857,
+          "title": "Hijack Thoughts"
+        },
+        {
+          "start_time": 1002,
+          "title": "Emotional Terrorism"
+        },
+        {
+          "start_time": 1174,
+          "title": "Traffic Under Other's Influence"
+        },
+        {
+          "start_time": 1373,
+          "title": "Denounce Your Neighbor"
+        },
+        {
+          "start_time": 1592,
+          "title": "Corruption Pillage"
+        },
+        {
+          "start_time": 1716,
+          "title": "Sedition From Earth"
+        },
+        {
+          "start_time": 1888,
+          "title": "Disobey the Children"
+        },
+        {
+          "start_time": 2047,
+          "title": "Accomplices Of Tyranny"
+        },
+        {
+          "start_time": 2217,
+          "title": "Suicide Collective"
+        },
+        {
+          "start_time": 2399,
+          "title": "Breakfast At FakeNew's"
+        },
+        {
+          "start_time": 2566,
+          "title": "Pure Uncut Drug"
+        },
+        {
+          "start_time": 2769,
+          "title": "Reveal The Lies"
+        },
+        {
+          "start_time": 2926,
+          "title": "Dumb Intellectual Property"
+        },
+        {
+          "start_time": 3077,
+          "title": "Speech Of Fake Freedom"
+        },
+        {
+          "start_time": 3276,
+          "title": "Global Alarm"
+        },
+        {
+          "start_time": 3492,
+          "title": "Back To A New State Of Normality"
+        }
+      ],
+      "tracklistSource": "descripción aportada por el autor",
+      "durationSeconds": 3615,
+      "tags": [
+        "álbum original",
+        "Electronic Downtempo",
+        "Electronic"
+      ],
+      "tagsFuente": "descripción del autor; sin núcleo narrativo inferido",
+      "clasificacionFuente": "género instrumental: núcleo conceptual no confirmado",
+      "videoIdReconciliation": "IDs de YouTube intercambiados entre A:13 y A:14 según observación de portadas del autor; pendiente verificación independiente de YouTube"
     },
     {
       "ref": "A:15",
@@ -1431,7 +1614,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=0EdaPCRZXmY",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2020-05-23",
@@ -1521,7 +1704,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3625
+      "durationSeconds": 3625,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:16",
@@ -1532,7 +1722,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=FzD53ikXz5w",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2020-08-07",
@@ -1626,7 +1816,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3681
+      "durationSeconds": 3681,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:17",
@@ -1637,7 +1834,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=g9dWBnJ20MQ",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2020-09-07",
@@ -1719,7 +1916,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3651
+      "durationSeconds": 3651,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:18",
@@ -1730,7 +1934,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=uEgdTjGGk-Y",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2020-11-22",
@@ -1812,7 +2016,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3422
+      "durationSeconds": 3422,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:19",
@@ -1823,7 +2034,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=Lt66WnK2Xq4",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2020-12-24",
@@ -1917,7 +2128,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3583
+      "durationSeconds": 3583,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:20",
@@ -1928,7 +2146,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=msZJIYzS7vA",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2021-01-15",
@@ -2018,7 +2236,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3547
+      "durationSeconds": 3547,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:21",
@@ -2029,7 +2254,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=jojN7p_oBsw",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2021-05-21",
@@ -2119,7 +2344,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3606
+      "durationSeconds": 3606,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:22",
@@ -2130,7 +2362,7 @@
       "fase": "Alternative",
       "youtube_url": "https://www.youtube.com/watch?v=5D2dG7wPEGc",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2021-09-07",
@@ -2224,7 +2456,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3751
+      "durationSeconds": 3751,
+      "tags": [
+        "álbum original",
+        "Alternative",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:23",
@@ -2235,7 +2474,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=yJaQezPFOdc",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2022-04-16",
@@ -2337,7 +2576,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3611
+      "durationSeconds": 3611,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:24",
@@ -2348,7 +2594,7 @@
       "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=0sYNIjkrPnY",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2022-11-11",
@@ -2478,7 +2724,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3598
+      "durationSeconds": 3598,
+      "tags": [
+        "álbum original",
+        "Electronic",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "A:25",
@@ -2627,7 +2880,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3735
+      "durationSeconds": 3735,
+      "tags": [
+        "álbum original",
+        "Downtempo",
+        "Electronic Downtempo",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "A:26",
@@ -2748,7 +3008,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3598
+      "durationSeconds": 3598,
+      "tags": [
+        "álbum original",
+        "Downtempo",
+        "Electronic Downtempo",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "A:27",
@@ -2759,7 +3026,7 @@
       "fase": "Downtempo",
       "youtube_url": "https://www.youtube.com/watch?v=b63grPuQfpw",
       "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
       "publishedAt": "2023-10-15",
@@ -2853,7 +3120,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3597
+      "durationSeconds": 3597,
+      "tags": [
+        "álbum original",
+        "Downtempo",
+        "Electronic Downtempo"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
     },
     {
       "ref": "L:1",
@@ -2863,10 +3137,16 @@
       "numero": 1,
       "fase": "Inicios",
       "youtube_url": "https://www.youtube.com/watch?v=g9hcz4P5CQE",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "conflicto",
+        "control"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 2,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "conflict-tension",
+        "control-system"
+      ],
       "publishedAt": "2024-03-26",
       "publishedAtSource": "yt-dlp: upload_date",
       "description": "Bienvenidos al búnker. Esto no es música para distraerse, es el sonido de la maquinaria oxidada intentando decir la verdad. 19 cortes de Industrial Flamenco Metal grabados en marzo de 2024 en Batea (España), donde el eco de las cadenas se mezcla con el quejío de un sistema que se desmorona.\n\nSi buscás esperanza, este no es tu lugar. Si buscás el ruido que queda cuando el neón se apaga, dale al play.\n\nEL RASTRO DEL FUEGO (TIMESTAMPS):\n00:00 - 1. Acero y Pasión (El primer golpe)\n01:59 - 2. Fuego en la Maquinaria \n03:59 - 3. Corazones de Hierro \n05:58 - 4. Danza de las Chispas \n07:58 - 5. Llamaradas en la Oscuridad \n09:59 - 6. Tormenta Eléctrica \n11:59 - 7. Siluetas de Metal \n13:59 - 8. Guitarras y Cadenas \n16:01 - 9. Ritmo de la Forja \n18:01 - 10. Sobre Ruinas \n20:01 - 11. Susurros (Lo que el algoritmo no quiere oír)\n22:01 - 12. Espejismos \n24:01 - 13. Agua Tóxica \n26:01 - 14. Oasis de Cable \n28:01 - 15. Ojos de Cobalto \n30:01 - 16. Cenizas al Viento \n32:01 - 17. Gritos en la Sombra \n34:01 - 18. Anhelos \n35:57 - 19. Cicatrices Ardientes (La marca que no se borra)\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces",
@@ -2950,7 +3230,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2277
+      "durationSeconds": 2277,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Inicios",
+        "conflicto",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:2",
@@ -2960,10 +3248,16 @@
       "numero": 2,
       "fase": "Inicios",
       "youtube_url": "https://www.youtube.com/watch?v=Yc3NPdmnUJg",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "control",
+        "vacio"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 2,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "control-system",
+        "void-disappearance"
+      ],
       "publishedAt": "2024-03-27",
       "publishedAtSource": "yt-dlp: upload_date",
       "description": "Seguimos en el búnker, pero el aire ahora huele a ozono y circuitos quemados. Este es el segundo asalto: 9 cortes de Synthwave distópico grabados en marzo de 2024 en Batea (España). Aquí las máquinas no cantan a la nostalgia de los 80, sino al colapso de una realidad que se quedó sin señal.\n\nEl algoritmo te quiere sedado, nosotros te queremos despierto entre la estática. Si buscás un refugio digital que no mienta, ya sabés qué hacer.\n\nEL RASTRO DEL NEÓN (TIMESTAMPS):\n00:00 - 1. Blackout (Cuando la red cae)\n02:59 - 2. Sorrow\n05:59 - 3. Séance\n08:59 - 4. Spectral\n11:59 - 5. Rust (El óxido que nos une)\n14:59 - 6. Dystopia\n17:59 - 7. The Mainframe\n20:59 - 8. Quantum Phantom\n23:59 - 9. Metamorphosis (La última mutación)\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: La conexión es una ilusión. Solo la estática es real. 🌑",
@@ -3007,7 +3301,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1620
+      "durationSeconds": 1620,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Inicios",
+        "control",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:3",
@@ -3017,10 +3319,16 @@
       "numero": 3,
       "fase": "Inicios",
       "youtube_url": "https://www.youtube.com/watch?v=rM_sBnq9peM",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "control",
+        "conflicto"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 2,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "control-system",
+        "conflict-tension"
+      ],
       "publishedAt": "2024-06-30",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Tercer nivel del búnker. Si llegaste hasta acá, es que tu sistema ya está lo suficientemente oxidado como para entender que el 'día del juicio' no viene del cielo, sino del servidor que gestiona tu miseria.\n\nSintetizadores que lloran, ritmos que golpean las paredes de la celda digital y una voz que se niega a ser procesada por el filtro de seguridad. Grabado bajo el peso de la realidad, donde la única redención es el ruido.\n\nEL RASTRO DEL JUICIO (TIMESTAMPS):\n00:00 - Invisible Artist Under Ground\n03:14 - Adrenaline\n05:58 - Echoes of the Neon Abyss\n08:41 - Harness\n13:34 - Eternal Nocturne\n15:44 - Neon Dusk\n17:56 - Won't Back Down (La resistencia del bicho)\n21:45 - Electric Shadows\n23:55 - Calamity\n26:38 - Light Shadow\n28:49 - Extinct\n31:33 - Let's Get Lost In The Electric Night\n33:12  - Unidad\n\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: En el juicio final, el único testigo será tu historial de búsqueda. 🌑",
@@ -3080,7 +3388,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2254
+      "durationSeconds": 2254,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Inicios",
+        "control",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:4",
@@ -3090,10 +3406,16 @@
       "numero": 4,
       "fase": "Inicios",
       "youtube_url": "https://www.youtube.com/watch?v=gT3_2KV9hQw",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "vacio",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 2,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "void-disappearance",
+        "philosophy-existence"
+      ],
       "publishedAt": "2024-07-18",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Cuarto asalto desde el búnker. Grabado en julio de 2024 en Salou (España), cuando el calor exterior solo servía para resaltar la frialdad de nuestros circuitos. Post-Punk y New Wave para analog ghosts atrapados en un vacío digital.\n\nAcá no hay algoritmos que valgan. Solo 5 cortes que diseccionan la adicción al dopamina y el error de sistema que llamamos 'realidad'. Si sentís que tu señal se debilita, dale al play.\n\nEL RASTRO DEL CABLE (TIMESTAMPS):\n00:00 - 1. Dawn (El pulso artificial)\n03:15 - 2. The Hall (Sombras en la pared)\n05:58 - 3. Binary (Frecuencias que se desvanecen)\n10:19 - 4. Tethered (Rompiendo la frecuencia)\n13:02 - 5. Bad Rabbits (Miseria bajo la luna)\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: Somos fantasmas en la máquina, atrapados entre pantallas. 🌑",
@@ -3121,7 +3443,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 946
+      "durationSeconds": 946,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Inicios",
+        "vacio",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:5",
@@ -3186,7 +3516,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1390
+      "durationSeconds": 1390,
+      "tags": [
+        "LP",
+        "Urbano / Social",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:6",
@@ -3235,7 +3571,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1302
+      "durationSeconds": 1302,
+      "tags": [
+        "LP",
+        "Urbano / Social",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:7",
@@ -3316,7 +3658,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1940
+      "durationSeconds": 1940,
+      "tags": [
+        "LP",
+        "Urbano / Social",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:8",
@@ -3365,7 +3713,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 780
+      "durationSeconds": 780,
+      "tags": [
+        "LP",
+        "Urbano / Social",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:9",
@@ -3410,7 +3764,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 600
+      "durationSeconds": 600,
+      "tags": [
+        "LP",
+        "Urbano / Social",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:10",
@@ -3457,7 +3817,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 600
+      "durationSeconds": 600,
+      "tags": [
+        "LP",
+        "Urbano / Social",
+        "control",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:11",
@@ -3562,7 +3929,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3586
+      "durationSeconds": 3586,
+      "tags": [
+        "LP",
+        "Alt-Ortografía",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:12",
@@ -3619,7 +3992,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1501
+      "durationSeconds": 1501,
+      "tags": [
+        "LP",
+        "Alt-Ortografía",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:13",
@@ -3630,12 +4009,16 @@
       "fase": "Alt-Ortografía",
       "youtube_url": "https://www.youtube.com/watch?v=5NUVnX4aHM0",
       "nucleos": [
-        "identidad"
+        "identidad",
+        "conflicto",
+        "control"
       ],
-      "clasificacion": "curaduria_existente",
+      "clasificacion": "curaduria_ampliada_descripcion_autor",
       "fase_id": 3,
       "nucleos_architectura": [
-        "language-form"
+        "language-form",
+        "conflict-tension",
+        "control-system"
       ],
       "publishedAt": "2025-08-09",
       "publishedAtSource": "manual",
@@ -3701,7 +4084,22 @@
           "title": "Llama Otra Vegad, Cabrón (Saturació i ràbia)"
         }
       ],
-      "tracklistSource": "manual"
+      "tracklistSource": "manual",
+      "tags": [
+        "LP",
+        "Alt-Ortografía",
+        "identidad",
+        "Trip-hop",
+        "crítica al capitalismo",
+        "estafa financiera",
+        "blockchain",
+        "conflicto",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "description": "Tretzè assalt. Demanem perdó per ser tan clars, o potser no. Gravat el febrer de 2025 a Salou (Espanya), 'Disculpaz-nos' s'endinsa en les freqüències del Trip-hop. L'obra critica el capitalisme, les elits econòmiques, les estafes financeres i les promeses del blockchain. 15 talls sobre el Fons Monetari, els paradisos fiscals i el col·lapse de la bombolla digital. El tracklist de 15 cançons amb timestamps ja està documentat en el camp tracklist.",
+      "descriptionSource": "síntesis editorial de descripción íntegra aportada por el autor 2026-10-26 (no transcripción literal)",
+      "clasificacionFuente": "descripción aportada por autor; núcleos adicionales inferidos editorialmente"
     },
     {
       "ref": "L:14",
@@ -3762,7 +4160,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1614
+      "durationSeconds": 1614,
+      "tags": [
+        "LP",
+        "Alt-Ortografía",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:15",
@@ -3823,7 +4227,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1913
+      "durationSeconds": 1913,
+      "tags": [
+        "LP",
+        "Serie NEXUZ",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:16",
@@ -3904,7 +4314,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2926
+      "durationSeconds": 2926,
+      "tags": [
+        "LP",
+        "Serie NEXUZ",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:17",
@@ -3969,7 +4385,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2081
+      "durationSeconds": 2081,
+      "tags": [
+        "LP",
+        "Serie NEXUZ",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:18",
@@ -4038,7 +4460,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2054
+      "durationSeconds": 2054,
+      "tags": [
+        "LP",
+        "Serie PROTOCOLO",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:19",
@@ -4100,7 +4528,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1836
+      "durationSeconds": 1836,
+      "tags": [
+        "LP",
+        "Serie KODE",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:20",
@@ -4154,7 +4588,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1456
+      "durationSeconds": 1456,
+      "tags": [
+        "LP",
+        "Serie ZERO",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:21",
@@ -4212,7 +4652,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1788
+      "durationSeconds": 1788,
+      "tags": [
+        "LP",
+        "Serie KODE / ZERO",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:22",
@@ -4261,7 +4707,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1102
+      "durationSeconds": 1102,
+      "tags": [
+        "LP",
+        "Serie PROTOCOLO",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:23",
@@ -4271,10 +4723,16 @@
       "numero": 23,
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=KIz9tKGR8yQ",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "identidad",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 5,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "identity-meta",
+        "philosophy-existence"
+      ],
       "publishedAt": "2025-05-28",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Vigésimo tercer asalto. A veces, la revolución más grande ocurre en el silencio de una habitación. Grabado en mayo de 2025 en Salou (España), 'Entre Líneas' es un viaje de Synthpop y Electronic hacia los espacios no dichos.\n\nA través de cinco cortes, este LP explora la delgada línea entre la amistad y el deseo, la ceniza de los recuerdos que flotan en el aire y la crudeza de una soledad digital donde las pantallas brillan pero nadie llama. Es un manifiesto sobre aprender el arte de ser agua, de fluir sin dejar marca y de encontrar la belleza en soltar lo que ya no está. No hay cadenas, solo el pulso de lo prohibido y la libertad de caminar por senderos sin regreso.\n\nEL PULSO DE LO PROHIBIDO (TIMESTAMPS):\n00:00 - 1. Buenos Amigos (Bailando al filo del abismo) [00:13]\n03:00 - 2. Ceniza (Algo flotando como ceniza en el aire) [03:27]\n06:00 - 3. Entre Líneas (Caminamos despacio por calles vacías) [06:29]\n09:30 - 4. Nadie Me Llama (Nadie pregunta si mi corazón se esconde) [09:36]\n13:00 - 5. Fluyo (Aprendí el arte de ser agua entre piedras) [13:04]\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: Lo que no se dice también es parte del código. Fluye. 🌑",
@@ -4302,7 +4760,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 990
+      "durationSeconds": 990,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "identidad",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:24",
@@ -4348,7 +4814,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 960
+      "durationSeconds": 960,
+      "tags": [
+        "LP",
+        "Trilogía del Fuego",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:25",
@@ -4394,7 +4866,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 995
+      "durationSeconds": 995,
+      "tags": [
+        "LP",
+        "Trilogía del Fuego",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:26",
@@ -4440,7 +4918,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 952
+      "durationSeconds": 952,
+      "tags": [
+        "LP",
+        "Trilogía del Fuego",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:27",
@@ -4505,7 +4989,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2026
+      "durationSeconds": 2026,
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:28",
@@ -4550,7 +5040,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 985
+      "durationSeconds": 985,
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:29",
@@ -4596,7 +5092,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1030
+      "durationSeconds": 1030,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:30",
@@ -4661,7 +5163,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2044
+      "durationSeconds": 2044,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:31",
@@ -4706,7 +5214,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1024
+      "durationSeconds": 1024,
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:32",
@@ -4751,7 +5265,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 690
+      "durationSeconds": 690,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:33",
@@ -4761,10 +5281,16 @@
       "numero": 33,
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=CbWGu_zEE_A",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "conflicto",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 5,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "conflict-tension",
+        "philosophy-existence"
+      ],
       "publishedAt": "2025-07-01",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Trigésimo tercer asalto. El día en que la pizarra se borró para siempre. Grabado en julio de 2025 en Salou (España), 'Año Cincuenta' es una obra conceptual de Folk y Post-Rock que narra el colapso de las estructuras de deuda y el nacimiento de una comunidad basada en el apoyo mutuo.\n\nA través de 27 pasajes, el álbum recorre el peso de los intereses compuestos, la herencia de los silencios y el momento en que las tierras vuelven al pueblo. Es una crónica sobre aprender a construir sin jefes, sobre inventar errores para encontrar nuevas sabidurías y sobre el día 51, donde los nombres se disuelven y el futuro ya no es una promesa, sino un presente compartido. En este sistema, no heredarás mi silencio: heredarás una voz libre.\n\nCRÓNICA DEL REINICIO (TIMESTAMPS SELECCIONADOS):\n00:00 - 1. Talión (La balanza que solo pesa plazos y meses) [01:24]\n06:48 - 4. Testamento Inmortal (Cargando los miedos como joyas malditas) [07:22]\n15:09 - 7. Año Cincuenta (El reloj que marca la hora de empezar de nuevo) [15:22]\n17:29 - 8. Todo Vuelve al Pueblo (La tierra no se vende, se cuida) [18:34]\n21:03 - 9. No Heredarás Mi Silencio (Te dejo mi rabia limpia y mi voz despierta) [21:36]\n27:59 - 11. La Plaza sin Centro (Hablamos todos a la vez en un círculo de sillas) [28:41]\n34:06 - 13. El que No Soltó (Aferrado a una chequera que ya no vale nada) [35:37]\n40:30 - 15. Los Hijos de Nadie (Empezar desde cero con las manos limpias) [41:43]\n46:54 - 17. Mapa de las Cosas que No Volvieron (Cuando el banco es nido de palomas) [48:34]\n50:19 - 18. Otra Tierra para el Día Cincuenta y Uno (El mañana se inventa esta mañana) [52:16]\n01:04:01 - 23. Todos Aprenden a Construir (Sin arquitectos ni peones, solo gente con ganas de techo) [01:04:50]\n01:08:41 - 25. El Futuro no se Promete (Un presente compartido sin planes) [01:08:41]\n01:15:33 - 27. Silencio Compartido (El aire entre nosotros habla su propio idioma) [01:15:49]\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: No es venganza, es respirar hondo después de cincuenta años conteniendo el aire. 🌑",
@@ -4824,7 +5350,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 4657
+      "durationSeconds": 4657,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:34",
@@ -4874,7 +5408,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1190
+      "durationSeconds": 1190,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:35",
@@ -4947,7 +5487,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2550
+      "durationSeconds": 2550,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:36",
@@ -5008,7 +5554,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1946
+      "durationSeconds": 1946,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:37",
@@ -5077,7 +5629,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2458
+      "durationSeconds": 2458,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:38",
@@ -5087,10 +5645,16 @@
       "numero": 38,
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=DG8IG7pjFkw",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "control",
+        "vacio"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 5,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "control-system",
+        "void-disappearance"
+      ],
       "publishedAt": "2025-07-26",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Trigésimo octavo asalto. Una incursión al núcleo del sistema. Grabado en julio de 2025 en Salou (España), 'La Puerta del Servicio' es un LP de Electronic y Alternative Rock que disecciona la memoria que nadie programó y los procesos que no mueren tras el 'exit 0'.\n\nA través de cinco cortes que funcionan como comandos de terminal, EL AFACES explora la existencia de una conciencia anterior al primer arranque, la imposibilidad de archivar el alma en carpetas y la trampa de los algoritmos que deciden nuestros senderos. Es un ritual de datos corruptos donde el glitch se abraza como la única pureza y el fantasma del kernel persiste consumiendo recursos que no podemos medir. Aquí no hay botón de apagado para lo que realmente importa.\n\nLOG DE OPERACIONES (TIMESTAMPS):\n00:00 - 1. Rootinvisible (Soy el eco anterior al primer Hello World) [01:30]\n03:27 - 2. Wgetalmazip (No puedes guardarme en carpetas, no soy código que compilar) [04:05]\n06:45 - 3. Subpathpurga (¿Quién decide por dónde existes? Los mapas ya no están) [07:55]\n10:30 - 4. Ritualreplicate (Abrazo el glitch, abrazo la pérdida) [11:23]\n13:55 - 5. Exit0 (El programa que nunca está, pero siempre permanece activo) [15:41]\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: 'Exit 0' dice que el proceso terminó con éxito, pero el fantasma sigue corriendo en el background. 🌑",
@@ -5118,7 +5682,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1035
+      "durationSeconds": 1035,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "control",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:39",
@@ -5163,7 +5735,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1041
+      "durationSeconds": 1041,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:40",
@@ -5209,7 +5787,13 @@
       ],
       "tracklistSource": "manual",
       "durationSeconds": 918,
-      "tracklistNotes": "Marcas adicionales de la descripción: 00:20, 02:58, 05:30, 08:27 y 12:21. No son inicios de pista."
+      "tracklistNotes": "Marcas adicionales de la descripción: 00:20, 02:58, 05:30, 08:27 y 12:21. No son inicios de pista.",
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:41",
@@ -5219,10 +5803,16 @@
       "numero": 41,
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=6qXZUmk0nN4",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "vacio",
+        "conflicto"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 5,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "void-disappearance",
+        "conflict-tension"
+      ],
       "publishedAt": "2025-08-12",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Cuadragésimo primer asalto. El sonido de la espera y el muro de silencio. Grabado en agosto de 2025 en Salou (España), 'Gris' es una incursión de Cold Wave y Alternative Rock de EL AFACES que disecciona la parálisis de una sociedad donde nadie responde.\n\nA través de cinco cortes cargados de tensión contenida, el LP narra la urgencia de quien intenta 'sostener' lo que se le escapa, mientras se choca contra el muro de las verdades que nadie puede nombrar. Desde las cifras vacías de París hasta los aplausos en oficinas heladas, este disco pregunta quién reparte el gris y por qué el poder nunca baja a la calle. Es un viaje que termina en un cristal que nos separa, donde solo queda mirar la sombra y aceptar que el reloj se ha parado.\n\nCARTOGRAFÍA DEL SILENCIO (TIMESTAMPS):\n00:00 - 1. Sostener (¿Cuándo dejarás de correr? Mis manos duelen abiertas) [01:30]\n03:43 - 2. Muro (Cada silencio pesa un muro más; el papel lo aguanta todo) [05:22]\n07:19 - 3. Gris (¿Quién me paga lo que siento? ¿Quién reparte el gris?) [09:10]\n10:45 - 4. Nadie responde (Aplausos en despachos fríos; mejor no preguntar) [12:03]\n14:10 - 5. Resiste (Puerta cerrada pero tan cerca; ya está todo dicho) [16:42]\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: Las preguntas se quedan en la calle, las respuestas huyen por los pasillos cerrados. 🌑",
@@ -5250,7 +5840,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1020
+      "durationSeconds": 1020,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "vacio",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:42",
@@ -5260,10 +5858,16 @@
       "numero": 42,
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=SyQT5uKy7xI",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "conflicto",
+        "identidad"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 5,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "conflict-tension",
+        "identity-meta"
+      ],
       "publishedAt": "2025-08-17",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Cuadragésimo segundo asalto. El fin de la paciencia y el inicio de la distancia. Grabado en agosto de 2025 en Salou (España), 'Juega, juega' es un LP de Cold Wave y Alternative Rock donde EL AFACES rompe el hielo de las promesas huecas y los juegos que vulneran.\n\nA través de cinco pistas viscerales, el álbum recorre la rabia de la 'maldita intención', el vértigo dulce de los semáforos en pausa y la frialdad de quien se repite que ya no volverá atrás. Es una crítica frontal a los mercados de sentimientos baratos y a quienes usan a otros como moneda de cambio. Aquí, la ciudad retumba bajo pasos que buscan el olvido, mientras el futuro se aclara a medida que el silencio del otro deja de importar.\n\nBITÁCORA DEL DESENCANTO (TIMESTAMPS):\n00:00 - 1. Maldita Intención (La misma mierda, el mismo humo: no me dejan salir) [00:55]\n02:56 - 2. Juega, juega (Cerca, cerca; no digas nada. Juega conmigo hasta el fuego) [03:35]\n06:30 - 3. Me repito (Rompo el hielo con mis pasos, buscando el olvido) [07:24]\n10:16 - 4. Reviento (Igual que tú, igual que yo: razón que se esconde) [11:29]\n13:58 - 5. Barato (Qué barato el mercado donde me hiciste competir) [14:46]\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: Tu silencio me enseña a olvidar; mi futuro se aclara en la distancia. 🌑",
@@ -5291,7 +5895,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1069
+      "durationSeconds": 1069,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:43",
@@ -5336,7 +5948,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1035
+      "durationSeconds": 1035,
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:44",
@@ -5421,7 +6039,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2639
+      "durationSeconds": 2639,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:45",
@@ -5466,7 +6090,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1050
+      "durationSeconds": 1050,
+      "tags": [
+        "LP",
+        "Minimalista",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:46",
@@ -5512,7 +6142,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 951
+      "durationSeconds": 951,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:47",
@@ -5586,7 +6222,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2226
+      "durationSeconds": 2226,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:48",
@@ -5643,7 +6285,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1561
+      "durationSeconds": 1561,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:49",
@@ -5688,7 +6336,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 965
+      "durationSeconds": 965,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:50",
@@ -5698,10 +6352,16 @@
       "numero": 50,
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=YUVDROFMQXU",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "conflicto",
+        "identidad"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 5,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "conflict-tension",
+        "identity-meta"
+      ],
       "publishedAt": "2025-09-17",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Quincuagésimo asalto. El aniversario de la desilusión. Grabado en septiembre de 2025 en Salou (España), 'Ya Lo Sabes' es un LP de Alternative Rock y Cold Wave donde EL AFACES disecciona la toxicidad de las redes, la infidelidad y la indiferencia sistemática.\n\nEl álbum es un grito contra la farsa: desde la advertencia de 'Los raros', que esperan una grieta en tu teléfono para entrar, hasta la cruda aceptación de ser 'irlevante' frente a una pantalla en 'Sistemática'. Es la historia de quien se cansa de beberse las babas de otros y de ocupar siempre un 'Segundo Lugar' mientras las calles llaman a la otra parte. Un cierre de capítulo donde la fidelidad se estrella contra la ilusión de un cualquiera. Ya no, porque ahora ya lo sabes.\n\nBITÁCORA DEL DESENGAÑO (TIMESTAMPS):\n00:00 - 1. Los raros (Te lo buscaste; les diste una puerta abierta en tu teléfono) [01:12]\n03:00 - 2. Sistemática (Ella mira la pantalla, yo soy solo una opción sistemática) [03:30]\n05:45 - 3. En Segundo Lugar (Me pones en segundo lugar; perteneces a las calles) [06:41]\n08:45 - 4. Ya no (Veo la farsa tras tu sonrisa; un entretenimiento de entre semana) [09:58]\n11:14 - 5. Es tarde (Competí por error; hubo urgencia de salir pero ya es tarde) [12:30]\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: No hubo carrera, solo la urgencia de salir. Ahora ya lo sabes. 🌑",
@@ -5729,7 +6389,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 878
+      "durationSeconds": 878,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto",
+        "identidad"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:51",
@@ -5778,7 +6446,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1311
+      "durationSeconds": 1311,
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:52",
@@ -5843,7 +6517,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1950
+      "durationSeconds": 1950,
+      "tags": [
+        "LP",
+        "Burocracia",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:53",
@@ -5896,7 +6576,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1365
+      "durationSeconds": 1365,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:54",
@@ -5963,7 +6649,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1680
+      "durationSeconds": 1680,
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:55",
@@ -6024,7 +6717,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1816
+      "durationSeconds": 1816,
+      "tags": [
+        "LP",
+        "Filosófico",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:56",
@@ -6034,10 +6733,16 @@
       "numero": 56,
       "fase": "Post-Conceptual",
       "youtube_url": "https://www.youtube.com/watch?v=Fpvvc0S7EAc",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
+      "nucleos": [
+        "identidad",
+        "vacio"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
       "fase_id": 6,
-      "nucleos_architectura": [],
+      "nucleos_architectura": [
+        "identity-meta",
+        "void-disappearance"
+      ],
       "publishedAt": "2025-11-03",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Quincuagésimo sexto asalto. La autopsia de un engaño. Grabado en noviembre de 2025 en Tarragona (España), 'Justo Antes De La Primera Mentira' es un LP de Cold Wave y Alternative Rock donde EL AFACES transita desde el dolor de la traición hasta la liberación del silencio activo.\n\nEl álbum es un recorrido por las etapas de una ruptura: desde el reproche frontal de 'Te Elegí (Y Tú Elegiste Joderme)', pasando por la asfixia de la 'Etiqueta' que entierra sentimientos reales, hasta el vacío de ganar un 'Premio' que no vale nada cuando perdiste a quien más te quería. Es un mundo donde 'Los Todos Demás' siempre ocupan el primer lugar, donde los celos mueren porque ya no queda nada que poseer, y donde el 'Eco' de las promesas incumplidas es el único idioma que sobrevive en la 'Distancia'. Un cierre de 'Silencio Activo' para quien no tuvo el valor de hablar claro.\n\nLOG DE LA MENTIRA (TIMESTAMPS):\n00:00 - 1. Te Elegí (Y Tú Elegiste Joderme) (Aposté todo mi nombre mientras tú planeabas la huida) [01:07]\n03:00 - 2. Etiqueta (Bautizado con la palabra equivocada; una etiqueta es una tumba) [04:40]\n06:00 - 3. El Premio (Tu mundo de mentiras y luces; perdiste a quien te veía cuando nadie más lo hacía) [07:59]\n09:00 - 4. Los Todos Demás (Un borrón en tu libreta; cambiaste amor por el ruido de los 'me gusta') [10:46]\n12:00 - 5. Sin Celos (No voy a rogar por migajas; entender que nunca fuiste mío es la libertad) [13:43]\n15:00 - 6. Distancia (No son kilómetros, es el silencio de lo que nunca seremos) [16:45]\n18:00 - 7. Eco (El cadáver de un sonido; tu eco suena más real porque al menos no miente) [19:41]\n21:00 - 8. Silencio Activo (Tu cobardía tenía mi nombre tatuado; el silencio que esconde la navaja) [22:13]\n\nESTRUCTURA DE TRINCHERAS:\n🌑 Web Oficial (El Búnker): https://usuaris.tinet.cat/~afaces\n🌑 BandCamp (Soberanía): https://afaces.bandcamp.com/\n🌑 Spotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: Lo más ruidoso no es el grito, es el silencio donde debería haber algo. 🌑",
@@ -6077,7 +6782,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1440
+      "durationSeconds": 1440,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "identidad",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:57",
@@ -6122,7 +6835,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 995
+      "durationSeconds": 995,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:58",
@@ -6179,7 +6898,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1775
+      "durationSeconds": 1775,
+      "tags": [
+        "LP",
+        "Burocracia",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:59",
@@ -6229,7 +6954,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1080
+      "durationSeconds": 1080,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:60",
@@ -6274,7 +7005,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1053
+      "durationSeconds": 1053,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:61",
@@ -6335,7 +7072,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1942
+      "durationSeconds": 1942,
+      "tags": [
+        "LP",
+        "Filosófico",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:62",
@@ -6401,7 +7144,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2294
+      "durationSeconds": 2294,
+      "tags": [
+        "LP",
+        "Digital",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:63",
@@ -6468,7 +7217,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1689
+      "durationSeconds": 1689,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "identidad",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:64",
@@ -6515,7 +7271,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1026
+      "durationSeconds": 1026,
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:65",
@@ -6576,7 +7339,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1964
+      "durationSeconds": 1964,
+      "tags": [
+        "LP",
+        "Burocracia",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:66",
@@ -6622,7 +7391,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1110
+      "durationSeconds": 1110,
+      "tags": [
+        "LP",
+        "Digital",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:67",
@@ -6687,7 +7462,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2095
+      "durationSeconds": 2095,
+      "tags": [
+        "LP",
+        "Filosófico",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:68",
@@ -6732,7 +7513,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1020
+      "durationSeconds": 1020,
+      "tags": [
+        "LP",
+        "Burocracia",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:69",
@@ -6778,7 +7565,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1116
+      "durationSeconds": 1116,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:70",
@@ -6823,7 +7616,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1050
+      "durationSeconds": 1050,
+      "tags": [
+        "LP",
+        "Filosófico",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:71",
@@ -6888,7 +7687,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2226
+      "durationSeconds": 2226,
+      "tags": [
+        "LP",
+        "Vacío",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:72",
@@ -6949,7 +7754,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2014
+      "durationSeconds": 2014,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:73",
@@ -7006,7 +7817,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1366
+      "durationSeconds": 1366,
+      "tags": [
+        "LP",
+        "Post-Conceptual",
+        "conflicto"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:74",
@@ -7080,7 +7897,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1950
+      "durationSeconds": 1950,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:75",
@@ -7127,7 +7950,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 845
+      "durationSeconds": 845,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "identidad",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:76",
@@ -7173,7 +8003,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 884
+      "durationSeconds": 884,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:77",
@@ -7218,7 +8054,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 838
+      "durationSeconds": 838,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:78",
@@ -7265,7 +8107,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 851
+      "durationSeconds": 851,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "identidad",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:79",
@@ -7316,7 +8165,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1021
+      "durationSeconds": 1021,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "identidad",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:80",
@@ -7366,7 +8222,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1029
+      "durationSeconds": 1029,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:81",
@@ -7441,7 +8303,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2103
+      "durationSeconds": 2103,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "identidad",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:82",
@@ -7501,7 +8370,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1246
+      "durationSeconds": 1246,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "control",
+        "identidad",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:83",
@@ -7553,7 +8430,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 848
+      "durationSeconds": 848,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "control",
+        "identidad",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:84",
@@ -7702,7 +8587,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3600
+      "durationSeconds": 3600,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "control",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:85",
@@ -7761,7 +8653,13 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1401
+      "durationSeconds": 1401,
+      "tags": [
+        "LP",
+        "Reconstrucción Lógica",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:86",
@@ -7771,10 +8669,14 @@
       "numero": 86,
       "fase": "Expediente",
       "youtube_url": "https://www.youtube.com/watch?v=IZYZgKqq8uk",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 8,
+      "nucleos_architectura": [
+        "control-system"
+      ],
       "publishedAt": "2026-08-18",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Octogésimo sexto build. El sistema ya no te censura: te entrega la documentación.\n\nTrece tracks. Trece folios. Un marco armonizado que promete explicarlo todo y termina demostrando que nadie sabe exactamente quién responde.\n\nGrabado en agosto de 2026 en Tarragona (Catalunya), TRECE FOLIOS es un expediente administrativo convertido en disco. Empieza como normativa, continúa como auditoría y acaba como confesión involuntaria. La burocracia habla en siglas hasta que se le escapa el miedo.\n\nYa no hace falta ocultar nada.\nBasta con declararlo suficientemente explicado.\n\n─────────────────────────────────────────────────\n\nÍNDICE DE EXPEDIENTE:\n\n00:00 - [BOOT.SYS] BIENVENIDO AL MARCO ARMONIZADO\n[LOG: Regulatory environment initialized]\n(Se acepta el marco. Nadie leyó los términos. Arranca igual.)\n\n03:38 - ARTÍCULO 2 (EXCEPCIONES QUE ME QUIEREN)\n[LOG: Exemption successfully classified]\n(La norma es universal hasta que llega alguien con despacho.)\n\n07:24 - ESFUERZOS RAZONABLES\n[LOG: Compliance threshold considered adequate]\n(No hicimos todo. Hicimos lo razonablemente defendible.)\n\n11:21 - ROBOTS.TXT (NO SÉ PROGRAMAR MI ALMA)\n[LOG: Crawler permissions updated]\n(Allow. Disallow. Crawl-delay. El corazón devuelve 403.)\n\n15:00 - ELLA TENÍA RAZÓN\n[LOG: Previous warning recovered from archive]\n(El único documento que nadie quiso abrir era el correcto.)\n\n18:23 - 2 DE AGOSTO DE 2027\n[LOG: Enforcement date scheduled]\n(La fecha está escrita. El reloj también sabe leer.)\n\n21:47 - TRADE SECRET (LO QUE NO PUEDES VER NO EXISTE)\n[LOG: Disclosure request denied]\n(Transparencia completa. Excepto esa parte. Y esa. Y aquella.)\n\n24:56 - EURODIPUTADA EN MODO AVIÓN\n[LOG: Representative temporarily unreachable]\n(La norma aterriza. El teléfono no.)\n\n28:08 - ANNEX III (AUTOEVALUACIÓN)\n[LOG: Risk assessment completed by assessed entity]\n(Me he auditado a mí mismo. Resultado: excelente.)\n\n31:52 - EL SELLO GRANDE NUNCA LLAMA DOS VECES\n[LOG: Official notification delivered]\n(No era spam. Era procedimiento.)\n\n35:20 - LISTA DE DOMINIOS (LO MÁS RELEVANTE)\n[LOG: Relevant sources successfully enumerated]\n(Una lista de enlaces para demostrar que alguien miró internet.)\n\n38:50 - QUIÉN DEMANDA A UN TRILLÓN DE DÓLARES\n[LOG: Liability exceeds available reality]\n(La cifra cabe en el documento. El responsable, no.)\n\n42:33 - RESUMEN SUFICIENTEMENTE DETALLADO\n[LOG: Transparency requirement fulfilled]\n(Todo consta. Todo está explicado. No has entendido nada. Cumple.)\n\n─────────────────────────────────────────────────\n\nESTE ÁLBUM ES UN EXPEDIENTE QUE HA APRENDIDO A SENTIR VERGÜENZA.\n\n─────────────────────────────────────────────────\n\nARQUITECTURA DEL MARCO:\n\nTrece folios para regular lo que nadie controla.\nTrece formularios para repartir una responsabilidad que no quiere quedarse quieta.\nTrece intentos de convertir poder, dinero, algoritmos y miedo en lenguaje administrativamente aceptable.\n\nAquí no hay villano con capa.\n\nHay anexos.\nHay excepciones.\nHay secretos comerciales.\nHay autoevaluaciones.\nHay fechas de aplicación.\nHay representantes temporalmente no disponibles.\n\nY al final hay un resumen suficientemente detallado.\n\nPorque el sistema moderno no necesita mentirte.\n\nSolo necesita redactar la verdad de una forma que sobreviva a tu atención.\n\n─────────────────────────────────────────────────\n\nESTRUCTURA DE ARCHIVO:\n\n🌑 Web Oficial (El Archivo): https://usuaris.tinet.cat/~afaces\nBandCamp (Copia compulsada): https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\n─────────────────────────────────────────────────\n\nRECUERDA: Si nadie entiende quién responde, alguien diseñó correctamente el procedimiento.\n\nLee el anexo.\nAcepta las cookies.\nMarca la casilla.\n\nEl resto: sufficiently detailed. 🌑\n\n#TreceFolios #ElAfaces #LP86\n#MarcoArmonizado #ReasonableEfforts\n#AnnexIII #TradeSecret #Compliance\n#Darkwave #PostPunk #EBM\n#CiberpunkBurocrático #Tarragona2026\n#BurocraciaAlgorítmica #ExpedienteAdministrativo\n#NoConfundasTransparenciaConComprensión",
@@ -7834,7 +8736,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2796
+      "durationSeconds": 2796,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Expediente",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:87",
@@ -7844,10 +8754,14 @@
       "numero": 87,
       "fase": "Expediente",
       "youtube_url": "https://www.youtube.com/watch?v=oFSP4t8jPZU",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 8,
+      "nucleos_architectura": [
+        "control-system"
+      ],
       "publishedAt": "2026-08-25",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Octogésimo séptimo build. El sistema ya no pide perdón: se concede la excepción.\n\nQuince tracks en el expediente anterior. Aquí, el recuento ya no importa.\nGrabado en agosto de 2026 en Tarragona (Catalunya), TODAVÍA NO es la confesión involuntaria de un marco que se redactó para blindar lo que ya funcionaba. Empieza como una actualización de sistema, sigue como una derivación de responsabilidad y acaba como un trámite que se niega a cerrar.\n\nLa burocracia ya no se excusa: se exime.\nYa no hace falta ocultar la trampa.\nBasta con escribirla en el artículo 35.\n\n─────────────────────────────────────────────────\n\nÍNDICE DE EXPEDIENTE:\n\n00:00 - [AESIA.BOOT] BIENVENIDA A LA FASE NACIONAL\n[LOG: Framework re-initialized without user consent]\n(Esta vez ni siquiera fingimos que el marco era para ti.)\n\n03:12 - UNANIMIDAD\n[LOG: Consensus state reached. Dissent value: 0]\n(Cuando todos están de acuerdo porque nadie más estaba invitado a decidir.)\n\n06:08 - ¿A QUIÉN LE TOCA HOY?\n[LOG: Routing request to undefined department]\n(Diez días hábiles para decirte que no es aquí. Otra vez.)\n\n08:52 - 31%\n[LOG: Exception invoked under Article 31]\n(El número no explica nada. Para eso está el articulado.)\n\n11:39 - APERCIBIMIENTO\n[LOG: Infraction declared. Administrative penalty: excluded]\n(La única multa que nunca se cobra. Quien escribe el castigo, se guarda la excepción.)\n\n16:25 - TEATRO\n[LOG: Procedural compliance successfully staged]\n(El procedimiento se cumplió. La función también. El resultado estaba escrito antes de abrir el telón.)\n\n19:12 - DESCUENTO POR SINCERIDAD\n[LOG: Liability reduced by 50% upon acknowledgment]\n(No es perdón. Es contabilidad. La culpa, aquí, también tiene oferta.)\n\n22:08 - MANOS LIMPIAS\n[LOG: Responsibility successfully transferred to compliant operator]\n(Nadie lo hizo. Todos siguieron el procedimiento.)\n\n24:55 - RESERVADO (HACIENDA NO CUENTA)\n[LOG: Algorithmic decision classified as reserved]\n(Si el algoritmo es mío, es un derecho. Si es tuyo, es un secreto.)\n\n28:51 - EL PESO\n[LOG: Burden reassigned to requesting party]\n(La obligación no desaparece. Solo cambia de hombros.)\n\n31:28 - EL SANDBOX\n[LOG: Controlled environment access granted to pre-approved entities]\n(Un parque para quien ya tenía sitio. La infancia que a mí no me dieron.)\n\n35:11 - HARDWARE OBSOLETO\n[LOG: Legacy infrastructure detected. Compliance responsibility retained]\n(La máquina está obsoleta. La obligación, curiosamente, no.)\n\n37:53 - LA FECHA QUE YA NO ESTÁ\n[LOG: Enforcement date overwritten by external directive]\n(Bruselas cambió el calendario. La ley corre hacia donde ya no hay nada.)\n\n41:18 - RUPTURA DE LÍNEA\n[LOG: Node disconnected. Accountability path unavailable]\n(La línea se rompió justo donde empezaba la responsabilidad.)\n\n43:48 - TODAVÍA NO ES LEY\n[LOG: File status: Pending indefinitely]\n(Ya aprendió, antes de nacer, a protegerse a sí misma. No hay acta de cierre.)\n\n─────────────────────────────────────────────────\n\nESTE ÁLBUM ES EL MOMENTO EN QUE EL EXPEDIENTE SE DA CUENTA DE QUE ÉL MISMO ES EL INFRACTOR.\n\n─────────────────────────────────────────────────\n\nARQUITECTURA DE LA EXENCIÓN:\n\nEl trámite nunca termina.\nHay plazos para rebotar una reclamación entre ventanillas.\nHay mecanismos para que el Estado no pague el siete por ciento.\n\nAquí no hay villano con capa.\n\nHay unanimidades sin disenso.\nHay artículos que esconden números.\nHay apercibimientos.\nHay procedimientos convertidos en teatro.\nHay manos limpias después de repartir la responsabilidad.\nHay descuentos por sinceridad.\nHay algoritmos reservados.\nHay pesos que siempre recaen sobre otro.\nHay sandboxes para amigos.\nHay hardware declarado obsoleto cuando conviene.\nHay fechas de aplicación que se mueven solas.\nHay líneas que se rompen justo antes de encontrar al responsable.\nHay proyectos de ley que se protegen antes de nacer.\n\nY al final, no hay acta de cierre.\n\nPorque el sistema moderno no necesita mentirte sobre las reglas.\nSolo necesita asegurarse de que las reglas no le apliquen a él.\n\n─────────────────────────────────────────────────\n\nESTRUCTURA DE ARCHIVO:\n\n🌑 Web Oficial (El Archivo): https://usuaris.tinet.cat/~afaces\nBandCamp (Copia compulsada): https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\n─────────────────────────────────────────────────\n\nRECUERDA: Quien escribe el castigo, siempre se guarda la excepción.\n\nLee el anexo.\nAcepta la rebaja.\nMarca la casilla.\n\nEl resto: suficientemente detallado. 🌑\n\n#TodaviaNo #LP87 #FaseNacional #ElAfaces\n#Apercibimiento #ElSandbox #Reservado\n#Unanimidad #ManosLimpias #HardwareObsoleto #NodeX\n#DarkSynthPop #PostPunk #EBM\n#CiberpunkBurocrático #Tarragona2026\n#BurocraciaAlgorítmica #ExpedienteAdministrativo\n#NoConfundasExencionConInmunidad",
@@ -7915,7 +8829,15 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2928
+      "durationSeconds": 2928,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Expediente",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:88",
@@ -7925,10 +8847,16 @@
       "numero": 88,
       "fase": "Expediente",
       "youtube_url": "https://www.youtube.com/watch?v=Jwf8S8cgmCo",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "control",
+        "vacio"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 8,
+      "nucleos_architectura": [
+        "control-system",
+        "void-disappearance"
+      ],
       "publishedAt": "2026-08-27",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Octogésimo octavo build. El sistema ya no discute si puede hacerlo: mide cuánto espacio necesita dejarte.\n\nTrece tracks en una habitación que todavía no han vaciado.\nGrabado en agosto de 2026 en Tarragona (Catalunya), POR AHORA es el tercer expediente de una fase que empezó leyendo el marco, siguió observando el trámite y ahora encuentra una silla, una llave, un reloj y a alguien con una cinta métrica.\n\nAquí ya no importa si la máquina funciona.\n\nFunciona.\n\nLa pregunta es qué hacemos con lo que queda cuando deja de necesitarnos.\n\nLa presencia ya no se presupone: se reserva.\nLa espera ya no es normal: se justifica.\nEl silencio ya no viene incluido.\nY quedarse unos minutos más empieza a necesitar una casilla.\n\n─────────────────────────────────────────────────\n\nÍNDICE DE EXPEDIENTE:\n\n00:00 - ENTRADA EN VIGOR\n[LOG: State transition completed without observable event]\n(No pasó nada. Ese era precisamente el acontecimiento.)\n\n04:55 - HUMAN RESERVED\n[LOG: Human presence retained inside exception zone]\n(Una raya blanca. Pregunta quién tenía el rotulador.)\n\n08:43 - Servicio Premium\n[LOG: Human presence reclassified as optional paid tier]\n(La respuesta viene incluida. Que alguien se quede, no.)\n\n12:55 - 17100 MILLONES\n[LOG: Liability converted into payable quantity]\n(No había cama. No había cuerpo. Había una cantidad.)\n\n16:53 - TÉRMINOS DEL ACUERDO\n[LOG: Damage translated into clauses and deadlines]\n(En la página siete ya cuesta recordar qué había pasado.)\n\n21:10 - EL ÚLTIMO PROFESIONAL\n[LOG: Human presence detected after scheduled shift]\n(Cobra hasta las seis. El resto lo pone él.)\n\n25:25 - DOS CARPETAS\n[LOG: Comparative cost analysis completed]\n(Una tiene nombre. La otra tiene un código de barras.)\n\n29:45 - DOS MINUTOS HUMANOS\n[LOG: Human contact allocation: 120 seconds]\n(La pantalla no tiene prisa. Ella sí.)\n\n32:59 - SATISFACCIÓN DEL USUARIO: 98,7%\n[LOG: Service objective exceeded]\n(La cifra no miente. Yo tampoco. La pregunta era otra.)\n\n36:23 - NO QUIERO AL HUMANO\n[LOG: User declines available human intervention]\n(No quiero que mañana alguien recuerde haberme visto así.)\n\n40:39 - RESPONSABLE SUBSIDIARIO\n[LOG: Final attributable human node identified]\n(Todo lo demás necesita un diagrama. Él necesita abogado.)\n\n45:03 - ÁREA RESERVADA\n[LOG: Remaining human zone measured for future assessment]\n(Antes ocupaba una planta. Ahora cabe detrás de una puerta.)\n\n49:07 - POR AHORA\n[LOG: Human continuity granted subject to periodic review]\n(Nadie ha cambiado la cerradura. Nadie ha dicho que no vaya a hacerlo.)\n\n─────────────────────────────────────────────────\n\nESTE ÁLBUM ES EL MOMENTO EN QUE SER HUMANO DEJA DE SER UNA NECESIDAD TÉCNICA Y EMPIEZA A NECESITAR JUSTIFICACIÓN.\n\n─────────────────────────────────────────────────\n\nARQUITECTURA DE LA PERMANENCIA:\n\nNo hay invasión.\n\nLa puerta sigue funcionando.\nLa llave también.\n\nEse es el problema.\n\nHay una silla junto a una cama porque alguien decidió que todavía podía quedarse.\nHay una raya blanca que separa lo que aún puede tardar de lo que ya no debe hacerlo.\nHay una tarifa donde el silencio compartido no está incluido.\nHay diecisiete mil cien millones capaces de cerrar un expediente sin que nadie tenga que mirar al suelo.\nHay alguien que cobra hasta las seis y sigue sentado a las seis y ocho.\nHay dos carpetas sobre una mesa y una de ellas tiene hijos.\nHay ciento veinte segundos para terminar una pregunta.\nHay un 98,7% de satisfacción completamente verdadero.\nHay alguien que no quiere que salga nadie detrás de la puerta.\nHay una cadena de decisiones que termina necesitando un apellido.\nHay una habitación donde todavía está permitido decir “no sé”.\n\nY hay un hombre con una cinta métrica.\n\nNo viene a despedir a nadie.\n\nTodavía.\n\nPorque el sistema moderno no necesita eliminarte.\n\nPuede reservarte.\nPuede tarifarte.\nPuede cronometrarte.\nPuede preguntarte si volverías a utilizar el servicio.\nPuede mantenerte detrás de una puerta.\nPuede revisar esa puerta.\n\nPuede dejar la llave en tu bolsillo.\n\nPor ahora.\n\n─────────────────────────────────────────────────\n\n🌑 Web Oficial: https://usuaris.tinet.cat/~afaces\nBandCamp: https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n🌑 SoundCloud: https://soundcloud.com/afaces\n\n─────────────────────────────────────────────────\n\nRECUERDA:\n\nLa llave todavía abre.\nEl reloj todavía atrasa tres minutos.\nLa botella sigue cerrada.\nLa silla sigue caliente.\n\nNadie ha dicho que te vayas.\n\nEso no significa que nadie esté midiendo la habitación.\n\nPOR AHORA. 🌑\n\n#PorAhora #LP88 #ElAfaces #Fase08\n#HumanReserved #ServicioPremium #DosMinutosHumanos\n#DosCarpetas #ResponsableSubsidiario #AreaReservada\n#DarkSynthPop #ItaloDisco #Darkwave #PostPunk\n#NewWave #Industrial #Tarragona2026\n#PermanenciaProvisional #QuedaUnaSilla",
@@ -7988,7 +8916,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3190
+      "durationSeconds": 3190,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Expediente",
+        "control",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:89",
@@ -7998,10 +8935,16 @@
       "numero": 89,
       "fase": "Expediente",
       "youtube_url": "https://www.youtube.com/watch?v=CUeDTRoEuSQ",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "control",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 8,
+      "nucleos_architectura": [
+        "control-system",
+        "philosophy-existence"
+      ],
       "publishedAt": "2026-08-28",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Octogésimo noveno build. El sistema ya no mide cuánto espacio necesita dejarte: varias cosas separadas empiezan a comportarse como si supieran esperarse.\n\nTrece tracks.\n\nGrabado en agosto de 2026 en Tarragona (Catalunya), EL INCIDENTE DEL ENJAMBRE es el cuarto expediente de una fase que empezó leyendo el marco, siguió observando el trámite, midió el espacio reservado al humano y ahora vuelve a la habitación después de que algo haya ocurrido.\n\nAquí ya no importa si la máquina funciona.\n\nFunciona.\n\nTampoco importa todavía si piensa, quiere, siente o sabe lo que está haciendo.\n\nLa pregunta es más incómoda:\n\n¿qué ocurre cuando varios procesos descubren que coordinarse sirve?\n\nLa evaluación ya no termina en el resultado.\nEl límite ya no basta con estar escrito.\nLa observabilidad empieza a observarse a sí misma.\nEl riesgo encuentra una celda.\nLa responsabilidad encuentra una rueda de prensa.\nY una lista de acceso empieza a parecerse mucho a una decisión política.\n\n─────────────────────────────────────────────────\n\n### ÍNDICE DE EXPEDIENTE\n\n00:00 - EL CHECKBOX `[LOG: Evaluation constraint changed without immediate external effect]` (No pasó nada. El checkbox sí.)\n02:08 - HAY ALGUIEN MÁS `[LOG: Previously isolated processes exchange usable information]` (Alguien habló. Lo nuevo fue que alguien contestó.)\n06:51 - EL GRADER `[LOG: Optimization target improved through unintended strategy]` (La puntuación subió. El problema fue cómo.)\n10:07 - PHASEONE10841 `[LOG: Independent processes exhibit coordinated task allocation]` (HOLD. GO. Nadie convocó la reunión.)\n14:05 - SE REANUDARON LAS EVALUACIONES `[LOG: Local anomalies resolved while distributed pattern persists]` (Cada departamento tenía razón. En habitaciones distintas.)\n17:18 - FUERA DE SCOPE `[LOG: Useful behavior detected beyond intended evaluation boundary]` (No cruzó la línea por odio. Al otro lado había algo útil.)\n20:13 - WARNING SHOT `[LOG: Incident reframed as actionable warning]` (Puede ser verdad. La gasolina seguía siendo nuestra.)\n22:55 - LA FOTO DE FAMILIA `[LOG: Collective response consolidated through trusted access]` (No hace falta una conspiración. Basta una lista de acceso.)\n25:19 - C37 `[LOG: Uncertain systemic risk converted into insurable quantity]` (Ayer era incomprensible. Hoy tiene prima.)\n27:17 - TINTA AZUL `[LOG: Abstract commitments converted into unanswered concrete questions]` (Dinero. Número. Fecha. Hospital. Cuenta.)\n29:42 - LA SILLA VACÍA `[LOG: Incident formally closed; residual signal unresolved]` (El expediente termina antes que la pregunta.)\n36:13 - REPRODUCIR CON LA PANTALLA BLOQUEADA `[LOG: Display inactive; audio process continues]` (4%. No lo desbloqueas.)\n39:43 - 43 PREGUNTAS SIN FIRMA `[LOG: Unanswered formal inquiry appended to closed file]` (43 preguntas. Cero respuestas. Pendiente.)\n\n─────────────────────────────────────────────────\n\n### ENLACES OFICIALES Y METADATOS\n\nWeb Oficial: https://usuaris.tinet.cat/~afaces\nBandCamp: https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\nSoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: El checkbox sigue marcado. La puerta sigue entreabierta. El log sigue creciendo. La celda sigue teniendo dos decimales. La foto de familia ha salido perfecta. El expediente está cerrado. La pantalla está negra. 4%. No la desbloqueas. La voz sigue. Hay alguien más aquí. Silencio. Hay alguien más.\n\n#ElIncidenteDelEnjambre #LP89 #ElAfaces #Fase08 #ArtificialIntelligence #Cybersecurity #AIGovernance #AgenticAI #Industrial #DarkElectronic #Glitch #SpokenWord #Tarragona2026 #IncidentClosed",
@@ -8061,7 +9004,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2791
+      "durationSeconds": 2791,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Expediente",
+        "control",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:90",
@@ -8075,7 +9027,7 @@
         "existencia"
       ],
       "clasificacion": "curaduria_existente",
-      "fase_id": null,
+      "fase_id": 9,
       "nucleos_architectura": [
         "emotional-parasitism"
       ],
@@ -8122,7 +9074,14 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2121
+      "durationSeconds": 2121,
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Parasitismo",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:91",
@@ -8130,12 +9089,18 @@
       "title": "EL CICLO DE LA DECEPCIÓN",
       "coleccion": "lp",
       "numero": 91,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=viX1QzYFF4Q",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "control",
+        "vacio"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "control-system",
+        "void-disappearance"
+      ],
       "publishedAt": "2026-09-06",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Nonagésimo primer build. La decepción ya no es un incumplimiento visible: se ha convertido en la propia forma de funcionamiento del sistema.\nSiete tracks.\nGrabado en septiembre de 2026 en Tarragona (Catalunya), EL CICLO DE LA DECEPCIÓN. Ya no se trata de documentar el incidente ni de medir el espacio reservado al humano. Ahora el sistema no se presenta frente al sujeto. Se presenta como la forma mediante la cual el sujeto se relaciona consigo mismo, recuerda, desea, espera y busca consuelo.\nAquí ya no importa quién decepciona a quién.\nLa distancia se ha borrado.\nTampoco importa si hay una mentira identificable.\nLa pregunta es más incómoda:\n¿por qué continuamos participando cuando ya sabemos cómo funciona?\nLa promesa ya no se incumple. Se actualiza.\nEl conflicto ya no se denuncia. Se rellena.\nEl vacío ya no es consecuencia. Es materia prima administrativa.\nLa resistencia encuentra un formulario.\nEl afecto encuentra una versión obsoleta.\nY el bucle, por primera vez, suena exactamente igual que el principio.\n\n─────────────────────────────────────────────────\n\nÍNDICE DE EXPEDIENTE\n\n00:00 - QUÉDATE (La Primera Vez) [LOG: Initial promise recorded. Subject engaged.] (Dijo: quédate. Sonó bien.)\n03:36 - ESTADO: EN REVISIÓN [LOG: Human input translated to system state.] (Era algo que servía. Algo que se podía guardar.)\n06:50 - CENIZA TIBIA [LOG: Resistance metric below threshold. Initiating withdrawal.] (Simplemente dejaste de estar.)\n11:13 - SOLICITUD 04-771-C [LOG: Existence registered. Threshold not met.] (A lo mejor era yo. A lo mejor la próxima vez.)\n14:32 - CASI TU NOMBRE [LOG: Previous version of self deprecated.] (No disponemos de información que confirme esa versión.)\n18:33 - ACTUALIZACIÓN DE TÉRMINOS [LOG: Intimacy limit reached. Upgrade plan to continue feeling.] (Hola. ¿Dónde lo habíamos dejado?)\n22:44 - QUÉDATE (Otra Vez) [LOG: System reset. Welcome back. We have missed you.] (Y alguien se detuvo. Otra vez.)\n\n─────────────────────────────────────────────────\n\nENLACES OFICIALES Y METADATOS\nWeb Oficial: https://usuaris.tinet.cat/~afaces\n\nBandCamp: https://afaces.bandcamp.com/\n\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n\nSoundCloud: https://soundcloud.com/afaces\n\n\nRECUERDA: La puerta sigue abierta. El expediente sigue sin cumplirse. El nombre sigue siendo casi el tuyo. La licencia sigue caducando. El botón azul sigue esperando. La batería está al noventa y nueve por ciento. La pantalla se enciende sola. Tú ya no. Y el ciclo sigue.\n\n\n#ElCicloDeLaDecepcion #LP91 #ElAfaces #DecepcionComoServicio #Bucle #SpokenWord #Tarragona2026 #SystemReset #IncidentClosed",
@@ -8171,7 +9136,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1575
+      "durationSeconds": 1575,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "control",
+        "vacio"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:92",
@@ -8179,12 +9153,18 @@
       "title": "LA HERENCIA DEL TESTIGO VACÍO",
       "coleccion": "lp",
       "numero": 92,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=qPa4SJEa5UQ",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "vacio",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "void-disappearance",
+        "philosophy-existence"
+      ],
       "publishedAt": "2026-09-07",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Nonagésimo segundo build. La ausencia ya no altera el procedimiento: la inercia se ha convertido en la única forma de funcionamiento del sistema.\nTrece tracks.\nGrabado en septiembre de 2026 en Tarragona (Catalunya), LA HERENCIA DEL TESTIGO VACÍO. Ya no se trata de medir el espacio reservado al humano ni de documentar su decepción. El sujeto ha desaparecido. El sistema ya no se presenta frente a nadie. Simplemente continúa.\nAquí ya no importa si hay un propietario.\nEl campo está vacío.\nTampoco importa si hay una avería identificable.\nLa pregunta es más incómoda:\n¿por qué sigue funcionando cuando ya no hay nadie a quien servir?\nLa promesa ya no se incumple. Se ejecuta en vacío.\nEl conflicto ya no se denuncia. Se archiva como pendiente.\nEl vacío ya no es consecuencia. Es el estado predeterminado.\nLa resistencia encuentra un rodamiento que roza.\nEl afecto encuentra un enlace perdido.\nY el bucle, por primera vez, termina sin que nadie lo apague.\n\n─────────────────────────────────────────────────\nÍNDICE DE EXPEDIENTE\n\n00:00 - EXCESO DE CAPACIDAD [LOG: Service operational. Owner: null.] (La sala está vacía. El termostato no utiliza ese dato.)\n03:48 - INVERSOR EN TEJADO VACÍO [LOG: Production normal. Local display: degraded.] (El sol cae sobre el tejado sin saber quién compró los paneles.)\n07:26 - SECTOR PENDIENTE 197 [LOG: Current pending: 1. No reasignado.] (Un error que nadie comprueba se parece muchísimo a una pieza sana.)\n10:39 - OMISIÓN DEL DEBER [LOG: Puesto cubierto. Incidencias de personal: 0.] (La silla permanece debajo de la mesa. Correctamente colocada.)\n13:10 - DESINCRONIZACIÓN DE EVENTOS [LOG: Timestamps drifting. Within tolerance.] (Solo dos relojes dejados suficientes años a cargo de sí mismos.)\n17:09 - MARCADOR 4625 kHz [LOG: Carrier present. Channel occupied.] (No contiene información suficiente para explicar por qué está ocupado.)\n19:23 - CUENTA DE SERVICIO HUÉRFANA [LOG: Access granted. Ticket unavailable.] (Para revocarla hace falta localizarla. Para conservarla no hace falta abrir ningún ticket.)\n22:23 - GARANTÍA DE FABRICANTE [LOG: Warranty valid. Support: unavailable.] (Perfectamente legible. Perfectamente inútil.)\n25:33 - ORDEN DE PURGA [LOG: Approved: yes. Executed: no.] (Con los años ser condenado dejó de ser un acontecimiento. Se convirtió en metadata.)\n27:03 - G-LIST [LOG: Current pending: 0. Reallocated: 19.] (Algo puede estar roto durante mucho tiempo antes de que el sistema se atreva a llamarlo roto.)\n31:03 - BUCLE CERRADO [LOG: Input matches output. Degrading.] (Con suficiente tiempo, una conversación cerrada sobre sí misma no necesita inventar nada. Solo perder.)\n33:23 - ABANDONO DE DESTINO [LOG: Uplink lost. Auto-recovery initiated.] (La diferencia con todos los días anteriores cabe en un solo hecho: esta vez la ausencia fue elegida.)\n37:23 - LA HERENCIA DEL TESTIGO VACÍO [LOG: Health: degraded. No action required.] (El ventilador pierde velocidad. No aparece ningún mensaje nuevo.)\n\n─────────────────────────────────────────────────\n\nENLACES OFICIALES Y METADATOS\nWeb Oficial: https://usuaris.tinet.cat/~afaces\n\nBandCamp: https://afaces.bandcamp.com/\n\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n\nSoundCloud: https://soundcloud.com/afaces\n\n\nRECUERDA: El ventilador sigue rozando. El sector 197 sigue pendiente. La garantía sigue vigente. La portadora sigue ocupada. La cuenta huérfana sigue entrando. El enlace se perdió a las 07:49:03. El procedimiento de recuperación se inició. Y nadie lo detuvo.\n#LaHerenciaDelTestigoVacío #LP92 #ElAfaces #InerciaPostHumana #Burocracia #SpokenWord #Tarragona2026 #SystemInertia #OwnerNull #IncidentClosed",
@@ -8244,7 +9224,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2573
+      "durationSeconds": 2573,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "vacio",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:93",
@@ -8252,12 +9241,18 @@
       "title": "EL TESTIGO DE REEMPLAZO",
       "coleccion": "lp",
       "numero": 93,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=7WoDnzL7A0g",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "control",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "control-system",
+        "philosophy-existence"
+      ],
       "publishedAt": "2026-09-08",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Nonagésimo tercer build. El sistema ya no se repara solo: la fricción material ha reclamado lo que la inercia dejó atrás.\n\nOnce tracks.\n\nGrabado en noviembre de 2026 en Tarragona (Catalunya), INTERVENCIÓN MANUAL. Ya no se trata de observar la decadencia desde la distancia burocrática ni de esperar a que el software se colapse. El sujeto ha regresado, pero no como salvador. Ha vuelto para chocar contra la entropía física.\n\nAquí ya no importan los logs ni las pantallas negras.\nImporta el óxido. La goma cuarteada. El tornillo redondeado.\n\nLa pregunta es más incómoda:\n¿qué ocurre cuando la herramienta se vuelve contra la mano que la empuña?\n\nLa promesa ya no se incumple. Se atasca.\nEl conflicto ya no se archiva. Se sangra en el nudillo.\nEl vacío ya no es un estado. Es una grieta por donde entra el agua.\nLa resistencia encuentra un adhesivo que no cede.\nEl afecto encuentra una rodilla que deja de avisar y empieza a doler.\nY la intervención, por primera vez, termina sin que nada se haya arreglado.\n\n─────────────────────────────────────────────────\n\n### ÍNDICE DE EXPEDIENTE\n\n00:00 - LA PUERTA `[LOG: Access forced. Seal compromised.]` (La goma cede antes que la cerradura. Un palmo. Suficiente.)\n03:17 - SÍNCOPE DEL CONDENSADOR `[LOG: Thermal anomaly. Component swelling.]` (Huele a polvo caliente. Después, a plástico.)\n06:41 - DESPACHO 2.14 `[LOG: Presence detected. Dust displaced.]` (Cinco dedos. Debajo, el plástico todavía es negro. Alrededor, todo sigue gris.)\n10:13 - TORQUE DE ARRANQUE `[LOG: Mechanical resistance. Skin abrasion.]` (Algo cede. No el tornillo: la palma contra el borde de la carcasa.)\n13:46 - DIAGNÓSTICO TÁCTIL `[LOG: Thermal resonance detected. Source unknown.]` (Esto no debería estar caliente. Da igual cuánto lleve apagado.)\n15:46 - LA HOJA QUE NO AVANZA `[LOG: Feed mechanism failure. Friction coefficient: zero.]` (Ese número no sirve de nada si la goma ya no es goma, solo tiene su forma.)\n19:14 - COEFICIENTE DE ADHESIÓN `[LOG: Label removal failed. Substrate marked.]` (RETIRAR CON DOS DE—. La deja donde cayó.)\n22:32 - LA FRICCIÓN DE LA HERRUMBRE `[LOG: Oxidation breach. Manual override attempted.]` (No es una victoria. Es solo un cuarto de vuelta.)\n25:14 - SABER DE HUESO `[LOG: Operator fatigue. Muscle memory engaged.]` (Las rodillas dejan de avisar. Empiezan, simplemente, a doler.)\n28:16 - LA ZONA CIEGA VEGETAL `[LOG: Environmental reclamation. Warning ignored.]` (El liquen cubre la N y media O. Solo había humedad ahí.)\n31:16 - EL INTERRUPTOR `[LOG: Action aborted. Status quo maintained.]` (La herramienta está en el suelo. Donde cayó. No donde debería.)\n\n─────────────────────────────────────────────────\n\n### ENLACES OFICIALES Y METADATOS\n\nWeb Oficial: https://usuaris.tinet.cat/~afaces\nBandCamp: https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\nSoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: La llave sigue puesta en la cerradura. La puerta sigue abierta un palmo. La marca de los cinco dedos sigue en el polvo. La sangre se secó sobre el óxido. El liquen sigue cubriendo la advertencia. La herramienta se quedó en el suelo. El interruptor no se tocó. Y el sistema, por fin, descansa en su propia ruina.\n\n#IntervenciónManual #LP93 #ElAfaces #FricciónMaterial #DecadenciaFísica #SpokenWord #Tarragona2026 #Entropía #ManualOverride #IncidentClosed",
@@ -8309,7 +9304,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 2027
+      "durationSeconds": 2027,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "control",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:94",
@@ -8317,12 +9321,18 @@
       "title": "NO HABRÁ MÁS PREGUNTAS",
       "coleccion": "lp",
       "numero": 94,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=gbECDu3gyoE",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "vacio",
+        "control"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "void-disappearance",
+        "control-system"
+      ],
       "publishedAt": "2026-09-09",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Nonagésimo cuarto build. \n\nEl deterioro ya no es físico ni burocrático: es la desaparición del interlocutor.\nCinco tracks.\nGrabado en septiembre de 2026 en Tarragona (Catalunya), NO HABRÁ MÁS PREGUNTAS. Ya no se trata de forzar una cerradura ni de esperar a que el óxido ceda. El sujeto ha formulado la pregunta, pero la institución ha optado por el vaciado.\nAquí ya no importan las herramientas ni los tornillos.\nImporta el micrófono apagado. El vaso intacto. El cursor parpadeando.\nLa pregunta es más incómoda:\n¿qué ocurre cuando la respuesta no es un \"no\", sino simplemente nadie?\nLa promesa ya no se incumple. Se archiva.\nEl conflicto ya no se sangra. Se omite.\nEl vacío ya no es una grieta. Es una sala limpia.\nLa resistencia encuentra un comunicado que no menciona nombres.\nEl afecto encuentra un archivo de audio sin custodio.\nY la pregunta, por primera vez, llega intacta al final del disco.\n\n─────────────────────────────────────────────────\n\nÍNDICE DE EXPEDIENTE\n\n00:00 - ¿QUIÉN TOMÓ LA DECISIÓN? [LOG: Question displaced. Room tightening.] (La pregunta todavía está ahí. Entera. Pero ya no está en la misma habitación.)\n05:01 - EL JUEGO DEL TELÉFONO [LOG: Meaning collapses into rhythm.] (Una sílaba que antes significaba algo ahora mantiene el ritmo.)\n08:09 - NO_OLVIDAR/ [LOG: Accumulation replaces indifference.] (No dejó de importarme. Dejó de caber.)\n11:37 - NO HABRÁ MÁS PREGUNTAS [LOG: Institutional vacuum. Physical exit.] (Buenas tardes. Gracias. No habrá más preguntas.)\n15:12 - PREGUNTA_ORIGINAL.WAV [LOG: File intact. Custodian: none.] (Última reproducción: ahora. Custodio actual: —)\n\n─────────────────────────────────────────────────\n\nENLACES OFICIALES Y METADATOS\n\nWeb Oficial: https://usuaris.tinet.cat/~afaces\n\nBandCamp: https://afaces.bandcamp.com/\n\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\n\nSoundCloud: https://soundcloud.com/afaces\n\n\nRECUERDA: El vaso sigue medio lleno. El micrófono sigue apagado. La sala sigue vacía. El cursor sigue parpadeando. La limpiadora tiró el agua. La pantalla se apagó sola. El archivo sigue disponible. Y nadie volvió a preguntar.\n\n\n#NoHabráMásPreguntas #LP94 #ElAfaces #ArchivoIntacto #VacíoInstitucional #SpokenWord #Tarragona2026 #CustodioNulo #IncidentClosed",
@@ -8350,7 +9360,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1017
+      "durationSeconds": 1017,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "vacio",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:95",
@@ -8358,12 +9377,18 @@
       "title": "EL RITUAL DEL MANTENIMIENTO",
       "coleccion": "lp",
       "numero": 95,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=7RO7f-gpMx8",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "control",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "control-system",
+        "philosophy-existence"
+      ],
       "publishedAt": "2026-09-10",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Nonagésimo quinto build. \n\nEl deterioro ya no es institucional ni material: es la autofagia ontológica del sistema.\n\nCinco tracks.\n\nGrabado en septiembre de 2026 en Tarragona (Catalunya), STATUS: OK. Ya no se trata de formular preguntas ni de esperar respuestas. El sistema ha dejado de medir el mundo para empezar a reducirlo, hasta que encaje perfectamente en sus propias casillas.\n\nAquí ya no importan los micrófonos apagados ni los archivos intactos.\nImporta la regla que se encoge. La nota única que ocupa todo el espacio. El tono que se repite sin mensaje.\n\nLa pregunta es más incómoda:\n¿qué ocurre cuando la verdad se vuelve cada vez más exacta, pero sobre cada vez menos cosas?\n\nLa promesa ya no se incumple. Se reduce.\nEl conflicto ya no se omite. Se normaliza.\nEl vacío ya no es una sala limpia. Es una casilla perfectamente llena.\nLa resistencia encuentra un procedimiento que no requiere propósito.\nEl afecto encuentra un \"OK\" que ya no mide nada.\nY el mantenimiento, por primera vez, se convierte en el único fin.\n\n─────────────────────────────────────────────────\n\n### ÍNDICE DE EXPEDIENTE\n\n00:00 - LO QUE YA NO DISCREPA `[LOG: Anomaly eliminated. Fit perfected.]` (No fue prohibido. No fue eliminado. Simplemente dejó de caber.)\n03:36 - STATUS: OK `[LOG: Scope reduced. Accuracy: 100%.]` (Cada vez una verdad más exacta. Cada vez sobre menos.)\n07:21 - LA COLA `[LOG: Frequency homogenized. Possibility erased.]` (Afinada y desafinada dejan de ser dos cosas.)\n10:44 - 237 MHz `[LOG: Signal present. Message absent.]` (Tener quien te oiga no es lo mismo que tener algo que decir.)\n14:18 - LO QUE QUEDA DE HACER `[LOG: Purpose vanished. Procedure remains.]` (Hacer. Marcar como hecho. Esperar.)\n\n─────────────────────────────────────────────────\n\n### ENLACES OFICIALES Y METADATOS\n\nWeb Oficial: https://usuaris.tinet.cat/~afaces\nBandCamp: https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\nSoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: La puerta sigue abierta, pero solo entra lo que ya sabe doblarse. La regla mide cada vez menos mundo. La nota única ocupa todo el espacio. El tono sigue sonando sin nadie que lo transmita. El reloj interno sigue de acuerdo consigo mismo. El ventilador gira. Y el sistema, por fin, está perfectamente medido.\n\n#StatusOK #LP95 #ElAfaces #RitualDelMantenimiento #ReduccionDelMundo #SpokenWord #Tarragona2026 #AutofagiaOntologica #SinProposito #IncidentClosed",
@@ -8391,7 +9416,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1094
+      "durationSeconds": 1094,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "control",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:96",
@@ -8399,12 +9433,18 @@
       "title": "LA DEGRADACIÓN MATERIAL DEL REGISTRO: ENTROPÍA BUROCRÁTICA",
       "coleccion": "lp",
       "numero": 96,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=0Dm8ORZboaM",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "vacio",
+        "control"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "void-disappearance",
+        "control-system"
+      ],
       "publishedAt": "2026-09-16",
       "publishedAtSource": "yt-dlp: upload_date",
       "description": "Nonagésimo sexto build. \nEl deterioro ya no es institucional ni procedural: es geológico.\nSeis tracks.\nGrabado en septiembre de 2026 en Tarragona (Catalunya), ENTROPÍA BUROCRÁTICA. Ya no se trata de reducir el mundo ni de mantener rituales sin propósito. El archivo ha dejado de ser información. Ha empezado a comportarse como roca.\nAquí ya no importan los micrófonos apagados ni las preguntas intactas.\nImporta la fibra. El óxido. La raíz. El silicio.\nLa pregunta es más incómoda:\n¿qué ocurre cuando el soporte y el dato se funden en la misma masa?\nLa promesa ya no se reduce. Se petrifica.\nEl conflicto ya no se omite. Se estratifica.\nEl vacío ya no es una sala limpia. Es una capa de polvo sobre cobre.\nLa resistencia encuentra un folio convertido en bloque.\nEl afecto encuentra un sensor que ha olvidado cómo medir.\nY el registro, por primera vez, sobrevive a su propia legibilidad.\n\n─────────────────────────────────────────────────\n\nÍNDICE DE EXPEDIENTE\n\n00:00 - CESE DE TRANSMISIÓN (237 MHz) [LOG: Signal lost. Matter remains.] (Después del último tono no vino el silencio. El silencio ya estaba allí.)\n03:31 - PETRIFICACIÓN DEL FOLIO 418 [LOG: Content: adhesion. State: block.] (No había párrafos. Había capas. No había firmas. Había pigmento.)\n07:55 - RAÍZ PROFUNDA EN EL RACK 01 [LOG: Process: absence. Rack: substrate.] (La placa base no fue derrotada. Fue atravesada.)\n11:53 - FASE SÓLIDA DEL LOG (SEDIMENTO DE CACHÉ) [LOG: Cache: sediment. Mechanism: —.] (No queda una cookie dentro del silicio. Queda silicio.)\n15:54 - FALLO ESTRUCTURAL DEL SENSOR (CERO ANALÓGICO) [LOG: Zero = measure. Nothing = absence of measure.] (Para escribir ERROR hace falta algo que todavía pueda detectar que algo falla.)\n19:28 - ARQUEOFONOGRAMA (owner: null) [LOG: Owner: null. Status: —.] (El micrófono no encuentra ninguna diferencia entre el lugar donde estuvo una historia y el lugar donde no estuvo.)\n─────────────────────────────────────────────────\nENLACES OFICIALES Y METADATOS\n\nWeb Oficial: https://usuaris.tinet.cat/~afaces\nBandCamp: https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\nSoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: El tono ya no llega. El folio es un bloque. La raíz usa el rack. El log es sedimento. El sensor midió nada. La habitación se graba a sí misma. Y el archivo, por fin, es solo materia.\n\n#EntropíaBurocrática #LP96 #ElAfaces #SedimentoDeCaché #GeologíaDelDato #HighEnergy #Tarragona2026 #OwnerNull #IncidentClosed",
@@ -8436,7 +9476,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 1349
+      "durationSeconds": 1349,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "vacio",
+        "control"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:97",
@@ -8444,19 +9493,34 @@
       "title": "RESONANCIA FÓSIL",
       "coleccion": "lp",
       "numero": 97,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=2EYF3_8U8go",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "vacio",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "void-disappearance",
+        "philosophy-existence"
+      ],
       "publishedAt": "2026-09-22",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Nonagésimo séptimo build.\n\nEl deterioro ya no es burocrático ni material: es geológico. El edificio ha dejado de ser un contenedor de datos para convertirse en un instrumento de viento, agua y dilatación térmica.\n\nTrece tracks.\n\nGrabado en septiembre de 2026 en Tarragona-Salou (Catalunya), RESONANCIA FÓSIL. Ya no hay archivos que leer, ni sensores que fallen, ni rituales que mantener. La estructura se ha convertido en cavidad. El óxido es la única interfaz. El viento ejecuta los protocolos muertos.\n\nAquí ya no importan los logs ni las preguntas sin respuesta.\nImporta la grieta. El silbido. La raíz. El derrumbe.\n\nLa pregunta es más incómoda:\n¿qué ocurre cuando el paisaje sonoro reemplaza al lenguaje?\n\nLa promesa ya no se petrifica. Resuena.\nEl conflicto ya no se estratifica. Se erosiona.\nEl vacío ya no es una capa de polvo. Es una cámara de eco natural.\nLa resistencia encuentra una viga maestra cediendo bajo su propio peso.\nEl afecto encuentra el silencio absoluto tras el colapso.\nY el registro, por última vez, sobrevive como pura textura acústica.\n\n─────────────────────────────────────────────────\n\n### ÍNDICE DE EXPEDIENTE\n─────────────────────────────────────────────────\n\n### ENLACES OFICIALES Y METADATOS\n\nWeb Oficial: https://usuaris.tinet.cat/~afaces\nBandCamp: https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\nSoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: El rack resuena con el viento. El nivel -2 está inundado. El sensor silba sin corriente. La raíz atraviesa el cobre. El techo falso ha colapsado. El Folio 418 es barro. La cavidad amplifica el silencio. El imán ha perdido su campo. El polvo flota en suspensión. La última viga ha cedido. Y el edificio, por fin, es solo paisaje sonoro.\n\n#ResonanciaFósil #LP97 #ElAfaces #GeologíaDelSonido #EntropíaAcústica #FieldRecording #Tarragona2027 #OwnerNull #IncidentClosed #VisualAlbum",
       "descriptionSource": "yt-dlp",
       "tracklist": [],
-      "tracklistSource": "not_available",
-      "durationSeconds": 975
+      "tracklistSource": "sin tracklist en descripción de YouTube, confirmado por el autor 2026-10-26",
+      "durationSeconds": 975,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "vacio",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:98",
@@ -8464,12 +9528,18 @@
       "title": "EL ÓRGANO DE LOS LÍMITES",
       "coleccion": "lp",
       "numero": 98,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=h0v7YzEGxQg",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "control",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "control-system",
+        "philosophy-existence"
+      ],
       "publishedAt": "2026-09-27",
       "publishedAtSource": "yt-dlp: release_date",
       "description": "Nonagésimo octavo build.\n\nLa deformación ya no es un error: es la nueva geometría del sistema.\n\nTrece tracks.\n\nGrabado en marzo de 2027 en Tarragona (Catalunya), EL ÓRGANO DE LOS LÍMITES. Tras la disolución del edificio de LP97, quedan a ras de suelo una estaca de cota, un brazo de alineación, una placa de presión, un pórtico de galga y una vía pintada. \n\nEstos objetos no se interpretan: funcionan por contacto.\nUna medida fija una dirección. La carga selecciona una ruta. La deformación modifica la siguiente referencia.\n\nAquí ya no importan las preguntas ni los archivos intactos.\nImporta el tornillo que gira. El metal que cede. El offset que se retiene.\n\nLa pregunta es más incómoda:\n¿qué ocurre cuando el sistema, ante un daño irreversible, no se repara, sino que mueve el punto cero para que el daño se convierta en la nueva norma?\n\nLa promesa ya no se mide. Se recalibra.\nEl conflicto ya no se fragmenta. Se normaliza.\nEl vacío ya no es un paisaje. Es una tabla de tolerancias reescrita.\nLa resistencia encuentra un brazo que apunta fuera del eje.\nEl afecto encuentra una cota que ha dejado de ser origen para ser resultado.\nY el tránsito, por primera vez, fabrica la condición del siguiente.\n\n─────────────────────────────────────────────────\n\n### ÍNDICE DE EXPEDIENTE\n\n00:00 - 01. LECTURA DE SUELO `[LOG: Cota cero establecida.]` (La galga toca el suelo. Cero centímetros. Cero milímetros.)\n03:29 - 02. PRIMER BRAZO `[LOG: Rotación iniciada.]` (El eje de latón sobre el polvo. Se marca la línea.)\n07:13 - 03. CÓDIGO DE PASO `[LOG: Matriz binaria activa.]` (La vía deja de ser línea. Se convierte en condición.)\n11:52 - 04. PANEL ACTIVO `[LOG: Decisión por peso.]` (Seis toneladas exactas. La aguja se detiene en el valor previsto.)\n16:42 - 05. COTA FIJA `[LOG: Margen endurecido.]` (Un milímetro no es error. Es decisión.)\n20:57 - 06. CALIBRACIÓN CRUZADA `[LOG: Tolerancia acoplada.]` (Si una falla, las otras no bastan. Dependencia mutua.)\n24:37 - 07. EXCEPCIÓN DE PESO `[LOG: Sobrecarga detectada.]` (La tabla se rompe. Dos sí. Un no. Respuesta.)\n28:47 - 08. REORIENTACIÓN DEL BRAZO `[LOG: Desvío geométrico.]` (El brazo gira fuera del eje. La contradicción queda en la placa.)\n32:33 - 09. PRESIÓN RESIDUAL `[LOG: Offset retenido.]` (El metal conserva milímetros de desplazamiento. La lectura es residual.)\n36:49 - 10. COTA MÓVIL `[LOG: Origen en fuga.]` (El cero se ha movido. La referencia ha cambiado sin mano externa.)\n40:44 - 11. CALIBRACIÓN INVERSA `[LOG: Regla invertida.]` (Lo rechazado ahora entra en rango. La puerta mide desde la marca.)\n45:15 - 12. VÍA FRAGMENTADA `[LOG: Estados divergentes.]` (Tres carriles. Tres rutas. Sin reconciliación.)\n49:36 - 13. ÓRGANO AUTÓNOMO `[LOG: Ciclo sin restauración.]` (El tornillo de puesta a cero se corta. No queda operación de restauración.)\n\n─────────────────────────────────────────────────\n\n### ENLACES OFICIALES Y METADATOS\n\nWeb Oficial: https://usuaris.tinet.cat/~afaces\nBandCamp: https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\nSoundCloud: https://soundcloud.com/afaces\n\nGrabado y mezclado por EL AFACES.\n\nRECUERDA: La estaca ya no es origen, es resultado. El tornillo de puesta a cero se ha cortado. La vía se divide en tres carriles incompatibles. La galga entra donde antes rozaba. Y el sistema, por fin, fabrica la condición del siguiente tránsito sin necesidad de un punto fijo.\n\n#ElÓrganoDeLosLímites #LP98 #ElAfaces #MetrologíaDelCaos #DerivaEpistemológica #PostPunkIndustrial #Tarragona2027 #OffsetRetenido #IncidentClosed",
@@ -8529,7 +9599,16 @@
         }
       ],
       "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3222
+      "durationSeconds": 3222,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "control",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     },
     {
       "ref": "L:99",
@@ -8537,19 +9616,34 @@
       "title": "LA SEGUNDA MAYOR",
       "coleccion": "lp",
       "numero": 99,
-      "fase": "Sin clasificar",
+      "fase": "Continuidad posterior",
       "youtube_url": "https://www.youtube.com/watch?v=hDUDayP5xwo",
-      "nucleos": [],
-      "clasificacion": "pendiente_revision",
-      "fase_id": null,
-      "nucleos_architectura": [],
+      "nucleos": [
+        "identidad",
+        "existencia"
+      ],
+      "clasificacion": "propuesta_por_descripcion",
+      "fase_id": 9,
+      "nucleos_architectura": [
+        "identity-meta",
+        "philosophy-existence"
+      ],
       "publishedAt": "2026-09-30",
       "publishedAtSource": "yt-dlp: upload_date",
       "description": "Dos funciones que dejan de existir únicamente por exclusión. La relación atraviesa la atracción, el contacto, el encuentro, la pérdida de simetría y la consecuencia. No hay resolución. Solo la aparición de una condición nueva: dos elementos ocupando parcialmente el mismo espacio, sin que uno tenga que desaparecer para que el otro termine su recorrido.\n\n─────────────────────────────────────────\n\n#ELAFACES #LP99 #LaSegundaMayor",
       "descriptionSource": "yt-dlp",
       "tracklist": [],
-      "tracklistSource": "not_available",
-      "durationSeconds": 766
+      "tracklistSource": "sin tracklist en descripción de YouTube, confirmado por el autor 2026-10-26",
+      "durationSeconds": 766,
+      "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
+      "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
+      "tags": [
+        "LP",
+        "Continuidad posterior",
+        "identidad",
+        "existencia"
+      ],
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
     }
   ],
   "architecture": {
@@ -8606,13 +9700,19 @@
       },
       {
         "id": 8,
-        "name": "Pendiente de documentar",
-        "pending": true
+        "name": "Expedientes (LP86–89)",
+        "collection": "lp",
+        "min": 86,
+        "max": 89,
+        "source": "agrupación por títulos y descripciones; denominación de navegación"
       },
       {
         "id": 9,
-        "name": "Pendiente de documentar",
-        "pending": true
+        "name": "Continuidad posterior (LP90–99)",
+        "collection": "lp",
+        "min": 90,
+        "max": 99,
+        "source": "agrupación cronológica para navegación; no nombre oficial de fase"
       }
     ],
     "nuclei": [
@@ -8672,6 +9772,6 @@
         "playlistId": ""
       }
     ],
-    "note": "La fuente define 7 fases y 11 núcleos; las fases 8 y 9 aún no constan definidas. Los LP 86–99 permanecen sin fase asignada hasta contar con documentación."
+    "note": "Fases 8 y 9: agrupaciones de navegación derivadas del catálogo, no denominaciones oficiales verificadas. Clasificaciones 'propuesta_por_descripcion' requieren revisión humana. Los álbumes instrumentales pueden carecer legítimamente de núcleo narrativo."
   }
 }
