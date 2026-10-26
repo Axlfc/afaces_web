@@ -57,7 +57,7 @@ class RadioContract(unittest.TestCase):
         self.assertIn("sessionStorage", player)
         self.assertIn("loadTrack(state.index,false)", player)
         self.assertIn("audio.addEventListener('error'", player)
-        self.assertIn("window.open(track.path", player)
+        self.assertIn("direct.href=track.path", player)
 
 
 if __name__ == "__main__":

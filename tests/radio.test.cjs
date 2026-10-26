@@ -191,11 +191,15 @@ test('descarga crea MP3 sin iniciar la reproducción',async()=>{
   assert.match(app.links[0].download,/\.mp3$/);
 });
 
-test('cuando CORS impide la descarga abre archivo original y explica el límite',async()=>{
+test('cuando CORS impide la descarga muestra un enlace original utilizable',async()=>{
   const app=page(new Map(),false);
   app.playlist.downloads[2].dispatch('click');
   await new Promise(resolve=>setImmediate(resolve));
-  assert.equal(app.opened[0],tracks[2].path);
-  assert.match(app.playlist.status.textContent,/MP3 original/);
+  assert.match(app.playlist.status.textContent,/No se pudo descargar/);
+  const link=app.playlist.status.children[0];
+  assert.equal(link.href,tracks[2].path);
+  assert.equal(link.target,'_blank');
+  assert.equal(link.rel,'noopener noreferrer');
+  assert.equal(link.textContent,'Abrir MP3 original');
   assert.equal(app.api.getState().playing,false);
 });

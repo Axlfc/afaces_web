@@ -222,11 +222,20 @@
       setTimeout(()=>URL.revokeObjectURL(objectUrl),60000);
       say('Descarga iniciada: '+track.name);
     }catch(error){
-      console.warn('AFACES Radio: descarga directa bloqueada',error);
-      const popup=window.open(track.path,'_blank','noopener,noreferrer');
-      say(popup===null
-        ?'La descarga directa no está disponible. Permite ventanas emergentes para abrir el MP3 original.'
-        :'Se ha abierto el MP3 original en otra pestaña; puedes guardarlo desde el navegador.');
+      console.warn('AFACES Radio: descarga directa no disponible',error);
+      if(/^HTTP (?:404|410)\\b/.test(String(error.message))){
+        say('Este MP3 no está disponible actualmente en el repositorio de música.');
+        return;
+      }
+      // El enlace permanece visible y requiere un clic deliberado del usuario:
+      // funciona incluso si el navegador bloquea popups fuera de un gesto directo.
+      status.textContent='No se pudo descargar directamente. ';
+      const direct=document.createElement('a');
+      direct.href=track.path;
+      direct.target='_blank';
+      direct.rel='noopener noreferrer';
+      direct.textContent='Abrir MP3 original';
+      status.appendChild(direct);
     }
   }
 
