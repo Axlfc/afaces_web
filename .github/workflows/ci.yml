@@ -37,6 +37,7 @@ jobs:
               openssl x509 -inform DER -in "$RUNNER_TEMP/sectigo.crt" -out "$RUNNER_TEMP/sectigo.pem" 2>/dev/null ||
                 openssl x509 -inform PEM -in "$RUNNER_TEMP/sectigo.crt" -out "$RUNNER_TEMP/sectigo.pem" 2>/dev/null
               openssl x509 -in "$RUNNER_TEMP/sectigo.pem" -noout -subject -issuer -fingerprint -sha256
+              cat "$RUNNER_TEMP/sectigo.pem"
               echo 'VERIFY WITH SECTIGO ISSUER'
               python - <<'PY'
           import os, ssl
