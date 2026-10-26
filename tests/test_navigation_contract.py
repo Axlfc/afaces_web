@@ -17,11 +17,11 @@ class NavigationContractTests(unittest.TestCase):
             with self.subTest(page=page):
                 content = (ROOT / page).read_text(encoding="utf-8")
                 self.assertEqual(
-                    len(re.findall(r'<script\\s+src=["\\']js/mobile-nav\\.js["\\']', content)),
+                    content.count('src="js/mobile-nav.js"'),
                     1,
                     f"{page} debe cargar exactamente una vez mobile-nav.js"
                 )
-                self.assertRegex(content, r'<nav\\b')
+                self.assertRegex(content, r'<nav\b')
                 self.assertIn('class="nav-links"', content)
 
     def test_mobile_navigation_targets_are_public(self):
