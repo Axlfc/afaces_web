@@ -3638,7 +3638,70 @@
         "language-form"
       ],
       "publishedAt": "2025-08-09",
-      "publishedAtSource": "manual"
+      "publishedAtSource": "manual",
+      "tracklist": [
+        {
+          "start_time": 0,
+          "title": "Mund Txupz (Tot per ells)"
+        },
+        {
+          "start_time": 132,
+          "title": "Capitalisme Monstruós (L'animal que ens menja)"
+        },
+        {
+          "start_time": 278,
+          "title": "Mund Subvencionad (La farsa del rescat)"
+        },
+        {
+          "start_time": 430,
+          "title": "Pactes de Màfia Digital (Blockchain de sang)"
+        },
+        {
+          "start_time": 605,
+          "title": "Breu Història d’una Estafa (El conte de sempre)"
+        },
+        {
+          "start_time": 750,
+          "title": "Ibizazon (Paraisos de plàstic)"
+        },
+        {
+          "start_time": 933,
+          "title": "Trinkeworld S.L. (Picaresca i negoci)"
+        },
+        {
+          "start_time": 1134,
+          "title": "Del Fons Monetari a la Merda (La caiguda lliure)"
+        },
+        {
+          "start_time": 1306,
+          "title": "Patrons i Palmeros (Brindant per la ruina)"
+        },
+        {
+          "start_time": 1528,
+          "title": "No Ens Enganyareu Més (El poble desperta)"
+        },
+        {
+          "start_time": 1734,
+          "title": "Ministres de la Mentida (Hipocresia oficial)"
+        },
+        {
+          "start_time": 1947,
+          "title": "Tu Paga, Jo Riu (L'ajust fiscal)"
+        },
+        {
+          "start_time": 2159,
+          "title": "Eco no.... mia (El buit digital)"
+        },
+        {
+          "start_time": 2370,
+          "title": "Col·lapse (El final del joc)"
+        },
+        {
+          "start_time": 2576,
+          "title": "Llama Otra Vegad, Cabrón (Saturació i ràbia)"
+        }
+      ],
+      "tracklistSource": "manual"
     },
     {
       "ref": "L:14",
@@ -5125,27 +5188,28 @@
       "tracklist": [
         {
           "start_time": 0,
-          "title": "1. En Mis Brazos (La muerte en mis trazos, escapando de mis manos) []"
+          "title": "En Mis Brazos (La muerte en mis trazos, escapando de mis manos)"
         },
         {
           "start_time": 161,
-          "title": "2. Estación Fantasma (Metro jodido y sueños podidos para fantasmas vivos) []"
+          "title": "Estación Fantasma (Metro jodido y sueños podidos para fantasmas vivos)"
         },
         {
           "start_time": 304,
-          "title": "3. La ciudad sangra (Barrios muertos, fábricas cerradas y 700 muertes) []"
+          "title": "La ciudad sangra (Barrios muertos, fábricas cerradas y 700 muertes)"
         },
         {
           "start_time": 498,
-          "title": "4. Control de Mierda (Machismo, insultos y violencia que paraliza) []"
+          "title": "Control de Mierda (Machismo, insultos y violencia que paraliza)"
         },
         {
           "start_time": 717,
-          "title": "5. Plaza al Amanecer (Libertad que cuesta sangre en un mundo de mierda) []"
+          "title": "Plaza al Amanecer (Libertad que cuesta sangre en un mundo de mierda)"
         }
       ],
-      "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 918
+      "tracklistSource": "manual",
+      "durationSeconds": 918,
+      "tracklistNotes": "Marcas adicionales de la descripción: 00:20, 02:58, 05:30, 08:27 y 12:21. No son inicios de pista."
     },
     {
       "ref": "L:41",
