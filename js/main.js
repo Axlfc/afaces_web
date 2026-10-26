@@ -3650,7 +3650,7 @@ function mkCard(item, type){
   const t=item.title.replace(/&/g,'&amp;').replace(/</g,'&lt;');
   const esc=item.title.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
   const ph=item.phase.replace(/'/g,"\\'");
-  return `<div class="disc-card" data-vid="${item.vid}" data-title="${item.title.toLowerCase()}" data-phase="${item.phase}" onclick="openModal('${item.vid}','${esc}','${type}',${item.n},'${ph}')">
+  return `<a class="disc-card" href="lanzamiento.html?ref=${type==='Álbum'?'A':'L'}:${item.n}" data-vid="${item.vid}" data-title="${item.title.toLowerCase()}" data-phase="${item.phase}" aria-label="Ver ficha de ${t}">
     <img class="card-img" src="https://img.youtube.com/vi/${item.vid}/0.jpg" alt="${t}" loading="lazy">
     <div class="card-num-b">#${String(item.n).padStart(2,'0')}</div>
     <div class="card-phase-b ${item.pb}">${item.phase}</div>
@@ -3660,7 +3660,7 @@ function mkCard(item, type){
       <div class="card-phase-l">${item.phase}</div>
       <div class="card-play"><div class="play-c"><svg width="7" height="9" viewBox="0 0 7 9" fill="white"><path d="M0 0L7 4.5L0 9Z"/></svg></div>Ver</div>
     </div>
-  </div>`;
+  </a>`;
 }
 
 function buildGrids(){

@@ -10,5 +10,5 @@
   links.addEventListener('click',e=>{if(e.target.closest('a'))close()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
   document.addEventListener('pointerdown',e=>{if(!nav.contains(e.target))close()});
-  window.addEventListener('resize',()=>{if(innerWidth>1100)close()});
+  window.addEventListener('resize',()=>{if(innerWidth>1550)close()});
 })();
