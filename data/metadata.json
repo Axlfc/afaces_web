@@ -1,5 +1,5 @@
 {
-  "source": "js/main.js (ALBUMS, LPS y AFACES_SITE.themes)",
+  "source": "js/main.js (ALBUMS, LPS y AFACES_SITE)",
   "count": 126,
   "videos": [
     {
@@ -2271,14 +2271,14 @@
     }
   ],
   "architecture": {
-    "source": "js/main.js / AFACES_SITE.phases y AFACES_SITE.themes",
+    "source": "js/main.js",
     "phases": [
       {
         "id": 1,
         "name": "Experimental",
         "collection": "album",
         "min": 1,
-        "max": 999
+        "max": 999999
       },
       {
         "id": 2,
