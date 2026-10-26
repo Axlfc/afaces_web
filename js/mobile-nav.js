@@ -10,6 +10,9 @@
 
  links.replaceChildren();
  for(const [label,url] of items){const li=document.createElement('li'),a=document.createElement('a');a.href=url;a.textContent=label;if(url.split('#')[0]===here&&!url.includes('#'))a.setAttribute('aria-current','page');li.append(a);links.append(li)}
+ updateMode();
+ window.addEventListener('afaces:view-mode-change',updateMode);
+ window.addEventListener('storage',e=>{if(e.key==='afaces-view-mode')updateMode()});
  nav.setAttribute('aria-label','Navegación principal');
  const logo=nav.querySelector('.nav-logo');if(logo)logo.href='welcome.html';
 
