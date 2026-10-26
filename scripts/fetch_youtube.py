@@ -11,8 +11,12 @@ from pathlib import Path
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--url', default='https://www.youtube.com/@afaces/videos')
-    parser.add_argument('--output', type=Path, default=Path(__file__).resolve().parents[1] / 'data/metadata.json')
+    parser.add_argument('--output', type=Path, default=Path(__file__).resolve().parents[1] / '.cache/youtube-snapshot.json')
     args = parser.parse_args()
+    # El extractor entrega un snapshot bruto: nunca debe destruir la curaduría.
+    curated = Path(__file__).resolve().parents[1] / 'data/metadata.json'
+    if args.output.resolve() == curated.resolve():
+        parser.error('Prohibido sobrescribir data/metadata.json; usa un snapshot independiente')
     try:
         import yt_dlp
     except ImportError:
