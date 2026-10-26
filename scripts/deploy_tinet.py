@@ -12,6 +12,31 @@ from ftplib import FTP_TLS, error_perm
 from pathlib import Path
 
 
+
+# Intermedio emitido por Sectigo, necesario porque TINET no lo envía en FTPS.
+# SHA-256 del certificado DER corroborado con Sectigo y el runner CI.
+SECTIGO_OV_R36_PATH = Path(__file__).resolve().parents[1] / "certs" / "SectigoPublicServerAuthenticationCAOVR36.pem"
+SECTIGO_OV_R36_SHA256 = "6542d176bed50f193c0ce297ae44ecd8a0a86bec2ede682769344059b4e78530"
+
+
+def make_ftps_context(ca_path=SECTIGO_OV_R36_PATH):
+    """Confía en CA raíz del sistema y aporta intermedio Sectigo verificado.
+
+    Mantiene CERT_REQUIRED y check_hostname activado. No permite omitir la
+    verificación ni confiar en un certificado intermedio arbitrario.
+    """
+    pem = Path(ca_path).read_text(encoding="ascii")
+    try:
+        der = ssl.PEM_cert_to_DER_cert(pem)
+    except (ValueError, ssl.SSLError) as exc:
+        raise ValueError("Certificado intermedio Sectigo PEM inválido") from exc
+    if hashlib.sha256(der).hexdigest() != SECTIGO_OV_R36_SHA256:
+        raise ValueError("Huella SHA-256 del certificado intermedio Sectigo inesperada")
+    context = ssl.create_default_context()
+    context.load_verify_locations(cadata=pem)
+    return context
+
+
 def plan(files, old_files):
     changed = [p for p in files if old_files.get(p) != files[p]]
     # Recursos antes de HTML; welcome e index últimos.
@@ -135,7 +160,7 @@ def main():
         if not user or not password:
             raise ValueError("Faltan los secretos FTP_USERNAME o FTP_PASSWORD")
         port = int(os.getenv("TINET_FTP_PORT", "21"))
-        with FTP_TLS(context=ssl.create_default_context(), timeout=30) as ftp:
+        with FTP_TLS(context=make_ftps_context(), timeout=30) as ftp:
             ftp.connect(host, port)
             ftp.login(user, password)
             ftp.prot_p()  # FTPS explícito con canal de datos protegido.

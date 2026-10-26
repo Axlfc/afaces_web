@@ -1,11 +1,12 @@
 import hashlib
 import io
 import json
+import ssl
 import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.deploy_tinet import plan, publish
+from scripts.deploy_tinet import make_ftps_context, plan, publish
 
 
 class FakeFTP:
@@ -137,6 +138,20 @@ class FTPTests(unittest.TestCase):
             self.assertEqual(ftp.data["/welcome.html"], b"old")
 
 
+
+
+    def test_ftps_context_keeps_hostname_and_ca_validation(self):
+        context = make_ftps_context()
+        self.assertTrue(context.check_hostname)
+        self.assertEqual(context.verify_mode, ssl.CERT_REQUIRED)
+        self.assertGreater(len(context.get_ca_certs()), 0)
+
+    def test_ftps_context_rejects_unpinned_certificate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "unexpected.pem"
+            path.write_text("-----BEGIN CERTIFICATE-----\nQUJD\n-----END CERTIFICATE-----\n")
+            with self.assertRaisesRegex(ValueError, "Huella SHA-256"):
+                make_ftps_context(path)
 
 
 if __name__ == "__main__":

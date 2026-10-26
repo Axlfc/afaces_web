@@ -74,3 +74,28 @@ Si el sitio remoto fue modificado o le falta un fichero pese a que el manifiesto
 lo marca como sincronizado: Actions → "Publicar AFACES en TINET (FTPS)" →
 "Run workflow" sobre master → marcar `force_full=true`. Se volverá a transferir
 todo el paquete y se conservará copia de los archivos reemplazados.
+
+## Certificado FTPS de TINET (26-10-2026)
+
+El runner de GitHub observó que TINET presenta el certificado wildcard
+`*.tinet.cat` (Diputació de Tarragona) pero **omite el certificado
+intermedio Sectigo Public Server Authentication CA OV R36**. OpenSSL
+respondía `unable to get local issuer certificate`.
+
+Se conserva el certificado intermedio **público**, procedente de
+[Sectigo](https://www.sectigo.com/knowledge-base/detail/Access-New-Sectigo-Certificate-Chain),
+en `certs/SectigoPublicServerAuthenticationCAOVR36.pem`, con su huella
+SHA-256 DER fijada en el código:
+`6542d176bed50f193c0ce297ae44ecd8a0a86bec2ede682769344059b4e78530`.
+La comprobación de la conexión desde Actions, sin usuario ni contraseña,
+completó TLS 1.2 tras incorporar ese intermedio.
+
+`make_ftps_context()` carga primero el almacén de CAs predeterminadas del
+sistema y después este certificado intermedio (verificando previamente su
+huella). **No desactiva** la verificación TLS ni el control del nombre del
+servidor. Una futura rotación de CA debe tratarse con revisión explícita
+de los nuevos certificados y pruebas: jamás aplicar `CERT_NONE`.
+
+Esto mitiga el defecto de cadena incompleta del servidor; lo correcto
+a largo plazo es que el administrador de TINET configure su servidor FTPS
+para enviar la cadena completa.
