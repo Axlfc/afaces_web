@@ -1,12 +1,12 @@
-name: Actualizar metadatos de YouTube
+name: Capturar snapshot de YouTube (sin alterar catálogo)
 on:
   workflow_dispatch:
   schedule:
     - cron: '17 5 * * 1'
 permissions:
-  contents: write
+  contents: read
 jobs:
-  actualizar:
+  snapshot:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,12 +15,12 @@ jobs:
           python-version: '3.12'
       - name: Instalar extractor
         run: python -m pip install 'yt-dlp>=2025.1.1'
-      - name: Extraer metadatos
-        run: python scripts/fetch_youtube.py
-      - name: Registrar cambios
-        run: |
-          git add data/metadata.json
-          if ! git diff --cached --quiet; then
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore(data): actualizar metadatos de YouTube'
-            git push
-          fi
+      - name: Extraer metadatos de YouTube en un fichero aislado
+        run: python scripts/fetch_youtube.py --output "$RUNNER_TEMP/youtube-snapshot.json"
+      - name: Conservar snapshot para revisión o conciliación
+        uses: actions/upload-artifact@v4
+        with:
+          name: afaces-youtube-snapshot
+          path: ${{ runner.temp }}/youtube-snapshot.json
+          if-no-files-found: error
+          retention-days: 14

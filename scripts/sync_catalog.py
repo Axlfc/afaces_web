@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Sincroniza metadata.json desde las listas y grupos de js/main.js. Solo stdlib."""
 import argparse
+import difflib
 import json
 import re
 import sys
@@ -46,7 +47,7 @@ def generate():
     phases = []
     for number, name, collection, start, end in re.findall(phase_re, phases_text):
         phases.append(dict(id=int(number), name=name, collection="album" if collection == "albums" else "lp",
-                           min=int(start), max=999999 if end == "'max'" else int(end)))
+                           min=int(start), max=999 if end == "'max'" else int(end)))
     if not phases:
         raise ValueError("Fases no reconocidas")
     for phase in previous.get("architecture", {}).get("phases", []):
@@ -71,14 +72,21 @@ def generate():
         if len(matches) > 1:
             raise ValueError("Fases solapadas: " + ref)
         row["fase_id"] = matches[0]["id"] if matches else row.get("fase_id")
-        row["nucleos_architectura"] = list(dict.fromkeys([t["id"] for t in themes if ref in t["refs"]] + row.get("nucleos_architectura", [])))
+        if row.get("clasificacion") == "sin_nucleo_narrativo":
+            # Preservar la ausencia de núcleo narrativo decidida editorialmente.
+            row["nucleos_architectura"] = row.get("nucleos_architectura", [])
+        else:
+            row["nucleos_architectura"] = list(dict.fromkeys(
+                [t["id"] for t in themes if ref in t["refs"]] +
+                row.get("nucleos_architectura", [])
+            ))
         row.setdefault("nucleos", [])
         row.setdefault("clasificacion", "pendiente_revision")
         updated.append(row)
     arch = dict(previous.get("architecture", {}))
-    arch.update(source="js/main.js", phases=phases,
+    arch.update(source="js/main.js / AFACES_SITE.phases y AFACES_SITE.themes", phases=phases,
                 nuclei=[{k: v for k, v in t.items() if k != "refs"} for t in themes])
-    previous.update(source="js/main.js (ALBUMS, LPS y AFACES_SITE)",
+    previous.update(source="js/main.js (ALBUMS, LPS y AFACES_SITE.themes)",
                     count=len(updated), videos=updated, architecture=arch)
     return json.dumps(previous, ensure_ascii=False, indent=2) + "\n"
 
@@ -93,6 +101,14 @@ def main():
         if args.check:
             if output != current:
                 print("DESACTUALIZADO: ejecuta python scripts/sync_catalog.py")
+                preview = list(difflib.unified_diff(
+                    current.splitlines(), output.splitlines(),
+                    fromfile="data/metadata.json", tofile="generado", lineterm="",
+                ))
+                for line in preview[:75]:
+                    print(line)
+                if len(preview) > 75:
+                    print(f"... {len(preview) - 75} líneas de diff adicionales")
                 return 1
             print("OK: catálogo sincronizado")
         elif output != current:
