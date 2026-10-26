@@ -1,0 +1,10 @@
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.afaces-worktrees/
+.env
+.env.*
+*.pem
+*.key
