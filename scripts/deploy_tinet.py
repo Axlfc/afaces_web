@@ -73,21 +73,19 @@ def publish(ftp, dist, remote, backup, force=False):
         old_files = json.loads(previous)["files"] if previous else {}
     except (ValueError, KeyError, TypeError):
         old_files = {}
-    # Reparación automática si otro cliente FTP borró archivos que figuraban en el manifiesto.
+    # El manifiesto previo no prueba el contenido actual: cotejar hashes por FTPS.
+    # Esto recupera tanto ficheros eliminados como alteraciones manuales/remotas.
     if not force:
-        listings = {}
         for name, digest in files.items():
             if old_files.get(name) != digest:
                 continue
             parts = Path(name).parts
-            folder = tuple(parts[:-1])
-            if folder not in listings:
-                try:
-                    cd_path(ftp, root, folder)
-                    listings[folder] = {p.rsplit("/", 1)[-1] for p in ftp.nlst()}
-                except error_perm:
-                    listings[folder] = set()
-            if parts[-1] not in listings[folder]:
+            try:
+                cd_path(ftp, root, parts[:-1])
+                observed = retrieve(ftp, parts[-1])
+            except error_perm:
+                observed = None
+            if observed is None or hashlib.sha256(observed).hexdigest() != digest:
                 old_files.pop(name, None)
     changed = plan(files, {} if force else old_files)
     print(f"Destino FTP confirmado: {root}. Archivos a actualizar: {len(changed)} / {len(files)}.")
