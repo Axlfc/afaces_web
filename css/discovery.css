@@ -48,3 +48,5 @@
 @media(prefers-reduced-motion:reduce){.cursor,.cursor-ring{display:none!important}body{cursor:auto!important}}
 @media(max-width:900px){nav .nav-links{display:none}nav{gap:.8rem}nav .nav-right{margin-left:auto}}
 .ux-page{padding-top:clamp(8rem,13vw,11rem)}
+
+.ux-recommend-filters{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:1.5rem 0 2rem}.ux-recommend-filters label{font:.7rem 'Space Mono',monospace;color:var(--text)}.ux-recommend-filters select{min-width:min(100%,260px);padding:.9rem;background:var(--card-bg);color:var(--text);border:1px solid var(--border);font:inherit}.ux-recommend-heading{grid-column:1/-1;margin:1.4rem 0 0;font:800 clamp(1.6rem,4vw,2.3rem) 'Barlow Condensed',sans-serif;text-transform:uppercase}.ux-recommend-filters .ux-button{font:inherit}@media(max-width:500px){.ux-recommend-filters>*{width:100%}}
