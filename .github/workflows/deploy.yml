@@ -39,7 +39,7 @@ jobs:
           set -euo pipefail
           python -m unittest discover -s tests -v
           node --check js/mobile-nav.js
-          node --test tests/navigation.test.cjs
+          node --test tests/*.test.cjs
           python scripts/sync_catalog.py --check
           python scripts/build_tinet.py --manifest
       - name: Publicar por FTPS explícito en raíz web detectada con welcome.html
