@@ -6,7 +6,15 @@
       "control",
       "conflicto"
     ],
-    "lanzamientos": []
+    "lanzamientos": [
+      "L:68",
+      "L:66",
+      "L:84",
+      "L:57",
+      "L:69",
+      "L:73"
+    ],
+    "criterio": "Selección editorial provisional basada en título, fase y núcleos existentes; género sonoro pendiente de escucha."
   },
   "ambient": {
     "titulo": "Espacios y ausencia",
@@ -15,7 +23,16 @@
       "vacio",
       "existencia"
     ],
-    "lanzamientos": []
+    "lanzamientos": [
+      "L:27",
+      "L:31",
+      "L:40",
+      "L:43",
+      "L:54",
+      "L:64",
+      "L:71"
+    ],
+    "criterio": "Selección editorial provisional basada en título, fase y núcleos existentes; género sonoro pendiente de escucha."
   },
   "post-punk": {
     "titulo": "Tensión y ruptura",
@@ -24,7 +41,15 @@
       "conflicto",
       "identidad"
     ],
-    "lanzamientos": []
+    "lanzamientos": [
+      "L:24",
+      "L:25",
+      "L:26",
+      "L:48",
+      "L:59",
+      "L:69"
+    ],
+    "criterio": "Selección editorial provisional basada en título, fase y núcleos existentes; género sonoro pendiente de escucha."
   },
   "conceptual": {
     "titulo": "Arquitecturas de sentido",
@@ -34,6 +59,16 @@
       "identidad",
       "existencia"
     ],
-    "lanzamientos": []
+    "lanzamientos": [
+      "L:18",
+      "L:19",
+      "L:20",
+      "L:55",
+      "L:65",
+      "L:82",
+      "L:83",
+      "L:85"
+    ],
+    "criterio": "Selección editorial provisional basada en título, fase y núcleos existentes; género sonoro pendiente de escucha."
   }
 }
