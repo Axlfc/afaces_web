@@ -41,7 +41,7 @@ class RadioContract(unittest.TestCase):
         self.assertNotIn("Para escuchar la radio completa", shell)
         self.assertNotIn("location.href='welcome.html#hero'", shell)
         self.assertEqual(data.count("const RADIO_TRACKS = ["), 1)
-        self.assertGreaterEqual(len(re.findall(r"\\bpath: BASE \\+", data)), 100)
+        self.assertGreaterEqual(data.count("path: BASE +"), 100)
 
     def test_downloads_are_actions_not_ellipsis_icons(self):
         player = (ROOT / "js/radio-player.js").read_text(encoding="utf-8")
