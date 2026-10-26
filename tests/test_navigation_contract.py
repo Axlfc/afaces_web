@@ -26,7 +26,9 @@ class NavigationContractTests(unittest.TestCase):
 
     def test_mobile_navigation_targets_are_public(self):
         script = (ROOT / "js/mobile-nav.js").read_text(encoding="utf-8")
-        for dest in re.findall(r"\\['[^']+','([^']+\\.html)(?:#[^']*)?',(?:true|false)\\]", script):
+        targets = re.findall(r"'([^']+\\.html)(?:#[^']*)?'", script)
+        self.assertGreaterEqual(len(targets), 10, "Menú incompleto o parser desactualizado")
+        for dest in targets:
             with self.subTest(target=dest):
                 self.assertTrue((ROOT / dest).is_file(), dest)
 
