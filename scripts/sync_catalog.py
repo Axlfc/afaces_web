@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Sincroniza metadata.json desde las listas y grupos de js/main.js. Solo stdlib."""
 import argparse
+import difflib
 import json
 import re
 import sys
@@ -93,6 +94,14 @@ def main():
         if args.check:
             if output != current:
                 print("DESACTUALIZADO: ejecuta python scripts/sync_catalog.py")
+                preview = list(difflib.unified_diff(
+                    current.splitlines(), output.splitlines(),
+                    fromfile="data/metadata.json", tofile="generado", lineterm="",
+                ))
+                for line in preview[:75]:
+                    print(line)
+                if len(preview) > 75:
+                    print(f"... {len(preview) - 75} líneas de diff adicionales")
                 return 1
             print("OK: catálogo sincronizado")
         elif output != current:
