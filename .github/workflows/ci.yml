@@ -17,11 +17,15 @@ jobs:
           python-version: '3.12'
       - name: Preparar worktree de verificación aislado
         run: git worktree add --detach "$RUNNER_TEMP/afaces-web-verify" HEAD
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Pruebas, sincronización y construcción
         run: |
           set -euo pipefail
           cd "$RUNNER_TEMP/afaces-web-verify"
           for file in js/*.js; do node --check "$file"; done
+          node --test tests/navigation.test.cjs
           python -m unittest discover -s tests -v
           python scripts/sync_catalog.py --check
           python scripts/build_tinet.py --manifest
