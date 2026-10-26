@@ -389,6 +389,7 @@ section{position:relative;z-index:1}
 .phase-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
 .p1::before{background:#3a6b5c}.p2::before{background:#5c4a8a}.p3::before{background:#7a3a3a}
 .p4::before{background:#2a5a7a}.p5::before{background:#6a5a2a}.p6::before{background:#4a2a5a}
+.p7::before{background:#8a2a5a}.p8::before{background:#b47fff}.p9::before{background:#ff6b6b}
 .phase-num{font-size:.52rem;letter-spacing:.25em;color:var(--muted);text-transform:uppercase;margin-bottom:.75rem}
 .phase-name{font-family:'Barlow Condensed',sans-serif;font-size:1.25rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--white);margin-bottom:.7rem;line-height:1.1}
 .phase-range{font-size:.58rem;letter-spacing:.1em;color:var(--accent);margin-bottom:1.1rem}
@@ -401,6 +402,9 @@ section{position:relative;z-index:1}
 .ptag.p4{background:rgba(42,90,122,.22);color:#88c0d8;border:1px solid rgba(42,90,122,.35)}
 .ptag.p5{background:rgba(106,90,42,.22);color:#d4b86a;border:1px solid rgba(106,90,42,.35)}
 .ptag.p6{background:rgba(74,42,90,.22);color:#c090d8;border:1px solid rgba(74,42,90,.35)}
+.ptag.p7{background:rgba(138,42,90,.22);color:#d890c0;border:1px solid rgba(138,42,90,.35)}
+.ptag.p8{background:rgba(180,120,255,.15);color:#b47fff;border:1px solid rgba(180,120,255,.3)}
+.ptag.p9{background:rgba(255,107,107,.15);color:#ff6b6b;border:1px solid rgba(255,107,107,.3)}
 
 /* ── TEMATICAS ──────────────────────────────────────────────────── */
 #tematicas{padding:8rem 3rem;border-top:1px solid var(--border)}

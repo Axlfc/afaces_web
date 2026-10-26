@@ -12,6 +12,8 @@
   .ptag.p7{background:rgba(180,120,255,.15);color:#b47fff;border-color:rgba(180,120,255,.3);}
   .phase-card.p7{border-color:rgba(180,120,255,.25);}
   .phase-card.p7 .phase-num{color:#b47fff;}
+  .modal-release-subtitle{margin-top:.35rem;font-family:'Space Mono',monospace;font-size:.72rem;line-height:1.45;letter-spacing:.04em;opacity:.68;}
+  .modal-release-desc{padding:1rem 1.35rem 1.1rem;border-top:1px solid var(--border);font-size:.92rem;line-height:1.65;opacity:.82;}
 </style>
 </head>
 <body>
@@ -125,17 +127,17 @@
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
-  <div class="hero-bg-num" id="heroBgNum">100</div>
+  <div class="hero-bg-num" id="heroBgNum">112</div>
   <div class="hero-content">
     <div class="hero-eyebrow">Proyecto musical independiente · Desde 2017</div>
     <h1 class="hero-title">A<em>fa</em><br>ces</h1>
     <div class="hero-bottom">
-      <p class="hero-desc">Un universo sonoro de 100 lanzamientos.<br>Desde el caos experimental hasta la arquitectura conceptual. 7 fases. 9 núcleos. Sin fin.</p>
+      <p class="hero-desc">Un universo sonoro de <span id="heroReleaseCount">112</span> lanzamientos.<br>Desde el caos experimental hasta la arquitectura conceptual. <span id="heroPhaseCount">7</span> fases. <span id="heroThemeCount">10</span> núcleos. Sin fin.</p>
       <div class="hero-stats">
-        <div class="stat"><div class="stat-n">27</div><div class="stat-l">Álbumes</div></div>
-        <div class="stat"><div class="stat-n">81</div><div class="stat-l">LPs</div></div>
-        <div class="stat"><div class="stat-n">7</div><div class="stat-l">Fases</div></div>
-        <div class="stat"><div class="stat-n">9</div><div class="stat-l">Núcleos</div></div>
+        <div class="stat"><div class="stat-n" id="statAlbums">27</div><div class="stat-l">Álbumes</div></div>
+        <div class="stat"><div class="stat-n" id="statLps">85</div><div class="stat-l">LPs</div></div>
+        <div class="stat"><div class="stat-n" id="statPhases">7</div><div class="stat-l">Fases</div></div>
+        <div class="stat"><div class="stat-n" id="statThemes">10</div><div class="stat-l">Núcleos</div></div>
       </div>
     </div>
   </div>
@@ -150,8 +152,8 @@
   <div class="fu">
     <div class="about-label">El artista</div>
     <h2 class="about-headline">Un universo<br>narrativo <em>coherente</em></h2>
-    <p class="about-text">Afaces es el proyecto de Axel Fernandez Curros: obra musical masiva y continua de 100 lanzamientos. No es una colección de trabajos inconexos — es un universo narrativo donde cada pieza aporta a una exploración continua de sistemas, vacíos, códigos, desapariciones y estructuras invisibles de control.</p>
-    <p class="about-text">La producción muestra una evolución clara: desde trabajos experimentales en inglés con títulos provocativos, hacia producciones conceptuales complejas en español con arquitecturas narrativas interconectadas. Desde la frustración meta-artística de <em style="color:var(--gold)">'BUY NEVER'</em> hasta el cierre conceptual de <em style="color:var(--gold)">'Ceniza y Sal: Manual de Desaparición'</em>.</p>
+    <p class="about-text">Afaces es el proyecto de Axel Fernandez Curros: obra musical masiva y continua de <span id="aboutReleaseCount">112</span> lanzamientos. No es una colección de trabajos inconexos — es un universo narrativo donde cada pieza aporta a una exploración continua de sistemas, vacíos, códigos, desapariciones y estructuras invisibles de control.</p>
+    <p class="about-text">La producción muestra una evolución clara: desde trabajos experimentales en inglés con títulos provocativos, hacia producciones conceptuales complejas en español con arquitecturas narrativas interconectadas. Desde la frustración meta-artística de <em style="color:var(--gold)">'BUY NEVER'</em> hasta la fase de reconstrucción lógica cuyo punto más reciente es <em style="color:var(--gold)" id="aboutLatestRelease">Formato C:</em>.</p>
     <p class="about-text">Las series NEXUZ, PROTOCOLO y KODE funcionan como megaestructuras dentro de la obra mayor. La Trilogía del Fuego y la Constelación del Vacío trazan arcos temáticos que atraviesan décadas.</p>
     <div class="about-pills">
       <a href="https://open.spotify.com/artist/3zbzWzOqZcY3mZBG5ICF9l" target="_blank" class="pill">Spotify</a>
@@ -166,10 +168,10 @@
     <div class="info-grid">
       <div class="info-cell"><div class="info-cell-lbl">Artista</div><div class="info-cell-val">Axel F. Curros</div></div>
       <div class="info-cell"><div class="info-cell-lbl">Activo desde</div><div class="info-cell-val">2017</div></div>
-      <div class="info-cell"><div class="info-cell-lbl">Álbumes</div><div class="info-cell-val">27</div></div>
-      <div class="info-cell"><div class="info-cell-lbl">LPs</div><div class="info-cell-val">81</div></div>
-      <div class="info-cell"><div class="info-cell-lbl">Fases evolutivas</div><div class="info-cell-val">7</div></div>
-      <div class="info-cell"><div class="info-cell-lbl">Núcleos temáticos</div><div class="info-cell-val">9</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Álbumes</div><div class="info-cell-val" id="infoAlbums">27</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">LPs</div><div class="info-cell-val" id="infoLps">85</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Fases evolutivas</div><div class="info-cell-val" id="infoPhases">7</div></div>
+      <div class="info-cell"><div class="info-cell-lbl">Núcleos temáticos</div><div class="info-cell-val" id="infoThemes">10</div></div>
       <div class="info-cell"><div class="info-cell-lbl">Idioma(s)</div><div class="info-cell-val" style="font-size:.9rem;font-family:'Space Mono';font-weight:400">ES / EN  / CAT / EUS / IALEX</div></div>
       <div class="info-cell"><div class="info-cell-lbl">Sello</div><div class="info-cell-val">Independiente</div></div>
     </div>
@@ -181,17 +183,9 @@
   <div class="sec-head fu">
     <span class="sec-n">02</span>
     <h2 class="sec-title">Fases Evolutivas</h2>
-    <span class="sec-sub">7 períodos · 100 lanzamientos</span>
+    <span class="sec-sub" id="phaseSummary">7 períodos · 112 lanzamientos</span>
   </div>
-  <div class="phases-grid">
-    <div class="phase-card p1 fu"><div class="phase-num">Fase 01</div><div class="phase-name">Experimental</div><div class="phase-range">Álbumes 1–27</div><div class="phase-desc">Exploración y formación de identidad artística. Predominio del inglés con títulos provocativos y meta-referencias al proceso creativo. Crítica a la industria desde dentro.</div><div class="phase-tags"><span class="ptag p1">Inglés</span><span class="ptag p1">Provocativo</span><span class="ptag p1">Meta-artístico</span></div></div>
-    <div class="phase-card p2 fu" style="transition-delay:.08s"><div class="phase-num">Fase 02</div><div class="phase-name">Transición Urbana</div><div class="phase-range">LPs 1–10</div><div class="phase-desc">Cambio hacia narrativas en español con enfoque urbano y social. Realismo crítico: tránsito, accidentes, emigración, maquinaria sistémica.</div><div class="phase-tags"><span class="ptag p2">Español</span><span class="ptag p2">Urbano</span><span class="ptag p2">Social</span></div></div>
-    <div class="phase-card p3 fu" style="transition-delay:.16s"><div class="phase-num">Fase 03</div><div class="phase-name">Alt-Ortografía</div><div class="phase-range">LPs 11–14</div><div class="phase-desc">Deformación deliberada del lenguaje. La ortografía como territorio de subversión. Títulos que rompen la norma para revelar lo que la norma oculta.</div><div class="phase-tags"><span class="ptag p3">Lingüístico</span><span class="ptag p3">Experimental</span></div></div>
-    <div class="phase-card p4 fu" style="transition-delay:.24s"><div class="phase-num">Fase 04</div><div class="phase-name">Megaestructuras</div><div class="phase-range">LPs 15–22</div><div class="phase-desc">Series NEXUZ, PROTOCOLO y KODE: sistemas complejos de interconnexión temática. Arquitectura conceptual que supera al disco individual.</div><div class="phase-tags"><span class="ptag p4">Sistémico</span><span class="ptag p4">Conceptual</span><span class="ptag p4">Series</span></div></div>
-    <div class="phase-card p5 fu" style="transition-delay:.32s"><div class="phase-num">Fase 05</div><div class="phase-name">Post-Conceptual</div><div class="phase-range">LPs 23–51</div><div class="phase-desc">La fase más extensa. Madurez artística plena. Diversificación radical: desde el fuego social hasta la filosofía, desde el duelo hasta la burocracia.</div><div class="phase-tags"><span class="ptag p5">Maduro</span><span class="ptag p5">Diverso</span><span class="ptag p5">Filosófico</span></div></div>
-    <div class="phase-card p6 fu" style="transition-delay:.4s"><div class="phase-num">Fase 06</div><div class="phase-name">Cierre y Vacío</div><div class="phase-range">LPs 52–73</div><div class="phase-desc">El vacío como categoría definitiva. Burocracia, desaparición, ceniza. El cierre que no cierra — porque la obra permanece abierta en sus preguntas.</div><div class="phase-tags"><span class="ptag p6">Vacío</span><span class="ptag p6">Burocracia</span><span class="ptag p6">Final</span></div></div>
-    <div class="phase-card p7 fu" style="transition-delay:.48s"><div class="phase-num">Fase 07</div><div class="phase-name">Reconstrucción Lógica</div><div class="phase-range">LPs 74–81</div><div class="phase-desc">Tras el colapso, el sistema se analiza desde sus fallos. Protocolos de privacidad, memoria residual, identidad post-máscara y el mapa de las falacias. No es reacción: es comprensión operativa del mecanismo para habitarlo o destruirlo con precisión.</div><div class="phase-tags"><span class="ptag p7">Protocolos</span><span class="ptag p7">Memoria Residual</span><span class="ptag p7">Eficiencia</span><span class="ptag p7">Sofismas</span></div></div>
-  </div>
+  <div class="phases-grid" id="phasesGrid"></div>
 </section>
 
 <!-- TEMATICAS -->
@@ -199,90 +193,9 @@
   <div class="sec-head fu">
     <span class="sec-n">03</span>
     <h2 class="sec-title">Núcleos Temáticos</h2>
-    <span class="sec-sub">9 ejes transversales</span>
+    <span class="sec-sub" id="themeSummary">10 ejes transversales</span>
   </div>
-  <div class="temas-grid">
-    <div class="tema-card fu">
-      <div class="tema-icon">🔴</div>
-      <div class="tema-name">Control & Sistema</div>
-      <div class="tema-count">~22 obras</div>
-      <div class="tema-desc">La maquinaria invisible que organiza la existencia: burocracia, protocolos, códigos, censos. El poder que se ejerce sin nombre ni cara.</div>
-      <div class="tema-ex">El Papeleo · PROTOCOLO D.E.U.S. · 1/9: El Censo del Silencio</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="PLvEI0iOxif03N38irYr62Bc2EFIc72S-R">Abrir Playlist PROTOCOLO / BUROCRACIA</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.06s">
-      <div class="tema-icon">⬛</div>
-      <div class="tema-name">Vacío & Desaparición</div>
-      <div class="tema-count">~15 obras</div>
-      <div class="tema-desc">El vacío como espacio activo. Ausencias que pesan más que presencias. Geografías del silencio y la invisibilidad.</div>
-      <div class="tema-ex">Geometría del Vacío · Desaparecemos Juntos · Abismo</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="PLvEI0iOxif00gNqgRo2HpXugiDOsuwmJF">Abrir Playlist CONSTELACIÓN DEL VACÍO</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.12s">
-      <div class="tema-icon">🌆</div>
-      <div class="tema-name">Urbanismo & Sociedad</div>
-      <div class="tema-count">~18 obras</div>
-      <div class="tema-desc">La ciudad como escenario de conflicto. Calles, tránsito, gasolineras, barrios que arden. Lo colectivo bajo presión.</div>
-      <div class="tema-ex">Tránsito · Accidente · La Villa Está Que Arde</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="PLvEI0iOxif00NSZa-arI02EFs0uVzh0LS">Abrir Playlist TRILOGÍA DEL FUEGO</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.18s">
-      <div class="tema-icon">💻</div>
-      <div class="tema-name">Digital & Código</div>
-      <div class="tema-count">~16 obras</div>
-      <div class="tema-desc">La tecnología como lenguaje y como jaula. Interfaces, datos, logs, sistemas que reportan sin comprender. La memoria que sobrevive al borrado.</div>
-      <div class="tema-ex">SYN KODE · ARCHIVE-ZERO · remanencia.log · Memoria Residual</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="PLvEI0iOxif02vuX1YQgpWtHPdZ2aSktBU">Abrir Playlist KODE / ZERO</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.24s">
-      <div class="tema-icon">🔥</div>
-      <div class="tema-name">Conflicto & Tensión</div>
-      <div class="tema-count">~10 obras</div>
-      <div class="tema-desc">El fuego como metáfora estructural. Explosión inminente, combustión lenta, la cancha siempre al borde del estallido.</div>
-      <div class="tema-ex">La Trilogía del Fuego · Las Últimas Habitaciones</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="PLvEI0iOxif00NSZa-arI02EFs0uVzh0LS">Abrir Playlist TRILOGÍA DEL FUEGO</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.3s">
-      <div class="tema-icon">🪞</div>
-      <div class="tema-name">Identidad & Meta</div>
-      <div class="tema-count">~16 obras</div>
-      <div class="tema-desc">La obra que se mira a sí misma. La industria, el artista, el proceso. La máscara heredada y la construcción del yo. Meta-referencias que ponen en crisis la idea misma de la música.</div>
-      <div class="tema-ex">BUY NEVER · Where are my royalties · advisory content · Sin Cara Propia</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="">Abrir Playlist (no asignada)</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.36s">
-      <div class="tema-icon">⚖️</div>
-      <div class="tema-name">Filosofía & Existencia</div>
-      <div class="tema-count">~9 obras</div>
-      <div class="tema-desc">Preguntas sin respuesta como método. Kenosis, vacío, alta gamma. La filosofía no como respuesta sino como forma de habitar la incertidumbre.</div>
-      <div class="tema-ex">Kenosis · Alta γ · Teoría del Eco</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="">Abrir Playlist (no asignada)</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.42s">
-      <div class="tema-icon">🌐</div>
-      <div class="tema-name">Lengua & Forma</div>
-      <div class="tema-count">~8 obras</div>
-      <div class="tema-desc">El idioma como territorio de subversión. Catalán, euskera, IALEX, ortografía rota. La forma del lenguaje como contenido político.</div>
-      <div class="tema-ex">Alt-Ortografía · Pacizeq · Disculpaz-nos</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="">Abrir Playlist (no asignada)</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.48s">
-      <div class="tema-icon">🛡️</div>
-      <div class="tema-name">Arquitectura de Control</div>
-      <div class="tema-count">~6 obras</div>
-      <div class="tema-desc">Privacidad pública, vigilancia progresiva, rastreo algorítmico y la economía de la atención como grillete digital. El iris como código, el like como contrato.</div>
-      <div class="tema-ex">Privacidad Pública · Protocolo Extremo · Creador Sin Corte</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="">Abrir Playlist (no asignada)</button></div>
-    </div>
-    <div class="tema-card fu" style="transition-delay:.54s">
-      <div class="tema-icon">🧠</div>
-      <div class="tema-name">Psicología del Error</div>
-      <div class="tema-count">~4 obras</div>
-      <div class="tema-desc">Obsolescencia del alma, el glitch como identidad y el análisis de sesgos cognitivos. Falacias como espejo del pensamiento humano. El fallo honesto como forma de libertad.</div>
-      <div class="tema-ex">Obsolescencia del Alma · Sofisma · Eficiencia Operativa</div>
-      <div class="tema-actions"><button class="visor-btn" data-playlist="">Abrir Playlist (no asignada)</button></div>
-    </div>
-  </div>
+  <div class="temas-grid" id="themesGrid"></div>
 </section>
 <section id="series">
   <div class="sec-head fu">
@@ -290,63 +203,13 @@
     <h2 class="sec-title">Series y Arcos</h2>
     <span class="sec-sub">Megaestructuras narrativas</span>
   </div>
-  <div class="series-grid">
-    <div class="serie-card fu">
-      <div class="serie-label">LPs 15–17</div>
-      <div class="serie-title">Serie NEXUZ</div>
-      <div class="serie-desc">Tres volúmenes que exploran la conexión invisible entre sistemas humanos y estructuras ocultas de organización social. Influencias del pensamiento sistémico y la teoría del caos.</div>
-      <div class="serie-items"><div class="s-item"><span class="s-n">15.</span><span>Nexuz-Persönaz — El individuo en la red</span></div><div class="s-item"><span class="s-n">16.</span><span>Nexuz Sonoraz — El sonido como nexo</span></div><div class="s-item"><span class="s-n">17.</span><span>NEXUZ SOPHIA: KONZEPT FRAKTUR</span></div></div>
-      <div class="serie-actions"><button class="serie-visor" data-playlist="PLvEI0iOxif00yoBYkknpE7FSNxvykKJZh">EJECUTAR REPRODUCCIÓN NEXUZ</button></div>
-    </div>
-    <div class="serie-card fu" style="transition-delay:.1s">
-      <div class="serie-label">LPs 18 + 22</div>
-      <div class="serie-title">Serie PROTOCOLO</div>
-      <div class="serie-desc">El protocolo como forma de violencia administrativa. Dos capítulos que exploran cómo los sistemas de procedimiento borran la humanidad de sus participantes.</div>
-      <div class="serie-items"><div class="s-item"><span class="s-n">18.</span><span>PROTOCOLO D.E.U.S. - CONSTRUYENDO EL FUTURO</span></div><div class="s-item"><span class="s-n">22.</span><span>PROTOCOLO ESCAPE: Capítulo 1 (Piloto)</span></div></div>
-      <div class="serie-actions"><button class="serie-visor" data-playlist="PLvEI0iOxif00E_V8QUWbE6V-wwXdUKntk">EJECUTAR REPRODUCCIÓN PROTOCOLO</button></div>
-    </div>
-    <div class="serie-card fu" style="transition-delay:.2s">
-      <div class="serie-label">LPs 19–21</div>
-      <div class="serie-title">Serie KODE / ZERO</div>
-      <div class="serie-desc">Códigos como estructuras de control. El punto cero como archivo fundamental y reset absoluto. Las dos series se cruzan en KODE-ZERO.</div>
-      <div class="serie-items"><div class="s-item"><span class="s-n">19.</span><span>SYN KODE: The Complete System Report</span></div><div class="s-item"><span class="s-n">20.</span><span>ARCHIVE-ZERO — Origen de todo registro</span></div><div class="s-item"><span class="s-n">21.</span><span>KODE-ZERO — Reset absoluto del código</span></div></div>
-      <div class="serie-actions"><button class="serie-visor" data-playlist="PLvEI0iOxif02vuX1YQgpWtHPdZ2aSktBU">EJECUTAR REPRODUCCIÓN KODE/ZERO</button></div>
-    </div>
-    <div class="serie-card fu" style="transition-delay:.3s">
-      <div class="serie-label">LPs 24–26</div>
-      <div class="serie-title">Trilogía del Fuego</div>
-      <div class="serie-desc">El fuego como metáfora de conflicto, tensión y destrucción social. Escala desde el barrio en llamas hasta la combustión total.</div>
-      <div class="serie-items"><div class="s-item"><span class="s-n">24.</span><span>La Villa Está Que Arde — Conflicto territorial</span></div><div class="s-item"><span class="s-n">25.</span><span>La Cancha Está Por Estallar — A punto de explosión</span></div><div class="s-item"><span class="s-n">26.</span><span>Todo Se Quema — Combustión total</span></div></div>
-      <div class="serie-actions"><button class="serie-visor" data-playlist="PLvEI0iOxif00NSZa-arI02EFs0uVzh0LS">EJECUTAR REPRODUCCIÓN FUEGO</button></div>
-    </div>
-    <div class="serie-card fu" style="transition-delay:.4s">
-      <div class="serie-label">9 obras dispersas</div>
-      <div class="serie-title">Constelación del Vacío</div>
-      <div class="serie-desc">No una serie lineal sino un arco temático recurrente que agrupa obras que exploran el vacío como concepto espacial y existencial a lo largo de toda la obra.</div>
-      <div class="serie-items"><div class="s-item"><span class="s-n">27.</span><span>Geometría del Vacío</span></div><div class="s-item"><span class="s-n">31.</span><span>Desaparecemos Juntos</span></div><div class="s-item"><span class="s-n">40.</span><span>Estación Fantasma</span></div><div class="s-item"><span class="s-n">54.</span><span>Espero Nada</span></div><div class="s-item"><span class="s-n">64.</span><span>Abismo</span></div><div class="s-item"><span class="s-n">71.</span><span>Ceniza y Sal: Manual de Desaparición</span></div></div>
-      <div class="serie-actions"><button class="serie-visor" data-playlist="PLvEI0iOxif00gNqgRo2HpXugiDOsuwmJF">EJECUTAR REPRODUCCIÓN VACÍO</button></div>
-    </div>
-    <div class="serie-card fu" style="transition-delay:.5s">
-      <div class="serie-label">4 obras clave</div>
-      <div class="serie-title">Serie Burocrática</div>
-      <div class="serie-desc">Violencia de lo administrativo, invisibilidad de sistemas de control, censos deshumanizantes e infraestructuras ocultas del poder.</div>
-      <div class="serie-items"><div class="s-item"><span class="s-n">52.</span><span>El Papeleo</span></div><div class="s-item"><span class="s-n">58.</span><span>Infraestructuras Invisibles</span></div><div class="s-item"><span class="s-n">65.</span><span>1/9: El Censo del Silencio</span></div><div class="s-item"><span class="s-n">68.</span><span>Estática Burocrática</span></div></div>
-      <div class="serie-actions"><button class="serie-visor" data-playlist="PLvEI0iOxif03N38irYr62Bc2EFIc72S-R">EJECUTAR REPRODUCCIÓN BUROCRACIA</button></div>
-    </div>
-    <div class="serie-card fu" style="transition-delay:.6s">
-      <div class="serie-label">LPs 74, 76 + 79</div>
-      <div class="serie-title">Protocolos de Supervivencia</div>
-      <div class="serie-desc">Cómo operar dentro (o fuera) de un sistema de vigilancia. Privacidad como acto político, zonas ciegas como resistencia, eficiencia como cirugía del carácter. Una trilogía táctica para habitar el mundo sin ser consumido por él.</div>
-      <div class="serie-items"><div class="s-item"><span class="s-n">74.</span><span>Privacidad Pública — El iris como código</span></div><div class="s-item"><span class="s-n">76.</span><span>Protocolo Extremo — Zonas ciegas y rastreo</span></div><div class="s-item"><span class="s-n">79.</span><span>Eficiencia Operativa — El yo como función</span></div></div>
-      <div class="serie-actions"><button class="serie-visor" data-playlist="PLvEI0iOxif01jZPOhX63zD6GKjZJto_be">EJECUTAR REPRODUCCIÓN PROTOCOLOS</button></div>
-    </div>
-  </div>
+  <div class="series-grid" id="seriesGrid"></div>
 </section>
 <section id="discography">
   <div class="sec-head fu">
     <span class="sec-n">05</span>
     <h2 class="sec-title">Discografía</h2>
-    <span class="sec-sub">100 lanzamientos completos</span>
+    <span class="sec-sub" id="discSummary">112 lanzamientos completos</span>
   </div>
   <div class="disc-controls">
     <button class="tab-btn active" data-tab="albums">Álbumes <span id="aCnt"></span></button>
@@ -459,6 +322,7 @@
         <div class="modal-type" id="mType">—</div>
         <div class="modal-title" id="mTitle">—</div>
         <div class="modal-phase-txt" id="mPhase">—</div>
+        <div class="modal-release-subtitle" id="mSubtitle" style="display:none"></div>
       </div>
       <button class="modal-close" onclick="closeModal()">✕ Cerrar</button>
     </div>
@@ -470,6 +334,7 @@
       <span class="mwatch-label">Hover para reproducir</span>
       <span class="mwatch-cta">▶ Ver en YouTube</span>
     </a>
+    <div class="modal-release-desc" id="mDesc" style="display:none"></div>
     <div class="modal-foot">
       <a href="#" id="mYtLink" target="_blank" rel="noopener" class="modal-yt">↗ Abrir en YouTube</a>
       <a href="#" id="mBcLink" target="_blank" rel="noopener" class="modal-bc">↗ Abrir en Bandcamp</a>
@@ -481,7 +346,6 @@
   </div>
 </div>
 
-<script src="js/main.js"></script>
 
 <!-- PLAYLIST VISOR MODAL -->
 <div class="modal-overlay" id="playlistModal" aria-hidden="true">
@@ -519,112 +383,6 @@
     }catch(e){console.warn(e)}
   })();
 </script>
-<!-- LP 74-81 DATA — Fase 07: Reconstrucción Lógica -->
-<script>
-(function(){
-  var nuevosLPs = [
-    {
-      n: 74,
-      title: "Privacidad Pública",
-      type: "LP",
-      phase: "Fase 07",
-      year: 2025,
-      tags: ["Ciberseguridad","Vigilancia","Digital"],
-      yt: "ncxhYf_PugQ",
-      bc: "",
-      desc: "El iris como código biométrico y el contrato invisible de los likes. La privacidad ya no es un derecho sino un residuo que el sistema tolera cuando no es rentable suprimirlo."
-    },
-    {
-      n: 75,
-      title: "Sin Cara Propia",
-      type: "LP",
-      phase: "Fase 07",
-      year: 2025,
-      tags: ["Identidad","Meta","Post-sistema"],
-      yt: "MoNzoQ__daU",
-      bc: "",
-      desc: "La máscara heredada. La construcción del yo real frente a la identidad que el entorno impone. ¿Quién eres cuando nadie te está mirando?"
-    },
-    {
-      n: 76,
-      title: "Protocolo Extremo",
-      type: "LP",
-      phase: "Fase 07",
-      year: 2025,
-      tags: ["Vigilancia","Ciberseguridad","Protocolos"],
-      yt: "AfHPHMEUmGw",
-      bc: "",
-      desc: "Zonas ciegas y resistencia al rastreo algorítmico. El protocolo llevado al límite como única forma de existir fuera del radar del control digital."
-    },
-    {
-      n: 77,
-      title: "Memoria Residual",
-      type: "LP",
-      phase: "Fase 07",
-      year: 2025,
-      tags: ["Digital","Archivo","Memoria"],
-      yt: "3BUQpEgzf2Y",
-      bc: "",
-      desc: "Datos que sobreviven al borrado. El ghost history: la huella que permanece cuando ya no quieres que permanezca nada. La memoria como trampa y como herencia."
-    },
-    {
-      n: 78,
-      title: "Creador Sin Corte",
-      type: "LP",
-      phase: "Fase 07",
-      year: 2025,
-      tags: ["Economía Digital","Meta","Artista"],
-      yt: "tetiibop_7o",
-      bc: "",
-      desc: "La lucha del artista independiente contra la monetización corporativa. Crear sin cesión. El creador que no negocia su corte porque no acepta que exista un intermediario."
-    },
-    {
-      n: 79,
-      title: "Eficiencia Operativa",
-      type: "LP",
-      phase: "Fase 07",
-      year: 2025,
-      tags: ["Productividad","Protocolos","Identidad"],
-      yt: "h3sb_s4jmbs",
-      bc: "",
-      desc: "El yo como función. Cirugía estructural del carácter: eliminar lo innecesario, optimizar lo que permanece. La eficiencia no como rendimiento sino como honestidad radical con uno mismo."
-    },
-    {
-      n: 80,
-      title: "Obsolescencia del Alma",
-      type: "LP",
-      phase: "Fase 07",
-      year: 2025,
-      tags: ["Filosofía Digital","Existencia","Error"],
-      yt: "giqnvH-jhZw",
-      bc: "",
-      desc: "El fallo honesto y la libertad de ser inservible. En un sistema que exige actualización perpetua, quedarse obsoleto es un acto de resistencia existencial."
-    },
-    {
-      n: 81,
-      title: "Sofisma",
-      type: "LP",
-      phase: "Fase 07",
-      year: 2025,
-      tags: ["Lógica","Lenguaje","Falacias"],
-      yt: "--WR4MBuQiA",
-      bc: "",
-      desc: "229 formas de mentir con la verdad. Un catálogo exhaustivo de falacias lógicas como mapa del pensamiento humano. El sofisma no como error sino como técnica deliberada de control narrativo."
-    }
-  ];
-
-  // Intenta inyectar en el array de LPs de main.js
-  // Compatible con patrones de nombre comunes
-  var possibleArrays = ['lpsData','lps','LPS','allLPs','tracks','discography'];
-  for(var i=0;i<possibleArrays.length;i++){
-    if(window[possibleArrays[i]] && Array.isArray(window[possibleArrays[i]])){
-      window[possibleArrays[i]] = window[possibleArrays[i]].concat(nuevosLPs);
-      break;
-    }
-  }
-  // Exponer globalmente para que main.js lo consuma si hace comprobación tardía
-  window.lpsExtra = nuevosLPs;
-})();
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
