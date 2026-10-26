@@ -67,6 +67,7 @@
     ui.play.setAttribute('aria-label',playing?'Pausar radio':'Reproducir radio');
   };
   const openRadio=()=>{
+    ui.panel.inert=false;
     ui.panel.classList.add('open');
     ui.panel.setAttribute('aria-hidden','false');
     ui.backdrop.classList.add('open');
@@ -74,12 +75,14 @@
     ui.toggle.setAttribute('aria-expanded','true');
   };
   const closeRadio=()=>{
+    ui.panel.inert=true;
     ui.panel.classList.remove('open');
     ui.panel.setAttribute('aria-hidden','true');
     ui.backdrop.classList.remove('open');
     ui.toggle.classList.remove('active');
     ui.toggle.setAttribute('aria-expanded','false');
   };
+  ui.panel.inert=true;
   ui.toggle.setAttribute('aria-controls','radioPanel');
   ui.toggle.setAttribute('aria-expanded','false');
   ui.toggle.addEventListener('click',()=>ui.panel.classList.contains('open')?closeRadio():openRadio());
