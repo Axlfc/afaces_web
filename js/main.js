@@ -20,7 +20,7 @@ const ALBUMS = [
   {n:11, title:"Bull's-eye", vid:"VCzKkBZ-03w", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/bulls-eye"},
   {n:12, title:"Where are my royalties", vid:"zg2NECdI3OY", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/where-are-my-royalties"},
   {n:13, title:"Who u tryna' impress", vid:"Nx3ucT01P-g", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/who-u-tryna-impress"},
-  {n:14, title:"The bad words", vid:"rEKs9ttSOLA", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/the-bad-words"},
+  {n:14, title:"The bad words", vid:"Nx3ucT01P-g", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/the-bad-words"},
   {n:15, title:"Journey to Wasted Youth", vid:"0EdaPCRZXmY", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/journey-to-wasted-youth"},
   {n:16, title:"Lyricless Miracles", vid:"FzD53ikXz5w", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/lyricless-miracles"},
   {n:17, title:"irl", vid:"g9dWBnJ20MQ", phase:"Electronic", pb:"pb-exp", bc:"https://afaces.bandcamp.com/album/irl"},

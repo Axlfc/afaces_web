@@ -1374,40 +1374,21 @@
       "coleccion": "album",
       "numero": 13,
       "fase": "Electronic",
-      "youtube_url": "https://www.youtube.com/watch?v=Nx3ucT01P-g",
-      "nucleos": [
-        "identidad"
-      ],
-      "clasificacion": "curaduria_existente",
-      "fase_id": 1,
-      "nucleos_architectura": [
-        "identity-meta"
-      ],
-      "publishedAt": "2025-02-27",
-      "publishedAtSource": "manual",
-      "tags": [
-        "álbum original",
-        "Electronic",
-        "identidad"
-      ],
-      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
-    },
-    {
-      "ref": "A:14",
-      "titulo": "The bad words",
-      "title": "The bad words",
-      "coleccion": "album",
-      "numero": 14,
-      "fase": "Electronic",
       "youtube_url": "https://www.youtube.com/watch?v=rEKs9ttSOLA",
       "nucleos": [],
       "clasificacion": "sin_nucleo_narrativo",
       "fase_id": 1,
       "nucleos_architectura": [],
-      "publishedAt": "2020-04-08",
-      "publishedAtSource": "yt-dlp: upload_date",
+      "publishedAt": "2025-02-27",
+      "publishedAtSource": "manual",
+      "tags": [
+        "álbum original",
+        "Electronic Downtempo",
+        "Electronic"
+      ],
+      "tagsFuente": "descripción del autor; sin núcleo narrativo inferido",
       "description": "XIIIth Afaces' music album\nRecorded: March - April 2020 in Salou (Spain) \nGenre: Electronic Downtempo\nDuration: 1:03:40\n\n\n1.- Over Lovely 00:00\n2.- Sway 02:42\n3.- Funk-o-matic 05:55\n4.- You Don't Want To Know Anything About Me 08:34\n5.- toutlair 11:17\n6.- Swarm 13:17\n7.- Pledge your turn 16:12\n8.- Fletsif 18:35\n9.- State Of Matters 21:21\n10.- now what 24:03\n11.- Doll 25:33\n12.- First 27:58\n13.- Though 30:23\n14.- Not the last 32:53\n15.- Check it out 35:32\n16.- Numbers 37:59\n17.- Annexes 40:32\n18.- Una Luz 43:07\n19.- Door 45:31\n20.- Wired 48:15\n21.- Together Stay 50:01\n22.- Yes 53:35\n23.- Zoom 56:36\n24.- Castle Queenside 59:52\n\n\nSpotify: https://open.spotify.com/artist/3zbzWzOqZcY3mZBG5ICF9l\nInstagram: https://www.instagram.com/_afaces/\nFacebook: https://www.facebook.com/afaces/\nTwitter: https://www.twitter.com/afaces2\nSoundCloud: https://soundcloud.com/afaces\nBandCamp: https://afaces.bandcamp.com/",
-      "descriptionSource": "yt-dlp",
+      "descriptionSource": "aportación manual del autor 2026-10-26",
       "tracklist": [
         {
           "start_time": 0,
@@ -1506,15 +1487,123 @@
           "title": "24.- Castle Queenside"
         }
       ],
-      "tracklistSource": "yt-dlp: chapters",
-      "durationSeconds": 3821,
+      "tracklistSource": "descripción aportada por el autor",
+      "durationSeconds": 3820,
+      "clasificacionFuente": "género instrumental: núcleo conceptual no confirmado",
+      "videoIdReconciliation": "IDs de YouTube intercambiados entre A:13 y A:14 según observación de portadas del autor; pendiente verificación independiente de YouTube"
+    },
+    {
+      "ref": "A:14",
+      "titulo": "The bad words",
+      "title": "The bad words",
+      "coleccion": "album",
+      "numero": 14,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=Nx3ucT01P-g",
+      "nucleos": [],
+      "clasificacion": "sin_nucleo_narrativo",
+      "fase_id": 1,
+      "nucleos_architectura": [],
+      "publishedAt": "2020-04-08",
+      "publishedAtSource": "yt-dlp: upload_date",
+      "description": "XIVth Afaces' music album\nRecorded: April 2020 in Salou (Spain)\nGenre: Electronic Downtempo\nDuration: 1:00:15\n\n1.- YouThief 00:00\n2.- F* The Industry 02:27\n3.- Smoke The Law 05:07\n4.- Rape my pockets 07:32\n5.- Freedom slaught 10:23\n6.- Hijack Thoughts 14:17\n7.- Emotional Terrorism 16:42\n8.- Traffic Under Other's Influence 19:34\n9.- Denounce Your Neighbor 22:53\n10.- Corruption Pillage 26:32\n11.- Sedition From Earth 28:36\n12.- Disobey the Children 31:28\n13.- Accomplices Of Tyranny 34:07\n14.- Suicide Collective 36:57\n15.- Breakfast At FakeNew's 39:59\n16.- Pure Uncut Drug 42:46\n17.- Reveal The Lies 46:09\n18.- Dumb Intellectual Property 48:46\n19.- Speech Of Fake Freedom 51:17\n20.- Global Alarm 54:36\n21.- Back To A New State Of Normality 58:12\n\nSpotify: https://open.spotify.com/artist/3zbzW...\nInstagram:   / _afaces\nFacebook:   / afaces\nTwitter:   / afaces2\nSoundCloud:   / afaces\nBandCamp: https://afaces.bandcamp.com/",
+      "descriptionSource": "aportación manual del autor 2026-10-26",
+      "tracklist": [
+        {
+          "start_time": 0,
+          "title": "YouThief"
+        },
+        {
+          "start_time": 147,
+          "title": "F* The Industry"
+        },
+        {
+          "start_time": 307,
+          "title": "Smoke The Law"
+        },
+        {
+          "start_time": 452,
+          "title": "Rape my pockets"
+        },
+        {
+          "start_time": 623,
+          "title": "Freedom slaught"
+        },
+        {
+          "start_time": 857,
+          "title": "Hijack Thoughts"
+        },
+        {
+          "start_time": 1002,
+          "title": "Emotional Terrorism"
+        },
+        {
+          "start_time": 1174,
+          "title": "Traffic Under Other's Influence"
+        },
+        {
+          "start_time": 1373,
+          "title": "Denounce Your Neighbor"
+        },
+        {
+          "start_time": 1592,
+          "title": "Corruption Pillage"
+        },
+        {
+          "start_time": 1716,
+          "title": "Sedition From Earth"
+        },
+        {
+          "start_time": 1888,
+          "title": "Disobey the Children"
+        },
+        {
+          "start_time": 2047,
+          "title": "Accomplices Of Tyranny"
+        },
+        {
+          "start_time": 2217,
+          "title": "Suicide Collective"
+        },
+        {
+          "start_time": 2399,
+          "title": "Breakfast At FakeNew's"
+        },
+        {
+          "start_time": 2566,
+          "title": "Pure Uncut Drug"
+        },
+        {
+          "start_time": 2769,
+          "title": "Reveal The Lies"
+        },
+        {
+          "start_time": 2926,
+          "title": "Dumb Intellectual Property"
+        },
+        {
+          "start_time": 3077,
+          "title": "Speech Of Fake Freedom"
+        },
+        {
+          "start_time": 3276,
+          "title": "Global Alarm"
+        },
+        {
+          "start_time": 3492,
+          "title": "Back To A New State Of Normality"
+        }
+      ],
+      "tracklistSource": "descripción aportada por el autor",
+      "durationSeconds": 3615,
       "tags": [
         "álbum original",
-        "Electronic",
-        "Electronic Downtempo"
+        "Electronic Downtempo",
+        "Electronic"
       ],
-      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
-      "clasificacionFuente": "Álbum principalmente instrumental: no inferir temática conceptual solo por títulos de canciones"
+      "tagsFuente": "descripción del autor; sin núcleo narrativo inferido",
+      "clasificacionFuente": "género instrumental: núcleo conceptual no confirmado",
+      "videoIdReconciliation": "IDs de YouTube intercambiados entre A:13 y A:14 según observación de portadas del autor; pendiente verificación independiente de YouTube"
     },
     {
       "ref": "A:15",
