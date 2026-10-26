@@ -634,3 +634,37 @@ body>nav .nav-links a:focus-visible,body>nav .af-mobile-toggle:focus-visible{out
   body>nav .nav-right{gap:.2rem}
 }
 @media(prefers-reduced-motion:reduce){body>nav .nav-links,body>nav .af-mobile-toggle{transition:none}}
+
+
+/* Selector Novato/Experto disponible en todas las páginas, no solo la portada. */
+body>.ux-mode-switch{
+  position:fixed;top:5.8rem;right:1rem;z-index:190;
+  display:flex;align-items:center;gap:.3rem;padding:.35rem;
+  border:1px solid var(--border);background:var(--nav-bg);
+  box-shadow:0 8px 30px rgba(0,0,0,.22);
+}
+body>.ux-mode-switch span{
+  padding:.5rem;font:.55rem 'Space Mono',monospace;color:var(--muted)
+}
+body>.ux-mode-switch button{
+  min-height:35px;padding:.5rem .65rem;cursor:pointer;
+  background:transparent;color:var(--text);border:1px solid var(--border);
+  font:.65rem 'Space Mono',monospace;
+}
+body>.ux-mode-switch button[aria-pressed="true"]{
+  background:var(--accent);border-color:var(--accent);color:#fff
+}
+body>.ux-mode-switch button:focus-visible{
+  outline:2px solid var(--accent);outline-offset:3px
+}
+body>nav .af-nav-shortcuts a[hidden]{display:none!important}
+@media(max-width:850px){
+  body>.ux-mode-switch{
+    top:auto;bottom:max(1rem,env(safe-area-inset-bottom));right:1rem
+  }
+  body>.ux-mode-switch span{display:none}
+}
+@media(max-width:420px){
+  body>.ux-mode-switch{right:.5rem;padding:.25rem;gap:.2rem}
+  body>.ux-mode-switch button{font-size:.6rem;padding:.45rem .5rem}
+}

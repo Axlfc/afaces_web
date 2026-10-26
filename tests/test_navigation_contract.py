@@ -22,6 +22,10 @@ class NavigationContractTests(unittest.TestCase):
                     f"{page} debe cargar exactamente una vez mobile-nav.js"
                 )
                 self.assertRegex(content, r'<nav\b')
+                self.assertEqual(
+                    content.count('src="js/modes.js"'), 1,
+                    f"{page} debe cargar el selector Novato/Experto una vez"
+                )
                 self.assertIn('class="nav-links"', content)
 
     def test_mobile_navigation_targets_are_public(self):

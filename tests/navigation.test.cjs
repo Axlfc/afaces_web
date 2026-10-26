@@ -99,12 +99,13 @@ function makeMenu(mode='experto',pathname='/~afaces/welcome.html'){
 
 test('menú completo, accesos rápidos y orden de tabulación',()=>{
   const page=makeMenu();
-  assert.equal(page.links.children.length,17);
+  assert.equal(page.links.children.length,16);
+  assert.ok(!page.links.children.some(li=>li.querySelector('a').textContent==='Inicio'));
   assert.equal(page.quick.querySelectorAll('a').length,4);
   assert.equal(page.links.hidden,true);
   assert.equal(page.toggle.getAttribute('aria-controls'),page.links.id);
   assert.ok(page.nav.children.indexOf(page.toggle)<page.nav.children.indexOf(page.links));
-  assert.equal(page.links.querySelectorAll('a')[0].getAttribute('aria-current'),'page');
+  assert.equal(page.logo.getAttribute('aria-current'),'page');
   assert.equal(page.logo.href,'welcome.html');
 });
 
@@ -146,9 +147,12 @@ test('novato filtra avanzados; cambiar a experto actualiza sin recargar',()=>{
   const discover=links.find(li=>li.querySelector('a').textContent==='Descubrir');
   assert.equal(map.hidden,true);
   assert.equal(discover.hidden,false);
+  assert.equal(links.find(li=>li.querySelector('a').textContent==='Discografía').hidden,true);
+  assert.equal(page.quick.querySelectorAll('a').filter(a=>!a.hidden).length,1);
   page.storage.mode='experto';
   page.win.dispatch('storage',{key:'afaces-view-mode'});
   assert.equal(map.hidden,false);
+  assert.equal(page.quick.querySelectorAll('a').filter(a=>!a.hidden).length,4);
   assert.equal(page.doc.documentElement.dataset.viewMode,'experto');
 });
 

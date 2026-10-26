@@ -7,7 +7,7 @@ import re
 import shutil
 import sys
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import parse_qsl, unquote, urlencode, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
@@ -88,6 +88,43 @@ def copy_public_files():
     )
 
 
+
+# Solo se modifica el HTML generado en dist/, nunca los archivos fuente.
+# Así los navegadores obtienen el CSS y JavaScript nuevos tras cada despliegue.
+ASSET_ATTR = re.compile(
+    r"""(?P<prefix>\b(?:src|href)\s*=\s*)(?P<quote>["'])(?P<url>[^"']+)(?P=quote)""",
+    re.I,
+)
+
+
+def version_static_assets():
+    base = DIST.resolve()
+    for page in DIST.rglob("*.html"):
+        source = page.read_text(encoding="utf-8")
+
+        def rewrite(match):
+            url = match.group("url")
+            parts = urlsplit(url)
+            if parts.scheme or parts.netloc or not parts.path or parts.path.startswith("/"):
+                return match.group(0)
+            if Path(parts.path).suffix.lower() not in {".css", ".js"}:
+                return match.group(0)
+            asset = (page.parent / unquote(parts.path)).resolve()
+            if not asset.is_relative_to(base) or not asset.is_file():
+                # validate_links() informará de recursos inexistentes o inseguros.
+                return match.group(0)
+            digest = hashlib.sha256(asset.read_bytes()).hexdigest()[:12]
+            query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True) if k != "v"]
+            query.append(("v", digest))
+            versioned = urlunsplit((parts.scheme, parts.netloc, parts.path,
+                                     urlencode(query), parts.fragment))
+            return match.group("prefix") + match.group("quote") + versioned + match.group("quote")
+
+        updated = ASSET_ATTR.sub(rewrite, source)
+        if updated != source:
+            page.write_text(updated, encoding="utf-8")
+
+
 def validate_links():
     for page in REQUIRED:
         if not (DIST / page).is_file():
@@ -111,6 +148,7 @@ def build(manifest=False):
     if DIST.exists():
         shutil.rmtree(DIST)
     copy_public_files()
+    version_static_assets()
     validate_links()
     files = sorted(p for p in DIST.rglob("*") if p.is_file())
     if not files:

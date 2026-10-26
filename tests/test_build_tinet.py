@@ -55,6 +55,34 @@ class BuildTinetTests(unittest.TestCase):
         self.assertEqual(doc["catalog_count"], 2)
         self.assertIn("welcome.html", doc["files"])
 
+    def test_versioned_css_js_urls_prevent_stale_browser_cache(self):
+        (self.root / "welcome.html").write_text(
+            '<link rel="stylesheet" href="css/style.css">'
+            '<script src="js/main.js"></script>'
+            '<a href="onboarding.html">Descubrir</a>',
+            encoding="utf-8",
+        )
+        build_tinet.build(manifest=True)
+        generated = (self.root / "dist" / "welcome.html").read_text(encoding="utf-8")
+        self.assertRegex(generated, r'css/style\.css\?v=[a-f0-9]{12}')
+        self.assertRegex(generated, r'js/main\.js\?v=[a-f0-9]{12}')
+        self.assertIn('href="onboarding.html"', generated)
+        # La versión cambia únicamente cuando cambian los bytes del recurso.
+        (self.root / "js" / "main.js").write_text("console.log('changed')")
+        build_tinet.build(manifest=True)
+        after = (self.root / "dist" / "welcome.html").read_text(encoding="utf-8")
+        self.assertNotEqual(generated, after)
+        original = (self.root / "welcome.html").read_text(encoding="utf-8")
+        self.assertNotIn("?v=", original)
+
+    def test_asset_versioning_preserves_existing_query_and_fragment(self):
+        (self.root / "welcome.html").write_text(
+            '<script src="js/main.js?lang=es#boot"></script>', encoding="utf-8"
+        )
+        build_tinet.build(manifest=True)
+        generated = (self.root / "dist" / "welcome.html").read_text(encoding="utf-8")
+        self.assertRegex(generated, r'js/main\.js\?lang=es&v=[a-f0-9]{12}#boot')
+
     def test_missing_link_fails(self):
         (self.root / "welcome.html").write_text('<a href="missing.html">No existe</a>')
         with self.assertRaisesRegex(ValueError, "Enlace local inexistente"):
