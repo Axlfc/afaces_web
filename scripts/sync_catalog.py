@@ -47,7 +47,7 @@ def generate():
     phases = []
     for number, name, collection, start, end in re.findall(phase_re, phases_text):
         phases.append(dict(id=int(number), name=name, collection="album" if collection == "albums" else "lp",
-                           min=int(start), max=999999 if end == "'max'" else int(end)))
+                           min=int(start), max=999 if end == "'max'" else int(end)))
     if not phases:
         raise ValueError("Fases no reconocidas")
     for phase in previous.get("architecture", {}).get("phases", []):
@@ -84,7 +84,7 @@ def generate():
         row.setdefault("clasificacion", "pendiente_revision")
         updated.append(row)
     arch = dict(previous.get("architecture", {}))
-    arch.update(source="js/main.js", phases=phases,
+    arch.update(source="js/main.js / AFACES_SITE.phases y AFACES_SITE.themes", phases=phases,
                 nuclei=[{k: v for k, v in t.items() if k != "refs"} for t in themes])
     previous.update(source="js/main.js (ALBUMS, LPS y AFACES_SITE.themes)",
                     count=len(updated), videos=updated, architecture=arch)
