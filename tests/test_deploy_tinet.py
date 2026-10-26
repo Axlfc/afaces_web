@@ -94,6 +94,24 @@ class FTPTests(unittest.TestCase):
             self.assertEqual(publish(ftp, dist, ".", dist / "backup"), 1)
             self.assertEqual(ftp.data["/data/metadata.json"], b"new")
 
+    def test_remote_manual_modification_is_repaired_and_backed_up(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dist = Path(tmp)
+            (dist / "welcome.html").write_bytes(b"canonical")
+            digest = hashlib.sha256(b"canonical").hexdigest()
+            manifest = json.dumps({
+                "schema_version": 1, "files": {"welcome.html": digest}
+            }).encode()
+            (dist / "deploy-manifest.json").write_bytes(manifest)
+            ftp = FakeFTP()
+            ftp.data["/welcome.html"] = b"changed by hand"
+            ftp.data["/deploy-manifest.json"] = manifest
+            count = publish(ftp, dist, ".", dist / "backup")
+            self.assertEqual(count, 1)
+            self.assertEqual(ftp.data["/welcome.html"], b"canonical")
+            self.assertEqual((dist / "backup" / "welcome.html").read_bytes(),
+                             b"changed by hand")
+
     def test_html_folder_is_not_an_accepted_target(self):
         with tempfile.TemporaryDirectory() as tmp:
             with self.assertRaisesRegex(ValueError, "TINET_REMOTE_DIR"):
