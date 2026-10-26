@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Publicación incremental segura mediante FTPS explícito para TINET."""
 import argparse
+import hashlib
 import io
 import json
+import re
 import os
 import ssl
 import sys
@@ -54,16 +56,41 @@ def publish(ftp, dist, remote, backup, force=False):
     if manifest.get("schema_version") != 1:
         raise ValueError("Manifiesto de despliegue incompatible")
     files = manifest["files"]
-    for name in files:
-        if name.startswith("/") or ".." in Path(name).parts or not (dist / name).is_file():
-            raise ValueError("Ruta de despliegue insegura: " + name)
+    if not isinstance(files, dict) or "welcome.html" not in files:
+        raise ValueError("Manifiesto incompleto: falta welcome.html")
+    for name, digest in files.items():
+        if (not isinstance(name, str) or not isinstance(digest, str)
+                or not re.fullmatch(r"[a-f0-9]{64}", digest)
+                or name.startswith("/") or ".." in Path(name).parts):
+            raise ValueError("Ruta o hash inválido: " + str(name))
+        local_file = dist / name
+        if local_file.is_symlink() or not local_file.is_file():
+            raise ValueError("Archivo local inseguro o inexistente: " + name)
+        if hashlib.sha256(local_file.read_bytes()).hexdigest() != digest:
+            raise ValueError("Hash local incoherente con manifiesto: " + name)
     previous = retrieve(ftp, "deploy-manifest.json")
     try:
         old_files = json.loads(previous)["files"] if previous else {}
     except (ValueError, KeyError, TypeError):
         old_files = {}
+    # Reparación automática si otro cliente FTP borró archivos que figuraban en el manifiesto.
+    if not force:
+        listings = {}
+        for name, digest in files.items():
+            if old_files.get(name) != digest:
+                continue
+            parts = Path(name).parts
+            folder = tuple(parts[:-1])
+            if folder not in listings:
+                try:
+                    cd_path(ftp, root, folder)
+                    listings[folder] = {p.rsplit("/", 1)[-1] for p in ftp.nlst()}
+                except error_perm:
+                    listings[folder] = set()
+            if parts[-1] not in listings[folder]:
+                old_files.pop(name, None)
     changed = plan(files, {} if force else old_files)
-    print(f"Destino verificado: {root}. Actualizados: {len(changed)} / {len(files)}.")
+    print(f"Destino FTP confirmado: {root}. Archivos a actualizar: {len(changed)} / {len(files)}.")
     backup.mkdir(parents=True, exist_ok=True)
     if previous is not None:
         (backup / "deploy-manifest.json").write_bytes(previous)
