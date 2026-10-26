@@ -72,14 +72,21 @@ def generate():
         if len(matches) > 1:
             raise ValueError("Fases solapadas: " + ref)
         row["fase_id"] = matches[0]["id"] if matches else row.get("fase_id")
-        row["nucleos_architectura"] = list(dict.fromkeys([t["id"] for t in themes if ref in t["refs"]] + row.get("nucleos_architectura", [])))
+        if row.get("clasificacion") == "sin_nucleo_narrativo":
+            # Preservar la ausencia de núcleo narrativo decidida editorialmente.
+            row["nucleos_architectura"] = row.get("nucleos_architectura", [])
+        else:
+            row["nucleos_architectura"] = list(dict.fromkeys(
+                [t["id"] for t in themes if ref in t["refs"]] +
+                row.get("nucleos_architectura", [])
+            ))
         row.setdefault("nucleos", [])
         row.setdefault("clasificacion", "pendiente_revision")
         updated.append(row)
     arch = dict(previous.get("architecture", {}))
     arch.update(source="js/main.js", phases=phases,
                 nuclei=[{k: v for k, v in t.items() if k != "refs"} for t in themes])
-    previous.update(source="js/main.js (ALBUMS, LPS y AFACES_SITE)",
+    previous.update(source="js/main.js (ALBUMS, LPS y AFACES_SITE.themes)",
                     count=len(updated), videos=updated, architecture=arch)
     return json.dumps(previous, ensure_ascii=False, indent=2) + "\n"
 
