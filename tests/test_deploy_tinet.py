@@ -26,20 +26,20 @@ class FakeFTP:
         return self.cwd_path
 
     def nlst(self):
-        return [p.rsplit("/", 1)[-1] for p in self.data if p.startswith(self.cwd_path + "/")]
+        return [p.rsplit("/", 1)[-1] for p in self.data if p.startswith(self.cwd_path.rstrip("/") + "/")]
 
     def retrbinary(self, command, callback):
         from ftplib import error_perm
-        key = self.cwd_path + "/" + command.removeprefix("RETR ")
+        key = self.cwd_path.rstrip("/") + "/" + command.removeprefix("RETR ")
         if key not in self.data:
             raise error_perm("550 Missing file")
         callback(self.data[key])
 
     def mkd(self, name):
-        self.dirs.add(self.cwd_path + "/" + name)
+        self.dirs.add(self.cwd_path.rstrip("/") + "/" + name)
 
     def storbinary(self, command, stream):
-        self.data[self.cwd_path + "/" + command.removeprefix("STOR ")] = stream.read()
+        self.data[self.cwd_path.rstrip("/") + "/" + command.removeprefix("STOR ")] = stream.read()
 
 
 class FTPTests(unittest.TestCase):
