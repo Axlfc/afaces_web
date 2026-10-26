@@ -1,0 +1,2935 @@
+'use strict';
+// Catálogo de MP3 exclusivo de Afaces (álbumes originales), no de EL AFACES.
+// Archivo compartido por todas las páginas. No duplicar en js/main.js.
+const BASE = 'https://github.com/afaces/afaces.github.io/raw/refs/heads/main/assets/music/';
+
+const RADIO_TRACKS = [
+  // ── Álbum 1.- 'Nefasto' ──
+  {
+    name: "A Team Fight",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/8%20-%20A%20Team%20Fight.mp3"
+  },
+  {
+    name: "Aberrante",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/10%20-%20Aberrante.mp3"
+  },
+  {
+    name: "aceptable",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/22%20-%20aceptable.mp3"
+  },
+  {
+    name: "Baby On Fire",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/4%20-%20Baby%20On%20Fire.mp3"
+  },
+  {
+    name: "Back from there",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/16%20-%20Back%20from%20there.mp3"
+  },
+  {
+    name: "Catastrofico",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/17%20-%20Catastrofico.mp3"
+  },
+  {
+    name: "Cough",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/12%20-%20Cough.mp3"
+  },
+  {
+    name: "Desgarrador2",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/3%20-%20Desgarrador2.mp3"
+  },
+  {
+    name: "Don't remind me",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/23%20-%20Don%27t%20remind%20me.mp3"
+  },
+  {
+    name: "egipto",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/18%20-%20egipto.mp3"
+  },
+  {
+    name: "Floating",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/5%20-%20Floating.mp3"
+  },
+  {
+    name: "Forgotten past",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/2%20-%20Forgotten%20past.mp3"
+  },
+  {
+    name: "Ha ha ha",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/9%20-%20Ha%20ha%20ha.mp3"
+  },
+  {
+    name: "Helo",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/15%20-%20Helo.mp3"
+  },
+  {
+    name: "Help",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/11%20-%20Help.mp3"
+  },
+  {
+    name: "Hot  Spicy",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/7%20-%20Hot%20%26%20Spicy.mp3"
+  },
+  {
+    name: "Inconscience",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/6%20-%20Inconscience.mp3"
+  },
+  {
+    name: "Just enough",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/13%20-%20Just%20enough.mp3"
+  },
+  {
+    name: "Nefasto",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/1%20-%20Nefasto.mp3"
+  },
+  {
+    name: "Platform",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/24%20-%20Platform.mp3"
+  },
+  {
+    name: "Song for the deaf",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/14%20-%20Song%20for%20the%20deaf.mp3"
+  },
+  {
+    name: "take those pills",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/19%20-%20take%20those%20pills.mp3"
+  },
+  {
+    name: "Uh-uh ft. Yellow Button",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/20%20-%20Uh-uh%20ft.%20Yellow%20Button.mp3"
+  },
+  {
+    name: "Waves Not Found",
+    album: "1.- 'Nefasto'",
+    vid: "SWNbhMxS4S4",
+    path: BASE + "1.-%20%27Nefasto%27/21%20-%20Waves%20Not%20Found.mp3"
+  },
+  // ── Álbum 2.- 'Writer' ──
+  {
+    name: "Assault",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/3%20-%20Assault.mp3"
+  },
+  {
+    name: "back to lack",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/16%20-%20back%20to%20lack.mp3"
+  },
+  {
+    name: "Birthday of Universe",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/6%20-%20Birthday%20of%20Universe.mp3"
+  },
+  {
+    name: "BONDAGE",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/21%20-%20BONDAGE.mp3"
+  },
+  {
+    name: "Christmas again",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/15%20-%20Christmas%20again.mp3"
+  },
+  {
+    name: "DEPresion",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/8%20-%20DEPresion.mp3"
+  },
+  {
+    name: "Desires",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/11%20-Desires.mp3"
+  },
+  {
+    name: "Dirty clothes",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/17%20-%20Dirty%20clothes.mp3"
+  },
+  {
+    name: "Go  Catch A Flight",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/12%20-Go%20%26%20Catch%20A%20Flight.mp3"
+  },
+  {
+    name: "haunted love",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/7%20-%20haunted%20love.mp3"
+  },
+  {
+    name: "innocent",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/23%20-%20innocent.mp3"
+  },
+  {
+    name: "Last Sight",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/24%20-%20Last%20Sight.mp3"
+  },
+  {
+    name: "No Reason",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/2%20-%20No%20Reason.mp3"
+  },
+  {
+    name: "Paint Over the Floor",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/4%20-%20Paint%20Over%20the%20Floor.mp3"
+  },
+  {
+    name: "Pencil",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/1%20-%20Pencil.mp3"
+  },
+  {
+    name: "Phoenix Arising From The Ashes",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/5%20-%20Phoenix%20Arising%20From%20The%20Ashes.mp3"
+  },
+  {
+    name: "sick of it",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/19%20-%20sick%20of%20it.mp3"
+  },
+  {
+    name: "tears",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/20%20-%20tears.mp3"
+  },
+  {
+    name: "Time just gone",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/10%20-%20Time%20just%20gone.mp3"
+  },
+  {
+    name: "too much",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/14%20-%20too%20much.mp3"
+  },
+  {
+    name: "Warm in Winter",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/9%20-%20Warm%20in%20Winter.mp3"
+  },
+  {
+    name: "What did he gone",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/13%20-%20What%20did,%20he%20gone.mp3"
+  },
+  {
+    name: "Why so sad",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/18%20-%20Why%20so%20sad.mp3"
+  },
+  {
+    name: "Writer",
+    album: "2.- 'Writer'",
+    vid: "1PB176jjic8",
+    path: BASE + "2.-%20%27Writer%27/22%20-%20Writer.mp3"
+  },
+  // ── Álbum 3.- 'Back and Fro' ──
+  {
+    name: "Ball",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/18%20-%20Ball.mp3"
+  },
+  {
+    name: "city lights",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/14%20-%20city%20lights.mp3"
+  },
+  {
+    name: "day owl",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/4%20-%20day%20owl.mp3"
+  },
+  {
+    name: "explorer",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/17%20-%20explorer.mp3"
+  },
+  {
+    name: "goodbye beach",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/16%20-%20goodbye%20beach.mp3"
+  },
+  {
+    name: "got the music of tonight",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/10%20-%20got%20the%20music%20of%20tonight.mp3"
+  },
+  {
+    name: "Landscape",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/12%20-%20Landscape.mp3"
+  },
+  {
+    name: "mirage",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/13%20-%20mirage.mp3"
+  },
+  {
+    name: "moth",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/19%20-%20moth.mp3"
+  },
+  {
+    name: "Oclock",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/7%20-%20Oclock.mp3"
+  },
+  {
+    name: "shout",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/5%20-%20shout.mp3"
+  },
+  {
+    name: "storm",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/9%20-%20storm.mp3"
+  },
+  {
+    name: "sunrise",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/11%20-%20sunrise.mp3"
+  },
+  {
+    name: "taste",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/1%20-%20taste.mp3"
+  },
+  {
+    name: "teenage drive",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/3%20-%20teenage%20drive.mp3"
+  },
+  {
+    name: "to and fro",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/20%20-%20to%20and%20fro.mp3"
+  },
+  {
+    name: "troop",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/2%20-%20troop.mp3"
+  },
+  {
+    name: "TUESDAY",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/15%20-%20TUESDAY.mp3"
+  },
+  {
+    name: "village",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/8%20-%20village.mp3"
+  },
+  {
+    name: "War King",
+    album: "3.- 'Back and Fro'",
+    vid: "uwmr2eNdpE4",
+    path: BASE + "3.-%20%27Back%20and%20Fro%27/6%20-%20War%20King.mp3"
+  },
+  // ── Álbum 4.- 'Planetc' ──
+  {
+    name: "Ambrosia",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/1%20-%20Ambrosia.mp3"
+  },
+  {
+    name: "aphostmere",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/19%20-%20aphostmere.mp3"
+  },
+  {
+    name: "cold space",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/6%20-%20cold%20space.mp3"
+  },
+  {
+    name: "encelato",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/17%20-%20encelato.mp3"
+  },
+  {
+    name: "fast bad",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/3%20-%20fast%20bad.mp3"
+  },
+  {
+    name: "ganimidi",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/18%20-%20ganimidi.mp3"
+  },
+  {
+    name: "kind of weird",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/7%20-%20kind%20of%20weird.mp3"
+  },
+  {
+    name: "LUNE",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/9%20-%20LUNE.mp3"
+  },
+  {
+    name: "MARS",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/10%20-%20MARS.mp3"
+  },
+  {
+    name: "memory",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/2%20-%20memory.mp3"
+  },
+  {
+    name: "mercury",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/11%20-%20mercury.mp3"
+  },
+  {
+    name: "Need",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/5%20-%20Need.mp3"
+  },
+  {
+    name: "NETPUNO",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/15%20-%20NETPUNO.mp3"
+  },
+  {
+    name: "Retipuj",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/13%20-%20Retipuj.mp3"
+  },
+  {
+    name: "soon",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/16%20-%20soon.mp3"
+  },
+  {
+    name: "stream",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/4%20-%20stream.mp3"
+  },
+  {
+    name: "terre",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/8%20-%20terre.mp3"
+  },
+  {
+    name: "uranio",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/14%20-%20uranio.mp3"
+  },
+  {
+    name: "venus",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/12%20-%20venus.mp3"
+  },
+  {
+    name: "yeahr",
+    album: "4.- 'Planetc'",
+    vid: "F44txcWQoJQ",
+    path: BASE + "4.-%20%27Planetc%27/20%20-%20yeahr.mp3"
+  },
+  // ── Álbum 5.- 'Black' ──
+  {
+    name: "ad's grace",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/6%20-%20ad%27s%20grace.mp3"
+  },
+  {
+    name: "andorthe",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/8%20-%20andorthe.mp3"
+  },
+  {
+    name: "artrist",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/17%20-%20artrist.mp3"
+  },
+  {
+    name: "BITTERCANDY",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/21%20-%20BITTERCANDY.mp3"
+  },
+  {
+    name: "Bive",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/5%20-%20Bive.mp3"
+  },
+  {
+    name: "Bulb",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/11%20-%20Bulb.mp3"
+  },
+  {
+    name: "control_plus_s",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/20%20-%20control_plus_s.mp3"
+  },
+  {
+    name: "COUNTLESS",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/15%20-%20COUNTLESS.mp3"
+  },
+  {
+    name: "derklight",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/16%20-%20derklight.mp3"
+  },
+  {
+    name: "furtherword",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/13%20-%20furtherword.mp3"
+  },
+  {
+    name: "gallery",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/3%20-%20gallery.mp3"
+  },
+  {
+    name: "Juggler",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/10%20-%20Juggler.mp3"
+  },
+  {
+    name: "late",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/24%20-%20late.mp3"
+  },
+  {
+    name: "orange",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/2%20-%20orange.mp3"
+  },
+  {
+    name: "Petri dish",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/23%20-%20Petri%20dish.mp3"
+  },
+  {
+    name: "scratch",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/12%20-%20scratch.mp3"
+  },
+  {
+    name: "screan",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/1%20-%20screan.mp3"
+  },
+  {
+    name: "Sentinel",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/14%20-%20Sentinel.mp3"
+  },
+  {
+    name: "Shipfriend",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/25%20-%20Shipfriend.mp3"
+  },
+  {
+    name: "shock",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/9%20-%20shock.mp3"
+  },
+  {
+    name: "surrend",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/7%20-%20surrend.mp3"
+  },
+  {
+    name: "todya",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/4%20-%20todya.mp3"
+  },
+  {
+    name: "UNKNOWN",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/19%20-%20UNKNOWN.mp3"
+  },
+  {
+    name: "water small",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/22%20-%20water%20small.mp3"
+  },
+  {
+    name: "whatdidhappen",
+    album: "5.- 'Black'",
+    vid: "rcAxMjoC7fw",
+    path: BASE + "5.-%20%27Black%27/18%20-%20whatdidhappen.mp3"
+  },
+  // ── Álbum 6.- 'list' ──
+  {
+    name: "ace",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/1%20-%20ace.mp3"
+  },
+  {
+    name: "clear",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/8%20-%20clear.mp3"
+  },
+  {
+    name: "clueless",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/9%20-%20clueless.mp3"
+  },
+  {
+    name: "dancefloor",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/17%20-%20dancefloor.mp3"
+  },
+  {
+    name: "depart",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/11%20-%20depart.mp3"
+  },
+  {
+    name: "ease",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/13%20-%20ease.mp3"
+  },
+  {
+    name: "escalene",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/16%20-%20escalene.mp3"
+  },
+  {
+    name: "flash",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/14%20-%20flash.mp3"
+  },
+  {
+    name: "Gone",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/10%20-%20Gone.mp3"
+  },
+  {
+    name: "HitHats",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/18%20-%20HitHats.mp3"
+  },
+  {
+    name: "leftovers",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/21%20-%20leftovers.mp3"
+  },
+  {
+    name: "Noon",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/7%20-%20Noon.mp3"
+  },
+  {
+    name: "petals",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/20%20-%20petals.mp3"
+  },
+  {
+    name: "plate",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/19%20-%20plate.mp3"
+  },
+  {
+    name: "robots in london",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/15%20-%20robots%20in%20london.mp3"
+  },
+  {
+    name: "sniks",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/6%20-%20sniks.mp3"
+  },
+  {
+    name: "start",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/2%20-%20start.mp3"
+  },
+  {
+    name: "the power of gabber",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/3%20-%20the%20power%20of%20gabber.mp3"
+  },
+  {
+    name: "Track lost",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/4%20-%20Track%20lost.mp3"
+  },
+  {
+    name: "upward",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/22%20-%20upward.mp3"
+  },
+  {
+    name: "wait",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/12%20-%20wait.mp3"
+  },
+  {
+    name: "yawn",
+    album: "6.- 'list'",
+    vid: "_DSxx9E3MCQ",
+    path: BASE + "6.-%20%27list%27/5%20-%20yawn.mp3"
+  },
+  // ── Álbum 7.- 'A cool name' ──
+  {
+    name: "boom!",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/18%20-%20boom!.mp3"
+  },
+  {
+    name: "celebrate",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/10%20-%20celebrate.mp3"
+  },
+  {
+    name: "Fly",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/3%20-%20Fly.mp3"
+  },
+  {
+    name: "graph",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/12%20-%20graph.mp3"
+  },
+  {
+    name: "haul",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/8%20-%20haul.mp3"
+  },
+  {
+    name: "heartbreak",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/5%20-%20heartbreak.mp3"
+  },
+  {
+    name: "hustle",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/6%20-%20hustle.mp3"
+  },
+  {
+    name: "lasers through smoke",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/7%20-%20lasers%20through%20smoke.mp3"
+  },
+  {
+    name: "mirror",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/14%20-%20mirror.mp3"
+  },
+  {
+    name: "Negativ",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/1%20-%20Negativ.mp3"
+  },
+  {
+    name: "r u there",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/17%20-%20r%20u%20there.mp3"
+  },
+  {
+    name: "resources",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/16%20-%20resources.mp3"
+  },
+  {
+    name: "shining stars",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/9%20-%20shining%20stars.mp3"
+  },
+  {
+    name: "sos",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/13%20-%20sos.mp3"
+  },
+  {
+    name: "step",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/11%20-%20step.mp3"
+  },
+  {
+    name: "unbalanced",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/2%20-%20unbalanced.mp3"
+  },
+  {
+    name: "Untitled",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/4%20-%20Untitled.mp3"
+  },
+  {
+    name: "vortex attack",
+    album: "7.- 'A cool name'",
+    vid: "RVxpNONLZ8o",
+    path: BASE + "7.-%20%27A%20cool%20name%27/15%20-%20vortex%20attack.mp3"
+  },
+  // ── Álbum 8.- '50%' ──
+  {
+    name: "50%",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/21%20-%2050%.mp3"
+  },
+  {
+    name: "best beast",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/17%20-%20best%20beast.mp3"
+  },
+  {
+    name: "branch",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/5%20-%20branch.mp3"
+  },
+  {
+    name: "Cute As Hell",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/18%20-%20Cute%20As%20Hell.mp3"
+  },
+  {
+    name: "edge",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/20%20-%20edge.mp3"
+  },
+  {
+    name: "gap",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/8%20-%20gap.mp3"
+  },
+  {
+    name: "hot pockets",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/22%20-%20hot%20pockets.mp3"
+  },
+  {
+    name: "jackpot",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/2%20-%20jackpot.mp3"
+  },
+  {
+    name: "loco motion",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/16%20-%20loco%20motion.mp3"
+  },
+  {
+    name: "meet",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/3%20-%20meet.mp3"
+  },
+  {
+    name: "missing",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/10%20-%20missing.mp3"
+  },
+  {
+    name: "new titles",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/15%20-%20new%20titles.mp3"
+  },
+  {
+    name: "no one",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/1%20-%20no%20one.mp3"
+  },
+  {
+    name: "Prince",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/9%20-%20Prince.mp3"
+  },
+  {
+    name: "regreat",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/19%20-%20regreat.mp3"
+  },
+  {
+    name: "roundabout",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/4%20-%20roundabout.mp3"
+  },
+  {
+    name: "sirens",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/14%20-%20sirens.mp3"
+  },
+  {
+    name: "skid",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/6%20-%20skid.mp3"
+  },
+  {
+    name: "sticky heat",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/11%20-%20sticky%20heat.mp3"
+  },
+  {
+    name: "stop",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/7%20-%20stop.mp3"
+  },
+  {
+    name: "surcease",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/12%20-%20surcease.mp3"
+  },
+  {
+    name: "Weissbier",
+    album: "8.- '50%'",
+    vid: "_4Vfk487foQ",
+    path: BASE + "8.-%20%2750%%27/13%20-%20Weissbier.mp3"
+  },
+  // ── Álbum 9.- 'advisory content' ──
+  {
+    name: "candle",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/15%20-%20candle.mp3"
+  },
+  {
+    name: "Chasing papers",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/19%20-%20Chasing%20papers.mp3"
+  },
+  {
+    name: "cigarret advertisement",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/1%20-%20cigarret%20advertisement.mp3"
+  },
+  {
+    name: "club the clap",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/14%20-%20club%20the%20clap.mp3"
+  },
+  {
+    name: "coolture",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/9%20-%20coolture.mp3"
+  },
+  {
+    name: "dessert",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/7%20-%20dessert.mp3"
+  },
+  {
+    name: "enchanted",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/18%20-%20enchanted.mp3"
+  },
+  {
+    name: "forbear",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/21%20-%20forbear.mp3"
+  },
+  {
+    name: "freemium",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/10%20-%20freemium.mp3"
+  },
+  {
+    name: "keen",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/12%20-%20keen.mp3"
+  },
+  {
+    name: "lab",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/5%20-%20lab.mp3"
+  },
+  {
+    name: "lesshome",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/17%20-%20lesshome.mp3"
+  },
+  {
+    name: "lit",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/6%20-%20lit.mp3"
+  },
+  {
+    name: "no more recall",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/11%20-%20no%20more%20recall.mp3"
+  },
+  {
+    name: "nostalgia",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/3%20-%20nostalgia.mp3"
+  },
+  {
+    name: "one blink two eyes",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/20%20-%20one%20blink%20two%20eyes.mp3"
+  },
+  {
+    name: "parlor",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/16%20-%20parlor.mp3"
+  },
+  {
+    name: "ray-v",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/4%20-%20ray-v.mp3"
+  },
+  {
+    name: "seawatch",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/2%20-%20seawatch.mp3"
+  },
+  {
+    name: "tahw",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/8%20-%20tahw.mp3"
+  },
+  {
+    name: "try",
+    album: "9.- 'advisory content'",
+    vid: "ybNa3a48fxk",
+    path: BASE + "9.-%20%27advisory%20content%27/13%20-%20try.mp3"
+  },
+  // ── Álbum 10.- 'BUY NEVER' ──
+  {
+    name: "1 .- Entrance",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/1%20.-%20Entrance.mp3"
+  },
+  {
+    name: "Adrian",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/16.-%20Adrian.mp3"
+  },
+  {
+    name: "Ana",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/11.-%20Ana.mp3"
+  },
+  {
+    name: "Aubrey",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/9.-%20Aubrey.mp3"
+  },
+  {
+    name: "Breath Pause",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/6.-%20Breath%20Pause.mp3"
+  },
+  {
+    name: "Confidant",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/4.-%20Confidant.mp3"
+  },
+  {
+    name: "Cruiser",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/19.-%20Cruiser.mp3"
+  },
+  {
+    name: "Darcy",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/10.-%20Darcy.mp3"
+  },
+  {
+    name: "Deter",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/18.-%20Deter.mp3"
+  },
+  {
+    name: "Extravaganza",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/3.-%20Extravaganza.mp3"
+  },
+  {
+    name: "Field Company",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/5.-%20Field%20Company.mp3"
+  },
+  {
+    name: "Haze",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/2.-%20Haze.mp3"
+  },
+  {
+    name: "John",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/14.-%20John.mp3"
+  },
+  {
+    name: "Jugular",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/8.-%20Jugular.mp3"
+  },
+  {
+    name: "Julia",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/12.-%20Julia.mp3"
+  },
+  {
+    name: "Land",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/17.-%20Land.mp3"
+  },
+  {
+    name: "Martin",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/15.-%20Martin.mp3"
+  },
+  {
+    name: "Off Faces",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/20.-%20Off%20Faces.mp3"
+  },
+  {
+    name: "Pete",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/13.-%20Pete.mp3"
+  },
+  {
+    name: "Roads to Nowhere",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/21.-%20Roads%20to%20Nowhere.mp3"
+  },
+  {
+    name: "Violence en l'amour",
+    album: "10.- 'BUY NEVER'",
+    vid: "Utmf9RgCITo",
+    path: BASE + "10.-%20%27BUY%20NEVER%27/7.-%20Violence%20en%20l%27amour.mp3"
+  },
+  // ── Álbum 11.- 'Bull's-eye' ──
+  {
+    name: "Ashore",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/12%20-%20Ashore.mp3"
+  },
+  {
+    name: "Bearer",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/10%20-%20Bearer.mp3"
+  },
+  {
+    name: "Cap",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/11%20-%20Cap.mp3"
+  },
+  {
+    name: "Confine Yourself",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/17%20-%20Confine%20Yourself.mp3"
+  },
+  {
+    name: "darts",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/6%20-%20darts.mp3"
+  },
+  {
+    name: "Heights",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/9%20-%20Heights.mp3"
+  },
+  {
+    name: "Heirs",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/5%20-%20Heirs.mp3"
+  },
+  {
+    name: "Nightmares",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/14%20-%20Nightmares.mp3"
+  },
+  {
+    name: "Nights Alone fake  Bill",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/2%20-Nights%20Alone%20(fake%20$%20Bill).mp3"
+  },
+  {
+    name: "Not's new",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/20%20-%20Not%27s%20new.mp3"
+  },
+  {
+    name: "On try",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/18%20-%20On%20try.mp3"
+  },
+  {
+    name: "Play my mind",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/19%20-%20Play%20my%20mind.mp3"
+  },
+  {
+    name: "Powder",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/7%20-%20Powder.mp3"
+  },
+  {
+    name: "Presage",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/15%20-%20Presage.mp3"
+  },
+  {
+    name: "r-Cycle",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/3%20-%20r-Cycle.mp3"
+  },
+  {
+    name: "Real Heterogeneous Fauna",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/13%20-%20Real%20Heterogeneous%20Fauna.mp3"
+  },
+  {
+    name: "scrape",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/16%20-%20scrape.mp3"
+  },
+  {
+    name: "Struggles",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/4%20-%20Struggles.mp3"
+  },
+  {
+    name: "Traeh",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/8%20-Traeh.mp3"
+  },
+  {
+    name: "Try your worst",
+    album: "11.- 'Bull's-eye'",
+    vid: "VCzKkBZ-03w",
+    path: BASE + "11.-%20%27Bull%27s-eye%27/1%20-%20Try%20your%20worst.mp3"
+  },
+  // ── Álbum 12.- 'Where are my royalties' ──
+  {
+    name: "26536",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/15%20-%2026536.mp3"
+  },
+  {
+    name: "abmas",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/14%20-%20abmas.mp3"
+  },
+  {
+    name: "Calmly",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/11%20-%20Calmly.mp3"
+  },
+  {
+    name: "Corsair",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/2%20-%20Corsair.mp3"
+  },
+  {
+    name: "End",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/13%20-%20End.mp3"
+  },
+  {
+    name: "God knows no",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/1%20-%20God%20knows%20no.mp3"
+  },
+  {
+    name: "How",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/9%20-%20How.mp3"
+  },
+  {
+    name: "migraine",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/12%20-%20migraine.mp3"
+  },
+  {
+    name: "Mnoalu",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/18%20-%20Mnoalu.mp3"
+  },
+  {
+    name: "Oh yeah hey",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/10%20-%20Oh%20yeah%20hey.mp3"
+  },
+  {
+    name: "Prevail",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/4%20-%20Prevail.mp3"
+  },
+  {
+    name: "Sari",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/6%20-%20Sari.mp3"
+  },
+  {
+    name: "shadows",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/16%20-%20shadows.mp3"
+  },
+  {
+    name: "Shudder",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/5-%20Shudder.mp3"
+  },
+  {
+    name: "Stay Home metamorphosis",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/3%20-%20Stay%20Home%20(metamorphosis).mp3"
+  },
+  {
+    name: "Subterfuge",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/7%20-%20Subterfuge.mp3"
+  },
+  {
+    name: "trial",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/17%20-%20trial.mp3"
+  },
+  {
+    name: "Tú",
+    album: "12.- 'Where are my royalties'",
+    vid: "zg2NECdI3OY",
+    path: BASE + "12.-%20%27Where%20are%20my%20royalties%27/8-%20Tú.mp3"
+  },
+  // ── Álbum 13.- 'Who u tryna' impress' ──
+  {
+    name: "annexes",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/17%20-%20annexes.mp3"
+  },
+  {
+    name: "castle queenside",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/24%20-%20castle%20queenside.mp3"
+  },
+  {
+    name: "check it out",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/15%20-%20check%20it%20out.mp3"
+  },
+  {
+    name: "doll",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/11%20-%20doll.mp3"
+  },
+  {
+    name: "door",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/19%20-%20door.mp3"
+  },
+  {
+    name: "first",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/12%20-%20first.mp3"
+  },
+  {
+    name: "fletsif",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/8%20-%20fletsif.mp3"
+  },
+  {
+    name: "funk-o-matic",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/3%20-%20funk-o-matic.mp3"
+  },
+  {
+    name: "not the last",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/14%20-%20not%20the%20last.mp3"
+  },
+  {
+    name: "now what",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/10%20-%20now%20what.mp3"
+  },
+  {
+    name: "numbers",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/16%20-%20numbers.mp3"
+  },
+  {
+    name: "Over lovely",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/1%20-%20Over%20lovely.mp3"
+  },
+  {
+    name: "pledge",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/7%20-%20pledge.mp3"
+  },
+  {
+    name: "State of matters",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/9%20-%20State%20of%20matters.mp3"
+  },
+  {
+    name: "swarmv",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/6%20-%20swarmv.mp3"
+  },
+  {
+    name: "Sway",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/2-%20Sway.mp3"
+  },
+  {
+    name: "though",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/13%20-%20though.mp3"
+  },
+  {
+    name: "together stay",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/21%20-%20together%20stay.mp3"
+  },
+  {
+    name: "toutlair",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/5%20-%20toutlair.mp3"
+  },
+  {
+    name: "Una luz",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/18%20-%20Una%20luz.mp3"
+  },
+  {
+    name: "Wired",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/20%20-%20Wired.mp3"
+  },
+  {
+    name: "yes",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/22%20-%20yes.mp3"
+  },
+  {
+    name: "you dont want to know anything about me",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/4%20-%20you%20dont%20want%20to%20know%20anything%20about%20me.mp3"
+  },
+  {
+    name: "zoom",
+    album: "13.- 'Who u tryna' impress'",
+    vid: "Nx3ucT01P-g",
+    path: BASE + "13.-%20%27Who%20u%20tryna%27%20impress%27/23%20-%20zoom.mp3"
+  },
+  // ── Álbum 14.- 'The bad words' ──
+  {
+    name: "Accomplices of Tyranny",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/13%20-%20Accomplices%20of%20Tyranny.mp3"
+  },
+  {
+    name: "Back to a New State of Normality",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/21%20-%20Back%20to%20a%20New%20State%20of%20Normality.mp3"
+  },
+  {
+    name: "Breakfast at FakeNew's",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/15%20-%20Breakfast%20at%20FakeNew%27s.mp3"
+  },
+  {
+    name: "Corruption pillage",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/10%20-%20Corruption%20pillage.mp3"
+  },
+  {
+    name: "Denounce your neighbor",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/9%20-%20Denounce%20your%20neighbor.mp3"
+  },
+  {
+    name: "Disobey the Children",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/12%20-%20Disobey%20the%20Children.mp3"
+  },
+  {
+    name: "Dumb Intellectual Property",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/18%20-%20Dumb%20Intellectual%20Property.mp3"
+  },
+  {
+    name: "Emotional terrorism",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/7%20-%20Emotional%20terrorism.mp3"
+  },
+  {
+    name: "F the industry",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/2%20-%20F%20the%20industry.mp3"
+  },
+  {
+    name: "Freedom slaught",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/5%20-%20Freedom%20slaught.mp3"
+  },
+  {
+    name: "Global Alarm",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/20%20-%20Global%20Alarm.mp3"
+  },
+  {
+    name: "Hijack thoughts",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/6%20-%20Hijack%20thoughts.mp3"
+  },
+  {
+    name: "Pure uncut drug",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/16%20-%20Pure%20uncut%20drug.mp3"
+  },
+  {
+    name: "Rape my pockets",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/4%20-%20Rape%20my%20pockets.mp3"
+  },
+  {
+    name: "Reveal the Lies",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/17%20-%20Reveal%20the%20Lies.mp3"
+  },
+  {
+    name: "Sedition from Earth",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/11%20-%20Sedition%20from%20Earth.mp3"
+  },
+  {
+    name: "Smoke The Law",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/3%20-%20Smoke%20The%20Law.mp3"
+  },
+  {
+    name: "Speech of Fake Freedom",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/19%20-%20Speech%20of%20Fake%20Freedom.mp3"
+  },
+  {
+    name: "Suicide Collective",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/14%20-%20Suicide%20Collective.mp3"
+  },
+  {
+    name: "Traffic under other's influence",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/8%20-%20Traffic%20under%20other%27s%20influence.mp3"
+  },
+  {
+    name: "YouThieve",
+    album: "14.- 'The bad words'",
+    vid: "rEKs9ttSOLA",
+    path: BASE + "14.-%20%27The%20bad%20words%27/1%20-%20YouThieve.mp3"
+  },
+  // ── Álbum 15.- 'Journey to Wasted Youth' ──
+  {
+    name: "Afflatus",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/10%20-%20Afflatus.mp3"
+  },
+  {
+    name: "Bloody Valhalla",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/9%20-%20Bloody%20Valhalla.mp3"
+  },
+  {
+    name: "Conquer",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/13%20-%20Conquer.mp3"
+  },
+  {
+    name: "crossed looks",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/12%20-%20crossed%20looks.mp3"
+  },
+  {
+    name: "deal",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/19%20-%20deal.mp3"
+  },
+  {
+    name: "Desolate",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/18%20-%20Desolate.mp3"
+  },
+  {
+    name: "do your will",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/2%20-%20do%20your%20will.mp3"
+  },
+  {
+    name: "elope",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/20%20-%20elope.mp3"
+  },
+  {
+    name: "For what do",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/15%20-%20For%20what%20do.mp3"
+  },
+  {
+    name: "get you hype",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/1%20-%20get%20you%20hype.mp3"
+  },
+  {
+    name: "I own a computer",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/4%20-%20I%20own%20a%20computer.mp3"
+  },
+  {
+    name: "lewej",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/16%20-%20lewej.mp3"
+  },
+  {
+    name: "Melalcoholiac",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/7%20-%20Melalcoholiac.mp3"
+  },
+  {
+    name: "Not me to talk",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/14%20-%20Not%20me%20to%20talk.mp3"
+  },
+  {
+    name: "Peevish",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/8%20-%20Peevish.mp3"
+  },
+  {
+    name: "Soul impulse",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/5%20-%20Soul%20impulse.mp3"
+  },
+  {
+    name: "Techne",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/6%20-%20Techne.mp3"
+  },
+  {
+    name: "Way to Death",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/11%20-%20Way%20to%20Death.mp3"
+  },
+  {
+    name: "Weight of Ego",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/3%20-%20Weight%20of%20Ego.mp3"
+  },
+  {
+    name: "Wicked",
+    album: "15.- 'Journey to Wasted Youth'",
+    vid: "0EdaPCRZXmY",
+    path: BASE + "15.-%20%27Journey%20to%20Wasted%20Youth%27/17%20-%20Wicked.mp3"
+  },
+  // ── Álbum 16.- 'Lyricless Miracles' ──
+  {
+    name: "all almost",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/12%20-%20all%20almost.mp3"
+  },
+  {
+    name: "Amalgam",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/5%20-%20Amalgam.mp3"
+  },
+  {
+    name: "Back your watch",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/11%20-%20Back%20your%20watch.mp3"
+  },
+  {
+    name: "Blue",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/7%20-%20Blue.mp3"
+  },
+  {
+    name: "Burn it",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/19%20-%20Burn%20it.mp3"
+  },
+  {
+    name: "casual",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/16%20-%20casual.mp3"
+  },
+  {
+    name: "concealed",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/20%20-%20concealed.mp3"
+  },
+  {
+    name: "Drifted",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/4%20-%20Drifted.mp3"
+  },
+  {
+    name: "Forgotten kisses",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/8%20-%20Forgotten%20kisses.mp3"
+  },
+  {
+    name: "Headway",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/2%20-%20Headway.mp3"
+  },
+  {
+    name: "It Seems That The Clouds Left With You",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/14%20-%20It%20Seems%20That%20The%20Clouds%20Left%20With%20You.mp3"
+  },
+  {
+    name: "Lightning",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/21%20-%20Lightning.mp3"
+  },
+  {
+    name: "might",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/15%20-%20might.mp3"
+  },
+  {
+    name: "Nitwit",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/9%20-%20Nitwit.mp3"
+  },
+  {
+    name: "Paramount echoes",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/3%20-%20Paramount%20echoes.mp3"
+  },
+  {
+    name: "Place",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/1%20-%20Place.mp3"
+  },
+  {
+    name: "regrowth",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/18%20-%20regrowth.mp3"
+  },
+  {
+    name: "skyline",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/13%20-%20skyline.mp3"
+  },
+  {
+    name: "Soulmates",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/6%20-%20Soulmates.mp3"
+  },
+  {
+    name: "Untangled",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/17%20-%20Untangled.mp3"
+  },
+  {
+    name: "Wait me for",
+    album: "16.- 'Lyricless Miracles'",
+    vid: "FzD53ikXz5w",
+    path: BASE + "16.-%20%27Lyricless%20Miracles%27/10%20-%20Wait%20me%20for.mp3"
+  },
+  // ── Álbum 17.- 'irl' ──
+  {
+    name: "3",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/3%20-%203.mp3"
+  },
+  {
+    name: "4444",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/4%20-%204444.mp3"
+  },
+  {
+    name: "Bad DJ",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/17%20-%20Bad%20DJ.mp3"
+  },
+  {
+    name: "Bitter Goodbyes",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/11%20-%20Bitter%20Goodbyes.mp3"
+  },
+  {
+    name: "Downstairs",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/8%20-%20Downstairs.mp3"
+  },
+  {
+    name: "Flummox",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/9%20-%20Flummox.mp3"
+  },
+  {
+    name: "Handhold",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/16%20-%20Handhold.mp3"
+  },
+  {
+    name: "Have to have",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/6%20-%20Have%20to%20have.mp3"
+  },
+  {
+    name: "Last Summer",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/7%20-%20Last%20Summer.mp3"
+  },
+  {
+    name: "Misery",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/1.-%20Misery.mp3"
+  },
+  {
+    name: "Old Hat",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/14%20-%20Old%20Hat.mp3"
+  },
+  {
+    name: "Outcast",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/10%20-%20Outcast.mp3"
+  },
+  {
+    name: "Pay day",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/18%20-%20Pay%20day.mp3"
+  },
+  {
+    name: "Poor aching heart",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/15%20-%20Poor%20aching%20heart.mp3"
+  },
+  {
+    name: "Sand",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/12%20-%20Sand.mp3"
+  },
+  {
+    name: "Sunshine eyes",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/13%20-%20Sunshine%20eyes.mp3"
+  },
+  {
+    name: "The music you skip",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/5%20-%20The%20music%20you%20skip.mp3"
+  },
+  {
+    name: "Wonder",
+    album: "17.- 'irl'",
+    vid: "g9dWBnJ20MQ",
+    path: BASE + "17.-%20%27irl%27/2%20-%20Wonder.mp3"
+  },
+  // ── Álbum 18.- 'before senescence' ──
+  {
+    name: "14 - New Titles1",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/13%20-%2014%20-%20New%20Titles[1].mp3"
+  },
+  {
+    name: "Awry astrays",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/7%20-%20Awry%20astrays.mp3"
+  },
+  {
+    name: "Bottle",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/2%20-%20Bottle.mp3"
+  },
+  {
+    name: "Cat",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/16%20-%20Cat.mp3"
+  },
+  {
+    name: "Chiripitiflauticus",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/15%20-Chiripitiflauticus.mp3"
+  },
+  {
+    name: "External thoughts",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/14%20-%20External%20thoughts.mp3"
+  },
+  {
+    name: "Flail",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/11%20-%20Flail.mp3"
+  },
+  {
+    name: "Greedings",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/9%20-%20Greedings.mp3"
+  },
+  {
+    name: "Hang up",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/5%20-%20Hang%20up.mp3"
+  },
+  {
+    name: "Hi there",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/17%20-%20Hi%20there.mp3"
+  },
+  {
+    name: "Infraencer",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/6%20-%20Infraencer.mp3"
+  },
+  {
+    name: "Large dresses",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/8%20-%20Large%20dresses.mp3"
+  },
+  {
+    name: "Lonely - Bella Thorne - Afaces remix",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/Lonely%20-%20Bella%20Thorne%20-%20Afaces%20remix.mp3"
+  },
+  {
+    name: "Preshrunk",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/1%20-%20Preshrunk.mp3"
+  },
+  {
+    name: "Questions",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/12%20-%20Questions.mp3"
+  },
+  {
+    name: "Soundtest3",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/18%20-%20Soundtest3.mp3"
+  },
+  {
+    name: "That epoch you existed",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/3%20-%20That%20epoch%20you%20existed.mp3"
+  },
+  {
+    name: "Unplaylisted",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/4%20-%20Unplaylisted.mp3"
+  },
+  {
+    name: "Whim",
+    album: "18.- 'before senescence'",
+    vid: "uEgdTjGGk-Y",
+    path: BASE + "18.-%20%27before%20senescence%27/10%20-%20Whim.mp3"
+  },
+  // ── Álbum 19.- 'back to the origins' ──
+  {
+    name: "Astronauta",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/18.-%20Astronauta.mp3"
+  },
+  {
+    name: "blue lighted rain",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/20.-%20blue%20lighted%20rain.mp3"
+  },
+  {
+    name: "Destiny repeats",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/13.-%20Destiny%20repeats.mp3"
+  },
+  {
+    name: "dial",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/15.-%20dial.mp3"
+  },
+  {
+    name: "Flying neon tires",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/11.-%20Flying%20neon%20tires.mp3"
+  },
+  {
+    name: "good night",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/21.-%20good%20night.mp3"
+  },
+  {
+    name: "La hija de Franco",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/16.-%20La%20hija%20de%20Franco.mp3"
+  },
+  {
+    name: "liek",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/3.-%20liek.mp3"
+  },
+  {
+    name: "Long time no see",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/9.-%20Long%20time%20no%20see.mp3"
+  },
+  {
+    name: "Making me crazy",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/4.-%20Making%20me%20crazy.mp3"
+  },
+  {
+    name: "mixptakes",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/7.-%20mixptakes.mp3"
+  },
+  {
+    name: "My mother's softener",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/14.-%20My%20mother%27s%20softener.mp3"
+  },
+  {
+    name: "Old times",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/8.-%20Old%20times.mp3"
+  },
+  {
+    name: "Schedules",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/19.-%20Schedules.mp3"
+  },
+  {
+    name: "Sintonize",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/17.-%20Sintonize.mp3"
+  },
+  {
+    name: "Soundtest2",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/12.-%20Soundtest2.mp3"
+  },
+  {
+    name: "Stick to the tree",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/5.-%20Stick%20to%20the%20tree.mp3"
+  },
+  {
+    name: "Tarnish",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/2.-%20Tarnish.mp3"
+  },
+  {
+    name: "This song has no video",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/1.-%20This%20song%20has%20no%20video.mp3"
+  },
+  {
+    name: "trap'd by u",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/10.-%20trap%27d%20by%20u.mp3"
+  },
+  {
+    name: "vitriolic",
+    album: "19.- 'back to the origins'",
+    vid: "Lt66WnK2Xq4",
+    path: BASE + "19.-%20%27back%20to%20the%20origins%27/6.-%20vitriolic.mp3"
+  },
+  // ── Álbum 20.- 'conversation conservation' ──
+  {
+    name: "aftermath",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/6.-%20aftermath.mp3"
+  },
+  {
+    name: "bday boi",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/19.-%20bday%20boi.mp3"
+  },
+  {
+    name: "change of view",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/13.-%20change%20of%20view.mp3"
+  },
+  {
+    name: "first day's afternoon dormer junk",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/8.-%20first%20day%27s%20afternoon%20dormer%20junk.mp3"
+  },
+  {
+    name: "gators",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/11.-%20gators.mp3"
+  },
+  {
+    name: "improvise over",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/12.-%20improvise%20over.mp3"
+  },
+  {
+    name: "last day's morning bedroom trash",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/7.-%20last%20day%27s%20morning%20bedroom%20trash.mp3"
+  },
+  {
+    name: "mami call you later",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/4.-%20mami%20call%20you%20later.mp3"
+  },
+  {
+    name: "man's compliments",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/3.-%20man%27s%20compliments.mp3"
+  },
+  {
+    name: "Messy streak",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/1.-%20Messy%20streak.mp3"
+  },
+  {
+    name: "more work",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/18.-%20more%20work.mp3"
+  },
+  {
+    name: "raw",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/20.-%20raw.mp3"
+  },
+  {
+    name: "so cheap",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/5.-%20so%20cheap.mp3"
+  },
+  {
+    name: "taboo",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/16.-%20taboo.mp3"
+  },
+  {
+    name: "the ether",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/14.-%20the%20ether.mp3"
+  },
+  {
+    name: "things removed",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/2.-%20things%20removed.mp3"
+  },
+  {
+    name: "tired",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/9.-%20tired.mp3"
+  },
+  {
+    name: "Unbidden",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/15.-%20Unbidden.mp3"
+  },
+  {
+    name: "where do I weirdo I",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/17.-%20where%20do%20I%20(weirdo%20I).mp3"
+  },
+  {
+    name: "words of choice",
+    album: "20.- 'conversation conservation'",
+    vid: "msZJIYzS7vA",
+    path: BASE + "20.-%20%27conversation%20conservation%27/10.-%20words%20of%20choice.mp3"
+  },
+  // ── Álbum 21.- 'Gloomy dances' ──
+  {
+    name: "almsgiving",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/4.-%20almsgiving.mp3"
+  },
+  {
+    name: "appear",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/12.-%20appear.mp3"
+  },
+  {
+    name: "bby",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/2.-%20bby.mp3"
+  },
+  {
+    name: "cascade",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/8.-%20cascade.mp3"
+  },
+  {
+    name: "distractions",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/6.-%20distractions.mp3"
+  },
+  {
+    name: "flickering",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/15.-%20flickering.mp3"
+  },
+  {
+    name: "La cour de mon grand-père",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/16.-%20La%20cour%20de%20mon%20grand-père.mp3"
+  },
+  {
+    name: "mcguffin",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/3.-%20mcguffin.mp3"
+  },
+  {
+    name: "Plans",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/14.-%20Plans.mp3"
+  },
+  {
+    name: "product project",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/5.-%20product%20project.mp3"
+  },
+  {
+    name: "promise",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/18.-%20promise.mp3"
+  },
+  {
+    name: "secrets",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/7.-%20secrets.mp3"
+  },
+  {
+    name: "So far so close your friends will be okay",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/10.-%20So%20far%20so%20close%20(your%20friends%20will%20be%20okay).mp3"
+  },
+  {
+    name: "sunscreen",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/9.-%20sunscreen.mp3"
+  },
+  {
+    name: "trip",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/11.-%20trip.mp3"
+  },
+  {
+    name: "unspeak",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/19.-%20unspeak.mp3"
+  },
+  {
+    name: "Unveil",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/13.-%20Unveil.mp3"
+  },
+  {
+    name: "Used to be my friend",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/20.-%20Used%20to%20be%20my%20friend.mp3"
+  },
+  {
+    name: "what's poppin'",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/17.-%20what%27s%20poppin%27.mp3"
+  },
+  {
+    name: "yeah yeah",
+    album: "21.- 'Gloomy dances'",
+    vid: "jojN7p_oBsw",
+    path: BASE + "21.-%20%27Gloomy%20dances%27/1.-%20yeah%20yeah.mp3"
+  },
+  // ── Álbum 22.- 'Not Too Bad' ──
+  {
+    name: "aigre-doux",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/15.-%20aigre-doux.mp3"
+  },
+  {
+    name: "bane",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/17.-%20bane.mp3"
+  },
+  {
+    name: "batteries not included",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/20.-%20batteries%20not%20included.mp3"
+  },
+  {
+    name: "Bleak",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/2.-%20Bleak.mp3"
+  },
+  {
+    name: "cloaks",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/19.-%20cloaks.mp3"
+  },
+  {
+    name: "dear diary",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/14.-%20dear%20diary.mp3"
+  },
+  {
+    name: "dim bone",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/9.-%20dim%20bone.mp3"
+  },
+  {
+    name: "Distant echoes of lost loves",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/10.-%20Distant%20echoes%20of%20lost%20loves.mp3"
+  },
+  {
+    name: "forlorn",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/18.-%20forlorn.mp3"
+  },
+  {
+    name: "giddy",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/12.-%20giddy.mp3"
+  },
+  {
+    name: "grewth",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/4.-%20grewth.mp3"
+  },
+  {
+    name: "Ker al Loch",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/1.-%20Ker%20al%20Loch.mp3"
+  },
+  {
+    name: "Life without u",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/16.-%20Life%20without%20u.mp3"
+  },
+  {
+    name: "nab",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/8.-%20nab.mp3"
+  },
+  {
+    name: "pleasant strangeness",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/21.-%20%20pleasant%20strangeness.mp3"
+  },
+  {
+    name: "resile",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/7.-%20resile.mp3"
+  },
+  {
+    name: "Sad kids game",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/5.-%20%20Sad%20kids%20game.mp3"
+  },
+  {
+    name: "seed",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/3.-%20seed.mp3"
+  },
+  {
+    name: "Stalwart",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/11.-%20Stalwart.mp3"
+  },
+  {
+    name: "wag",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/13.-%20wag.mp3"
+  },
+  {
+    name: "Worthless",
+    album: "22.- 'Not Too Bad'",
+    vid: "5D2dG7wPEGc",
+    path: BASE + "22.-%20%27Not%20Too%20Bad%27/6.-%20Worthless.mp3"
+  },
+  // ── Álbum 23.- 'There is Another' ──
+  {
+    name: "alive verge",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/21.-%20alive%20verge.mp3"
+  },
+  {
+    name: "cross lines",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/6.-%20cross%20lines.mp3"
+  },
+  {
+    name: "diffident age",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/12.-%20diffident%20age.mp3"
+  },
+  {
+    name: "dissent",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/15.-%20dissent.mp3"
+  },
+  {
+    name: "dubious",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/13.-%20dubious.mp3"
+  },
+  {
+    name: "flowers",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/20.-%20flowers.mp3"
+  },
+  {
+    name: "half below",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/23.-%20half%20below.mp3"
+  },
+  {
+    name: "handle",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/9.-%20handle.mp3"
+  },
+  {
+    name: "humdrum",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/16.-%20humdrum.mp3"
+  },
+  {
+    name: "Kept me hanging",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/1.-%20%20Kept%20me%20hanging.mp3"
+  },
+  {
+    name: "Leaks",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/4.-%20Leaks.mp3"
+  },
+  {
+    name: "mayhap",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/11.-%20mayhap.mp3"
+  },
+  {
+    name: "milling",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/10.-%20milling.mp3"
+  },
+  {
+    name: "nothing left",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/7.-%20nothing%20left.mp3"
+  },
+  {
+    name: "one floor",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/8.-%20one%20floor.mp3"
+  },
+  {
+    name: "salver",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/18.-%20salver.mp3"
+  },
+  {
+    name: "Solution",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/2.-%20Solution.mp3"
+  },
+  {
+    name: "strike",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/14.-%20strike.mp3"
+  },
+  {
+    name: "tie your shoes",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/22.-%20tie%20your%20shoes.mp3"
+  },
+  {
+    name: "toss",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/17.-%20toss.mp3"
+  },
+  {
+    name: "trite",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/19.-%20trite.mp3"
+  },
+  {
+    name: "undertow",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/5.-%20undertow.mp3"
+  },
+  {
+    name: "Where were you this friday night",
+    album: "23.- 'There is Another'",
+    vid: "yJaQezPFOdc",
+    path: BASE + "23.-%20%27There%20is%20Another%27/3.-%20Where%20were%20you%20this%20friday%20night.mp3"
+  },
+  // ── Añade más pistas aquí siguiendo el mismo patrón ──
+  // {
+  //   name: "Nombre de la canción",
+  //   album: "N.- 'Nombre del álbum'",
+  //   vid: "ID_YOUTUBE",
+  //   path: BASE + "N.-%20'Album%20folder'/N%20-%20track.mp3"
+  // },
+];
