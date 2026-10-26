@@ -10,7 +10,7 @@ const link=item=>item.youtube_url&&/^https:\/\/www\.youtube\.com\/watch\?v=[\w-]
 if(map){
 const detail=document.getElementById('mapDetail'),search=document.getElementById('mapSearch'),count=document.getElementById('mapCount');
 const show=(phase,nucleus,selected)=>{
-detail.replaceChildren();detail.append(el('h2','',nucleus.name+' / Fase '+String(phase.id).padStart(2,'0')),el('p','ux-note',selected.length+' lanzamientos documentados'));
+detail.replaceChildren();detail.append(el('h2','',nucleus.name+' / Fase '+String(phase.id).padStart(2,'0')),el('p','ux-note',selected.length+' lanzamientos asociados (incluye clasificaciones propuestas)'));
 const actions=el('div','ux-actions');
 const query=el('a','ux-link','Ver recomendaciones filtradas');query.href='recomendaciones.html?fase='+phase.id+'&nucleo_arch='+encodeURIComponent(nucleus.id);actions.append(query);
 if(nucleus.playlistId){const a=el('a','ux-link','Playlist temática de YouTube');a.href='https://www.youtube.com/playlist?list='+encodeURIComponent(nucleus.playlistId);a.target='_blank';a.rel='noopener noreferrer';actions.append(a)}

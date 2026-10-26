@@ -50,7 +50,7 @@ def generate():
     if not phases:
         raise ValueError("Fases no reconocidas")
     for phase in previous.get("architecture", {}).get("phases", []):
-        if phase.get("pending") and phase["id"] not in {x["id"] for x in phases}:
+        if phase["id"] not in {x["id"] for x in phases}:
             phases.append(phase)
     phases.sort(key=lambda x: x["id"])
     themes_text = between(source, "  themes: [", "  series: [")
@@ -70,8 +70,8 @@ def generate():
                    and p["min"] <= item["numero"] <= p["max"]]
         if len(matches) > 1:
             raise ValueError("Fases solapadas: " + ref)
-        row["fase_id"] = matches[0]["id"] if matches else None
-        row["nucleos_architectura"] = [t["id"] for t in themes if ref in t["refs"]]
+        row["fase_id"] = matches[0]["id"] if matches else row.get("fase_id")
+        row["nucleos_architectura"] = list(dict.fromkeys([t["id"] for t in themes if ref in t["refs"]] + row.get("nucleos_architectura", [])))
         row.setdefault("nucleos", [])
         row.setdefault("clasificacion", "pendiente_revision")
         updated.append(row)
