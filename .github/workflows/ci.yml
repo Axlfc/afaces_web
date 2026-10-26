@@ -10,16 +10,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Comprobar sincronización del catálogo
-        run: python scripts/sync_catalog.py --check
-      - name: Construir y comprobar recursos estáticos
-        run: python scripts/build_tinet.py --manifest
-      - name: Publicar artefacto para inspección
+      - name: Preparar worktree de verificación aislado
+        run: git worktree add --detach "$RUNNER_TEMP/afaces-web-verify" HEAD
+      - name: Pruebas, sincronización y construcción
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/afaces-web-verify"
+          python -m unittest discover -s tests -v
+          python scripts/sync_catalog.py --check
+          python scripts/build_tinet.py --manifest
+          python -m http.server 8765 --bind 127.0.0.1 --directory dist >"$RUNNER_TEMP/afaces-http.log" 2>&1 &
+          pid=$!
+          trap 'kill "$pid" 2>/dev/null || true' EXIT
+          python scripts/verify_tinet.py --base-url http://127.0.0.1:8765/ --all --retries 3
+      - name: Publicar artefacto de despliegue
         uses: actions/upload-artifact@v4
         with:
           name: afaces-tinet-site
-          path: dist/
+          path: ${{ runner.temp }}/afaces-web-verify/dist/
           if-no-files-found: error
+      - name: Limpiar worktree temporal
+        if: always()
+        run: |
+          git worktree remove --force "$RUNNER_TEMP/afaces-web-verify" || true
+          git worktree prune
