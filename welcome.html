@@ -24,16 +24,7 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">A<span>F</span>ACES</a>
-  <ul class="nav-links">
-    <li><a href="#about">Artista</a></li>
-    <li><a href="#phases">Fases</a></li>
-    <li><a href="#tematicas">Temáticas</a></li>
-    <li><a href="#series">Series</a></li>
-    <li><a href="#discography">Discografía</a></li>
-    <li><a href="#platforms">Escuchar</a></li>
-    <li><a href="onboarding.html">Descubrir</a></li>
-    <li><a href="perfiles.html">Perfiles</a></li><li><a href="mapa.html">Mapa</a></li><li><a href="timeline.html">Cronología</a></li>
-  </ul>
+  <ul class="nav-links"></ul>
   <div class="nav-right">
     <!-- RADIO TOGGLE -->
     <button class="radio-toggle" id="radioToggle" title="Radio Afaces" aria-label="Abrir radio">
@@ -332,17 +323,17 @@
       </div>
       <button class="modal-close" onclick="closeModal()">✕ Cerrar</button>
     </div>
-    <a href="#" id="mThumbLink" target="_blank" rel="noopener" class="modal-thumb-wrap">
+    <a href="#" id="mThumbLink" class="modal-thumb-wrap">
       <img id="mThumbImg" class="mthumb-img" src="" alt="">
       <div class="mplay-btn">
         <svg width="22" height="26" viewBox="0 0 22 26" fill="white"><path d="M0 0L22 13L0 26Z"/></svg>
       </div>
       <span class="mwatch-label">Hover para reproducir</span>
-      <span class="mwatch-cta">▶ Ver en YouTube</span>
+      <span class="mwatch-cta">▶ Ver ficha y escuchar</span>
     </a>
     <div class="modal-release-desc" id="mDesc" style="display:none"></div>
     <div class="modal-foot">
-      <a href="#" id="mYtLink" target="_blank" rel="noopener" class="modal-yt">↗ Abrir en YouTube</a>
+      <a href="#" id="mYtLink" class="modal-yt">▶ Ver ficha y escuchar aquí</a>
       <a href="#" id="mBcLink" target="_blank" rel="noopener" class="modal-bc">↗ Abrir en Bandcamp</a>
       <div class="modal-nav">
         <button class="mnav-btn" id="mPrev" onclick="navigateModal(-1)">← Anterior</button>
@@ -389,6 +380,6 @@
     }catch(e){console.warn(e)}
   })();
 </script>
-<script src="js/main.js"></script><script src="js/modes.js" defer></script>
+<script src="js/main.js"></script><script src="js/mobile-nav.js" defer></script><script src="js/modes.js" defer></script>
 </body>
 </html>
