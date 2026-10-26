@@ -1,4 +1,4 @@
-name: Publicar AFACES en TINET
+name: Publicar AFACES en TINET (FTPS)
 on:
   push:
     branches: [master]
@@ -13,53 +13,35 @@ jobs:
     if: vars.TINET_DEPLOY_ENABLED == 'true'
     runs-on: ubuntu-latest
     environment: tinet-production
+    env:
+      FTP_SERVER: ${{ secrets.FTP_SERVER || 'usuaris.tinet.cat' }}
+      FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+      FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      TINET_REMOTE_DIR: ${{ vars.TINET_REMOTE_DIR || 'html' }}
+      TINET_FTP_PORT: ${{ vars.TINET_FTP_PORT || '21' }}
+      TINET_PUBLIC_URL: ${{ vars.TINET_PUBLIC_URL || 'https://usuaris.tinet.cat/~afaces/' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validar catálogo
-        run: python scripts/sync_catalog.py --check
-      - name: Construir sitio estático
-        run: python scripts/build_tinet.py --manifest
-      - name: Verificar configuración FTP
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-          FTP_REMOTE_DIR: ${{ vars.TINET_REMOTE_DIR }}
-        run: |
-          test -n "$FTP_SERVER" && test -n "$FTP_USERNAME" && test -n "$FTP_PASSWORD"
-          test -n "$FTP_REMOTE_DIR"
-          case "$FTP_REMOTE_DIR" in
-            /*) ;;
-            *) echo "TINET_REMOTE_DIR debe ser ruta absoluta confirmada" >&2; exit 1 ;;
-          esac
-      - name: Instalar cliente FTP
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
-      - name: Subir solo archivos publicables (sin borrados remotos)
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-          FTP_REMOTE_DIR: ${{ vars.TINET_REMOTE_DIR }}
-          FTP_PORT: ${{ vars.TINET_FTP_PORT || '21' }}
+      - name: Pruebas, integridad y paquete público
         run: |
           set -euo pipefail
-          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" -p "$FTP_PORT" "$FTP_SERVER" <<EOF
-          set cmd:fail-exit yes
-          set ftp:ssl-allow yes
-          set ssl:verify-certificate yes
-          set net:max-retries 2
-          mirror --reverse --verbose --only-newer --parallel=2 dist/ "$FTP_REMOTE_DIR"
-          bye
-          EOF
-      - name: Comprobar página pública
-        env:
-          TINET_PUBLIC_URL: ${{ vars.TINET_PUBLIC_URL }}
+          python -m unittest discover -s tests -v
+          python scripts/sync_catalog.py --check
+          python scripts/build_tinet.py --manifest
+      - name: Publicar por FTPS explícito cifrado en html/
         run: |
-          if [ -n "$TINET_PUBLIC_URL" ]; then
-            curl --fail --location --retry 3 --retry-delay 3 --max-time 30 "$TINET_PUBLIC_URL" -o /dev/null
-          else
-            echo "Sin TINET_PUBLIC_URL: verificación HTTP no configurada"
-          fi
+          python scripts/deploy_tinet.py --dist dist --backup "$RUNNER_TEMP/tinet-backup"
+      - name: Guardar copias de seguridad de archivos sobrescritos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tinet-backup-${{ github.run_number }}
+          path: ${{ runner.temp }}/tinet-backup/
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Verificar páginas y catálogo en TINET mediante SHA-256
+        run: |
+          python scripts/verify_tinet.py --base-url "$TINET_PUBLIC_URL" --manifest dist/deploy-manifest.json --retries 4
