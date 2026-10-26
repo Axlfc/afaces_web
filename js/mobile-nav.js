@@ -7,12 +7,12 @@
   if(!nav || !links)return;
 
   const items=[
-    ['Artista','welcome.html#about',true],
+    ['Artista','welcome.html#about',false],
     ['Fases','welcome.html#phases',false],
     ['Temáticas','welcome.html#tematicas',false],
     ['Series','welcome.html#series',false],
-    ['Discografía','welcome.html#discography',true],
-    ['Escuchar','welcome.html#platforms',true],
+    ['Discografía','welcome.html#discography',false],
+    ['Escuchar','welcome.html#platforms',false],
     ['Descubrir','onboarding.html',true],
     ['Perfiles','perfiles.html',true],
     ['Mapa','mapa.html',false],
