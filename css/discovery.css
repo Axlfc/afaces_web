@@ -42,3 +42,9 @@
 @media(max-width:700px){.ux-page{padding:7rem 1rem 4rem}.ux-title{font-size:clamp(3.5rem,16vw,6rem)}.ux-grid{grid-template-columns:1fr}.ux-card{min-height:130px}.ux-choice{min-height:115px}.ux-results .ux-card{min-height:220px}nav{padding:1rem}nav .nav-right{gap:.35rem}nav .nav-cta{padding:.5rem;font-size:.5rem}}
 @media(prefers-reduced-motion:reduce){.ux-card,.ux-card:before,.ux-button,.ux-cover{transition:none!important}}
 @media(pointer:coarse){.ux-page,.ux-page *,.ux-home-entry *{cursor:auto!important}}
+
+/* Shared chrome parity with welcome.html */
+@media(hover:none),(pointer:coarse){.cursor,.cursor-ring{display:none!important}body{cursor:auto!important}a,button,input,label{cursor:pointer!important}}
+@media(prefers-reduced-motion:reduce){.cursor,.cursor-ring{display:none!important}body{cursor:auto!important}}
+@media(max-width:900px){nav .nav-links{display:none}nav{gap:.8rem}nav .nav-right{margin-left:auto}}
+.ux-page{padding-top:clamp(8rem,13vw,11rem)}
