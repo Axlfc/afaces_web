@@ -1,3 +1,4 @@
+import hashlib
 import io
 import json
 import tempfile
@@ -10,14 +11,12 @@ from scripts.deploy_tinet import plan, publish
 class FakeFTP:
     def __init__(self):
         self.cwd_path = "/"
-        self.data = {"/html/welcome.html": b"old"}
-        self.dirs = {"/", "/html"}
+        self.data = {"/welcome.html": b"old"}
+        self.dirs = {"/"}
 
     def cwd(self, path):
-        dest = (self.cwd_path.rstrip("/") + "/" + path).replace("//", "/") if not path.startswith("/") else path
-        while "/./" in dest:
-            dest = dest.replace("/./", "/")
-        dest = dest.rstrip("/") or "/"
+        import posixpath
+        dest = posixpath.normpath(posixpath.join(self.cwd_path, path))
         if dest not in self.dirs:
             from ftplib import error_perm
             raise error_perm("550 No such directory")
@@ -62,16 +61,64 @@ class FTPTests(unittest.TestCase):
             (dist / "data").mkdir()
             (dist / "data" / "metadata.json").write_bytes(b"new")
             (dist / "welcome.html").write_bytes(b"updated")
+            hashes = {
+                "data/metadata.json": hashlib.sha256(b"new").hexdigest(),
+                "welcome.html": hashlib.sha256(b"updated").hexdigest(),
+            }
             (dist / "deploy-manifest.json").write_text(json.dumps({
-                "schema_version": 1,
-                "files": {"data/metadata.json": "x", "welcome.html": "y"}
+                "schema_version": 1, "files": hashes
             }))
             ftp = FakeFTP()
-            changed = publish(ftp, dist, "html", dist / "backup")
+            changed = publish(ftp, dist, ".", dist / "backup")
             self.assertEqual(changed, 2)
-            self.assertEqual(ftp.data["/html/data/metadata.json"], b"new")
-            self.assertEqual(ftp.data["/html/welcome.html"], b"updated")
+            self.assertEqual(ftp.data["/data/metadata.json"], b"new")
+            self.assertEqual(ftp.data["/welcome.html"], b"updated")
             self.assertEqual((dist / "backup" / "welcome.html").read_bytes(), b"old")
+
+
+    def test_repair_missing_file_with_unchanged_manifest(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dist = Path(tmp)
+            (dist / "data").mkdir()
+            (dist / "data" / "metadata.json").write_bytes(b"new")
+            (dist / "welcome.html").write_bytes(b"updated")
+            hashes = {
+                "data/metadata.json": hashlib.sha256(b"new").hexdigest(),
+                "welcome.html": hashlib.sha256(b"updated").hexdigest(),
+            }
+            manifest = json.dumps({"schema_version": 1, "files": hashes}).encode()
+            (dist / "deploy-manifest.json").write_bytes(manifest)
+            ftp = FakeFTP()
+            ftp.data["/welcome.html"] = b"updated"
+            ftp.data["/deploy-manifest.json"] = manifest
+            self.assertEqual(publish(ftp, dist, ".", dist / "backup"), 1)
+            self.assertEqual(ftp.data["/data/metadata.json"], b"new")
+
+    def test_html_folder_is_not_an_accepted_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaisesRegex(ValueError, "TINET_REMOTE_DIR"):
+                publish(FakeFTP(), Path(tmp), "html", Path(tmp) / "backup")
+
+    def test_missing_welcome_fails_before_upload(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ftp = FakeFTP()
+            ftp.data.clear()
+            with self.assertRaisesRegex(ValueError, "welcome.html"):
+                publish(ftp, Path(tmp), ".", Path(tmp) / "backup")
+
+    def test_manifest_hash_mismatch_fails_before_upload(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dist = Path(tmp)
+            (dist / "welcome.html").write_bytes(b"new")
+            (dist / "deploy-manifest.json").write_text(json.dumps({
+                "schema_version": 1, "files": {"welcome.html": "0" * 64}
+            }))
+            ftp = FakeFTP()
+            with self.assertRaisesRegex(ValueError, "Hash local incoherente"):
+                publish(ftp, dist, ".", dist / "backup")
+            self.assertEqual(ftp.data["/welcome.html"], b"old")
+
+
 
 
 if __name__ == "__main__":
