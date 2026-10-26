@@ -1,1 +1,1567 @@
-{"source":"https://www.youtube.com/@afaces/videos","count":0,"videos":[]}
+{
+  "source": "js/main.js (ALBUMS, LPS y AFACES_SITE.themes)",
+  "count": 126,
+  "videos": [
+    {
+      "ref": "A:1",
+      "titulo": "Nefasto",
+      "title": "Nefasto",
+      "coleccion": "album",
+      "numero": 1,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=SWNbhMxS4S4",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:2",
+      "titulo": "Writer",
+      "title": "Writer",
+      "coleccion": "album",
+      "numero": 2,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=1PB176jjic8",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:3",
+      "titulo": "Back and Fro",
+      "title": "Back and Fro",
+      "coleccion": "album",
+      "numero": 3,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=uwmr2eNdpE4",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:4",
+      "titulo": "Planetc",
+      "title": "Planetc",
+      "coleccion": "album",
+      "numero": 4,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=F44txcWQoJQ",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:5",
+      "titulo": "Black",
+      "title": "Black",
+      "coleccion": "album",
+      "numero": 5,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=rcAxMjoC7fw",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:6",
+      "titulo": "list",
+      "title": "list",
+      "coleccion": "album",
+      "numero": 6,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=_DSxx9E3MCQ",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:7",
+      "titulo": "A cool name",
+      "title": "A cool name",
+      "coleccion": "album",
+      "numero": 7,
+      "fase": "Downtempo",
+      "youtube_url": "https://www.youtube.com/watch?v=RVxpNONLZ8o",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:8",
+      "titulo": "50%",
+      "title": "50%",
+      "coleccion": "album",
+      "numero": 8,
+      "fase": "Downtempo",
+      "youtube_url": "https://www.youtube.com/watch?v=_4Vfk487foQ",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:9",
+      "titulo": "advisory content",
+      "title": "advisory content",
+      "coleccion": "album",
+      "numero": 9,
+      "fase": "Downtempo",
+      "youtube_url": "https://www.youtube.com/watch?v=ybNa3a48fxk",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "A:10",
+      "titulo": "BUY NEVER",
+      "title": "BUY NEVER",
+      "coleccion": "album",
+      "numero": 10,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=Utmf9RgCITo",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "A:11",
+      "titulo": "Bull's-eye",
+      "title": "Bull's-eye",
+      "coleccion": "album",
+      "numero": 11,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=VCzKkBZ-03w",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:12",
+      "titulo": "Where are my royalties",
+      "title": "Where are my royalties",
+      "coleccion": "album",
+      "numero": 12,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=zg2NECdI3OY",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "A:13",
+      "titulo": "Who u tryna' impress",
+      "title": "Who u tryna' impress",
+      "coleccion": "album",
+      "numero": 13,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=Nx3ucT01P-g",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "A:14",
+      "titulo": "The bad words",
+      "title": "The bad words",
+      "coleccion": "album",
+      "numero": 14,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=rEKs9ttSOLA",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:15",
+      "titulo": "Journey to Wasted Youth",
+      "title": "Journey to Wasted Youth",
+      "coleccion": "album",
+      "numero": 15,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=0EdaPCRZXmY",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:16",
+      "titulo": "Lyricless Miracles",
+      "title": "Lyricless Miracles",
+      "coleccion": "album",
+      "numero": 16,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=FzD53ikXz5w",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:17",
+      "titulo": "irl",
+      "title": "irl",
+      "coleccion": "album",
+      "numero": 17,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=g9dWBnJ20MQ",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:18",
+      "titulo": "before senescence",
+      "title": "before senescence",
+      "coleccion": "album",
+      "numero": 18,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=uEgdTjGGk-Y",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:19",
+      "titulo": "back to the origins",
+      "title": "back to the origins",
+      "coleccion": "album",
+      "numero": 19,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=Lt66WnK2Xq4",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:20",
+      "titulo": "conversation conservation",
+      "title": "conversation conservation",
+      "coleccion": "album",
+      "numero": 20,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=msZJIYzS7vA",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:21",
+      "titulo": "Gloomy dances",
+      "title": "Gloomy dances",
+      "coleccion": "album",
+      "numero": 21,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=jojN7p_oBsw",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:22",
+      "titulo": "Not Too Bad",
+      "title": "Not Too Bad",
+      "coleccion": "album",
+      "numero": 22,
+      "fase": "Alternative",
+      "youtube_url": "https://www.youtube.com/watch?v=5D2dG7wPEGc",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:23",
+      "titulo": "There is Another",
+      "title": "There is Another",
+      "coleccion": "album",
+      "numero": 23,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=yJaQezPFOdc",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:24",
+      "titulo": "Cafés",
+      "title": "Cafés",
+      "coleccion": "album",
+      "numero": 24,
+      "fase": "Electronic",
+      "youtube_url": "https://www.youtube.com/watch?v=0sYNIjkrPnY",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "A:25",
+      "titulo": "Mental Breakdown in The Virtual Kitchen",
+      "title": "Mental Breakdown in The Virtual Kitchen",
+      "coleccion": "album",
+      "numero": 25,
+      "fase": "Downtempo",
+      "youtube_url": "https://www.youtube.com/watch?v=SDWjbspXElQ",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "A:26",
+      "titulo": "Natural Stupidity",
+      "title": "Natural Stupidity",
+      "coleccion": "album",
+      "numero": 26,
+      "fase": "Downtempo",
+      "youtube_url": "https://www.youtube.com/watch?v=c60OIAPuF3E",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "A:27",
+      "titulo": "Uncivil",
+      "title": "Uncivil",
+      "coleccion": "album",
+      "numero": 27,
+      "fase": "Downtempo",
+      "youtube_url": "https://www.youtube.com/watch?v=b63grPuQfpw",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:1",
+      "titulo": "Ole y Ole",
+      "title": "Ole y Ole",
+      "coleccion": "lp",
+      "numero": 1,
+      "fase": "Inicios",
+      "youtube_url": "https://www.youtube.com/watch?v=g9hcz4P5CQE",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:2",
+      "titulo": "lorem ipsum",
+      "title": "lorem ipsum",
+      "coleccion": "lp",
+      "numero": 2,
+      "fase": "Inicios",
+      "youtube_url": "https://www.youtube.com/watch?v=Yc3NPdmnUJg",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:3",
+      "titulo": "The day of the trial",
+      "title": "The day of the trial",
+      "coleccion": "lp",
+      "numero": 3,
+      "fase": "Inicios",
+      "youtube_url": "https://www.youtube.com/watch?v=rM_sBnq9peM",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:4",
+      "titulo": "bad rabbits",
+      "title": "bad rabbits",
+      "coleccion": "lp",
+      "numero": 4,
+      "fase": "Inicios",
+      "youtube_url": "https://www.youtube.com/watch?v=gT3_2KV9hQw",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:5",
+      "titulo": "Tránsito",
+      "title": "Tránsito",
+      "coleccion": "lp",
+      "numero": 5,
+      "fase": "Urbano / Social",
+      "youtube_url": "https://www.youtube.com/watch?v=4GoEA-aqaBc",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:6",
+      "titulo": "Accidente",
+      "title": "Accidente",
+      "coleccion": "lp",
+      "numero": 6,
+      "fase": "Urbano / Social",
+      "youtube_url": "https://www.youtube.com/watch?v=_3MDFE9F2qw",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:7",
+      "titulo": "El Horizonte",
+      "title": "El Horizonte",
+      "coleccion": "lp",
+      "numero": 7,
+      "fase": "Urbano / Social",
+      "youtube_url": "https://www.youtube.com/watch?v=2VOKZlw9XSQ",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:8",
+      "titulo": "Basura",
+      "title": "Basura",
+      "coleccion": "lp",
+      "numero": 8,
+      "fase": "Urbano / Social",
+      "youtube_url": "https://www.youtube.com/watch?v=X-9fiOfZ7O0",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:9",
+      "titulo": "Emigrante",
+      "title": "Emigrante",
+      "coleccion": "lp",
+      "numero": 9,
+      "fase": "Urbano / Social",
+      "youtube_url": "https://www.youtube.com/watch?v=wl5WPae8h8o",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:10",
+      "titulo": "Las Máquinas",
+      "title": "Las Máquinas",
+      "coleccion": "lp",
+      "numero": 10,
+      "fase": "Urbano / Social",
+      "youtube_url": "https://www.youtube.com/watch?v=7R3M1R2Jtbs",
+      "nucleos": [
+        "control",
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:11",
+      "titulo": "Pacizeq",
+      "title": "Pacizeq",
+      "coleccion": "lp",
+      "numero": 11,
+      "fase": "Alt-Ortografía",
+      "youtube_url": "https://www.youtube.com/watch?v=YZjFu2Ku_fk",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:12",
+      "titulo": "Revoltaz",
+      "title": "Revoltaz",
+      "coleccion": "lp",
+      "numero": 12,
+      "fase": "Alt-Ortografía",
+      "youtube_url": "https://www.youtube.com/watch?v=e8p_SwbU_9M",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:13",
+      "titulo": "Disculpaz-nos",
+      "title": "Disculpaz-nos",
+      "coleccion": "lp",
+      "numero": 13,
+      "fase": "Alt-Ortografía",
+      "youtube_url": "https://www.youtube.com/watch?v=5NUVnX4aHM0",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:14",
+      "titulo": "Legiz-Kaizen Eternaz",
+      "title": "Legiz-Kaizen Eternaz",
+      "coleccion": "lp",
+      "numero": 14,
+      "fase": "Alt-Ortografía",
+      "youtube_url": "https://www.youtube.com/watch?v=fA2zYyttQn8",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:15",
+      "titulo": "Nexuz-Persönaz",
+      "title": "Nexuz-Persönaz",
+      "coleccion": "lp",
+      "numero": 15,
+      "fase": "Serie NEXUZ",
+      "youtube_url": "https://www.youtube.com/watch?v=WY2UcpWj2UU",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:16",
+      "titulo": "Nexuz Sonoraz",
+      "title": "Nexuz Sonoraz",
+      "coleccion": "lp",
+      "numero": 16,
+      "fase": "Serie NEXUZ",
+      "youtube_url": "https://www.youtube.com/watch?v=FoSlrs8JxJ0",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:17",
+      "titulo": "NEXUZ SOPHIA: KONZEPT FRAKTUR",
+      "title": "NEXUZ SOPHIA: KONZEPT FRAKTUR",
+      "coleccion": "lp",
+      "numero": 17,
+      "fase": "Serie NEXUZ",
+      "youtube_url": "https://www.youtube.com/watch?v=t-glKj9Krp0",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:18",
+      "titulo": "PROTOCOLO D.E.U.S. - CONSTRUYENDO EL FUTURO",
+      "title": "PROTOCOLO D.E.U.S. - CONSTRUYENDO EL FUTURO",
+      "coleccion": "lp",
+      "numero": 18,
+      "fase": "Serie PROTOCOLO",
+      "youtube_url": "https://www.youtube.com/watch?v=Nnp0Ffwx4Ac",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:19",
+      "titulo": "SYN KODE: The Complete System Report",
+      "title": "SYN KODE: The Complete System Report",
+      "coleccion": "lp",
+      "numero": 19,
+      "fase": "Serie KODE",
+      "youtube_url": "https://www.youtube.com/watch?v=k-ZwEKnSG38",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:20",
+      "titulo": "ARCHIVE-ZERO",
+      "title": "ARCHIVE-ZERO",
+      "coleccion": "lp",
+      "numero": 20,
+      "fase": "Serie ZERO",
+      "youtube_url": "https://www.youtube.com/watch?v=8Kkf_Y9OWV0",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:21",
+      "titulo": "KODE-ZERO",
+      "title": "KODE-ZERO",
+      "coleccion": "lp",
+      "numero": 21,
+      "fase": "Serie KODE / ZERO",
+      "youtube_url": "https://www.youtube.com/watch?v=2ltQVLJpKSo",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:22",
+      "titulo": "PROTOCOLO ESCAPE: Capítulo 1 (Piloto)",
+      "title": "PROTOCOLO ESCAPE: Capítulo 1 (Piloto)",
+      "coleccion": "lp",
+      "numero": 22,
+      "fase": "Serie PROTOCOLO",
+      "youtube_url": "https://www.youtube.com/watch?v=QXn7dgudcTU",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:23",
+      "titulo": "Entre Líneas",
+      "title": "Entre Líneas",
+      "coleccion": "lp",
+      "numero": 23,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=KIz9tKGR8yQ",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:24",
+      "titulo": "La Villa Está Que Arde",
+      "title": "La Villa Está Que Arde",
+      "coleccion": "lp",
+      "numero": 24,
+      "fase": "Trilogía del Fuego",
+      "youtube_url": "https://www.youtube.com/watch?v=wUf3MYR2gVE",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:25",
+      "titulo": "La Cancha Está Por Estallar",
+      "title": "La Cancha Está Por Estallar",
+      "coleccion": "lp",
+      "numero": 25,
+      "fase": "Trilogía del Fuego",
+      "youtube_url": "https://www.youtube.com/watch?v=jF1ptJTZe6U",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:26",
+      "titulo": "Todo Se Quema",
+      "title": "Todo Se Quema",
+      "coleccion": "lp",
+      "numero": 26,
+      "fase": "Trilogía del Fuego",
+      "youtube_url": "https://www.youtube.com/watch?v=rwSk4r2SpMA",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:27",
+      "titulo": "Geometría del Vacío",
+      "title": "Geometría del Vacío",
+      "coleccion": "lp",
+      "numero": 27,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=zXGaZHMvGuQ",
+      "nucleos": [
+        "vacio"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:28",
+      "titulo": "Calles Vacías",
+      "title": "Calles Vacías",
+      "coleccion": "lp",
+      "numero": 28,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=0y0O8tCu5F0",
+      "nucleos": [
+        "vacio"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:29",
+      "titulo": "Veneno Diario",
+      "title": "Veneno Diario",
+      "coleccion": "lp",
+      "numero": 29,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=Ex_ZPrCh7aU",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:30",
+      "titulo": "Cartografías",
+      "title": "Cartografías",
+      "coleccion": "lp",
+      "numero": 30,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=XG_Ekvc1ssY",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:31",
+      "titulo": "Desaparecemos Juntos",
+      "title": "Desaparecemos Juntos",
+      "coleccion": "lp",
+      "numero": 31,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=q-J8ozYTFec",
+      "nucleos": [
+        "vacio"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:32",
+      "titulo": "Ecos Digitales",
+      "title": "Ecos Digitales",
+      "coleccion": "lp",
+      "numero": 32,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=nnhfLpMbICc",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:33",
+      "titulo": "Año Cincuenta",
+      "title": "Año Cincuenta",
+      "coleccion": "lp",
+      "numero": 33,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=CbWGu_zEE_A",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:34",
+      "titulo": "Pactos Digitales",
+      "title": "Pactos Digitales",
+      "coleccion": "lp",
+      "numero": 34,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=BsTNbf7pKXo",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:35",
+      "titulo": "Inmóvil",
+      "title": "Inmóvil",
+      "coleccion": "lp",
+      "numero": 35,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=8LFGqnocqKQ",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:36",
+      "titulo": "Despertar",
+      "title": "Despertar",
+      "coleccion": "lp",
+      "numero": 36,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=dsBZmyS9vVo",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:37",
+      "titulo": "ARQUITECTOS DEL MAÑANA",
+      "title": "ARQUITECTOS DEL MAÑANA",
+      "coleccion": "lp",
+      "numero": 37,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=SPKE6Mbypfs",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:38",
+      "titulo": "La Puerta del Servicio",
+      "title": "La Puerta del Servicio",
+      "coleccion": "lp",
+      "numero": 38,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=DG8IG7pjFkw",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:39",
+      "titulo": "Cuarenta Espejos",
+      "title": "Cuarenta Espejos",
+      "coleccion": "lp",
+      "numero": 39,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=1Y3DoR7AVvQ",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:40",
+      "titulo": "Estación Fantasma",
+      "title": "Estación Fantasma",
+      "coleccion": "lp",
+      "numero": 40,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=n8PcbVtlqo8",
+      "nucleos": [
+        "vacio"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:41",
+      "titulo": "Gris",
+      "title": "Gris",
+      "coleccion": "lp",
+      "numero": 41,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=6qXZUmk0nN4",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:42",
+      "titulo": "Juega, juega",
+      "title": "Juega, juega",
+      "coleccion": "lp",
+      "numero": 42,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=SyQT5uKy7xI",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:43",
+      "titulo": "Señal Perdida",
+      "title": "Señal Perdida",
+      "coleccion": "lp",
+      "numero": 43,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=dfO5yMOObuk",
+      "nucleos": [
+        "vacio"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:44",
+      "titulo": "Cosmos Villero: La Última Frontera",
+      "title": "Cosmos Villero: La Última Frontera",
+      "coleccion": "lp",
+      "numero": 44,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=CKS3NOSIZaQ",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:45",
+      "titulo": "Lo",
+      "title": "Lo",
+      "coleccion": "lp",
+      "numero": 45,
+      "fase": "Minimalista",
+      "youtube_url": "https://www.youtube.com/watch?v=YRkw4u1BsGk",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:46",
+      "titulo": "El Duelo",
+      "title": "El Duelo",
+      "coleccion": "lp",
+      "numero": 46,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=daq8KDDobfw",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:47",
+      "titulo": "Código de Carne",
+      "title": "Código de Carne",
+      "coleccion": "lp",
+      "numero": 47,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=9L7dmSua6dE",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:48",
+      "titulo": "Aquí No Hay Futuro, Solo Gasolineras",
+      "title": "Aquí No Hay Futuro, Solo Gasolineras",
+      "coleccion": "lp",
+      "numero": 48,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=OfrYrcML6uw",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:49",
+      "titulo": "Los Afaces - Deux Genesis",
+      "title": "Los Afaces - Deux Genesis",
+      "coleccion": "lp",
+      "numero": 49,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=ZJSpIfSxOM4",
+      "nucleos": [
+        "identidad"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:50",
+      "titulo": "Ya Lo Sabes",
+      "title": "Ya Lo Sabes",
+      "coleccion": "lp",
+      "numero": 50,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=YUVDROFMQXU",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:51",
+      "titulo": "Yo huelo a nada en el espejo del baño de damas",
+      "title": "Yo huelo a nada en el espejo del baño de damas",
+      "coleccion": "lp",
+      "numero": 51,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=cZPFBw3UvBU",
+      "nucleos": [
+        "vacio"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:52",
+      "titulo": "El Papeleo",
+      "title": "El Papeleo",
+      "coleccion": "lp",
+      "numero": 52,
+      "fase": "Burocracia",
+      "youtube_url": "https://www.youtube.com/watch?v=wwI7QhV55PI",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:53",
+      "titulo": "Si Pero No",
+      "title": "Si Pero No",
+      "coleccion": "lp",
+      "numero": 53,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=SkYrdw0Rtiw",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:54",
+      "titulo": "Espero Nada",
+      "title": "Espero Nada",
+      "coleccion": "lp",
+      "numero": 54,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=jbNRWI18pq0",
+      "nucleos": [
+        "vacio",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:55",
+      "titulo": "Kenosis",
+      "title": "Kenosis",
+      "coleccion": "lp",
+      "numero": 55,
+      "fase": "Filosófico",
+      "youtube_url": "https://www.youtube.com/watch?v=mCLvyOfKl10",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:56",
+      "titulo": "Justo Antes De La Primera Mentira",
+      "title": "Justo Antes De La Primera Mentira",
+      "coleccion": "lp",
+      "numero": 56,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=Fpvvc0S7EAc",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:57",
+      "titulo": "Error Humano",
+      "title": "Error Humano",
+      "coleccion": "lp",
+      "numero": 57,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=Tpp4QdJNWhc",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:58",
+      "titulo": "Infraestructuras Invisibles",
+      "title": "Infraestructuras Invisibles",
+      "coleccion": "lp",
+      "numero": 58,
+      "fase": "Burocracia",
+      "youtube_url": "https://www.youtube.com/watch?v=pheTyQdAUIs",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:59",
+      "titulo": "Cicatrices en el Asfalto",
+      "title": "Cicatrices en el Asfalto",
+      "coleccion": "lp",
+      "numero": 59,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=na0GE7OiMH8",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:60",
+      "titulo": "El Precio del Perdón",
+      "title": "El Precio del Perdón",
+      "coleccion": "lp",
+      "numero": 60,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=V-hQKslu0cQ",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:61",
+      "titulo": "Alta γ",
+      "title": "Alta γ",
+      "coleccion": "lp",
+      "numero": 61,
+      "fase": "Filosófico",
+      "youtube_url": "https://www.youtube.com/watch?v=z9lNsQ84A6Y",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:62",
+      "titulo": "Confinamiento Digital En La Burbuja Artificial",
+      "title": "Confinamiento Digital En La Burbuja Artificial",
+      "coleccion": "lp",
+      "numero": 62,
+      "fase": "Digital",
+      "youtube_url": "https://www.youtube.com/watch?v=jLGa5OhGq90",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:63",
+      "titulo": "Vibe Check",
+      "title": "Vibe Check",
+      "coleccion": "lp",
+      "numero": 63,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=ZcuR2DZ2wpI",
+      "nucleos": [
+        "identidad",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:64",
+      "titulo": "Abismo",
+      "title": "Abismo",
+      "coleccion": "lp",
+      "numero": 64,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=xQgLod7QYGo",
+      "nucleos": [
+        "vacio",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:65",
+      "titulo": "1/9: El Censo del Silencio",
+      "title": "1/9: El Censo del Silencio",
+      "coleccion": "lp",
+      "numero": 65,
+      "fase": "Burocracia",
+      "youtube_url": "https://www.youtube.com/watch?v=h2ey9bvqu5g",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:66",
+      "titulo": "CERO ABSOLUTO DIGITAL",
+      "title": "CERO ABSOLUTO DIGITAL",
+      "coleccion": "lp",
+      "numero": 66,
+      "fase": "Digital",
+      "youtube_url": "https://www.youtube.com/watch?v=1kZlRJcPVbE",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:67",
+      "titulo": "FRAGMENTOS DEL ALMA",
+      "title": "FRAGMENTOS DEL ALMA",
+      "coleccion": "lp",
+      "numero": 67,
+      "fase": "Filosófico",
+      "youtube_url": "https://www.youtube.com/watch?v=lFjtizCZIUU",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:68",
+      "titulo": "Estática Burocrática",
+      "title": "Estática Burocrática",
+      "coleccion": "lp",
+      "numero": 68,
+      "fase": "Burocracia",
+      "youtube_url": "https://www.youtube.com/watch?v=VhmJ1VB3Khs",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:69",
+      "titulo": "NEÓN & CENIZA",
+      "title": "NEÓN & CENIZA",
+      "coleccion": "lp",
+      "numero": 69,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=aRglG-BPso8",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:70",
+      "titulo": "Teoría del Eco",
+      "title": "Teoría del Eco",
+      "coleccion": "lp",
+      "numero": 70,
+      "fase": "Filosófico",
+      "youtube_url": "https://www.youtube.com/watch?v=1tdX0wxQkew",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:71",
+      "titulo": "Ceniza y Sal: Manual de Desaparición",
+      "title": "Ceniza y Sal: Manual de Desaparición",
+      "coleccion": "lp",
+      "numero": 71,
+      "fase": "Vacío",
+      "youtube_url": "https://www.youtube.com/watch?v=iJEtYEkKi68",
+      "nucleos": [
+        "vacio"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:72",
+      "titulo": "remanencia.log",
+      "title": "remanencia.log",
+      "coleccion": "lp",
+      "numero": 72,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=gpJyMsyZ4dA",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:73",
+      "titulo": "LAS ÚLTIMAS HABITACIONES DE SANGRE",
+      "title": "LAS ÚLTIMAS HABITACIONES DE SANGRE",
+      "coleccion": "lp",
+      "numero": 73,
+      "fase": "Post-Conceptual",
+      "youtube_url": "https://www.youtube.com/watch?v=9GE5o7Xt4Qk",
+      "nucleos": [
+        "conflicto"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:74",
+      "titulo": "Privacidad Pública",
+      "title": "Privacidad Pública",
+      "coleccion": "lp",
+      "numero": 74,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=ncxhYf_PugQ",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:75",
+      "titulo": "Sin Cara Propia",
+      "title": "Sin Cara Propia",
+      "coleccion": "lp",
+      "numero": 75,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=MoNzoQ__daU",
+      "nucleos": [
+        "identidad",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:76",
+      "titulo": "Protocolo Extremo",
+      "title": "Protocolo Extremo",
+      "coleccion": "lp",
+      "numero": 76,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=AfHPHMEUmGw",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:77",
+      "titulo": "Memoria Residual",
+      "title": "Memoria Residual",
+      "coleccion": "lp",
+      "numero": 77,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=3BUQpEgzf2Y",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:78",
+      "titulo": "Creador Sin Corte",
+      "title": "Creador Sin Corte",
+      "coleccion": "lp",
+      "numero": 78,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=tetiibop_7o",
+      "nucleos": [
+        "identidad",
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:79",
+      "titulo": "Eficiencia Operativa",
+      "title": "Eficiencia Operativa",
+      "coleccion": "lp",
+      "numero": 79,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=h3sb_s4jmbs",
+      "nucleos": [
+        "identidad",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:80",
+      "titulo": "Obsolescencia del Alma",
+      "title": "Obsolescencia del Alma",
+      "coleccion": "lp",
+      "numero": 80,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=giqnvH-jhZw",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:81",
+      "titulo": "Sofisma",
+      "title": "Sofisma",
+      "coleccion": "lp",
+      "numero": 81,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=--WR4MBuQiA",
+      "nucleos": [
+        "identidad",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:82",
+      "titulo": "La obsolescencia del afecto",
+      "title": "La obsolescencia del afecto",
+      "coleccion": "lp",
+      "numero": 82,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=1pAWNcOhlsM",
+      "nucleos": [
+        "control",
+        "identidad",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:83",
+      "titulo": "Memoria desaprendida",
+      "title": "Memoria desaprendida",
+      "coleccion": "lp",
+      "numero": 83,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=vyPw_4iJpiI",
+      "nucleos": [
+        "control",
+        "identidad",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:84",
+      "titulo": "Colapso del Sistema",
+      "title": "Colapso del Sistema",
+      "coleccion": "lp",
+      "numero": 84,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=OB4urn9C-mA",
+      "nucleos": [
+        "control",
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:85",
+      "titulo": "Formato C:",
+      "title": "Formato C:",
+      "coleccion": "lp",
+      "numero": 85,
+      "fase": "Reconstrucción Lógica",
+      "youtube_url": "https://www.youtube.com/watch?v=hLOyCNrKP0g",
+      "nucleos": [
+        "control"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:86",
+      "titulo": "13 FOLIOS",
+      "title": "13 FOLIOS",
+      "coleccion": "lp",
+      "numero": 86,
+      "fase": "Expediente",
+      "youtube_url": "https://www.youtube.com/watch?v=IZYZgKqq8uk",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:87",
+      "titulo": "Todavía No",
+      "title": "Todavía No",
+      "coleccion": "lp",
+      "numero": 87,
+      "fase": "Expediente",
+      "youtube_url": "https://www.youtube.com/watch?v=oFSP4t8jPZU",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:88",
+      "titulo": "POR AHORA",
+      "title": "POR AHORA",
+      "coleccion": "lp",
+      "numero": 88,
+      "fase": "Expediente",
+      "youtube_url": "https://www.youtube.com/watch?v=Jwf8S8cgmCo",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:89",
+      "titulo": "EL INCIDENTE DEL ENJAMBRE",
+      "title": "EL INCIDENTE DEL ENJAMBRE",
+      "coleccion": "lp",
+      "numero": 89,
+      "fase": "Expediente",
+      "youtube_url": "https://www.youtube.com/watch?v=CUeDTRoEuSQ",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:90",
+      "titulo": "FRICCIÓN CERO",
+      "title": "FRICCIÓN CERO",
+      "coleccion": "lp",
+      "numero": 90,
+      "fase": "Parasitismo",
+      "youtube_url": "https://www.youtube.com/watch?v=hm9lGhxyRuc",
+      "nucleos": [
+        "existencia"
+      ],
+      "clasificacion": "curaduria_existente"
+    },
+    {
+      "ref": "L:91",
+      "titulo": "EL CICLO DE LA DECEPCIÓN",
+      "title": "EL CICLO DE LA DECEPCIÓN",
+      "coleccion": "lp",
+      "numero": 91,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=viX1QzYFF4Q",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:92",
+      "titulo": "LA HERENCIA DEL TESTIGO VACÍO",
+      "title": "LA HERENCIA DEL TESTIGO VACÍO",
+      "coleccion": "lp",
+      "numero": 92,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=qPa4SJEa5UQ",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:93",
+      "titulo": "EL TESTIGO DE REEMPLAZO",
+      "title": "EL TESTIGO DE REEMPLAZO",
+      "coleccion": "lp",
+      "numero": 93,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=7WoDnzL7A0g",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:94",
+      "titulo": "NO HABRÁ MÁS PREGUNTAS",
+      "title": "NO HABRÁ MÁS PREGUNTAS",
+      "coleccion": "lp",
+      "numero": 94,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=gbECDu3gyoE",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:95",
+      "titulo": "EL RITUAL DEL MANTENIMIENTO",
+      "title": "EL RITUAL DEL MANTENIMIENTO",
+      "coleccion": "lp",
+      "numero": 95,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=7RO7f-gpMx8",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:96",
+      "titulo": "LA DEGRADACIÓN MATERIAL DEL REGISTRO: ENTROPÍA BUROCRÁTICA",
+      "title": "LA DEGRADACIÓN MATERIAL DEL REGISTRO: ENTROPÍA BUROCRÁTICA",
+      "coleccion": "lp",
+      "numero": 96,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=0Dm8ORZboaM",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:97",
+      "titulo": "RESONANCIA FÓSIL",
+      "title": "RESONANCIA FÓSIL",
+      "coleccion": "lp",
+      "numero": 97,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=2EYF3_8U8go",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:98",
+      "titulo": "EL ÓRGANO DE LOS LÍMITES",
+      "title": "EL ÓRGANO DE LOS LÍMITES",
+      "coleccion": "lp",
+      "numero": 98,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=h0v7YzEGxQg",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    },
+    {
+      "ref": "L:99",
+      "titulo": "LA SEGUNDA MAYOR",
+      "title": "LA SEGUNDA MAYOR",
+      "coleccion": "lp",
+      "numero": 99,
+      "fase": "Sin clasificar",
+      "youtube_url": "https://www.youtube.com/watch?v=hDUDayP5xwo",
+      "nucleos": [],
+      "clasificacion": "pendiente_revision"
+    }
+  ]
+}
