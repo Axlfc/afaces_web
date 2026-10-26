@@ -3650,7 +3650,7 @@ function mkCard(item, type){
   const t=item.title.replace(/&/g,'&amp;').replace(/</g,'&lt;');
   const esc=item.title.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
   const ph=item.phase.replace(/'/g,"\\'");
-  return `<div class="disc-card" data-vid="${item.vid}" data-title="${item.title.toLowerCase()}" data-phase="${item.phase}" onclick="openModal('${item.vid}','${esc}','${type}',${item.n},'${ph}')">
+  return `<a class="disc-card" href="lanzamiento.html?ref=${type==='Álbum'?'A':'L'}:${item.n}" data-vid="${item.vid}" data-title="${item.title.toLowerCase()}" data-phase="${item.phase}" aria-label="Ver ficha de ${t}">
     <img class="card-img" src="https://img.youtube.com/vi/${item.vid}/0.jpg" alt="${t}" loading="lazy">
     <div class="card-num-b">#${String(item.n).padStart(2,'0')}</div>
     <div class="card-phase-b ${item.pb}">${item.phase}</div>
@@ -3660,7 +3660,7 @@ function mkCard(item, type){
       <div class="card-phase-l">${item.phase}</div>
       <div class="card-play"><div class="play-c"><svg width="7" height="9" viewBox="0 0 7 9" fill="white"><path d="M0 0L7 4.5L0 9Z"/></svg></div>Ver</div>
     </div>
-  </div>`;
+  </a>`;
 }
 
 function buildGrids(){
@@ -3715,7 +3715,7 @@ function openModal(vid,title,type,n,phase){
 function renderModal(){
   const item=mData[mIdx];
   const type=currentTab==='albums'?'Álbum':'LP';
-  const ytUrl=`https://www.youtube.com/watch?v=${item.vid}`;
+  const releaseUrl=`lanzamiento.html?ref=${currentTab==='albums'?'A':'L'}:${item.n}`;
   document.getElementById('mType').textContent=`${type} · #${String(item.n).padStart(2,'0')}`;
   document.getElementById('mTitle').textContent=item.title;
   document.getElementById('mPhase').textContent=item.phase;
@@ -3723,8 +3723,12 @@ function renderModal(){
   img.src=`https://img.youtube.com/vi/${item.vid}/maxresdefault.jpg`;
   img.onerror=()=>{ img.src=`https://img.youtube.com/vi/${item.vid}/0.jpg`; img.onerror=null; };
   img.alt=item.title;
-  document.getElementById('mThumbLink').href=ytUrl;
-  document.getElementById('mYtLink').href=ytUrl;
+  document.getElementById('mThumbLink').href=releaseUrl;
+  document.getElementById('mYtLink').href=releaseUrl;
+  document.getElementById('mYtLink').textContent='▶ Ver ficha y escuchar aquí';
+  document.getElementById('mYtLink').removeAttribute('target');
+  document.getElementById('mThumbLink').removeAttribute('target');
+  document.getElementById('mThumbLink').removeAttribute('rel');
   const bcEl = document.getElementById('mBcLink');
   if(item.bc){ bcEl.href = item.bc; bcEl.style.display = ''; } else { bcEl.href = '#'; bcEl.style.display = 'none'; }
   document.getElementById('mPrev').disabled=mIdx===0;

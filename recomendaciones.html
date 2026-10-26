@@ -1,14 +1,7 @@
 <!doctype html><html lang="es" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Recomendaciones — AFACES</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Space+Mono:wght@400;700&family=Barlow+Condensed:wght@300;400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/discovery.css"></head><body><div class="cursor" id="cursor"></div><div class="cursor-ring" id="cursorRing"></div><!-- NAV -->
 <nav>
   <a href="welcome.html" class="nav-logo">A<span>F</span>ACES</a>
-  <ul class="nav-links">
-    <li><a href="welcome.html#about">Artista</a></li>
-    <li><a href="welcome.html#phases">Fases</a></li>
-    <li><a href="welcome.html#tematicas">Temáticas</a></li>
-    <li><a href="welcome.html#series">Series</a></li>
-    <li><a href="welcome.html#discography">Discografía</a></li>
-    <li><a href="welcome.html#platforms">Escuchar</a></li><li><a href="onboarding.html">Descubrir</a></li><li><a href="perfiles.html">Perfiles</a></li>
-  </ul>
+  <ul class="nav-links"></ul>
   <div class="nav-right">
     <!-- RADIO TOGGLE -->
     <button class="radio-toggle" id="radioToggle" title="Radio Afaces" aria-label="Abrir radio">
@@ -100,4 +93,11 @@
 </div>
 <div class="radio-backdrop" id="radioBackdrop"></div>
 
-<main class="ux-page"><div class="ux-index">AFACES / ARCHIVO SONORO / EXPLORACIÓN</div><p class="ux-kicker">Escucha / Recomendaciones</p><h1 class="ux-title" id="titulo">Tu recorrido</h1><p class="ux-note" id="estado" role="status">Cargando catálogo…</p><div class="ux-grid ux-results" id="resultados"></div><div class="ux-actions"><a class="ux-button" href="onboarding.html">Repetir test</a><a class="ux-link" href="perfiles.html">Rutas por perfil</a></div></main><script src="js/discovery.js" defer></script><script src="js/discovery-shell.js" defer></script></body></html>
+<main class="ux-page"><div class="ux-index">AFACES / ARCHIVO SONORO / EXPLORACIÓN</div><p class="ux-kicker">Escucha / Recomendaciones</p><h1 class="ux-title" id="titulo">Tu recorrido</h1><p class="ux-note" id="estado" role="status">Cargando catálogo…</p><form id="recommendationFilters" class="ux-recommend-filters" aria-label="Filtrar recomendaciones"><fieldset class="ux-recommend-fieldset"><legend>Explorar por temática</legend><div class="ux-topic-grid" id="recommendationTopics" role="group" aria-label="Seleccionar temática">
+<label class="ux-topic"><input type="radio" name="nucleo" value="" checked><span>Todas las temáticas</span></label>
+<label class="ux-topic"><input type="radio" name="nucleo" value="control"><span>Sistema y control</span></label>
+<label class="ux-topic"><input type="radio" name="nucleo" value="vacio"><span>Vacío y desaparición</span></label>
+<label class="ux-topic"><input type="radio" name="nucleo" value="conflicto"><span>Conflicto social</span></label>
+<label class="ux-topic"><input type="radio" name="nucleo" value="identidad"><span>Identidad y lenguaje</span></label>
+<label class="ux-topic"><input type="radio" name="nucleo" value="existencia"><span>Filosofía y existencia</span></label>
+</div></fieldset><button class="ux-button ux-topic-submit" type="submit">Mostrar selección</button></form><div class="ux-grid ux-results" id="resultados"></div><div class="ux-actions"><a class="ux-button" href="onboarding.html">Repetir test</a><a class="ux-link" href="perfiles.html">Rutas por perfil</a></div></main><script src="js/discovery.js" defer></script><script src="js/discovery-shell.js" defer></script><script src="js/mobile-nav.js" defer></script></body></html>
