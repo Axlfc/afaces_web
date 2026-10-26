@@ -1,3 +1,44 @@
 .ux-page{min-height:100vh;max-width:1100px;margin:auto;padding:9rem 1.5rem 5rem}.ux-kicker{color:var(--accent);font-size:.75rem;letter-spacing:.22em;text-transform:uppercase}.ux-title{font-family:'Barlow Condensed',sans-serif;font-size:clamp(3rem,9vw,6rem);line-height:1;margin:1rem 0 2rem;text-transform:uppercase}.ux-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}.ux-card{display:block;text-align:left;background:var(--card-bg);border:1px solid var(--border);padding:1.5rem;color:var(--text);text-decoration:none;min-width:0;cursor:pointer}.ux-card:hover,.ux-card:focus-visible,.ux-choice:has(input:checked){border-color:var(--accent)}.ux-card h2{font-family:'Barlow Condensed',sans-serif;font-size:1.7rem;margin-bottom:.8rem}.ux-card p,.ux-note{line-height:1.7;color:var(--text);opacity:.8}.ux-choice{position:relative}.ux-choice input{accent-color:var(--accent);margin-right:.7rem}.ux-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}.ux-button{display:inline-block;padding:1rem 1.3rem;background:var(--accent);color:#fff;text-decoration:none;border:0;font:inherit;cursor:pointer}.ux-link{color:var(--accent)}.ux-note{margin:1.5rem 0}.ux-status{padding:1.5rem;border:1px solid var(--border)}@media(pointer:coarse){.ux-page,.ux-page *{cursor:auto}}
 
 .ux-picks{display:grid;gap:.65rem;margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--border)}.ux-release{color:var(--text);font-size:.8rem;line-height:1.5;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:.25rem}.ux-release:hover,.ux-release:focus-visible{color:var(--accent)}
+
+
+/* AFACES · editorial discovery */
+.ux-page{position:relative;isolation:isolate;max-width:1240px;padding:clamp(7rem,12vw,11rem) clamp(1.2rem,5vw,4rem) 6rem}
+.ux-page:before{content:"AFACES";position:absolute;top:5rem;right:0;font:900 clamp(6rem,22vw,20rem)/1 'Barlow Condensed',sans-serif;letter-spacing:-.06em;color:var(--text);opacity:.035;pointer-events:none;z-index:-1}
+.ux-page:after{content:"";position:absolute;inset:0 0 auto;height:460px;background:radial-gradient(ellipse at 80% 0%,rgba(217,48,32,.09),transparent 60%);pointer-events:none;z-index:-1}
+.ux-index{font:400 .62rem/1.8 'Space Mono',monospace;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;border-bottom:1px solid var(--border);padding-bottom:1rem;margin-bottom:clamp(3rem,7vw,6rem)}
+.ux-kicker{font:700 .65rem/1.7 'Space Mono',monospace;letter-spacing:.25em;text-transform:uppercase;color:var(--accent)}
+.ux-title{max-width:950px;font:900 clamp(3.8rem,11vw,9rem)/.87 'Barlow Condensed',sans-serif;letter-spacing:-.035em;text-transform:uppercase;margin:1.2rem 0 2.5rem}
+.ux-title:after{content:".";color:var(--accent)}
+.ux-grid{gap:0;border-top:1px solid var(--border);border-left:1px solid var(--border);grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))}
+.ux-card{position:relative;border:0;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:transparent;padding:clamp(1.4rem,3vw,2.5rem);min-height:165px;transition:background .25s,border-color .25s,transform .25s;overflow:hidden}
+.ux-card:before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .3s}
+.ux-card:hover,.ux-card:focus-within,.ux-card:focus-visible{background:var(--card-bg)}
+.ux-card:hover:before,.ux-card:focus-within:before{width:100%}
+.ux-card h2,.ux-choice strong{display:block;font:800 clamp(1.55rem,3vw,2.4rem)/1.05 'Barlow Condensed',sans-serif;letter-spacing:.01em;text-transform:uppercase;color:var(--white)}
+.ux-card p{font:400 .7rem/1.8 'Space Mono',monospace;color:var(--muted);margin-top:1rem}
+.ux-choice{display:flex;align-items:center;gap:1rem;min-height:170px;cursor:pointer}
+.ux-choice input{width:18px;height:18px;flex-shrink:0;accent-color:var(--accent)}
+.ux-choice:has(input:checked){background:rgba(217,48,32,.075);box-shadow:inset 0 0 0 1px var(--accent)}
+.ux-choice:has(input:checked):before{width:100%}
+.ux-actions{margin-top:2.5rem;align-items:center;gap:1.5rem}
+.ux-button{font:700 .66rem/1.4 'Space Mono',monospace;letter-spacing:.12em;text-transform:uppercase;padding:1.15rem 1.7rem;transition:background .2s,transform .2s}
+.ux-button:hover,.ux-button:focus-visible{background:var(--white);color:var(--black);transform:translateY(-2px)}
+.ux-link{font:700 .63rem/1.6 'Space Mono',monospace;letter-spacing:.07em;text-decoration:none;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:.25rem}
+.ux-note,.ux-status{max-width:720px;font:400 .75rem/1.9 'Space Mono',monospace;color:var(--muted)}
+.ux-note{margin:0 0 2.5rem}
+.ux-picks{margin-top:1.5rem;padding-top:1.5rem}
+.ux-release{font:400 .7rem/1.65 'Space Mono',monospace;color:var(--text)}
+.ux-results .ux-card{min-height:260px;display:flex;flex-direction:column;justify-content:end;gap:1rem}
+.ux-cover{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--mid);filter:grayscale(.55);transition:filter .3s}
+.ux-card:hover .ux-cover{filter:grayscale(0)}
+.ux-results .ux-card h2{font-size:clamp(1.6rem,3vw,2.5rem)}
+.ux-release-meta{font:400 .6rem/1.6 'Space Mono',monospace;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+.ux-home-entry{position:relative;z-index:1;margin:0;padding:clamp(2rem,6vw,5rem) clamp(1.2rem,5vw,4rem);border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--dark)}
+.ux-home-entry-inner{max-width:1200px;margin:auto;display:flex;align-items:end;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.ux-home-entry h2{font:900 clamp(2.5rem,7vw,5.8rem)/.92 'Barlow Condensed',sans-serif;text-transform:uppercase;max-width:720px;margin:1rem 0}
+.ux-home-entry p{font:400 .7rem/1.8 'Space Mono',monospace;color:var(--muted);max-width:540px}
+@media(max-width:700px){.ux-page{padding:7rem 1rem 4rem}.ux-title{font-size:clamp(3.5rem,16vw,6rem)}.ux-grid{grid-template-columns:1fr}.ux-card{min-height:130px}.ux-choice{min-height:115px}.ux-results .ux-card{min-height:220px}nav{padding:1rem}nav .nav-right{gap:.35rem}nav .nav-cta{padding:.5rem;font-size:.5rem}}
+@media(prefers-reduced-motion:reduce){.ux-card,.ux-card:before,.ux-button,.ux-cover{transition:none!important}}
+@media(pointer:coarse){.ux-page,.ux-page *,.ux-home-entry *{cursor:auto!important}}
