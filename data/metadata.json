@@ -4009,12 +4009,16 @@
       "fase": "Alt-Ortografía",
       "youtube_url": "https://www.youtube.com/watch?v=5NUVnX4aHM0",
       "nucleos": [
-        "identidad"
+        "identidad",
+        "conflicto",
+        "control"
       ],
-      "clasificacion": "curaduria_existente",
+      "clasificacion": "curaduria_ampliada_descripcion_autor",
       "fase_id": 3,
       "nucleos_architectura": [
-        "language-form"
+        "language-form",
+        "conflict-tension",
+        "control-system"
       ],
       "publishedAt": "2025-08-09",
       "publishedAtSource": "manual",
@@ -4084,9 +4088,18 @@
       "tags": [
         "LP",
         "Alt-Ortografía",
-        "identidad"
+        "identidad",
+        "Trip-hop",
+        "crítica al capitalismo",
+        "estafa financiera",
+        "blockchain",
+        "conflicto",
+        "control"
       ],
-      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas"
+      "tagsFuente": "colección, fase y género descrito en metadatos; núcleos existentes o propuestas identificadas",
+      "description": "Tretzè assalt. Demanem perdó per ser tan clars, o potser no. Gravat el febrer de 2025 a Salou (Espanya), 'Disculpaz-nos' s'endinsa en les freqüències del Trip-hop. L'obra critica el capitalisme, les elits econòmiques, les estafes financeres i les promeses del blockchain. 15 talls sobre el Fons Monetari, els paradisos fiscals i el col·lapse de la bombolla digital. El tracklist de 15 cançons amb timestamps ja està documentat en el camp tracklist.",
+      "descriptionSource": "síntesis editorial de descripción íntegra aportada por el autor 2026-10-26 (no transcripción literal)",
+      "clasificacionFuente": "descripción aportada por autor; núcleos adicionales inferidos editorialmente"
     },
     {
       "ref": "L:14",
@@ -9497,7 +9510,7 @@
       "description": "Nonagésimo séptimo build.\n\nEl deterioro ya no es burocrático ni material: es geológico. El edificio ha dejado de ser un contenedor de datos para convertirse en un instrumento de viento, agua y dilatación térmica.\n\nTrece tracks.\n\nGrabado en septiembre de 2026 en Tarragona-Salou (Catalunya), RESONANCIA FÓSIL. Ya no hay archivos que leer, ni sensores que fallen, ni rituales que mantener. La estructura se ha convertido en cavidad. El óxido es la única interfaz. El viento ejecuta los protocolos muertos.\n\nAquí ya no importan los logs ni las preguntas sin respuesta.\nImporta la grieta. El silbido. La raíz. El derrumbe.\n\nLa pregunta es más incómoda:\n¿qué ocurre cuando el paisaje sonoro reemplaza al lenguaje?\n\nLa promesa ya no se petrifica. Resuena.\nEl conflicto ya no se estratifica. Se erosiona.\nEl vacío ya no es una capa de polvo. Es una cámara de eco natural.\nLa resistencia encuentra una viga maestra cediendo bajo su propio peso.\nEl afecto encuentra el silencio absoluto tras el colapso.\nY el registro, por última vez, sobrevive como pura textura acústica.\n\n─────────────────────────────────────────────────\n\n### ÍNDICE DE EXPEDIENTE\n─────────────────────────────────────────────────\n\n### ENLACES OFICIALES Y METADATOS\n\nWeb Oficial: https://usuaris.tinet.cat/~afaces\nBandCamp: https://afaces.bandcamp.com/\nSpotify: https://open.spotify.com/intl-es/artist/3zbzWzOqZcY3mZBG5ICF9l\nSoundCloud: https://soundcloud.com/afaces\n\nRECUERDA: El rack resuena con el viento. El nivel -2 está inundado. El sensor silba sin corriente. La raíz atraviesa el cobre. El techo falso ha colapsado. El Folio 418 es barro. La cavidad amplifica el silencio. El imán ha perdido su campo. El polvo flota en suspensión. La última viga ha cedido. Y el edificio, por fin, es solo paisaje sonoro.\n\n#ResonanciaFósil #LP97 #ElAfaces #GeologíaDelSonido #EntropíaAcústica #FieldRecording #Tarragona2027 #OwnerNull #IncidentClosed #VisualAlbum",
       "descriptionSource": "yt-dlp",
       "tracklist": [],
-      "tracklistSource": "not_available",
+      "tracklistSource": "sin tracklist en descripción de YouTube, confirmado por el autor 2026-10-26",
       "durationSeconds": 975,
       "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
       "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
@@ -9620,7 +9633,7 @@
       "description": "Dos funciones que dejan de existir únicamente por exclusión. La relación atraviesa la atracción, el contacto, el encuentro, la pérdida de simetría y la consecuencia. No hay resolución. Solo la aparición de una condición nueva: dos elementos ocupando parcialmente el mismo espacio, sin que uno tenga que desaparecer para que el otro termine su recorrido.\n\n─────────────────────────────────────────\n\n#ELAFACES #LP99 #LaSegundaMayor",
       "descriptionSource": "yt-dlp",
       "tracklist": [],
-      "tracklistSource": "not_available",
+      "tracklistSource": "sin tracklist en descripción de YouTube, confirmado por el autor 2026-10-26",
       "durationSeconds": 766,
       "clasificacionFuente": "description (yt-dlp archivada); revisión editorial pendiente",
       "faseFuente": "Agrupación de navegación inferida de número y descripción; no fase oficial confirmada",
