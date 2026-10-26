@@ -1,21 +1,65 @@
-name: 🚀 Deploy to FTP
-
+name: Publicar AFACES en TINET
 on:
   push:
-    branches: [ main, master ] # Cambia "main" o "master" por la rama principal de tu proyecto si se llama diferente
-
+    branches: [master]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: tinet-production
+  cancel-in-progress: false
 jobs:
-  web-deploy:
-    name: 📥 Deploy
+  deploy:
+    if: vars.TINET_DEPLOY_ENABLED == 'true'
     runs-on: ubuntu-latest
+    environment: tinet-production
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v4
-
-      - name: SYNC to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          # server-dir: /public_html/ # (Opcional) Descomenta y cambia esto si tus archivos van en una subcarpeta específica del servidor
+          python-version: '3.12'
+      - name: Validar catálogo
+        run: python scripts/sync_catalog.py --check
+      - name: Construir sitio estático
+        run: python scripts/build_tinet.py --manifest
+      - name: Verificar configuración FTP
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ vars.TINET_REMOTE_DIR }}
+        run: |
+          test -n "$FTP_SERVER" && test -n "$FTP_USERNAME" && test -n "$FTP_PASSWORD"
+          test -n "$FTP_REMOTE_DIR"
+          case "$FTP_REMOTE_DIR" in
+            /*) ;;
+            *) echo "TINET_REMOTE_DIR debe ser ruta absoluta confirmada" >&2; exit 1 ;;
+          esac
+      - name: Instalar cliente FTP
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+      - name: Subir solo archivos publicables (sin borrados remotos)
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ vars.TINET_REMOTE_DIR }}
+          FTP_PORT: ${{ vars.TINET_FTP_PORT || '21' }}
+        run: |
+          set -euo pipefail
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" -p "$FTP_PORT" "$FTP_SERVER" <<EOF
+          set cmd:fail-exit yes
+          set ftp:ssl-allow yes
+          set ssl:verify-certificate yes
+          set net:max-retries 2
+          mirror --reverse --verbose --only-newer --parallel=2 dist/ "$FTP_REMOTE_DIR"
+          bye
+          EOF
+      - name: Comprobar página pública
+        env:
+          TINET_PUBLIC_URL: ${{ vars.TINET_PUBLIC_URL }}
+        run: |
+          if [ -n "$TINET_PUBLIC_URL" ]; then
+            curl --fail --location --retry 3 --retry-delay 3 --max-time 30 "$TINET_PUBLIC_URL" -o /dev/null
+          else
+            echo "Sin TINET_PUBLIC_URL: verificación HTTP no configurada"
+          fi
