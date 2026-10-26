@@ -27,7 +27,7 @@ jobs:
       - name: Probar intermedio Sectigo oficial con verificación TLS estricta
         run: |
           set -euo pipefail
-          curl --fail --location --silent --show-error --max-time 25 https://crt.sectigo.com/SectigoPublicServerAuthenticationCAOVR36.crt --output "$RUNNER_TEMP/sectigo.ovr36.crt"
+          curl --fail --location --silent --show-error --max-time 25 'https://crt.sh/?d=4267304698' --output "$RUNNER_TEMP/sectigo.ovr36.crt"
           openssl x509 -inform DER -in "$RUNNER_TEMP/sectigo.ovr36.crt" -out "$RUNNER_TEMP/sectigo.ovr36.pem"
           openssl x509 -inform DER -in "$RUNNER_TEMP/sectigo.ovr36.crt" -noout -subject -issuer -fingerprint -sha256
           export AFACES_TEST_CERT="$RUNNER_TEMP/sectigo.ovr36.pem"
