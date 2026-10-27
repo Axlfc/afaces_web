@@ -12,6 +12,7 @@ test('las diez páginas incluyen main semántico, salto de teclado y no solicita
     const page=html(name+'.html');
     assert.equal((page.match(/<main\b/g)||[]).length,1,name);
     assert.match(page,/<a class="a11y-skip-link" href="#[^"]+">Saltar al contenido principal<\/a>/,name);
+    assert.match(page,/<main\\b[^>]*tabindex="-1"/,name);
     assert.ok(!page.includes('fonts.googleapis.com'),name);
     assert.ok(!page.includes('Rutas de exploración provisionales'),name);
   }
