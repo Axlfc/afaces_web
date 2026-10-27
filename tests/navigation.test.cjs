@@ -99,7 +99,8 @@ function makeMenu(mode='experto',pathname='/~afaces/welcome.html'){
 
 test('menú completo, accesos rápidos y orden de tabulación',()=>{
   const page=makeMenu();
-  assert.equal(page.links.children.length,16);
+  assert.equal(page.links.children.length,17);
+  assert.ok(page.links.children.some(li=>li.querySelector('a').textContent==='Prensa'));
   assert.ok(!page.links.children.some(li=>li.querySelector('a').textContent==='Inicio'));
   assert.equal(page.quick.querySelectorAll('a').length,4);
   assert.equal(page.links.hidden,true);
