@@ -32,10 +32,12 @@ test('biografía corta es menor de 80 palabras y antecede a los bloques de conte
 test('playlist señalizada y 2 videoclips suministrados, con enlaces descriptivos',()=>{
   const songs=page.match(/<ol class="press-curation">([\s\S]*?)<\/ol>/)?.[1]||'';
   const videos=page.match(/<ul class="press-video-links">([\s\S]*?)<\/ul>/)?.[1]||'';
-  assert.equal((songs.match(/<li>/g)||[]).length,0);
+  assert.equal((songs.match(/<li\b/g)||[]).length,5);
   assert.equal((videos.match(/<li>/g)||[]).length,2);
   assert.ok(page.includes('Esenciales para prensa'));
-  assert.ok(!page.includes('youtube.com/watch?v=SWNbhMxS4S4'));
+  assert.ok(page.includes('youtube.com/watch?v=SWNbhMxS4S4&amp;t=469s'));
+  assert.ok(!page.includes('Enlace pendiente de incorporar'));
+  assert.ok(!page.includes('No voy a enviarte a una lista inventada'));
   assert.ok(page.includes('https://www.youtube.com/watch?v=nR1u7q244bk'));
   assert.ok(page.includes('https://www.youtube.com/watch?v=q642i-jRWOA'));
   assert.equal((videos.match(/youtube\.com\/watch\?v=/g)||[]).length,2);
@@ -154,4 +156,31 @@ test('licencias para código y manuales, derechos del catálogo separados',()=>{
   assert.ok(readme.includes('RADIO_TRACKS'));
   assert.ok(page.includes('licencia MIT'));
   assert.ok(page.includes('LICENCIAS.md'));
+});
+
+test('selección del EPK: cinco capítulos existentes y 17 minutos de cortes',()=>{
+  const catalog=JSON.parse(read('data/metadata.json'));
+  const list=page.match(/<ol class="press-curation"[^>]*>([\s\S]*?)<\/ol>/)?.[1]||'';
+  const entries=[...list.matchAll(/<li data-release-ref="([^"]+)" data-start="(\d+)" data-track-duration="(\d+)">([\s\S]*?)<\/li>/g)];
+  assert.equal(entries.length,5);
+  assert.equal(new Set(entries.map(e=>e[1])).size,5);
+  let seconds=0,originals=0,lps=0;
+  for(const [,ref,rawStart,rawDuration,markup] of entries){
+    const release=catalog.videos.find(v=>v.ref===ref);
+    assert.ok(release,'Referencia inexistente '+ref);
+    const start=Number(rawStart),duration=Number(rawDuration);
+    const index=release.tracklist.findIndex(t=>t.start_time===start);
+    assert.ok(index>=0&&index+1<release.tracklist.length,'No se conoce el fin del corte '+ref);
+    assert.equal(release.tracklist[index+1].start_time-start,duration);
+    const yt=release.youtube_url.match(/[?&]v=([\w-]{11})/)?.[1];
+    assert.ok(markup.includes('youtube.com/watch?v='+yt+'&amp;t='+start+'s'));
+    assert.match(markup,/<a\b[^>]*aria-label=/);
+    seconds+=duration;
+    originals+=release.coleccion==='album'?1:0;
+    lps+=release.coleccion==='lp'?1:0;
+  }
+  assert.equal(seconds,1020);
+  assert.equal(originals,4);
+  assert.equal(lps,1);
+  assert.ok(read('docs/curaduria-epk.md').includes('No se ha realizado escucha comparativa'));
 });
