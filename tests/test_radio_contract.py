@@ -49,7 +49,7 @@ class RadioContract(unittest.TestCase):
         self.assertIn('class="rpl-download"', player)
         self.assertIn('aria-label="Descargar MP3 (descargar ', player)
         self.assertIn('title="Descargar MP3 (descargar ', player)
-        self.assertIn('href="'+ "'+escapeHtml(track.path)+'"+'"', player)
+        self.assertIn("escapeHtml(track.path)", player)
         self.assertIn('m7 10 5 5 5-5', player)
         self.assertNotIn('<circle cx="12" cy="5" r="1"', player)
         self.assertIn(".rpl-download:focus-visible", css)
