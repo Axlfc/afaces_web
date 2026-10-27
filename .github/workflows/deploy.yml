@@ -42,6 +42,27 @@ jobs:
           node --test tests/*.test.cjs
           python scripts/sync_catalog.py --check
           python scripts/build_tinet.py --manifest
+      # TINET entrega solo el certificado de servidor (sin OV R36 intermedio).
+      # Nunca se usa el PEM del repositorio: se obtiene de Sectigo durante el job.
+      # La descarga se verifica con SHA-256 DER fijado y no altera el trust store.
+      - name: Obtener intermedio Sectigo verificado (solo RUNNER_TEMP)
+        run: |
+          set -euo pipefail
+          python -m scripts.fetch_tinet_intermediate --output "$RUNNER_TEMP/sectigo_intermediate.pem"
+          echo "TINET_INTERMEDIATE_PEM=$RUNNER_TEMP/sectigo_intermediate.pem" >> "$GITHUB_ENV"
+      - name: Comprobar cadena y hostname FTPS con OpenSSL (sin credenciales)
+        run: |
+          set -euo pipefail
+          if ! timeout 40s openssl s_client -starttls ftp \
+              -connect "$FTP_SERVER:$TINET_FTP_PORT" -servername "$FTP_SERVER" \
+              -verify_hostname "$FTP_SERVER" -verify_return_error \
+              -CAfile "$TINET_INTERMEDIATE_PEM" -CApath /etc/ssl/certs \
+              -brief </dev/null >"$RUNNER_TEMP/tinet-tls.log" 2>&1; then
+            cat "$RUNNER_TEMP/tinet-tls.log"
+            exit 1
+          fi
+          grep -q 'Verification: OK' "$RUNNER_TEMP/tinet-tls.log"
+          echo "OK: OpenSSL verificó la cadena FTPS y el nombre del servidor"
       - name: Publicar por FTPS explícito en raíz web detectada con welcome.html
         run: |
           if [ "$TINET_FORCE_FULL_DEPLOY" = "true" ]; then

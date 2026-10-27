@@ -82,20 +82,39 @@ El runner de GitHub observó que TINET presenta el certificado wildcard
 intermedio Sectigo Public Server Authentication CA OV R36**. OpenSSL
 respondía `unable to get local issuer certificate`.
 
-Se conserva el certificado intermedio **público**, procedente de
-[Sectigo](https://www.sectigo.com/knowledge-base/detail/Access-New-Sectigo-Certificate-Chain),
-en `certs/SectigoPublicServerAuthenticationCAOVR36.pem`, con su huella
-SHA-256 DER fijada en el código:
+**El repositorio no versiona ningún certificado.** La opción A descarga
+el intermedio OV R36 en cada ejecución desde el punto de distribución
+[oficial de Sectigo](https://www.sectigo.com/knowledge-base/detail/Access-New-Sectigo-Certificate-Chain)
+(prueba HTTPS, con fallback al HTTP publicado por Sectigo). El transporte
+HTTP no se usa como prueba de autenticidad: siempre se exige la huella
+SHA-256 del DER antes de instalarlo; una descarga diferente falla sin
+crear el archivo. La huella fijada en `scripts/deploy_tinet.py` es
 `6542d176bed50f193c0ce297ae44ecd8a0a86bec2ede682769344059b4e78530`.
-La comprobación de la conexión desde Actions, sin usuario ni contraseña,
-completó TLS 1.2 tras incorporar ese intermedio.
 
-`make_ftps_context()` carga primero el almacén de CAs predeterminadas del
-sistema y después este certificado intermedio (verificando previamente su
-huella). **No desactiva** la verificación TLS ni el control del nombre del
-servidor. Una futura rotación de CA debe tratarse con revisión explícita
-de los nuevos certificados y pruebas: jamás aplicar `CERT_NONE`.
+En GitHub Actions, `python -m scripts.fetch_tinet_intermediate` escribe
+`$RUNNER_TEMP/sectigo_intermediate.pem` (modo 0600) y el deploy recibe
+`TINET_INTERMEDIATE_PEM`. `make_ftps_context()` conserva las raíces
+del sistema y añade solo el intermedio cuya huella ha comprobado. Mantiene
+`CERT_REQUIRED` y `check_hostname`. Antes de publicar, OpenSSL verifica
+el certificado del FTPS explícito, la cadena y el hostname sin credenciales.
+El workflow de CI ejecuta la misma prueba sin secretos, pero **no publica**.
 
-Esto mitiga el defecto de cadena incompleta del servidor; lo correcto
-a largo plazo es que el administrador de TINET configure su servidor FTPS
-para enviar la cadena completa.
+Reproducción desde la raíz del repositorio (sin subir PEM a Git):
+```bash
+python -m scripts.fetch_tinet_intermediate --output /tmp/sectigo_intermediate.pem
+openssl s_client -starttls ftp -connect usuaris.tinet.cat:21 \
+  -servername usuaris.tinet.cat -verify_hostname usuaris.tinet.cat \
+  -verify_return_error -CAfile /tmp/sectigo_intermediate.pem \
+  -CApath /etc/ssl/certs -brief </dev/null
+# Para publicar con secretos configurados y tras verificar el destino:
+TINET_INTERMEDIATE_PEM=/tmp/sectigo_intermediate.pem python scripts/deploy_tinet.py --dist dist
+```
+
+**Renovación/rotación:** si Sectigo o TINET sustituye el emisor, revisar la
+nueva cadena, los sujetos y la huella DER mediante documentación del emisor.
+Actualizar conjuntamente la URL y el SHA-256 fijado, someterlo a PR y
+repetir las pruebas automáticas; no descargar un certificado arbitrario,
+no sustituir el trust store del sistema y nunca usar `CERT_NONE`.
+El OV R36 actual vence en marzo de 2036, pero el certificado de TINET
+puede cambiar antes. La solución definitiva es que TINET envíe la
+cadena completa desde su servidor.

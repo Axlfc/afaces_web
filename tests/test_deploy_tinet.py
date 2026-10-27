@@ -1,5 +1,7 @@
 import hashlib
 import io
+import os
+from unittest.mock import patch
 import json
 import ssl
 import tempfile
@@ -175,8 +177,20 @@ class FTPTests(unittest.TestCase):
 
 
 
+    def test_ftps_context_requires_ephemeral_certificate(self):
+        with patch.dict(os.environ, {"TINET_INTERMEDIATE_PEM": ""}):
+            with self.assertRaisesRegex(ValueError, "TINET_INTERMEDIATE_PEM"):
+                make_ftps_context()
+
     def test_ftps_context_keeps_hostname_and_ca_validation(self):
-        context = make_ftps_context()
+        # Un certificado del trust store sirve de fixture sin subir PEM al repo.
+        der = ssl.create_default_context().get_ca_certs(binary_form=True)[0]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "temporary.pem"
+            path.write_text(ssl.DER_cert_to_PEM_cert(der), encoding="ascii")
+            with patch("scripts.deploy_tinet.SECTIGO_OV_R36_SHA256",
+                       hashlib.sha256(der).hexdigest()):
+                context = make_ftps_context(path)
         self.assertTrue(context.check_hostname)
         self.assertEqual(context.verify_mode, ssl.CERT_REQUIRED)
         self.assertGreater(len(context.get_ca_certs()), 0)
