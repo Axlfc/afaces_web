@@ -16,7 +16,7 @@ Los cambios están preparados en el script [scripts/apply_legacy_licenses.py](..
 
 ## Uso cuando haya permisos de GitHub adecuados
 
-\`\`\`bash
+```bash
 git clone https://github.com/afaces/afaces.github.io.git
 cd afaces.github.io
 git switch -c feat/licencias-web-radio
@@ -28,12 +28,12 @@ git diff -- README.md epk.md CONTRIBUTING.md
 git add LICENSE LICENCIAS.md README.md epk.md CONTRIBUTING.md
 git commit -m "docs(license): código MIT y guías CC BY-SA, catálogo protegido"
 git push -u origin feat/licencias-web-radio
-\`\`\`
+```
 
-Abre una PR desde \`feat/licencias-web-radio\` a \`main\`, comprueba que los medios no cambian y después fusiona. Revisa la atribución de posibles contribuciones previas y de Bootstrap, Bootswatch y otros materiales externos: no se les aplica unilateralmente MIT ni CC BY-SA.
+Abre una PR desde `feat/licencias-web-radio` a `main`, comprueba que los medios no cambian y después fusiona. Revisa la atribución de posibles contribuciones previas y de Bootstrap, Bootswatch y otros materiales externos: no se les aplica unilateralmente MIT ni CC BY-SA.
 
 El script es idempotente; en caso de que LICENSE o LICENCIAS.md existentes sean diferentes, **aborta** en lugar de sustituirlos. No toca música, imágenes, reproductor ni archivos de configuración.
 
 ## Requisito de acceso
 
-Autorizar la instalación de GitHub para escribir en \`afaces/afaces.github.io\` o realizar el cambio desde un clon local con credenciales que sí puedan publicar ramas. El repositorio moderno no necesita otorgar acceso a terceros a los archivos musicales.
+Autorizar la instalación de GitHub para escribir en `afaces/afaces.github.io` o realizar el cambio desde un clon local con credenciales que sí puedan publicar ramas. El repositorio moderno no necesita otorgar acceso a terceros a los archivos musicales.
