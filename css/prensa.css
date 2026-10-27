@@ -52,7 +52,7 @@
 @media(prefers-reduced-motion:reduce){.press-page *{scroll-behavior:auto!important}}
 @media(forced-colors:active){.press-sheet,.press-video-links li,.press-social li,.press-stats>div{border:1px solid CanvasText}}
 
-/* Segunda revisión: manifiesto, fotografía de archivo y lista pendiente */
+/* Manifiesto, fotografía de archivo y lista de escucha */
 .press-sheet{grid-template-columns:minmax(0,1fr) minmax(175px,.28fr)}
 .press-lead{font-size:clamp(1.35rem,2.5vw,2rem);line-height:1.35}
 .press-lead strong{color:var(--accent)}
@@ -66,7 +66,13 @@
 .press-playlist-mark{font:.63rem "Liberation Mono","DejaVu Sans Mono",monospace;color:var(--accent)}
 .press-playlist h3{font:800 clamp(1.55rem,3vw,2.5rem)/1.1 "Arial Narrow","Liberation Sans Narrow",Impact,sans-serif;color:var(--white);text-transform:uppercase}
 .press-playlist>p:not(.press-playlist-mark){font-size:.88rem;line-height:1.65}
-.press-playlist-pending{display:inline-block;justify-self:start;border:1px dashed var(--border);padding:.55rem .9rem;color:var(--muted)}
+.press-playlist-intro strong{color:var(--accent)}
+.press-playlist-note{font:.73rem/1.65 "Liberation Mono","DejaVu Sans Mono",monospace;color:var(--muted)}
+.press-playlist .press-curation{list-style:none;counter-reset:track;margin-top:.5rem}
+.press-playlist .press-curation li{padding:1rem 0;min-height:4.2rem}
+.press-playlist .press-curation small{line-height:1.55;overflow-wrap:anywhere}
+.press-playlist .press-curation a{padding:.55rem .8rem;border:1px solid var(--border);text-decoration:none;color:var(--white);font-weight:700}
+.press-playlist .press-curation a:hover{border-color:var(--accent);color:var(--accent)}
 .press-video-links a{display:grid;gap:.55rem;text-decoration:none;min-height:4rem}
 .press-video-links a strong{color:var(--white);font-size:.9rem}
 .press-video-links a span{color:var(--accent);font-size:.73rem}
