@@ -137,3 +137,21 @@ test('los dos repositorios y la radio propia se explican sin ceder música',()=>
   for(const part of ['RADIO_TRACKS','data/metadata.json','Git LFS','LICENSE','afaces/afaces.github.io','Axlfc/afaces_web'])
     assert.ok(guide.includes(part),part);
 });
+
+test('licencias para código y manuales, derechos del catálogo separados',()=>{
+  const license=read('LICENSE');
+  const rights=read('LICENCIAS.md');
+  const guide=read('docs/para-artistas.md');
+  const readme=read('README.md');
+  assert.ok(license.startsWith('MIT License'));
+  assert.match(license,/Copyright \(c\) 2026 Axel Fernández Curros \(Afaces\)/);
+  for(const key of ['MIT','CC BY-SA 4.0','derechos reservados','Git LFS','Bootswatch']){
+    assert.ok(rights.includes(key),key);
+  }
+  assert.ok(guide.includes('**MIT**'));
+  assert.ok(!guide.includes('Licencia pendiente de formalizar'));
+  assert.ok(readme.includes('LICENSE'));
+  assert.ok(readme.includes('RADIO_TRACKS'));
+  assert.ok(page.includes('licencia MIT'));
+  assert.ok(page.includes('LICENCIAS.md'));
+});
