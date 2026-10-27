@@ -142,8 +142,8 @@ test('todas las pistas tienen reproductor y botón de descarga accesibles',()=>{
   const app=page();
   assert.equal(app.playlist.rows.length,tracks.length);
   assert.equal(app.playlist.downloads.length,tracks.length);
-  assert.match(app.playlist.innerHTML,/aria-label="Descargar MP3 \\(descargar /);
-  assert.match(app.playlist.innerHTML,/title="Descargar MP3 \\(descargar /);
+  assert.match(app.playlist.innerHTML,/aria-label="Descargar MP3 \(descargar /);
+  assert.match(app.playlist.innerHTML,/title="Descargar MP3 \(descargar /);
   assert.match(app.playlist.innerHTML,/<a class="rpl-download" /);
   assert.match(app.playlist.innerHTML,/m7 10 5 5 5-5/);
   assert.equal(app.elements.radioTrackName.textContent,tracks[0].name);
