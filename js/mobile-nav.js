@@ -97,8 +97,8 @@
     if(!open && restoreFocus)toggle.focus();
   };
   const readMode=()=>{
-    try{return localStorage.getItem('afaces-view-mode')==='novato'?'novato':'experto'}
-    catch{return document.documentElement.dataset.viewMode==='novato'?'novato':'experto'}
+    try{return localStorage.getItem('afaces-view-mode')==='experto'?'experto':'novato'}
+    catch{return document.documentElement.dataset.viewMode==='experto'?'experto':'novato'}
   };
   const updateMode=()=>{
     const mode=readMode();

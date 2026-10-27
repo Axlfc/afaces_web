@@ -14,11 +14,13 @@
     const noviceButton=document.createElement('button');
     noviceButton.type='button';
     noviceButton.id='modeNovice';
-    noviceButton.textContent='Novato';
+    noviceButton.textContent='Vista Simplificada';
+    noviceButton.setAttribute('aria-label','Activar vista simplificada');
     const expertButton=document.createElement('button');
     expertButton.type='button';
     expertButton.id='modeExpert';
-    expertButton.textContent='Experto';
+    expertButton.textContent='Vista Completa';
+    expertButton.setAttribute('aria-label','Activar vista completa');
     controls.append(label,noviceButton,expertButton);
     document.body.append(controls);
   }
@@ -26,13 +28,14 @@
   const expert=controls.querySelector('#modeExpert');
   if(!novice||!expert)return;
 
-  const normalized=mode=>mode==='novato'?'novato':'experto';
+  const normalized=mode=>mode==='experto'?'experto':'novato';
   const storedMode=()=>{
     try{return normalized(localStorage.getItem(storageKey))}
     catch{return normalized(root.dataset.viewMode)}
   };
   const apply=(mode,persist=false)=>{
     const current=normalized(mode);
+    root.dataset.js='true';
     root.dataset.viewMode=current;
     novice.setAttribute('aria-pressed',String(current==='novato'));
     expert.setAttribute('aria-pressed',String(current==='experto'));

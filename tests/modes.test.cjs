@@ -61,9 +61,11 @@ test('crea el selector en páginas sin controles previos',()=>{
   const page=createPage(storage);
   assert.equal(page.body.children.length,1);
   assert.equal(page.group.getAttribute('role'),'group');
-  assert.equal(page.novice.getAttribute('aria-pressed'),'false');
-  assert.equal(page.expert.getAttribute('aria-pressed'),'true');
-  assert.equal(page.doc.documentElement.dataset.viewMode,'experto');
+  assert.equal(page.novice.getAttribute('aria-pressed'),'true');
+  assert.equal(page.expert.getAttribute('aria-pressed'),'false');
+  assert.equal(page.doc.documentElement.dataset.viewMode,'novato');
+  assert.equal(page.novice.textContent,'Vista Simplificada');
+  assert.equal(page.expert.textContent,'Vista Completa');
 });
 
 test('no duplica el selector de la portada',()=>{

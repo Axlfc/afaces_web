@@ -26,8 +26,9 @@ async function recommendations(){
   if(n&&!selected){status.textContent='El núcleo indicado no existe. Elige uno de los filtros.';title.textContent='Explorar recomendaciones';return}
   if(selected){
    title.textContent=NUCLEOS[selected];const found=eligible.filter(x=>matches(x,selected));
-   status.textContent=found.length?found.length+' lanzamientos relacionados con '+NUCLEOS[selected]+'.':'No hay lanzamientos clasificados en este núcleo.';
-   found.slice(0,24).forEach(x=>out.append(makeCard(x)));return;
+   const chosen=found.slice(0,5);
+   status.textContent=chosen.length?chosen.length+' recomendaciones sobre '+NUCLEOS[selected]+' seleccionadas del catálogo según coincidencias temáticas.':'No hay lanzamientos clasificados en este núcleo.';
+   chosen.forEach(x=>out.append(makeCard(x)));return;
   }
   title.textContent='Descubre tu próximo lanzamiento';
   status.textContent='Elige un núcleo, una ruta editorial o explora una selección del catálogo. Ningún tema está preseleccionado.';
