@@ -5,7 +5,7 @@ const pages={
  'welcome.html':'Inicio','onboarding.html':'Descubrir','perfiles.html':'Perfiles',
  'recomendaciones.html':'Recomendaciones','mapa.html':'Mapa','timeline.html':'Cronología',
  'lanzamiento.html':'Fichas','feedback.html':'Feedback','letras.html':'Letras y transcripciones',
- 'accesibilidad.html':'Accesibilidad'
+ 'accesibilidad.html':'Accesibilidad','prensa.html':'Prensa'
 };
 const storageKey='afaces-breadcrumb-trail-v1';
 const maxTrail=8;

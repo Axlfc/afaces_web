@@ -22,6 +22,7 @@
     ['Letras','letras.html',true],
     ['Opiniones','feedback.html',true],
     ['Accesibilidad','accesibilidad.html',true],
+    ['Prensa','prensa.html',true],
     ['Contacto','welcome.html#contact',true]
   ];
   const shortcuts=['Discografía','Descubrir','Mapa','Cronología'];

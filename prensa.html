@@ -1,0 +1,159 @@
+<!doctype html><html lang="es" data-theme="dark"><head><title>Prensa y EPK oficial — AFACES | Axel Fernández Curros</title><meta name="description" content="Dossier de prensa oficial de Afaces: biografías, 126 lanzamientos, nueve fases, once núcleos, escucha para medios, fotografías y contacto."><link rel="canonical" href="https://usuaris.tinet.cat/afaces/prensa.html"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="assets/images/icon/favicon.png"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/discovery.css"><link rel="stylesheet" href="css/architecture.css"><link rel="stylesheet" href="css/release.css"><link rel="stylesheet" href="css/prensa.css"></head><body><a class="a11y-skip-link" href="#contenido-principal" aria-label="Saltar al contenido principal">Saltar al contenido principal</a><div class="cursor" id="cursor"></div><div class="cursor-ring" id="cursorRing"></div><nav aria-label="Navegación principal"><a class="nav-logo" href="welcome.html" aria-label="AFACES — volver a la portada">A<span>F</span>ACES</a><ul class="nav-links"></ul><div class="nav-right"><button class="radio-toggle" id="radioToggle" title="Radio Afaces" aria-label="Abrir radio">
+      <span class="radio-toggle-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/>
+        </svg>
+      </span>
+      <span class="radio-toggle-label">RADIO</span>
+      <span class="radio-live-dot" id="radioLiveDot"></span>
+    </button><button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro u oscuro"><span class="theme-icon theme-icon-dark">☾</span><span class="theme-icon theme-icon-light">☀</span></button><a class="nav-cta" href="welcome.html" aria-label="Portada">Portada</a></div></nav>
+<div class="radio-panel" id="radioPanel" aria-hidden="true">
+  <div class="radio-panel-inner">
+    <div class="radio-header">
+      <div class="radio-logo">
+        <span class="radio-dot" id="rpDot"></span>
+        AFACES RADIO
+      </div>
+      <button class="radio-close" id="radioClose" aria-label="Cerrar radio">✕</button>
+    </div>
+
+    <div class="radio-art" id="radioArt">
+      <div class="radio-art-img" id="radioArtImg"></div>
+      <div class="radio-vinyl" id="radioVinyl">
+        <div class="vinyl-ring"></div>
+        <div class="vinyl-ring"></div>
+        <div class="vinyl-center"></div>
+      </div>
+    </div>
+
+    <div class="radio-info">
+      <div class="radio-track-name" id="radioTrackName">— Selecciona una pista —</div>
+      <div class="radio-track-artist" id="radioTrackArtist">Afaces</div>
+      <div class="radio-track-count" id="radioTrackCount">— / —</div>
+    </div>
+
+    <div class="radio-progress-wrap">
+      <span class="radio-time" id="radioCurrTime">00:00</span>
+      <div class="radio-progress-track">
+        <div class="radio-progress-fill" id="radioProgressFill"></div>
+        <input type="range" class="radio-seek" id="radioSeek" aria-label="Posición de reproducción de la radio" min="0" max="100" value="0" step="0.1">
+      </div>
+      <span class="radio-time" id="radioDuration">00:00</span>
+    </div>
+
+    <div class="radio-controls">
+      <button class="rctrl rctrl-prev" id="rPrev" title="Anterior" aria-label="Pista anterior">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 20L9 12l10-8v16zm-12 0V4H5v16h2z"/></svg>
+      </button>
+      <button class="rctrl rctrl-play" id="rPlay" title="Reproducir o pausar" aria-label="Reproducir o pausar">
+        <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="pause-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+      </button>
+      <button class="rctrl rctrl-next" id="rNext" title="Siguiente" aria-label="Pista siguiente">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5 4l10 8-10 8V4zm12 0h2v16h-2z"/></svg>
+      </button>
+      <button class="rctrl rctrl-shuffle" id="rShuffle" title="Aleatorio" aria-label="Modo aleatorio">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+      </button>
+    </div>
+
+    <div class="radio-volume">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5zm6.07 2.93a10 10 0 0 1 0 14.14"/><line x1="15.54" y1="8.46" x2="21.07" y2="2.93"/></svg>
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5z"/></svg>
+      <input type="range" class="radio-vol-slider" id="radioVol" aria-label="Volumen de la radio" min="0" max="100" value="80">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity:.5;flex-shrink:0"><path d="M11 5L6 9H2v6h4l5 4V5zm6.07 2.93a10 10 0 0 1 0 14.14m-3.53-10.61a6 6 0 0 1 0 8.48"/></svg>
+    </div>
+
+    <div class="radio-playlist" id="radioPlaylist">
+      <!-- populated by JS -->
+    </div>
+  </div>
+</div>
+<div class="radio-backdrop" id="radioBackdrop"></div>
+<main id="contenido-principal" class="ux-page press-page" tabindex="-1">
+  <div class="ux-index">AFACES / DOCUMENTACIÓN / PRENSA</div>
+  <header class="press-hero" aria-labelledby="titulo-prensa">
+    <p class="ux-kicker">Dossier oficial de prensa · 2026</p>
+    <h1 class="ux-title" id="titulo-prensa">Prensa</h1>
+    <p class="press-lead">Una obra que también es un sistema: música, lenguaje, archivo e infraestructura independiente.</p>
+    <p class="ux-note">Información para periodistas, medios y programadores culturales. Este dossier sustituye al EPK histórico.</p>
+    <div class="ux-actions">
+      <a class="ux-button" href="mailto:afaces@salou.tinet.cat?subject=Solicitud%20de%20prensa%20AFACES" aria-label="Escribir al contacto de prensa de AFACES">Solicitar material de prensa</a>
+      <a class="ux-link" href="#datos" aria-label="Ir a los datos clave del proyecto">Consultar datos clave</a>
+    </div>
+  </header>
+  <section class="press-section" aria-labelledby="bio-corta">
+    <p class="press-section-index">01 / PERFIL</p>
+    <h2 id="bio-corta">Biografía corta</h2>
+    <p class="press-prose press-emphasis">Afaces es el sistema musical y audiovisual independiente de Axel F. Curros (Axel Fernández Curros): <strong>126 lanzamientos</strong> articulados en <strong>9 fases evolutivas</strong> y <strong>11 núcleos temáticos</strong>, con <strong>IALEX</strong> como idioma construido propio. Más que una discografía, es una arquitectura narrativa y técnica que relaciona creación, memoria y distribución bajo un principio de <strong>soberanía tecnológica</strong>.</p>
+  </section>
+  <section class="press-section" aria-labelledby="bio-larga">
+    <p class="press-section-index">02 / TRAYECTORIA</p>
+    <h2 id="bio-larga">Biografía larga</h2>
+    <div class="press-prose">
+      <p>Desde 2017, Axel Fernández Curros desarrolla Afaces como una obra continua que parte de la experimentación electrónica, el downtempo y la canción para avanzar hacia álbumes conceptuales y estructuras narrativas interconectadas. Su catálogo no se ordena únicamente por estilos o fechas: explora identidad, lenguaje, conflicto, vacío, burocracia, código y formas de control.</p>
+      <p>Las series <strong>NEXUZ</strong>, <strong>PROTOCOLO</strong> y <strong>KODE</strong> funcionan como grandes recorridos dentro de ese universo. Nueve fases describen su evolución y once núcleos permiten leer relaciones entre obras. IALEX, lengua construida por el proyecto, forma parte de esa investigación sobre cómo el lenguaje transforma la experiencia musical y el relato.</p>
+      <p>En su etapa reciente, el proyecto incorpora <strong>afaces_music_forge</strong>, una cadena de producción modular gestionada por el artista para integrar inteligencia artificial asistida en música y audiovisuales. El flujo combina herramientas para ideación y texto, generación de audio con YuE2 y ComfyUI, arte con Flux y procesamiento audiovisual con FFmpeg. Su objetivo es conservar el control sobre el proceso creativo, los archivos y su publicación, sin depender de una plataforma intermediaria.</p>
+    </div>
+    <p class="press-context">Para explorar la obra: <a href="mapa.html" aria-label="Abrir el mapa de las nueve fases y once núcleos">mapa de fases y núcleos</a> y <a href="timeline.html" aria-label="Abrir la cronología musical desde 2017">cronología del catálogo</a>.</p>
+  </section>
+  <section class="press-section" id="datos" aria-labelledby="datos-titulo">
+    <p class="press-section-index">03 / EN CIFRAS</p>
+    <h2 id="datos-titulo">Datos clave</h2>
+    <dl class="press-stats">
+      <div><dt>Lanzamientos</dt><dd>126</dd></div>
+      <div><dt>Horas de música</dt><dd>Más de 72</dd></div>
+      <div><dt>Fases evolutivas</dt><dd>9</dd></div>
+      <div><dt>Núcleos temáticos</dt><dd>11</dd></div>
+      <div><dt>Álbumes</dt><dd>27</dd></div>
+      <div><dt>LP</dt><dd>99</dd></div>
+    </dl>
+    <p class="press-footnote">Cifras documentadas para esta edición del dossier. No constituyen un contador automático de futuros lanzamientos.</p>
+  </section>
+  <section class="press-section" aria-labelledby="escucha-titulo">
+    <p class="press-section-index">04 / ESCUCHA</p>
+    <h2 id="escucha-titulo">Escucha para medios</h2>
+    <p class="press-prose">Como punto de partida puede escucharse <cite>Nefasto</cite>, uno de los primeros álbumes de la trayectoria, en su lista de reproducción original. El canal oficial reúne los demás trabajos y recorridos por la obra.</p>
+    <div class="press-links">
+      <a class="ux-button" href="https://www.youtube.com/watch?v=0smluNgcsq0&amp;list=PLvEI0iOxif02xsNvRH71X7ERClDCkWAP_" target="_blank" rel="noopener noreferrer" aria-label="Escuchar la lista de reproducción del álbum Nefasto en YouTube, abre otra pestaña">Escuchar «Nefasto» en YouTube</a>
+      <a class="ux-link" href="https://www.youtube.com/@afaces" target="_blank" rel="noopener noreferrer" aria-label="Abrir el canal oficial de Afaces en YouTube, abre otra pestaña">Explorar el canal oficial</a>
+    </div>
+  </section>
+  <section class="press-section" aria-labelledby="fotos-titulo">
+    <p class="press-section-index">05 / MATERIAL GRÁFICO</p>
+    <h2 id="fotos-titulo">Fotografías en alta resolución</h2>
+    <div class="press-media">
+      <figure class="press-placeholder">
+        <div class="press-placeholder-art" aria-hidden="true"><span>AFACES</span><span>ARCHIVO / PRENSA</span></div>
+        <figcaption>Espacio reservado para fotografías oficiales. No se ofrecen miniaturas como archivos de prensa.</figcaption>
+      </figure>
+      <div class="press-media-copy">
+        <p>Las fotografías, portadas y otros materiales de alta resolución se facilitan bajo solicitud, junto con sus créditos y condiciones de uso. Este apartado se actualizará cuando existan archivos verificables autorizados para su publicación.</p>
+        <a class="ux-link" href="mailto:afaces@salou.tinet.cat?subject=Solicitud%20de%20fotografias%20de%20prensa%20AFACES" aria-label="Solicitar fotografías de prensa de AFACES por correo">Solicitar fotografías de prensa</a>
+      </div>
+    </div>
+  </section>
+  <section class="press-section press-contact" aria-labelledby="contacto-prensa">
+    <p class="press-section-index">06 / CONTACTO</p>
+    <h2 id="contacto-prensa">Contacto directo de prensa</h2>
+    <p class="press-prose">Para entrevistas, reseñas, programación, fotografías y documentación adicional:</p>
+    <p><a class="press-email" href="mailto:afaces@salou.tinet.cat" aria-label="Enviar correo a afaces arroba salou punto tinet punto cat">afaces@salou.tinet.cat</a></p>
+    <p class="press-footnote">Afaces es un proyecto independiente. Este dossier es la referencia oficial para medios.</p>
+  </section>
+</main><footer>
+  <div>
+    <div class="footer-logo">AFACES</div>
+    <p class="footer-copy">© 2026 Afaces · Axel Fernandez Curros<br>Todos los derechos reservados · Sello independiente</p>
+  </div>
+  <div class="footer-center">
+    <a href="mailto:afacesmusic@gmail.com" class="footer-email" aria-label="afacesmusic@gmail.com">afacesmusic@gmail.com</a>
+    <a href="mailto:afaces@salou.tinet.cat" class="footer-email" aria-label="afaces@salou.tinet.cat">afaces@salou.tinet.cat</a>
+    <div class="footer-since">Haciendo ruido desde 1996</div>
+  </div>
+  <div class="footer-right"><a href="feedback.html" aria-label="Opiniones">Opiniones</a><a href="letras.html" aria-label="Letras y transcripciones">Letras y transcripciones</a><a href="accesibilidad.html" aria-label="Accesibilidad">Accesibilidad</a>
+    <a href="prensa.html" aria-current="page" aria-label="Dossier de prensa">Dossier de prensa</a>
+    <a href="welcome.html#contact" aria-label="Contacto">Contacto</a>
+    <a href="https://afaces.github.io/donate" target="_blank" rel="noopener noreferrer" aria-label="Donar">Donar</a>
+    <a href="https://github.com/Axlfc/afaces_web" target="_blank" rel="noopener noreferrer" aria-label="Código fuente">Código fuente</a>
+  </div>
+</footer><script src="js/discovery-shell.js" defer></script><script src="js/radio-data.js" defer></script><script src="js/radio-player.js" defer></script><script src="js/mobile-nav.js" defer></script><script src="js/modes.js" defer></script><script src="js/breadcrumbs.js" defer></script><script src="js/persistent-navigation.js" defer></script></body></html>

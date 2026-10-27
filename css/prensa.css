@@ -1,0 +1,32 @@
+/* Dossier de prensa AFACES: conserva variables, tipografía y estructura existentes. */
+.press-page{max-width:1160px}
+.press-hero{padding-bottom:clamp(3rem,6vw,5rem)}
+.press-lead{max-width:780px;font:800 clamp(1.4rem,3.3vw,2.5rem)/1.28 "Arial Narrow","Liberation Sans Narrow",Impact,sans-serif;color:var(--white);margin-bottom:1.5rem}
+.press-section{display:grid;grid-template-columns:minmax(135px,.3fr) minmax(0,1fr);column-gap:clamp(1rem,5vw,4rem);row-gap:1rem;border-top:1px solid var(--border);padding:clamp(2.5rem,5vw,4rem) 0;min-width:0}
+.press-section-index{grid-column:1;align-self:start;font:700 .65rem/1.7 "Liberation Mono","DejaVu Sans Mono",monospace;color:var(--accent);letter-spacing:.12em}
+.press-section>h2,.press-section>.press-prose,.press-section>.press-context,.press-section>.press-stats,.press-section>.press-footnote,.press-section>.press-links,.press-section>.press-media,.press-section>p:not(.press-section-index){grid-column:2;min-width:0}
+.press-section h2{font:800 clamp(1.8rem,4vw,3rem)/1.1 "Arial Narrow","Liberation Sans Narrow",Impact,sans-serif;text-transform:uppercase;letter-spacing:.015em;color:var(--white)}
+.press-prose{max-width:78ch;font-size:clamp(.86rem,1.2vw,1rem);line-height:1.95;overflow-wrap:anywhere}
+.press-prose p+p{margin-top:1.25rem}
+.press-emphasis{font-size:clamp(1rem,1.6vw,1.18rem)}
+.press-context,.press-footnote,.press-media-copy p{font-size:.78rem;line-height:1.9;color:var(--muted);overflow-wrap:anywhere}
+.press-context{padding-top:1rem}
+.press-footnote{padding-top:.5rem}
+.press-page a{text-underline-offset:.2em}
+.press-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--border);border-left:1px solid var(--border)}
+.press-stats>div{min-width:0;padding:1.4rem 1rem;background:var(--card-bg);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.press-stats dt{font:.65rem/1.6 "Liberation Mono","DejaVu Sans Mono",monospace;color:var(--muted)}
+.press-stats dd{font:900 clamp(1.5rem,4vw,2.9rem)/1.1 "Arial Narrow","Liberation Sans Narrow",Impact,sans-serif;color:var(--white);margin-top:.6rem;overflow-wrap:anywhere}
+.press-links{display:flex;align-items:center;flex-wrap:wrap;gap:1.25rem;margin-top:1rem}
+.press-media{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1rem,3vw,2rem);align-items:start}
+.press-placeholder{min-width:0}
+.press-placeholder-art{min-height:220px;aspect-ratio:4/3;display:flex;flex-direction:column;justify-content:space-between;padding:1.5rem;border:1px solid var(--border);background:var(--card-bg);color:var(--muted);font:.65rem/1.7 "Liberation Mono","DejaVu Sans Mono",monospace;letter-spacing:.13em}
+.press-placeholder-art span:first-child{font:900 clamp(2rem,6vw,4rem)/1 "Arial Narrow","Liberation Sans Narrow",Impact,sans-serif;color:var(--white);letter-spacing:.12em}
+.press-placeholder figcaption{font:.68rem/1.7 "Liberation Mono","DejaVu Sans Mono",monospace;color:var(--muted);margin-top:.8rem}
+.press-media-copy{display:grid;justify-items:start;gap:1.5rem}
+.press-email{display:inline-block;font:700 clamp(1rem,2.8vw,1.6rem)/1.5 "Liberation Mono","DejaVu Sans Mono",monospace;overflow-wrap:anywhere;color:var(--accent)}
+.press-page :where(a):focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+@media(max-width:740px){.press-section{grid-template-columns:minmax(0,1fr);gap:1.15rem}.press-section>*{grid-column:1!important}.press-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.press-media{grid-template-columns:minmax(0,1fr)}.press-placeholder-art{min-height:180px}}
+@media(max-width:380px){.press-stats{grid-template-columns:minmax(0,1fr)}.press-links .ux-button{width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){.press-page *{scroll-behavior:auto!important}}
+@media(forced-colors:active){.press-placeholder-art,.press-stats>div{border:1px solid CanvasText}}
