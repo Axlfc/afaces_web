@@ -13,27 +13,37 @@ from pathlib import Path
 
 
 
-# Intermedio emitido por Sectigo, necesario porque TINET no lo envía en FTPS.
-# SHA-256 del certificado DER corroborado con Sectigo y el runner CI.
-SECTIGO_OV_R36_PATH = Path(__file__).resolve().parents[1] / "certs" / "SectigoPublicServerAuthenticationCAOVR36.pem"
+# Intermedio emitido por Sectigo, necesario porque TINET omite la cadena en FTPS.
+# Huella DER del intermedio público contrastada con la documentación de Sectigo.
+# Se descarga a RUNNER_TEMP durante Actions; NUNCA se versiona el PEM.
 SECTIGO_OV_R36_SHA256 = "6542d176bed50f193c0ce297ae44ecd8a0a86bec2ede682769344059b4e78530"
 
 
-def make_ftps_context(ca_path=SECTIGO_OV_R36_PATH):
-    """Confía en CA raíz del sistema y aporta intermedio Sectigo verificado.
+def make_ftps_context(ca_path=None):
+    """Usa raíces del sistema más el intermedio OV R36 validado por SHA-256.
 
-    Mantiene CERT_REQUIRED y check_hostname activado. No permite omitir la
-    verificación ni confiar en un certificado intermedio arbitrario.
+    No desactiva la verificación de cadena ni la comprobación de hostname.
+    El intermedio NO sustituye a las CAs raíz confiables del sistema.
     """
+    ca_path = ca_path or os.getenv("TINET_INTERMEDIATE_PEM")
+    if not ca_path:
+        raise ValueError(
+            "Falta TINET_INTERMEDIATE_PEM: descarga el intermedio en un "
+            "directorio temporal mediante python -m scripts.fetch_tinet_intermediate"
+        )
     pem = Path(ca_path).read_text(encoding="ascii")
+    if (pem.count("-----BEGIN CERTIFICATE-----") != 1
+            or pem.count("-----END CERTIFICATE-----") != 1
+            or "PRIVATE KEY" in pem):
+        raise ValueError("El archivo temporal debe contener un único certificado público PEM")
     try:
         der = ssl.PEM_cert_to_DER_cert(pem)
     except (ValueError, ssl.SSLError) as exc:
         raise ValueError("Certificado intermedio Sectigo PEM inválido") from exc
     if hashlib.sha256(der).hexdigest() != SECTIGO_OV_R36_SHA256:
         raise ValueError("Huella SHA-256 del certificado intermedio Sectigo inesperada")
-    context = ssl.create_default_context()
-    context.load_verify_locations(cadata=pem)
+    context = ssl.create_default_context(purpose=ssl.Purpose.SERVER_AUTH)
+    context.load_verify_locations(cadata=ssl.DER_cert_to_PEM_cert(der))
     return context
 
 

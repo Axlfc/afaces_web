@@ -33,6 +33,22 @@ jobs:
           pid=$!
           trap 'kill "$pid" 2>/dev/null || true' EXIT
           python scripts/verify_tinet.py --base-url http://127.0.0.1:8765/ --all --retries 3
+      # Smoke real sin secretos: comprueba si TINET sigue omitiendo el intermedio
+      # o cambia su cadena; nunca desactiva la verificación TLS.
+      - name: Validar cadena FTPS TINET con OpenSSL sin credenciales
+        run: |
+          set -euo pipefail
+          python -m scripts.fetch_tinet_intermediate --output "$RUNNER_TEMP/sectigo_intermediate.pem"
+          if ! timeout 40s openssl s_client -starttls ftp \
+              -connect usuaris.tinet.cat:21 -servername usuaris.tinet.cat \
+              -verify_hostname usuaris.tinet.cat -verify_return_error \
+              -CAfile "$RUNNER_TEMP/sectigo_intermediate.pem" -CApath /etc/ssl/certs \
+              -brief </dev/null >"$RUNNER_TEMP/tinet-ci-tls.log" 2>&1; then
+            cat "$RUNNER_TEMP/tinet-ci-tls.log"
+            exit 1
+          fi
+          grep -q 'Verification: OK' "$RUNNER_TEMP/tinet-ci-tls.log"
+          echo "OK: cadena y hostname TINET verificados"
       - name: Publicar artefacto de despliegue
         uses: actions/upload-artifact@v4
         with:
