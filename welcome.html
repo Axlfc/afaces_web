@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AFACES — Portfolio Oficial</title>
+<title>AFACES — Sitio oficial</title>
 <link rel="icon" type="image/x-icon" href="assets/images/icon/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<script>(function(){var r=document.documentElement;r.dataset.js="true";try{r.dataset.viewMode=localStorage.getItem("afaces-view-mode")==="experto"?"experto":"novato"}catch(e){r.dataset.viewMode="novato"}})();</script>
 <link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/discovery.css"><link rel="stylesheet" href="css/architecture.css">
 <style>
   .ptag.p7{background:rgba(180,120,255,.15);color:#b47fff;border-color:rgba(180,120,255,.3);}
@@ -16,7 +15,7 @@
   .modal-release-desc{padding:1rem 1.35rem 1.1rem;border-top:1px solid var(--border);font-size:.92rem;line-height:1.65;opacity:.82;}
 </style>
 <link rel="stylesheet" href="css/release.css"></head>
-<body>
+<body><a class="a11y-skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
@@ -116,7 +115,8 @@
 </div>
 <div class="radio-backdrop" id="radioBackdrop"></div>
 
-<div class="ux-mode-switch" role="group" aria-label="Modo de navegación"><span>Modo de vista</span><button id="modeNovice" type="button" aria-pressed="false">Novato</button><button id="modeExpert" type="button" aria-pressed="true">Experto</button></div>
+<div class="ux-mode-switch" role="group" aria-label="Elegir vista del sitio"><span>Modo de vista</span><button id="modeNovice" type="button" aria-pressed="true" aria-label="Activar vista simplificada">Vista Simplificada</button><button id="modeExpert" type="button" aria-pressed="false" aria-label="Activar vista completa">Vista Completa</button></div>
+<main id="contenido-principal" tabindex="-1">
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
@@ -135,12 +135,42 @@
       </div>
     </div>
   </div>
-  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+  <div class="scroll-hint"><span>Desplázate</span><div class="scroll-line"></div></div>
 </section>
 
 <section class="ux-home-entry" aria-labelledby="ux-home-title"><div class="ux-home-entry-inner"><div><div class="ux-kicker">PUNTO DE ENTRADA / 001</div><h2 id="ux-home-title">¿NO SABES POR DÓNDE EMPEZAR?</h2><p>126 lanzamientos. Cinco núcleos temáticos. Una puerta de entrada a tu medida.</p></div><div class="ux-actions"><a class="ux-button" href="onboarding.html">HAZ ESTE TEST →</a><a class="ux-link" href="perfiles.html">EXPLORAR PERFILES</a></div></div></section>
 <section class="ux-architecture-links"><a href="mapa.html">MAPA DE ARQUITECTURA <span>09 × 11</span></a><a href="timeline.html">LÍNEA TEMPORAL <span>2017 — 2026</span></a></section>
-<section class="ux-novice-gates" aria-label="Puertas de entrada"><div class="ux-kicker">PUERTAS DE ENTRADA</div><h2>Empieza por un registro</h2><div class="ux-actions"><a class="ux-button" href="onboarding.html">Seis registros</a><a class="ux-button" href="perfiles.html">Trece registros</a><a class="ux-link" href="mapa.html">Mapa simplificado</a></div><p>Rutas de exploración provisionales: la correspondencia exacta de los registros está pendiente de documentar.</p></section>
+<section class="ux-novice-gates" aria-labelledby="puertas-titulo">
+  <p class="ux-kicker">PUERTAS DE ENTRADA</p>
+  <h2 id="puertas-titulo">¿Qué buscas?</h2>
+  <p class="ux-note">Elige una temática y obtendrás cinco lanzamientos relacionados.</p>
+  <form action="recomendaciones.html" method="get" aria-labelledby="puertas-titulo">
+    <div class="ux-entry-choices">
+      <button class="ux-entry-choice" type="submit" name="nucleo" value="control" aria-label="Ver cinco recomendaciones sobre sistema y control">Sistema y control</button>
+      <button class="ux-entry-choice" type="submit" name="nucleo" value="vacio" aria-label="Ver cinco recomendaciones sobre vacío y desaparición">Vacío y desaparición</button>
+      <button class="ux-entry-choice" type="submit" name="nucleo" value="conflicto" aria-label="Ver cinco recomendaciones sobre conflicto social">Conflicto social</button>
+      <button class="ux-entry-choice" type="submit" name="nucleo" value="identidad" aria-label="Ver cinco recomendaciones sobre identidad y lenguaje">Identidad y lenguaje</button>
+      <button class="ux-entry-choice" type="submit" name="nucleo" value="existencia" aria-label="Ver cinco recomendaciones sobre filosofía y existencia">Filosofía y existencia</button>
+    </div>
+  </form>
+  <p class="ux-note">También puedes <a href="onboarding.html">hacer el recorrido guiado</a> o <a href="perfiles.html">explorar perfiles de escucha</a>.</p>
+</section>
+<section class="ux-summary" id="resumen-visual" aria-labelledby="resumen-titulo">
+  <p class="ux-kicker">ARQUITECTURA / VISTA GENERAL</p>
+  <h2 id="resumen-titulo">Nueve fases y tres series</h2>
+  <figure class="ux-structure">
+    <figcaption>Evolución del catálogo, de 2017 a 2026. El orden de las nueve fases es documental y no atribuye fechas exactas a cada etapa.</figcaption>
+    <p class="ux-timeline-label"><span>2017</span><span>2026</span></p>
+    <ol class="ux-phase-steps" id="resumenFases" aria-label="Nueve fases de la obra"><li>Consulta las <a href="mapa.html">nueve fases en el mapa</a>.</li></ol>
+    <div class="ux-series-tree" role="group" aria-label="Jerarquía de las series del universo musical">
+      <p class="ux-series-root">AFACES · Obra musical</p>
+      <ul class="ux-series-branches"><li>NEXUZ</li><li>PROTOCOLO</li><li>KODE</li></ul>
+      <p class="ux-note">Series dentro de la obra, sin atribuir relaciones temporales entre ellas.</p>
+    </div>
+  </figure>
+  <p class="ux-note"><a href="mapa.html">Consultar matriz de 9 fases y 11 núcleos</a> · <a href="timeline.html">Ver fechas documentadas</a></p>
+</section>
+
 <!-- MARQUEE -->
 <div class="marquee-wrap"><div class="marquee-track" id="mqTrack"></div></div>
 
@@ -257,35 +287,35 @@
         Gracias — tu mensaje ha sido enviado. Responderé tan pronto como pueda.
       </div>
       <form class="contact__form" id="contact-form" action="https://formsubmit.co/2f0e2077cc8a76bd2561e690126cc61d" method="POST">
-        <input type="hidden" name="_subject" value="New message from afaces site">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de AFACES">
         <input type="hidden" name="_next" value="https://usuaris.tinet.cat/afaces?success=true">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="_honey" style="display:none">
 
         <div class="form__row">
           <div class="form__field">
-            <label class="form__label" for="name">Name</label>
-            <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required>
+            <label class="form__label" for="name">Nombre</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Tu nombre" required>
           </div>
           <div class="form__field">
-            <label class="form__label" for="email">Email</label>
-            <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com" required>
+            <label class="form__label" for="email">Correo electrónico</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="correo@ejemplo.es" required>
           </div>
         </div>
 
         <div class="form__field">
-          <label class="form__label" for="subject">Subject</label>
-          <input class="form__input" type="text" id="subject" name="subject" placeholder="Project / Collaboration / Other" required>
+          <label class="form__label" for="subject">Asunto</label>
+          <input class="form__input" type="text" id="subject" name="subject" placeholder="Proyecto / Colaboración / Otro" required>
         </div>
 
         <div class="form__field">
-          <label class="form__label" for="message">Message</label>
-          <textarea class="form__textarea" id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+          <label class="form__label" for="message">Mensaje</label>
+          <textarea class="form__textarea" id="message" name="message" rows="6" placeholder="Cuéntame tu proyecto..." required></textarea>
         </div>
 
         <div class="form__submit">
           <button type="submit" class="btn btn--primary">
-            Send Message
+            Enviar mensaje
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
         </div>
@@ -293,6 +323,7 @@
     </div>
   </div>
 </section>
+</main>
 <footer>
   <div>
     <div class="footer-logo">AFACES</div>
@@ -301,10 +332,10 @@
   <div class="footer-center">
     <a href="mailto:afacesmusic@gmail.com" class="footer-email">afacesmusic@gmail.com</a>
     <a href="mailto:afaces@salou.tinet.cat" class="footer-email">afaces@salou.tinet.cat</a>
-    <div class="footer-since">Making noise since 1996</div>
+    <div class="footer-since">Haciendo ruido desde 1996</div>
   </div>
-  <div class="footer-right"><a href="feedback.html">Feedback</a><a href="letras.html">Letras y transcripciones</a><a href="accesibilidad.html">Accesibilidad</a>
-    <a href="https://afaces.github.io/epk" target="_blank">Electronic Press Kit</a>
+  <div class="footer-right"><a href="feedback.html">Opiniones</a><a href="letras.html">Letras y transcripciones</a><a href="accesibilidad.html">Accesibilidad</a>
+    <a href="https://afaces.github.io/epk" target="_blank">Dossier de prensa</a>
     <a href="welcome.html#contact">Contacto</a>
     <a href="https://afaces.github.io/donate" target="_blank">Donar</a>
     <a href="https://github.com/Axlfc/afaces_web" target="_blank">Código fuente</a>
@@ -380,6 +411,6 @@
     }catch(e){console.warn(e)}
   })();
 </script>
-<script src="js/main.js"></script><script src="js/radio-data.js" defer></script><script src="js/radio-player.js" defer></script><script src="js/mobile-nav.js" defer></script><script src="js/modes.js" defer></script>
+<script src="js/main.js"></script><script src="js/home-summary.js" defer></script><script src="js/radio-data.js" defer></script><script src="js/radio-player.js" defer></script><script src="js/mobile-nav.js" defer></script><script src="js/modes.js" defer></script>
 <script src="js/breadcrumbs.js" defer></script><script src="js/persistent-navigation.js" defer></script></body>
 </html>
