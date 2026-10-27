@@ -109,3 +109,49 @@ test('copy del manifiesto, sin cifras fijas ni llamadas a APIs de plataformas',(
   assert.ok(!source.includes('api.spotify.com'));
   assert.ok(!source.includes('googleapis.com'));
 });
+
+test('distribución incluye TikTok y SoundCloud con identificadores correctos',()=>{
+  const src=page.match(/<section class="press-section" aria-labelledby="redes-titulo">([\s\S]*?)<\/section>/)?.[1]||'';
+  for(const link of [
+    'https://www.tiktok.com/@el_afaces',
+    'https://soundcloud.com/afaces',
+    'https://www.youtube.com/@afaces',
+    'https://afaces.bandcamp.com',
+    'https://www.instagram.com/el_afaces/',
+    'https://open.spotify.com/artist/3zbzWzOqZcY3mZBG5ICF9l'
+  ])assert.ok(src.includes(link),link);
+  const links=src.match(/<a\b[^>]*>/g)||[];
+  assert.equal(links.length,6);
+  for(const link of links)assert.match(link,/aria-label=/);
+});
+
+test('los dos repositorios y la radio propia se explican sin ceder música',()=>{
+  const block=page.match(/<section class="press-section" aria-labelledby="codigo-titulo">([\s\S]*?)<\/section>/)?.[1]||'';
+  assert.ok(block.includes('https://github.com/afaces/afaces.github.io'));
+  assert.ok(block.includes('https://github.com/Axlfc/afaces_web'));
+  assert.ok(block.includes('Tu web. Tu radio. Tu catálogo.'));
+  assert.ok(block.includes('Música, letras, portadas, fotografías y marcas de Afaces: derechos reservados'));
+  assert.ok(block.includes('docs/para-artistas.md'));
+  for(const a of (block.match(/<a\b[^>]*>/g)||[]))assert.match(a,/aria-label=/);
+  const guide=read('docs/para-artistas.md');
+  for(const part of ['RADIO_TRACKS','data/metadata.json','Git LFS','LICENSE','afaces/afaces.github.io','Axlfc/afaces_web'])
+    assert.ok(guide.includes(part),part);
+});
+
+test('licencias para código y manuales, derechos del catálogo separados',()=>{
+  const license=read('LICENSE');
+  const rights=read('LICENCIAS.md');
+  const guide=read('docs/para-artistas.md');
+  const readme=read('README.md');
+  assert.ok(license.startsWith('MIT License'));
+  assert.match(license,/Copyright \(c\) 2026 Axel Fernández Curros \(Afaces\)/);
+  for(const key of ['MIT','CC BY-SA 4.0','derechos reservados','Git LFS','Bootswatch']){
+    assert.ok(rights.includes(key),key);
+  }
+  assert.ok(guide.includes('**MIT**'));
+  assert.ok(!guide.includes('Licencia pendiente de formalizar'));
+  assert.ok(readme.includes('LICENSE'));
+  assert.ok(readme.includes('RADIO_TRACKS'));
+  assert.ok(page.includes('licencia MIT'));
+  assert.ok(page.includes('LICENCIAS.md'));
+});
