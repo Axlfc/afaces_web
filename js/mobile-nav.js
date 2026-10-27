@@ -31,6 +31,7 @@
     const anchor=document.createElement('a');
     anchor.href=url;
     anchor.textContent=label;
+    anchor.setAttribute('aria-label',label);
     return anchor;
   };
 
