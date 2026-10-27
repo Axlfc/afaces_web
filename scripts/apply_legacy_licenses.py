@@ -28,7 +28,7 @@ El repositorio permite reutilizar el **código**, no redistribuir la **discograf
 
 1. Haz un fork del código original, conserva el aviso MIT y usa tu propia identidad artística.
 2. Sustituye la discografía, imágenes, contactos, URLs y textos de Afaces.
-3. Configura la radio con tus propias grabaciones: revisa \`player.js\`, \`index.md\` y los scripts generadores. El repositorio musical histórico puede depender de Git LFS.
+3. Configura la radio con tus propias grabaciones: revisa `player.js`, `index.md` y los scripts generadores. El repositorio musical histórico puede depender de Git LFS.
 4. Verifica accesibilidad, funcionamiento de la radio, permisos de música y despliegue en tu alojamiento.
 5. Si adaptas una guía técnica original, atribuye «Afaces / Axel Fernández Curros», enlaza a la fuente y a CC BY-SA 4.0 e indica tus cambios.
 
