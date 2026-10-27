@@ -206,43 +206,10 @@
     say('El archivo de esta pista no está disponible temporalmente.');
   });
 
-  // La descarga directa via Blob necesita CORS. Si el proveedor lo impide,
-  // se abre el MP3 original; nunca se afirma que ese segundo paso lo descargó.
-  async function downloadTrack(index){
-    const track=RADIO_TRACKS[index];
-    if(!track||!track.path)return;
-    say('Preparando descarga de '+track.name+'…');
-    try{
-      const response=await fetch(track.path);
-      if(!response.ok)throw new Error('HTTP '+response.status);
-      const blob=await response.blob();
-      if(!blob.size)throw new Error('Archivo vacío');
-      const objectUrl=URL.createObjectURL(blob);
-      const anchor=document.createElement('a');
-      anchor.href=objectUrl;
-      anchor.download=(track.name.replace(/[^\w .-]+/g,'').trim()||'pista-'+(index+1))+'.mp3';
-      document.body.appendChild(anchor);
-      anchor.click();
-      anchor.remove();
-      setTimeout(()=>URL.revokeObjectURL(objectUrl),60000);
-      say('Descarga iniciada: '+track.name);
-    }catch(error){
-      console.warn('AFACES Radio: descarga directa no disponible',error);
-      if(/^HTTP (?:404|410)\b/.test(String(error.message))){
-        say('Este MP3 no está disponible actualmente en el repositorio de música.');
-        return;
-      }
-      // El enlace permanece visible y requiere un clic deliberado del usuario:
-      // funciona incluso si el navegador bloquea popups fuera de un gesto directo.
-      status.textContent='No se pudo descargar directamente. ';
-      const direct=document.createElement('a');
-      direct.href=track.path;
-      direct.target='_blank';
-      direct.rel='noopener noreferrer';
-      direct.textContent='Abrir MP3 original';
-      status.appendChild(direct);
-    }
-  }
+  // El MP3 original se abre por navegación nativa del navegador, sin fetch:
+  // el alojamiento musical externo no necesita autorizar CORS.
+  // No usamos download= para otro origen: el navegador decide si descarga
+  // o abre el audio según las cabeceras del proveedor.
 
   function buildPlaylist(){
     const icon='<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>';
@@ -252,16 +219,10 @@
       +'<span class="rpl-info"><span class="rpl-name">'+escapeHtml(track.name)+'</span>'
       +'<span class="rpl-album">'+escapeHtml(track.album)+'</span></span>'
       +'<span class="rpl-play" aria-hidden="true">▶</span></button>'
-      +'<button type="button" class="rpl-download" data-idx="'+index+'" aria-label="Descargar MP3: '+escapeHtml(track.name)+'" title="Descargar MP3">'
-      +icon+'</button></div>').join('');
+      +'<a class="rpl-download" data-idx="'+index+'" href="'+escapeHtml(track.path)+'" target="_blank" rel="noopener noreferrer" aria-label="Descargar MP3 (descargar '+escapeHtml(track.name)+')" title="Descargar MP3 (descargar '+escapeHtml(track.name)+')">'
+      +icon+'</a></div>').join('');
     for(const button of ui.list.querySelectorAll('.rpl-select')){
       button.addEventListener('click',()=>loadTrack(Number(button.dataset.idx),true));
-    }
-    for(const button of ui.list.querySelectorAll('.rpl-download')){
-      button.addEventListener('click',event=>{
-        event.stopPropagation();
-        downloadTrack(Number(button.dataset.idx));
-      });
     }
   }
   restore();

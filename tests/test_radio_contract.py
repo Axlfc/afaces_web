@@ -47,7 +47,9 @@ class RadioContract(unittest.TestCase):
         player = (ROOT / "js/radio-player.js").read_text(encoding="utf-8")
         css = (ROOT / "css/styles.css").read_text(encoding="utf-8")
         self.assertIn('class="rpl-download"', player)
-        self.assertIn('aria-label="Descargar MP3:', player)
+        self.assertIn('aria-label="Descargar MP3 (descargar ', player)
+        self.assertIn('title="Descargar MP3 (descargar ', player)
+        self.assertIn("escapeHtml(track.path)", player)
         self.assertIn('m7 10 5 5 5-5', player)
         self.assertNotIn('<circle cx="12" cy="5" r="1"', player)
         self.assertIn(".rpl-download:focus-visible", css)
@@ -57,7 +59,10 @@ class RadioContract(unittest.TestCase):
         self.assertIn("sessionStorage", player)
         self.assertIn("loadTrack(state.index,false)", player)
         self.assertIn("audio.addEventListener('error'", player)
-        self.assertIn("direct.href=track.path", player)
+        self.assertIn('target="_blank" rel="noopener noreferrer"', player)
+        self.assertNotIn("fetch(track.path)", player)
+        self.assertNotIn("downloadTrack(", player)
+        self.assertNotIn("URL.createObjectURL(", player)
 
 
 if __name__ == "__main__":
