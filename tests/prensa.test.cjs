@@ -130,7 +130,7 @@ test('los dos repositorios y la radio propia se explican sin ceder música',()=>
   assert.ok(block.includes('https://github.com/afaces/afaces.github.io'));
   assert.ok(block.includes('https://github.com/Axlfc/afaces_web'));
   assert.ok(block.includes('Tu web. Tu radio. Tu catálogo.'));
-  assert.ok(block.includes('La música y las imágenes de Afaces no se ceden'));
+  assert.ok(block.includes('Música, letras, portadas, fotografías y marcas de Afaces: derechos reservados'));
   assert.ok(block.includes('docs/para-artistas.md'));
   for(const a of (block.match(/<a\b[^>]*>/g)||[]))assert.match(a,/aria-label=/);
   const guide=read('docs/para-artistas.md');
