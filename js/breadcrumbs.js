@@ -52,7 +52,7 @@ const path=trail.length>1?trail:structure();
 const nav=document.createElement('nav');nav.className='af-breadcrumbs';nav.setAttribute('aria-label','Ruta de navegación');
 const ol=document.createElement('ol');const nodes=[{url:'welcome.html',page:'welcome.html'},...path];
 const unique=[];for(const n of nodes){if(!unique.length||!same(unique.at(-1),n))unique.push(n)}
-unique.forEach((n,i)=>{const li=document.createElement('li');const last=i===unique.length-1;if(last){const span=document.createElement('span');span.textContent=labels(n);span.setAttribute('aria-current','page');span.id='af-breadcrumb-current';li.append(span)}else{const link=document.createElement('a');link.href=n.url;link.textContent=labels(n);li.append(link)}ol.append(li)});
+unique.forEach((n,i)=>{const li=document.createElement('li');const last=i===unique.length-1;if(last){const span=document.createElement('span');span.textContent=labels(n);span.setAttribute('aria-current','page');span.id='af-breadcrumb-current';li.append(span)}else{const link=document.createElement('a');link.href=n.url;link.textContent=labels(n);link.setAttribute('aria-label',labels(n));li.append(link)}ol.append(li)});
 nav.append(ol);
 if(main)main.insertBefore(nav,main.firstChild);
 if(page==='lanzamiento.html'){
