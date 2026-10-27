@@ -88,3 +88,29 @@ html[data-js="true"][data-view-mode="novato"] .marquee-wrap{display:none!importa
 /* Un enlace profundo a una sección completa no conduce a contenido oculto. */
 html[data-js="true"][data-view-mode="novato"] :is(#phases,#tematicas,#series,#discography,#platforms,#contact):target{display:block!important}
 html[data-js="true"][data-view-mode="novato"] #about:target{display:grid!important}
+
+/* Onboarding: prevent topic labels from clipping at intermediate widths. */
+.ux-onboarding .ux-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+.ux-onboarding .ux-choice {
+  gap: clamp(.65rem, 1.5vw, 1rem);
+  padding: clamp(1.15rem, 2.3vw, 2.1rem);
+  overflow: visible;
+}
+.ux-onboarding .ux-choice input {
+  margin: 0;
+  flex: 0 0 18px;
+}
+.ux-onboarding .ux-choice strong {
+  flex: 1;
+  min-width: 0;
+  font-size: clamp(1.5rem, 2.2vw, 2.15rem);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+@media (max-width: 700px) {
+  .ux-onboarding .ux-grid { grid-template-columns: minmax(0, 1fr); }
+  .ux-onboarding .ux-title { font-size: clamp(2.65rem, 13vw, 6rem); }
+}
