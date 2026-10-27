@@ -2,13 +2,13 @@
 :root,
 [data-theme="dark"] {
   --black:#070707;--dark:#101010;--mid:#181818;--border:#242424;--border2:#2e2e2e;
-  --text:#ddd8d0;--muted:#5a5550;--accent:#d93020;--gold:#c4a04a;--silver:#8a8580;--white:#f2ede5;
+  --text:#ddd8d0;--muted:#a9a198;--accent:#ff9386;--accent-solid:#bd3a29;--on-accent:#ffffff;--link:#ff9386;--control-border:#807970;--gold:#c4a04a;--silver:#8a8580;--white:#f2ede5;
   --nav-bg:rgba(7,7,7,.97);
   --card-bg:var(--dark);
   --radio-bg:#111111;
   --radio-border:#2a2a2a;
   --radio-text:#ddd8d0;
-  --radio-muted:#555;
+  --radio-muted:#a9a198;
   --radio-pill:#1e1e1e;
   --radio-pill-hover:#282828;
   --shadow:0 24px 80px rgba(0,0,0,.7);
@@ -16,13 +16,13 @@
 
 [data-theme="light"] {
   --black:#f5f0e8;--dark:#ede8df;--mid:#e5dfd5;--border:#cfc9be;--border2:#bfb8ab;
-  --text:#1a1714;--muted:#7a7268;--accent:#c02010;--gold:#a07830;--silver:#6a6560;--white:#1a1714;
+  --text:#1a1714;--muted:#62594f;--accent:#9f281c;--accent-solid:#b52519;--on-accent:#ffffff;--link:#9f281c;--control-border:#807970;--gold:#77501b;--silver:#6a6560;--white:#1a1714;
   --nav-bg:rgba(245,240,232,.97);
   --card-bg:var(--dark);
   --radio-bg:#ede8df;
   --radio-border:#cfc9be;
   --radio-text:#1a1714;
-  --radio-muted:#8a837a;
+  --radio-muted:#62594f;
   --radio-pill:#e0d9ce;
   --radio-pill-hover:#d5cec3;
   --shadow:0 24px 80px rgba(0,0,0,.15);
@@ -69,7 +69,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 [data-theme="light"] .theme-icon-light{transform:rotate(0) scale(1);opacity:1}
 
 .nav-cta{font-size:.58rem;letter-spacing:.15em;color:var(--accent);border:1px solid var(--accent);padding:.5rem 1.1rem;text-decoration:none;text-transform:uppercase;transition:all .2s}
-.nav-cta:hover{background:var(--accent);color:var(--white)}
+.nav-cta:hover{background:var(--accent-solid);color:var(--on-accent)}
 
 /* ── RADIO BACKDROP ─────────────────────────────────────────────── */
 .radio-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0);pointer-events:none;z-index:290;transition:background .3s}
@@ -253,7 +253,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
   color:var(--radio-text);
   transition:background .18s,transform .18s;
 }
-.rctrl-play:hover{background:var(--accent);color:#fff;transform:scale(1.08)}
+.rctrl-play:hover{background:var(--accent-solid);color:var(--on-accent);transform:scale(1.08)}
 .rctrl-shuffle.active{color:var(--accent)}
 
 /* Volume */
@@ -512,7 +512,7 @@ footer{padding:5rem 3rem 2.5rem;border-top:1px solid var(--border);display:grid;
 .modal-thumb-wrap:hover .mthumb-img{transform:scale(1.03);filter:brightness(.35)}
 .modal-thumb-wrap:hover .mplay-btn{transform:translate(-50%,-50%) scale(1.12)}
 .mthumb-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease,filter .4s ease;filter:brightness(.55)}
-.mplay-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .25s ease;box-shadow:0 0 40px rgba(217,48,32,.5)}
+.mplay-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;background:var(--accent-solid);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .25s ease;box-shadow:0 0 40px rgba(217,48,32,.5)}
 .mplay-btn svg{margin-left:5px}
 .mwatch-label{position:absolute;bottom:1.4rem;left:50%;transform:translateX(-50%);font-family:"Liberation Mono","DejaVu Sans Mono",monospace;font-size:.6rem;letter-spacing:.25em;color:rgba(255,255,255,.6);text-transform:uppercase;white-space:nowrap;pointer-events:none;transition:opacity .25s}
 .modal-thumb-wrap:hover .mwatch-label{opacity:0}
@@ -586,7 +586,7 @@ footer{padding:5rem 3rem 2.5rem;border-top:1px solid var(--border);display:grid;
 .form__textarea{resize:vertical;min-height:120px}
 .form__submit{display:flex;justify-content:flex-end;margin-top:.6rem}
 .btn{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--border);padding:.55rem .9rem;background:transparent;color:var(--text);cursor:pointer}
-.btn--primary{background:var(--accent);border-color:var(--accent);color:var(--white)}
+.btn--primary{background:var(--accent-solid);border-color:var(--accent-solid);color:var(--on-accent)}
 
 @media(max-width:900px){
   .form__row{flex-direction:column}
@@ -652,7 +652,7 @@ body>.ux-mode-switch button{
   font:.65rem "Liberation Mono","DejaVu Sans Mono",monospace;
 }
 body>.ux-mode-switch button[aria-pressed="true"]{
-  background:var(--accent);border-color:var(--accent);color:#fff
+  background:var(--accent-solid);border-color:var(--accent-solid);color:var(--on-accent)
 }
 body>.ux-mode-switch button:focus-visible{
   outline:2px solid var(--accent);outline-offset:3px
@@ -693,3 +693,36 @@ body>nav .af-nav-shortcuts a[hidden]{display:none!important}
 .a11y-skip-link:focus{transform:translateY(0)}
 :where(a,button,input,textarea,select,summary):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(forced-colors:active){.ux-entry-choice,.ux-phase-steps li,.ux-series-branches li{border:1px solid ButtonText}.a11y-skip-link{border-color:Highlight}}
+
+/* WCAG 2.2 AA — texto normal ≥4.5:1, controles/foco ≥3:1 sobre
+   superficies de los dos temas; no heredar azul/violeta UA en :visited. */
+:root,[data-theme="dark"]{color-scheme:dark}
+[data-theme="light"]{color-scheme:light}
+:where(a:link,a:visited){color:var(--link)}
+:where(main p a:link,main p a:visited,main li a:link,main li a:visited,
+       footer a:link,footer a:visited){
+  text-decoration:underline;
+  text-underline-offset:.2em;
+  text-decoration-thickness:1.5px;
+}
+:where(a:link,a:visited):focus-visible{text-decoration-thickness:2px}
+/* Los controles neutros tienen borde perceptible también sin hover. */
+:where(.radio-toggle,.radio-close,.theme-toggle,.rpl-download,.filter-sel,
+       .search-inp,.form__input,.form__textarea,.ux-entry-choice,
+       .ux-mode-switch button,.ux-topic,input[type="checkbox"],input[type="radio"]){
+  border-color:var(--control-border);
+}
+:where(.radio-toggle,.radio-close,.theme-toggle,.rpl-download,.ux-entry-choice,
+       .ux-mode-switch button,.ux-topic):focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:3px;
+}
+/* Etiquetas de color: una etiqueta clara con texto claro no es legible. */
+:root[data-theme="light"] .ptag,
+:root[data-theme="light"] [class^="pb-"],
+:root[data-theme="light"] [class*=" pb-"]{
+  color:var(--text);
+  background:var(--dark);
+  border-color:var(--control-border);
+}
+:root[data-theme="light"] .phase-card .phase-num{color:var(--text)}
