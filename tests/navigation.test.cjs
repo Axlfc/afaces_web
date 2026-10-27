@@ -165,3 +165,10 @@ test('actualiza sección activa al cambiar hash y cerrar menú',()=>{
   assert.equal(artist.getAttribute('aria-current'),'location');
   assert.equal(page.links.hidden,true);
 });
+
+test('sin preferencia guardada inicia en vista simplificada',()=>{
+  const page=makeMenu(null);
+  const map=page.links.children.find(li=>li.querySelector('a').textContent==='Mapa');
+  assert.equal(page.doc.documentElement.dataset.viewMode,'novato');
+  assert.equal(map.hidden,true);
+});

@@ -614,7 +614,7 @@ function setPlaylistModal({src, href, title, subtitle}){
   if(!iframe || !modal || !ytLink || !t) return;
   iframe.src = src;
   ytLink.href = href;
-  t.textContent = title || 'Playlist';
+  t.textContent = title || 'Lista de reproducción';
   if(sub) sub.textContent = subtitle || 'Reproducción de playlist';
   modal.classList.add('open');
   modal.setAttribute('aria-hidden','false');
@@ -626,8 +626,8 @@ function openPlaylistModal(playlistId, title){
   setPlaylistModal({
     src:`https://www.youtube.com/embed/videoseries?list=${playlistId}&autoplay=1&rel=0`,
     href:`https://www.youtube.com/playlist?list=${playlistId}`,
-    title:title || 'Playlist',
-    subtitle:'Playlist oficial de YouTube'
+    title:title || 'Lista de reproducción',
+    subtitle:'Lista de reproducción oficial en YouTube'
   });
 }
 

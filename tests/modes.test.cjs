@@ -65,6 +65,8 @@ test('crea el selector en páginas sin controles previos',()=>{
   assert.equal(page.expert.getAttribute('aria-pressed'),'false');
   assert.equal(page.doc.documentElement.dataset.viewMode,'novato');
   assert.equal(page.novice.textContent,'Vista Simplificada');
+  assert.equal(page.doc.documentElement.dataset.js,'true');
+  assert.equal(page.novice.getAttribute('aria-label'),'Activar vista simplificada');
   assert.equal(page.expert.textContent,'Vista Completa');
 });
 

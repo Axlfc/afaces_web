@@ -84,3 +84,7 @@ html[data-js="true"][data-view-mode="novato"] #platforms,
 html[data-js="true"][data-view-mode="novato"] #contact,
 html[data-js="true"][data-view-mode="novato"] .marquee-wrap{display:none!important}
 @media(prefers-reduced-motion:reduce){.ux-entry-choice{transition:none!important}}
+
+/* Un enlace profundo a una sección completa no conduce a contenido oculto. */
+html[data-js="true"][data-view-mode="novato"] :is(#phases,#tematicas,#series,#discography,#platforms,#contact):target{display:block!important}
+html[data-js="true"][data-view-mode="novato"] #about:target{display:grid!important}
