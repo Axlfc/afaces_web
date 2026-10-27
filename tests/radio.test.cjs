@@ -142,7 +142,9 @@ test('todas las pistas tienen reproductor y botón de descarga accesibles',()=>{
   const app=page();
   assert.equal(app.playlist.rows.length,tracks.length);
   assert.equal(app.playlist.downloads.length,tracks.length);
-  assert.match(app.playlist.innerHTML,/aria-label="Descargar MP3:/);
+  assert.match(app.playlist.innerHTML,/aria-label="Descargar MP3 \\(descargar /);
+  assert.match(app.playlist.innerHTML,/title="Descargar MP3 \\(descargar /);
+  assert.match(app.playlist.innerHTML,/<a class="rpl-download" /);
   assert.match(app.playlist.innerHTML,/m7 10 5 5 5-5/);
   assert.equal(app.elements.radioTrackName.textContent,tracks[0].name);
   assert.equal(app.elements.radioPanel.inert,true);
@@ -195,25 +197,36 @@ test('restauración de pista y tiempo en nueva página sin autoplay',()=>{
   assert.equal(next.api.getState().playing,false);
 });
 
-test('descarga crea MP3 sin iniciar la reproducción',async()=>{
+test('cada descarga enlaza directamente al MP3 original en una pestaña separada',()=>{
   const app=page();
-  app.playlist.downloads[0].dispatch('click');
-  await new Promise(resolve=>setImmediate(resolve));
+  const html=app.playlist.innerHTML;
+  const links=[...html.matchAll(/<a class="rpl-download" ([^>]+)>/g)];
+  assert.equal(links.length,tracks.length);
+  for(const index of [0,2,Math.floor(tracks.length/2),tracks.length-1]){
+    const attributes=links[index][1];
+    const escape=value=>String(value).replace(/[&<>"']/g,c=>({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    })[c]);
+    assert.ok(attributes.includes('href="'+escape(tracks[index].path)+'"'));
+    assert.ok(attributes.includes('target="_blank"'));
+    assert.ok(attributes.includes('rel="noopener noreferrer"'));
+    assert.ok(attributes.includes('title="Descargar MP3 (descargar '+escape(tracks[index].name)+')"'));
+    assert.ok(attributes.includes('aria-label="Descargar MP3 (descargar '+escape(tracks[index].name)+')"'));
+  }
   assert.equal(app.api.getState().playing,false);
-  assert.equal(app.links.length,1);
-  assert.ok(app.links[0].clicked);
-  assert.match(app.links[0].download,/\.mp3$/);
+  assert.equal(app.links.length,0); // No hay link artificial, fetch ni Blob.
 });
 
-test('cuando CORS impide la descarga muestra un enlace original utilizable',async()=>{
-  const app=page(new Map(),false);
-  app.playlist.downloads[2].dispatch('click');
-  await new Promise(resolve=>setImmediate(resolve));
-  assert.match(app.playlist.status.textContent,/No se pudo descargar/);
-  const link=app.playlist.status.children[0];
-  assert.equal(link.href,tracks[2].path);
-  assert.equal(link.target,'_blank');
-  assert.equal(link.rel,'noopener noreferrer');
-  assert.equal(link.textContent,'Abrir MP3 original');
-  assert.equal(app.api.getState().playing,false);
+test('el enlace de descarga no usa fetch y preserva el audio activo',async()=>{
+  const app=page(new Map(),false); // El mock bloquearía fetch mediante CORS.
+  app.elements.rPlay.dispatch('click');
+  await Promise.resolve();
+  assert.equal(app.api.getState().playing,true);
+  assert.equal(app.playlist.downloads.length,tracks.length);
+  assert.ok(app.playlist.innerHTML.includes('href="'+tracks[2].path+'"'));
+  assert.equal(app.playlist.status.textContent,'');
+  assert.ok(!playerSource.includes('fetch(track.path)'));
+  assert.ok(!playerSource.includes('downloadTrack('));
+  assert.ok(!playerSource.includes('URL.createObjectURL('));
+  assert.equal(app.api.getState().playing,true);
 });

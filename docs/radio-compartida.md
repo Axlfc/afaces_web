@@ -36,7 +36,16 @@ tema, móvil y apertura de menú.
 
 ## Descarga MP3
 
-El botón a la derecha de cada pista presenta un SVG de flecha hacia una bandeja y un nombre accesible `Descargar MP3`. La descarga directa intenta `fetch` del fichero original y genera un enlace Blob para sugerir nombre de archivo. Si la política CORS del alojamiento externo impide ese mecanismo, se muestra un enlace visible al MP3 original para que el usuario pueda abrirlo/guardarlo por una acción explícita. Un error 404/410 se informa como fichero ausente: no se anuncia una descarga inexistente.
+El botón de descarga de cada pista es un enlace HTML directo al mismo MP3 original
+que antes se mostraba como «Abrir MP3 original». Tiene el tooltip y nombre accesible
+`Descargar MP3 (descargar NOMBRE DE LA CANCIÓN)`, un SVG de descarga, `target="_blank"`
+y `rel="noopener noreferrer"`. No realiza un `fetch` CORS, no muestra el aviso
+engañoso de error y no interrumpe la reproducción de radio.
+
+El navegador y el servidor externo determinan si el enlace provoca una descarga
+automática o abre el archivo para guardarlo manualmente. Un 404 o un problema con
+Git LFS no se puede resolver desde este enlace sin cambiar el alojamiento.
+
 
 No se copian MP3 al FTP TINET. El GitHub independiente con ficheros de la radio puede seguir teniendo restricciones LFS; un audio ausente en origen no puede repararse con un cambio de frontend.
 
