@@ -30,7 +30,7 @@ test('biografía corta es menor de 80 palabras y antecede a los bloques de conte
   assert.ok(page.indexOf('class="press-short"')<page.indexOf('id="bio-larga"'));
 });
 test('playlist señalizada y 2 videoclips suministrados, con enlaces descriptivos',()=>{
-  const songs=page.match(/<ol class="press-curation">([\s\S]*?)<\/ol>/)?.[1]||'';
+  const songs=page.match(/<ol class="press-curation"[^>]*>([\s\S]*?)<\/ol>/)?.[1]||'';
   const videos=page.match(/<ul class="press-video-links">([\s\S]*?)<\/ul>/)?.[1]||'';
   assert.equal((songs.match(/<li\b/g)||[]).length,5);
   assert.equal((videos.match(/<li>/g)||[]).length,2);
