@@ -109,3 +109,31 @@ test('copy del manifiesto, sin cifras fijas ni llamadas a APIs de plataformas',(
   assert.ok(!source.includes('api.spotify.com'));
   assert.ok(!source.includes('googleapis.com'));
 });
+
+test('distribución incluye TikTok y SoundCloud con identificadores correctos',()=>{
+  const src=page.match(/<section class="press-section" aria-labelledby="redes-titulo">([\\s\\S]*?)<\\/section>/)?.[1]||'';
+  for(const link of [
+    'https://www.tiktok.com/@el_afaces',
+    'https://soundcloud.com/afaces',
+    'https://www.youtube.com/@afaces',
+    'https://afaces.bandcamp.com',
+    'https://www.instagram.com/el_afaces/',
+    'https://open.spotify.com/artist/3zbzWzOqZcY3mZBG5ICF9l'
+  ])assert.ok(src.includes(link),link);
+  const links=src.match(/<a\\b[^>]*>/g)||[];
+  assert.equal(links.length,6);
+  for(const link of links)assert.match(link,/aria-label=/);
+});
+
+test('los dos repositorios y la radio propia se explican sin ceder música',()=>{
+  const block=page.match(/<section class="press-section" aria-labelledby="codigo-titulo">([\\s\\S]*?)<\\/section>/)?.[1]||'';
+  assert.ok(block.includes('https://github.com/afaces/afaces.github.io'));
+  assert.ok(block.includes('https://github.com/Axlfc/afaces_web'));
+  assert.ok(block.includes('Tu web. Tu radio. Tu catálogo.'));
+  assert.ok(block.includes('La música y las imágenes de Afaces no se ceden'));
+  assert.ok(block.includes('docs/para-artistas.md'));
+  for(const a of (block.match(/<a\\b[^>]*>/g)||[]))assert.match(a,/aria-label=/);
+  const guide=read('docs/para-artistas.md');
+  for(const part of ['RADIO_TRACKS','data/metadata.json','Git LFS','LICENSE','afaces/afaces.github.io','Axlfc/afaces_web'])
+    assert.ok(guide.includes(part),part);
+});

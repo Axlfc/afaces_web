@@ -74,3 +74,14 @@
 .press-download{display:block;width:fit-content;border:1px solid var(--accent);padding:.7rem .9rem;text-decoration:none;font:700 .68rem/1.4 "Liberation Mono","DejaVu Sans Mono",monospace;letter-spacing:.03em;color:var(--white)}
 .press-download:hover{background:var(--accent);color:var(--black, #000)}
 @media(max-width:740px){.press-intro{grid-template-columns:1fr}.press-sheet{grid-template-columns:1fr}.press-challenge{padding:1rem}}
+
+/* Puerta de entrada para artistas que quieren reutilizar la estructura. */
+.press-open-source{display:grid;gap:1rem;max-width:78ch}
+.press-open-source>p:not(.press-footnote){font-size:clamp(.84rem,1.2vw,.98rem);line-height:1.85}
+.press-source-repos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;list-style:none;margin:0;padding:0}
+.press-source-repos li{min-width:0}
+.press-source-repos a{display:grid;gap:.55rem;height:100%;padding:1.2rem;border:1px solid var(--border);background:var(--card-bg);text-decoration:none;overflow-wrap:anywhere}
+.press-source-repos a strong{color:var(--white);font-size:.9rem}
+.press-source-repos a span{color:var(--accent);font:.7rem/1.55 "Liberation Mono","DejaVu Sans Mono",monospace}
+.press-source-repos a:hover{border-color:var(--accent)}
+@media(max-width:740px){.press-source-repos{grid-template-columns:1fr}}
