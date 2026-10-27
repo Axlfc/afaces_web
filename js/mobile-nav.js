@@ -22,6 +22,7 @@
     ['Letras','letras.html',true],
     ['Opiniones','feedback.html',true],
     ['Accesibilidad','accesibilidad.html',true],
+    ['Prensa','prensa.html',true],
     ['Contacto','welcome.html#contact',true]
   ];
   const shortcuts=['Discografía','Descubrir','Mapa','Cronología'];
@@ -30,6 +31,7 @@
     const anchor=document.createElement('a');
     anchor.href=url;
     anchor.textContent=label;
+    anchor.setAttribute('aria-label',label);
     return anchor;
   };
 

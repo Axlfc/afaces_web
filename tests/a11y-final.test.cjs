@@ -6,12 +6,12 @@ const path=require('node:path');
 const root=path.join(__dirname,'..');
 const html=name=>fs.readFileSync(path.join(root,name),'utf8');
 const pages=['welcome','onboarding','perfiles','mapa','timeline','lanzamiento',
-  'recomendaciones','feedback','letras','accesibilidad'];
-test('las diez páginas incluyen main semántico, salto de teclado y no solicitan Google Fonts',()=>{
+  'recomendaciones','feedback','letras','accesibilidad','prensa'];
+test('las once páginas incluyen main semántico, salto de teclado y no solicitan Google Fonts',()=>{
   for(const name of pages){
     const page=html(name+'.html');
     assert.equal((page.match(/<main\b/g)||[]).length,1,name);
-    assert.match(page,/<a class="a11y-skip-link" href="#[^"]+">Saltar al contenido principal<\/a>/,name);
+    assert.match(page,/<a class="a11y-skip-link" href="#[^"]+"(?: aria-label="[^"]+")?>Saltar al contenido principal<\/a>/,name);
     assert.match(page,/<main\b[^>]*tabindex="-1"/,name);
     assert.ok(!page.includes('fonts.googleapis.com'),name);
     assert.ok(!page.includes('Rutas de exploración provisionales'),name);

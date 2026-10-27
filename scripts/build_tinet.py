@@ -14,7 +14,7 @@ DIST = ROOT / "dist"
 REQUIRED = (
     "welcome.html", "mapa.html", "timeline.html", "perfiles.html",
     "lanzamiento.html", "recomendaciones.html", "onboarding.html",
-    "feedback.html", "letras.html", "accesibilidad.html",
+    "feedback.html", "letras.html", "accesibilidad.html", "prensa.html",
 )
 SUFFIXES = {
     "assets": {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".ico", ".avif", ".woff", ".woff2", ".ttf"},

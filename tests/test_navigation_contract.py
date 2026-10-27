@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAGES = (
     "welcome.html", "onboarding.html", "perfiles.html", "mapa.html",
     "timeline.html", "lanzamiento.html", "recomendaciones.html",
-    "feedback.html", "letras.html", "accesibilidad.html",
+    "feedback.html", "letras.html", "accesibilidad.html", "prensa.html",
 )
 
 

@@ -7,9 +7,9 @@ const path = require('node:path');
 const root = path.join(__dirname, '..');
 const source = fs.readFileSync(path.join(root, 'js/persistent-navigation.js'), 'utf8');
 const pages = ['welcome','onboarding','perfiles','mapa','timeline','lanzamiento',
-  'recomendaciones','feedback','letras','accesibilidad'];
+  'recomendaciones','feedback','letras','accesibilidad','prensa'];
 
-test('diez páginas cargan la navegación persistente tras la radio', () => {
+test('once páginas cargan la navegación persistente tras la radio', () => {
   for (const name of pages) {
     const html = fs.readFileSync(path.join(root, name + '.html'), 'utf8');
     assert.equal((html.match(/src="js\/persistent-navigation.js"/g) || []).length, 1, name);

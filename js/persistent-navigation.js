@@ -4,7 +4,7 @@
   const pages = new Set([
     'welcome.html', 'onboarding.html', 'perfiles.html', 'mapa.html',
     'timeline.html', 'lanzamiento.html', 'recomendaciones.html',
-    'feedback.html', 'letras.html', 'accesibilidad.html'
+    'feedback.html', 'letras.html', 'accesibilidad.html', 'prensa.html'
   ]);
   const directory = location.pathname.slice(0, location.pathname.lastIndexOf('/') + 1);
   const localPage = value => {
