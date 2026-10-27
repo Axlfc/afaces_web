@@ -2,6 +2,8 @@
 // AFACES RADIO: único reproductor para las 10 páginas de afaces_web.
 // El catálogo vive en radio-data.js, que contiene exclusivamente álbumes Afaces.
 (()=>{
+  // No crear un segundo audio dentro del iframe editorial.
+  try { if(window!==window.top&&window.parent?.__AfacesPersistentSite)return; } catch(e){}
   if(typeof RADIO_TRACKS==='undefined'||!Array.isArray(RADIO_TRACKS)||!RADIO_TRACKS.length)return;
   const id=name=>document.getElementById(name);
   const ui={
@@ -65,6 +67,7 @@
     ui.dot.classList.toggle('on',Boolean(playing));
     ui.liveDot.classList.toggle('on',Boolean(playing));
     ui.play.setAttribute('aria-label',playing?'Pausar radio':'Reproducir radio');
+    window.__AfacesPersistentSite?.updateRadio();
   };
   const openRadio=()=>{
     ui.panel.inert=false;
@@ -73,6 +76,7 @@
     ui.backdrop.classList.add('open');
     ui.toggle.classList.add('active');
     ui.toggle.setAttribute('aria-expanded','true');
+    window.__AfacesPersistentSite?.updateRadio();
   };
   const closeRadio=()=>{
     ui.panel.inert=true;
@@ -81,6 +85,7 @@
     ui.backdrop.classList.remove('open');
     ui.toggle.classList.remove('active');
     ui.toggle.setAttribute('aria-expanded','false');
+    window.__AfacesPersistentSite?.updateRadio();
   };
   ui.panel.inert=true;
   ui.toggle.setAttribute('aria-controls','radioPanel');
@@ -91,7 +96,7 @@
   document.addEventListener('keydown',event=>{
     if(event.key==='Escape'&&ui.panel.classList.contains('open')){
       closeRadio();
-      ui.toggle.focus();
+      if(!window.__AfacesPersistentSite?.focusRadioToggle())ui.toggle.focus();
     }
   });
 
@@ -268,6 +273,8 @@
   window.addEventListener('pagehide',persist);
   window.AfacesRadio={
     tracks:RADIO_TRACKS,play:playTrack,pause:pauseTrack,select:loadTrack,
+    open:openRadio,close:closeRadio,
+    toggle:()=>ui.panel.classList.contains('open')?closeRadio():openRadio(),
     getState:()=>({index:state.index,playing:state.playing,shuffle:state.shuffle})
   };
 })();
