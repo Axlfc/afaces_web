@@ -1,52 +1,39 @@
 'use strict';
-// Fuente única de verdad: catálogo local publicado; sin servicios externos.
+// El archivo local es la única fuente del contador; no se consulta ninguna API externa.
 (() => {
-  const fields = {
-    total: document.querySelectorAll('[data-press-counter="total"]'),
-    albums: document.querySelectorAll('[data-press-counter="albums"]'),
-    lps: document.querySelectorAll('[data-press-counter="lps"]'),
-    phases: document.querySelectorAll('[data-press-counter="phases"]'),
-    nuclei: document.querySelectorAll('[data-press-counter="nuclei"]'),
-    duration: document.querySelectorAll('[data-press-counter="duration"]')
-  };
-  if (!fields.total.length) return;
-  const status = document.getElementById('pressDataStatus');
-  const update = (key, value) => fields[key].forEach(node => { node.textContent = String(value); });
-  const format = n => new Intl.NumberFormat('es-ES').format(n);
-
+  const keys=['total','albums','lps','phases','nuclei','duration'];
+  const nodes=Object.fromEntries(keys.map(k=>[k,document.querySelectorAll('[data-press-counter="'+k+'"]')]));
+  if (!nodes.total.length) return;
+  const status=document.getElementById('pressDataStatus');
+  const put=(key,value)=>nodes[key].forEach(node=>{node.textContent=String(value)});
+  const format=n=>new Intl.NumberFormat('es-ES').format(n);
   async function load() {
+    const controller=typeof AbortController==='function'?new AbortController():null;
+    const timeout=controller?setTimeout(()=>controller.abort(),8000):null;
     try {
-      const response = await fetch('data/metadata.json', { cache: 'no-cache' });
-      if (!response.ok) throw new Error('Catálogo no disponible');
-      const catalog = await response.json();
-      if (!Array.isArray(catalog.videos) || !catalog.videos.length)
-        throw new Error('Catálogo sin lanzamientos');
-      const videos = catalog.videos;
-      update('total', format(videos.length));
-      update('albums', format(videos.filter(v => v.coleccion === 'album').length));
-      update('lps', format(videos.filter(v => v.coleccion === 'lp').length));
-      if (Array.isArray(catalog.architecture?.phases))
-        update('phases', format(catalog.architecture.phases.length));
-      if (Array.isArray(catalog.architecture?.nuclei))
-        update('nuclei', format(catalog.architecture.nuclei.length));
-
-      const durations = videos
-        .map(v => v.durationSeconds)
-        .filter(n => typeof n === 'number' && Number.isFinite(n) && n > 0);
-      if (durations.length) {
-        const seconds = durations.reduce((sum, n) => sum + n, 0);
-        const minutes = Math.floor(seconds / 60);
-        update('duration', `${Math.floor(minutes / 60)} h ${String(minutes % 60).padStart(2, '0')} min`);
-      }
-      if (status) {
-        status.textContent = durations.length === videos.length
-          ? `Datos calculados a partir de ${format(videos.length)} lanzamientos con duración registrada.`
-          : `Duración documentada de ${format(durations.length)} de ${format(videos.length)} lanzamientos; el total real puede ser mayor.`;
-      }
-    } catch (_) {
-      // Se conservan las cifras orientativas del HTML; nunca mostrar cero falso.
-      if (status) status.textContent = 'No se pudo actualizar el catálogo. Se muestran cifras de referencia.';
-    }
+      const response=await fetch('data/metadata.json',{cache:'no-cache',...(controller?{signal:controller.signal}:{})});
+      if(!response.ok)throw new Error('No se pudo leer el catálogo');
+      const data=await response.json();
+      if(!Array.isArray(data.videos)||!data.videos.length)throw new Error('Catálogo vacío');
+      const launches=data.videos;
+      put('total',format(launches.length));
+      put('albums',format(launches.filter(v=>v.coleccion==='album').length));
+      put('lps',format(launches.filter(v=>v.coleccion==='lp').length));
+      if(Array.isArray(data.architecture?.phases))put('phases',format(data.architecture.phases.length));
+      if(Array.isArray(data.architecture?.nuclei))put('nuclei',format(data.architecture.nuclei.length));
+      const durations=launches.map(v=>v.durationSeconds).filter(n=>typeof n==='number'&&Number.isFinite(n)&&n>0);
+      if(durations.length){
+        const minutes=Math.floor(durations.reduce((a,b)=>a+b,0)/60);
+        put('duration',Math.floor(minutes/60)+' h '+String(minutes%60).padStart(2,'0')+' min');
+      }else put('duration','Sin duración registrada');
+      if(status)status.textContent=durations.length===launches.length
+        ?'Todas las duraciones están documentadas.'
+        :'Duración documentada: '+format(durations.length)+' de '+format(launches.length)+' lanzamientos. Falta información; el total real puede ser mayor.';
+    }catch(_){
+      put('total','No disponible');
+      for(const key of ['albums','lps','duration'])put(key,'No disponible');
+      if(status)status.textContent='Error al cargar el sistema. ¿Quién eres y por qué estás aquí? Las cifras no están disponibles: recarga la página.';
+    }finally{if(timeout!==null)clearTimeout(timeout)}
   }
   load();
 })();

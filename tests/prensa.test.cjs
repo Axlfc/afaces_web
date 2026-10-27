@@ -12,8 +12,8 @@ test('EPK semántico español, secciones para profesionales y sin enlaces vacío
   assert.match(page,/<meta name="description"/);
   assert.equal((page.match(/<main\b/g)||[]).length,1);
   assert.equal((page.match(/<h1\b/g)||[]).length,1);
-  for(const label of ['Biografía corta','Biografía larga','Música seleccionada para prensa',
-    'Vídeos','Hitos del proyecto','Enlaces y redes','Fotografías de prensa','Contacto directo de prensa'])
+  for(const label of ['Biografía corta','Biografía larga','Empieza por escuchar',
+    'La música también tiene imagen','Hitos. Sin medallas inventadas','Canales de distribución del sistema','Fotos. Sin correos de ida y vuelta','Contacto para prensa'])
     assert.ok(page.includes(label),label);
   for(const tag of (page.match(/<(?:a|button|input)\b[^>]*>/g)||[]))assert.match(tag,/aria-label=/,tag);
   assert.ok(!page.includes('href="#"'));
@@ -29,21 +29,23 @@ test('biografía corta es menor de 80 palabras y antecede a los bloques de conte
   assert.ok(bio.trim().split(/\s+/).length<=80);
   assert.ok(page.indexOf('class="press-short"')<page.indexOf('id="bio-larga"'));
 });
-test('selección de exactamente 4 piezas y 2 videoclips, con enlaces externos descriptivos',()=>{
+test('playlist señalizada y 2 videoclips suministrados, con enlaces descriptivos',()=>{
   const songs=page.match(/<ol class="press-curation">([\s\S]*?)<\/ol>/)?.[1]||'';
   const videos=page.match(/<ul class="press-video-links">([\s\S]*?)<\/ul>/)?.[1]||'';
-  assert.equal((songs.match(/<li>/g)||[]).length,4);
+  assert.equal((songs.match(/<li>/g)||[]).length,0);
   assert.equal((videos.match(/<li>/g)||[]).length,2);
   assert.equal((songs.match(/youtube\.com\/watch\?v=/g)||[]).length,4);
 });
-test('dos encuadres con vínculo al original, créditos pendientes explícitos',()=>{
+test('dos archivos de imagen, descarga local y créditos pendientes explícitos',()=>{
   const photos=page.match(/<div class="press-gallery">([\s\S]*?)<\/div>/)?.[1]||'';
   assert.equal((photos.match(/<figure class="press-photo">/g)||[]).length,2);
   assert.equal((photos.match(/\bdownload=/g)||[]).length,2);
   assert.ok(photos.includes('press-photo-vertical'));
-  assert.ok(photos.includes('press-photo-horizontal'));
-  assert.ok(page.includes('Crédito fotográfico no identificado'));
-  assert.ok(page.includes('resolución nativa están pendientes de verificación'));
+  assert.ok(photos.includes('press-photo-archive'));
+  assert.ok(photos.includes('assets/images/press/afaces-archivo.jpg'));
+  assert.ok(fs.existsSync(path.join(root,'assets/images/press/afaces-archivo.jpg')));
+  assert.ok(page.includes('Autoría fotográfica no documentada'));
+  assert.ok(page.includes('No se promete una resolución'));
 });
 test('navegación compartida, estilos responsive, fallback y fuente local',()=>{
   assert.ok(page.includes('src="js/persistent-navigation.js"'));
@@ -51,7 +53,7 @@ test('navegación compartida, estilos responsive, fallback y fuente local',()=>{
   assert.ok(page.includes('src="js/modes.js"'));
   assert.ok(page.includes('href="prensa.html"'));
   assert.ok(read('css/prensa.css').includes('@media(max-width:740px)'));
-  assert.ok(page.includes('>126+</span>'));
+  assert.ok(page.includes('>Cargando cifras…</span>'));
   assert.match(source,/fetch\('data\/metadata\.json'/);
   assert.ok(!source.includes('googleapis'));
 });
@@ -71,7 +73,7 @@ function invoke(response,willReject=false){
     if(willReject)throw Error('Sin red');
     return {ok:true,json:async()=>response};
   };
-  vm.runInNewContext(source,{document:doc,fetch,Intl,Number,Math,Error,String,Array});
+  vm.runInNewContext(source,{document:doc,fetch,Intl,Number,Math,Error,String,Array,setTimeout,clearTimeout});
   return new Promise(resolve=>setImmediate(()=>resolve({nodes,status})));
 }
 test('contador usa longitud real del array y agrega duración disponible sin falsos totales',async()=>{
@@ -89,6 +91,17 @@ test('contador usa longitud real del array y agrega duración disponible sin fal
 });
 test('fallback estático ante fallo de lectura no se sustituye por cero',async()=>{
   const {nodes,status}=await invoke(null,true);
-  assert.ok(nodes.total.every(n=>n.textContent==='126+'));
-  assert.match(status.textContent,/No se pudo actualizar el catálogo/);
+  assert.ok(nodes.total.every(n=>n.textContent==='No disponible'));
+  assert.match(status.textContent,/Error al cargar el sistema/);
+});
+
+test('copy del manifiesto, sin cifras fijas ni llamadas a APIs de plataformas',()=>{
+  assert.match(page,/No juzgues de oídas/);
+  assert.match(page,/No necesito un juicio complaciente/);
+  assert.match(page,/No juzgues en quince segundos/);
+  assert.ok(!page.includes('126 lanzamientos'));
+  assert.ok(!page.includes('bajo solicitud'));
+  assert.match(source,/fetch\('data\/metadata\.json'/);
+  assert.ok(!source.includes('api.spotify.com'));
+  assert.ok(!source.includes('googleapis.com'));
 });
