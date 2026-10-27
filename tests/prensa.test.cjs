@@ -34,7 +34,11 @@ test('playlist señalizada y 2 videoclips suministrados, con enlaces descriptivo
   const videos=page.match(/<ul class="press-video-links">([\s\S]*?)<\/ul>/)?.[1]||'';
   assert.equal((songs.match(/<li>/g)||[]).length,0);
   assert.equal((videos.match(/<li>/g)||[]).length,2);
-  assert.equal((songs.match(/youtube\.com\/watch\?v=/g)||[]).length,4);
+  assert.ok(page.includes('Esenciales para prensa'));
+  assert.ok(!page.includes('youtube.com/watch?v=SWNbhMxS4S4'));
+  assert.ok(page.includes('https://www.youtube.com/watch?v=nR1u7q244bk'));
+  assert.ok(page.includes('https://www.youtube.com/watch?v=q642i-jRWOA'));
+  assert.equal((videos.match(/youtube\.com\/watch\?v=/g)||[]).length,2);
 });
 test('dos archivos de imagen, descarga local y créditos pendientes explícitos',()=>{
   const photos=page.match(/<div class="press-gallery">([\s\S]*?)<\/div>/)?.[1]||'';
@@ -61,7 +65,7 @@ test('navegación compartida, estilos responsive, fallback y fuente local',()=>{
 function invoke(response,willReject=false){
   const nodes={};
   for(const key of ['total','albums','lps','phases','nuclei','duration']){
-    nodes[key]=Array.from({length:key==='total'?3:1},()=>({textContent:key==='total'?'126+':'Sin datos'}));
+    nodes[key]=Array.from({length:key==='total'?3:1},()=>({textContent:key==='total'?'Cargando cifras…':'Sin datos'}));
   }
   const status={textContent:'Datos de referencia disponibles'};
   const doc={querySelectorAll:selector=>{
